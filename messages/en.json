@@ -1,5 +1,17 @@
 {
-  "appName": "GarageFlow",
+  "global": {
+    "app-name": "GarageFlow"
+  },
+  "metadata": {
+    "login": {
+      "title": "Login",
+      "description": "Login to your account"
+    },
+    "signup": {
+      "title": "Sign up",
+      "description": "Create an account"
+    }
+  },
   "locale": {
     "en": "English",
     "vi": "Vietnamese"

@@ -1,5 +1,17 @@
 {
-  "appName": "GarageFlow",
+  "global": {
+    "app-name": "GarageFlow"
+  },
+  "metadata": {
+    "login": {
+      "title": "Đăng nhập",
+      "description": "Đăng nhập vào tài khoản của bạn"
+    },
+    "signup": {
+      "title": "Đăng ký",
+      "description": "Tạo tài khoản"
+    }
+  },
   "locale": {
     "en": "Tiếng Anh",
     "vi": "Tiếng Việt"
@@ -14,5 +26,6 @@
     "login": "Đăng nhập",
     "no-account": "Chưa có tài khoản?",
     "signup": "Đăng ký"
-  }
+  },
+  "signup": {}
 }
