@@ -27,5 +27,11 @@
     "no-account": "Don't have an account?",
     "signup": "Sign up"
   },
-  "signup": {}
+  "signup": {},
+  "error": {
+    "404": "Oops! It seems you are lost. This page does not exist.",
+    "500": "Oops! Something went wrong on our server.",
+    "403": "Sorry! You don't have permission to access this page.",
+    "go-to-homepage": "Go to the homepage"
+  }
 }

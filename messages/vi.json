@@ -27,5 +27,11 @@
     "no-account": "Chưa có tài khoản?",
     "signup": "Đăng ký"
   },
-  "signup": {}
+  "signup": {},
+  "error": {
+    "404": "Ôi! Có vẻ như bạn đã đi lạc. Trang này không tồn tại.",
+    "500": "Ôi! Có gì đó không ổn trên máy chủ của chúng tôi.",
+    "403": "Xin lỗi! Bạn không có quyền truy cập vào trang này.",
+    "go-to-homepage": "Quay về trang chủ"
+  }
 }

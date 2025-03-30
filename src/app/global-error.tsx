@@ -1,9 +1,10 @@
-"use client"; // Error boundaries must be Client Components
+"use client";
+// Error boundaries must be Client Components
 import { useEffect } from "react";
+import { Error } from "../components/error";
 
 export default function GlobalError({
   error,
-  reset,
 }: {
   error: Error & { digest?: string };
   reset: () => void;
@@ -17,8 +18,7 @@ export default function GlobalError({
     // global-error must include html and body tags
     <html>
       <body>
-        <h2>Something went wrong!</h2>
-        <button onClick={() => reset()}>Try again</button>
+        <Error code={500} />
       </body>
     </html>
   );
