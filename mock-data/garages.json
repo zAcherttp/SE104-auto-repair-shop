@@ -1,0 +1,26 @@
+[
+  {
+    "id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "name": "Elite Auto Repairs",
+    "address": "123 Main Street, Springfield",
+    "phone": "(555) 123-4567",
+    "email": "info@eliteautorepairs.com",
+    "capacity": 8
+  },
+  {
+    "id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "name": "Precision Motors",
+    "address": "456 Oak Avenue, Riverdale",
+    "phone": "(555) 234-5678",
+    "email": "service@precisionmotors.com",
+    "capacity": 12
+  },
+  {
+    "id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "name": "City Auto Service",
+    "address": "789 Maple Road, Oakville",
+    "phone": "(555) 345-6789",
+    "email": "info@cityautoservice.com",
+    "capacity": 6
+  }
+]

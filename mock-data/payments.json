@@ -1,0 +1,104 @@
+[
+  {
+    "id": "5318aa8f-3992-409d-9f12-10afac5d4457",
+    "invoice_id": "46f15965-9505-46e2-b07d-804124181ae6",
+    "amount": 280.9,
+    "payment_date": "2022-04-15"
+  },
+  {
+    "id": "5bec6f15-8fd1-4e7c-a816-c176c3678408",
+    "invoice_id": "46f15965-9505-46e2-b07d-804124181ae6",
+    "amount": 269.88,
+    "payment_date": "2024-07-17"
+  },
+  {
+    "id": "ed2acac8-4b28-4233-9dc0-d6676a87bb3a",
+    "invoice_id": "21da392d-0aab-40be-9783-042e8805fc9b",
+    "amount": 1436.28,
+    "payment_date": "2024-05-12"
+  },
+  {
+    "id": "08ffc41c-8d06-4164-99f5-69261ec1dacc",
+    "invoice_id": "956d0444-fa30-4857-87b0-3834fdf67b4f",
+    "amount": 270,
+    "payment_date": "2025-03-07"
+  },
+  {
+    "id": "571b7324-0787-4fbe-a9ac-a560a5bf6c5b",
+    "invoice_id": "30889853-1784-4206-b3c5-cdd1b0fcfc73",
+    "amount": 626.38,
+    "payment_date": "2024-08-06"
+  },
+  {
+    "id": "f6d440fc-54c7-4487-89dc-6d4ad3fc6df3",
+    "invoice_id": "7d49eb4c-8ee7-4c76-867d-05bfac717ba6",
+    "amount": 392.67,
+    "payment_date": "2024-11-01"
+  },
+  {
+    "id": "0367c770-fd1a-4ba8-b40b-d6df0b75ac1e",
+    "invoice_id": "7d49eb4c-8ee7-4c76-867d-05bfac717ba6",
+    "amount": 698.07,
+    "payment_date": "2024-12-04"
+  },
+  {
+    "id": "7df9f101-5e84-4741-b409-fd17c85714ab",
+    "invoice_id": "83420c1f-6b7f-4138-9b06-d1e9b990c169",
+    "amount": 159.89,
+    "payment_date": "2024-09-08"
+  },
+  {
+    "id": "cb9070a5-1014-42ad-8911-9c4bda7b08f6",
+    "invoice_id": "83420c1f-6b7f-4138-9b06-d1e9b990c169",
+    "amount": 93.9,
+    "payment_date": "2025-02-17"
+  },
+  {
+    "id": "ab95f4f3-81ca-441d-a64a-47c555e2d1df",
+    "invoice_id": "de8dceac-0f9e-47e0-a507-1b07adc34232",
+    "amount": 1555.14,
+    "payment_date": "2025-03-28"
+  },
+  {
+    "id": "94e4b9aa-558b-4e78-96b4-6a190c01f5be",
+    "invoice_id": "ba23fbc1-fb15-4103-b79b-c00700b4ad51",
+    "amount": 921.21,
+    "payment_date": "2024-05-09"
+  },
+  {
+    "id": "56fa8605-109c-4242-a781-c8045eb19d81",
+    "invoice_id": "f96729b6-b240-44de-9d42-44cb72b01347",
+    "amount": 1015.17,
+    "payment_date": "2024-07-17"
+  },
+  {
+    "id": "4001547a-6dd1-4592-9f46-d47a8f3a3dfc",
+    "invoice_id": "32248d7d-95f6-456e-b4df-c3d6ea615d84",
+    "amount": 126.35,
+    "payment_date": "2024-01-06"
+  },
+  {
+    "id": "b53380cb-433f-46e3-a3be-fc613bf20e04",
+    "invoice_id": "32248d7d-95f6-456e-b4df-c3d6ea615d84",
+    "amount": 197.62,
+    "payment_date": "2024-10-29"
+  },
+  {
+    "id": "17211d22-282d-497d-9093-43ffcfe2b8aa",
+    "invoice_id": "e3f45e1d-9016-4b47-8f34-741d3c49e474",
+    "amount": 475.19,
+    "payment_date": "2023-09-02"
+  },
+  {
+    "id": "348fb6cb-5158-405f-b448-99bfda999af1",
+    "invoice_id": "7ad4bbb8-e047-427d-b793-6a70cfcc9097",
+    "amount": 1706.27,
+    "payment_date": "2025-03-29"
+  },
+  {
+    "id": "62028d71-7a16-460c-8893-2ee0b398d543",
+    "invoice_id": "d0924754-ebeb-472f-bf74-fd6bfa2aadf7",
+    "amount": 345.56,
+    "payment_date": "2025-02-26"
+  }
+]

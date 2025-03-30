@@ -1,0 +1,18 @@
+{
+  "appName": "GarageFlow",
+  "locale": {
+    "en": "Tiếng Anh",
+    "vi": "Tiếng Việt"
+  },
+  "login": {
+    "welcome-back": "Chào mừng bạn trở lại",
+    "email": "Email",
+    "login-to-your-account": "Nhập email bên dưới để đăng nhập vào tài khoản của bạn",
+    "email-placeholder": "m@vidu.com",
+    "password": "Mật khẩu",
+    "forgot-password": "Bạn quên mật khẩu?",
+    "login": "Đăng nhập",
+    "no-account": "Chưa có tài khoản?",
+    "signup": "Đăng ký"
+  }
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "65e2813b-df58-4a67-bc7b-4de0da97a1d9",
+    "name": "Toyota"
+  },
+  {
+    "id": "382cdafe-aafb-4052-9c25-5cf8733ca1ac",
+    "name": "Honda"
+  },
+  {
+    "id": "c052340e-6782-4625-bc5a-36344e5426e7",
+    "name": "Ford"
+  },
+  {
+    "id": "31007a25-4cba-4f21-a9a2-f17dccd9c9c2",
+    "name": "Chevrolet"
+  },
+  {
+    "id": "7bfafc45-4376-463c-b13e-a5dfc353f1b9",
+    "name": "BMW"
+  },
+  {
+    "id": "b564bd4a-c250-4839-9133-5135dd20532d",
+    "name": "Mercedes-Benz"
+  },
+  {
+    "id": "7aea892b-88bb-4d8a-a592-5d40a015f64e",
+    "name": "Audi"
+  },
+  {
+    "id": "76b4f69e-3020-445b-9557-ba057b391e5b",
+    "name": "Nissan"
+  },
+  {
+    "id": "b28b63bc-2974-4303-9db0-6de31b29ab41",
+    "name": "Hyundai"
+  },
+  {
+    "id": "519e3bac-1217-4d1e-8247-2ece275b1517",
+    "name": "Kia"
+  },
+  {
+    "id": "522222ac-1217-4d1e-8247-2ece275b1517",
+    "name": "Vinfast"
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "name": "Oil Filter",
+    "price": 12.99
+  },
+  {
+    "id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "name": "Air Filter",
+    "price": 19.99
+  },
+  {
+    "id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "name": "Brake Pads (Front)",
+    "price": 89.99
+  },
+  {
+    "id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "name": "Brake Pads (Rear)",
+    "price": 79.99
+  },
+  {
+    "id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "name": "Brake Rotors (Front)",
+    "price": 129.99
+  },
+  {
+    "id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "name": "Brake Rotors (Rear)",
+    "price": 119.99
+  },
+  {
+    "id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "name": "Spark Plugs (Set)",
+    "price": 49.99
+  },
+  {
+    "id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "name": "Battery",
+    "price": 149.99
+  },
+  {
+    "id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "name": "Alternator",
+    "price": 249.99
+  },
+  {
+    "id": "00027219-d617-4eda-8981-5692ba766012",
+    "name": "Starter Motor",
+    "price": 199.99
+  },
+  {
+    "id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "name": "Radiator",
+    "price": 179.99
+  },
+  {
+    "id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "name": "Water Pump",
+    "price": 89.99
+  },
+  {
+    "id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "name": "Timing Belt Kit",
+    "price": 159.99
+  },
+  {
+    "id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "name": "Fuel Pump",
+    "price": 129.99
+  },
+  {
+    "id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "name": "Oxygen Sensor",
+    "price": 79.99
+  }
+]

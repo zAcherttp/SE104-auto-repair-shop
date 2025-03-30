@@ -1,0 +1,58 @@
+[
+  {
+    "id": "753ab731-3a23-4415-8c71-1c422d7ee447",
+    "date": "2025-02-28",
+    "total_profit": 1706.27,
+    "car_brand_id": "76b4f69e-3020-445b-9557-ba057b391e5b",
+    "number_of_repairs": 1
+  },
+  {
+    "id": "2453fa0b-a4ad-4e9f-9342-8f58598e77c5",
+    "date": "2024-10-31",
+    "total_profit": 2014.07,
+    "car_brand_id": "519e3bac-1217-4d1e-8247-2ece275b1517",
+    "number_of_repairs": 1
+  },
+  {
+    "id": "7ecfcf0e-d8ba-4c60-88d0-a71f19004d36",
+    "date": "2024-09-30",
+    "total_profit": 1090.74,
+    "car_brand_id": "382cdafe-aafb-4052-9c25-5cf8733ca1ac",
+    "number_of_repairs": 1
+  },
+  {
+    "id": "c3d42d2c-d4e6-48f5-9f26-2cc641227a76",
+    "date": "2024-08-31",
+    "total_profit": 345.56,
+    "car_brand_id": "c052340e-6782-4625-bc5a-36344e5426e7",
+    "number_of_repairs": 1
+  },
+  {
+    "id": "c9a3fa33-cad4-471e-be59-2e0be28d3369",
+    "date": "2024-07-31",
+    "total_profit": 253.79,
+    "car_brand_id": "c052340e-6782-4625-bc5a-36344e5426e7",
+    "number_of_repairs": 1
+  },
+  {
+    "id": "34bd8c07-26f3-4820-b399-167e79be4a40",
+    "date": "2024-05-31",
+    "total_profit": 1555.14,
+    "car_brand_id": "b28b63bc-2974-4303-9db0-6de31b29ab41",
+    "number_of_repairs": 1
+  },
+  {
+    "id": "27734ccb-1ac4-4820-a60b-f8bb66b188a0",
+    "date": "2024-05-31",
+    "total_profit": 1004.37,
+    "car_brand_id": "519e3bac-1217-4d1e-8247-2ece275b1517",
+    "number_of_repairs": 1
+  },
+  {
+    "id": "59ed92fe-a1e7-492f-a513-ff0c4bb54ac2",
+    "date": "2024-04-30",
+    "total_profit": 270,
+    "car_brand_id": "31007a25-4cba-4f21-a9a2-f17dccd9c9c2",
+    "number_of_repairs": 1
+  }
+]

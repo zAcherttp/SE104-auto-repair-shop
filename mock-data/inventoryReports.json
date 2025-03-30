@@ -1,0 +1,5402 @@
+[
+  {
+    "id": "697ffd3b-5032-4615-8121-1f987ac3835e",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-29",
+    "beginning_balance": 9,
+    "ending_balance": 6,
+    "incoming": 0,
+    "outgoing": 3
+  },
+  {
+    "id": "be1f44ea-6bd8-4d16-8120-022ebc1f56ae",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-29",
+    "beginning_balance": 18,
+    "ending_balance": 17,
+    "incoming": 9,
+    "outgoing": 10
+  },
+  {
+    "id": "88623fc7-4832-411a-8104-4a5924a340ad",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-29",
+    "beginning_balance": 19,
+    "ending_balance": 19,
+    "incoming": 6,
+    "outgoing": 6
+  },
+  {
+    "id": "b81a681a-f7e2-4a6c-aa8c-ac4f422fb8e2",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-29",
+    "beginning_balance": 7,
+    "ending_balance": 2,
+    "incoming": 3,
+    "outgoing": 8
+  },
+  {
+    "id": "5ea46579-b0b1-4bbf-8891-126517e6006c",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-29",
+    "beginning_balance": 11,
+    "ending_balance": 9,
+    "incoming": 8,
+    "outgoing": 10
+  },
+  {
+    "id": "01ddd582-04b6-4c6b-91a7-c59b27e823e5",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-29",
+    "beginning_balance": 17,
+    "ending_balance": 21,
+    "incoming": 8,
+    "outgoing": 4
+  },
+  {
+    "id": "7c1c1c4a-91bb-4cc6-b583-ac5777b1b6b6",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-29",
+    "beginning_balance": 7,
+    "ending_balance": 9,
+    "incoming": 5,
+    "outgoing": 3
+  },
+  {
+    "id": "33cd5585-40d8-47d3-b8fa-54e1bc2bdf3a",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-29",
+    "beginning_balance": 15,
+    "ending_balance": 19,
+    "incoming": 9,
+    "outgoing": 5
+  },
+  {
+    "id": "d382c9c9-eb8b-46ab-a889-54565fa094c1",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-29",
+    "beginning_balance": 15,
+    "ending_balance": 6,
+    "incoming": 0,
+    "outgoing": 9
+  },
+  {
+    "id": "e2e3d21d-053c-42cf-b1c3-7247bc8c2c4b",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-29",
+    "beginning_balance": 12,
+    "ending_balance": 2,
+    "incoming": 5,
+    "outgoing": 15
+  },
+  {
+    "id": "fca71472-9fb8-46ce-8760-30dccb910d4c",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-29",
+    "beginning_balance": 11,
+    "ending_balance": 11,
+    "incoming": 10,
+    "outgoing": 10
+  },
+  {
+    "id": "a07cbda6-0f21-437c-8218-c60cdd8442fb",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-29",
+    "beginning_balance": 7,
+    "ending_balance": 0,
+    "incoming": 0,
+    "outgoing": 7
+  },
+  {
+    "id": "2fd0c1a9-9361-4b65-a73a-502150fb80f7",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-29",
+    "beginning_balance": 20,
+    "ending_balance": 21,
+    "incoming": 2,
+    "outgoing": 1
+  },
+  {
+    "id": "e32e771c-fdd7-4df0-aae9-def1a476a057",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-29",
+    "beginning_balance": 5,
+    "ending_balance": 5,
+    "incoming": 9,
+    "outgoing": 9
+  },
+  {
+    "id": "0e858a4a-f65e-40b1-a9d4-cdd3937f564c",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-29",
+    "beginning_balance": 9,
+    "ending_balance": 3,
+    "incoming": 8,
+    "outgoing": 14
+  },
+  {
+    "id": "50b1d416-6668-4122-8262-7100a3c62ae9",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-29",
+    "beginning_balance": 7,
+    "ending_balance": 7,
+    "incoming": 4,
+    "outgoing": 4
+  },
+  {
+    "id": "2d38024b-e3ba-4d20-88e3-ac0a341d3a8a",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-29",
+    "beginning_balance": 19,
+    "ending_balance": 16,
+    "incoming": 7,
+    "outgoing": 10
+  },
+  {
+    "id": "ccabb090-aa69-4b10-8bf3-acec1464bf9d",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-29",
+    "beginning_balance": 20,
+    "ending_balance": 12,
+    "incoming": 1,
+    "outgoing": 9
+  },
+  {
+    "id": "215e4599-17ff-4e31-a36d-c17a16bff1a7",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-29",
+    "beginning_balance": 14,
+    "ending_balance": 2,
+    "incoming": 0,
+    "outgoing": 12
+  },
+  {
+    "id": "526a7a76-3e5c-4e21-bdb9-324f7a1568b3",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-29",
+    "beginning_balance": 20,
+    "ending_balance": 18,
+    "incoming": 9,
+    "outgoing": 11
+  },
+  {
+    "id": "7a444bb6-6e71-48ff-9dc8-ef9cd915ac23",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-29",
+    "beginning_balance": 7,
+    "ending_balance": 8,
+    "incoming": 2,
+    "outgoing": 1
+  },
+  {
+    "id": "b75c4ae1-ee36-4123-b814-ea3a91a61174",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-29",
+    "beginning_balance": 14,
+    "ending_balance": 14,
+    "incoming": 4,
+    "outgoing": 4
+  },
+  {
+    "id": "b29b2117-6262-457c-8948-6fe3291dd733",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-29",
+    "beginning_balance": 7,
+    "ending_balance": 2,
+    "incoming": 10,
+    "outgoing": 15
+  },
+  {
+    "id": "6ffea823-7dff-40ff-8de7-ca821b123f7f",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-29",
+    "beginning_balance": 18,
+    "ending_balance": 12,
+    "incoming": 1,
+    "outgoing": 7
+  },
+  {
+    "id": "101c7825-a69e-4a63-bc17-b8aaaa9d9479",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-29",
+    "beginning_balance": 14,
+    "ending_balance": 11,
+    "incoming": 5,
+    "outgoing": 8
+  },
+  {
+    "id": "b0636a33-b6ae-4e6a-ae4e-5417e96d1094",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-29",
+    "beginning_balance": 5,
+    "ending_balance": 9,
+    "incoming": 5,
+    "outgoing": 1
+  },
+  {
+    "id": "8fa7b235-7735-407c-b233-8849bdbf5be9",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-29",
+    "beginning_balance": 11,
+    "ending_balance": 12,
+    "incoming": 2,
+    "outgoing": 1
+  },
+  {
+    "id": "b9a0bd76-3e12-4da7-8737-43dfbab45a04",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-29",
+    "beginning_balance": 7,
+    "ending_balance": 1,
+    "incoming": 5,
+    "outgoing": 11
+  },
+  {
+    "id": "bdbb65ca-2357-459b-80b9-8b03910476a7",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-29",
+    "beginning_balance": 18,
+    "ending_balance": 14,
+    "incoming": 9,
+    "outgoing": 13
+  },
+  {
+    "id": "811f9f67-6152-409f-8a0f-f3a8387cdb6d",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-29",
+    "beginning_balance": 11,
+    "ending_balance": 7,
+    "incoming": 3,
+    "outgoing": 7
+  },
+  {
+    "id": "4a23c86a-52a2-4cf9-a1a8-9a5382f6d92d",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-29",
+    "beginning_balance": 9,
+    "ending_balance": 6,
+    "incoming": 3,
+    "outgoing": 6
+  },
+  {
+    "id": "bbaba063-6532-43bf-9297-245ee01412dc",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-29",
+    "beginning_balance": 20,
+    "ending_balance": 12,
+    "incoming": 6,
+    "outgoing": 14
+  },
+  {
+    "id": "916aadd4-7a1d-46e9-98b2-5623495bcb5a",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-29",
+    "beginning_balance": 17,
+    "ending_balance": 11,
+    "incoming": 2,
+    "outgoing": 8
+  },
+  {
+    "id": "509f5fb9-e15a-41ea-8cc6-418b2f1f8f8f",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-29",
+    "beginning_balance": 9,
+    "ending_balance": 8,
+    "incoming": 9,
+    "outgoing": 10
+  },
+  {
+    "id": "a459c849-1a1d-4542-b781-36198d3efbf6",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-29",
+    "beginning_balance": 7,
+    "ending_balance": 1,
+    "incoming": 5,
+    "outgoing": 11
+  },
+  {
+    "id": "5ec7bdff-6b15-4973-9c3f-f16be4b4b574",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-29",
+    "beginning_balance": 17,
+    "ending_balance": 17,
+    "incoming": 4,
+    "outgoing": 4
+  },
+  {
+    "id": "abb5b10e-c8d2-458e-99c3-89ac1638a381",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-29",
+    "beginning_balance": 14,
+    "ending_balance": 5,
+    "incoming": 6,
+    "outgoing": 15
+  },
+  {
+    "id": "cb348b78-6923-4307-9345-60e927df12ef",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-29",
+    "beginning_balance": 20,
+    "ending_balance": 11,
+    "incoming": 5,
+    "outgoing": 14
+  },
+  {
+    "id": "53a1b98d-945f-44e7-9f43-e05c9873d38d",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-29",
+    "beginning_balance": 15,
+    "ending_balance": 7,
+    "incoming": 3,
+    "outgoing": 11
+  },
+  {
+    "id": "a6b49c7b-3507-446a-9b08-f151dd6e09a0",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-29",
+    "beginning_balance": 20,
+    "ending_balance": 18,
+    "incoming": 7,
+    "outgoing": 9
+  },
+  {
+    "id": "3ed456ad-5b9f-449b-a915-58c76efa186d",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-29",
+    "beginning_balance": 18,
+    "ending_balance": 8,
+    "incoming": 4,
+    "outgoing": 14
+  },
+  {
+    "id": "cbd40baa-65e7-4357-9f5b-63dd5e2afe3c",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-29",
+    "beginning_balance": 17,
+    "ending_balance": 15,
+    "incoming": 8,
+    "outgoing": 10
+  },
+  {
+    "id": "405e5d17-052d-451e-bb54-246e59f2fc8f",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-29",
+    "beginning_balance": 10,
+    "ending_balance": 20,
+    "incoming": 10,
+    "outgoing": 0
+  },
+  {
+    "id": "3902efb9-71ae-49df-b853-ff190c69543c",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-29",
+    "beginning_balance": 5,
+    "ending_balance": 9,
+    "incoming": 5,
+    "outgoing": 1
+  },
+  {
+    "id": "6922966c-4f45-4a5a-b571-95f16db8ec72",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-29",
+    "beginning_balance": 13,
+    "ending_balance": 11,
+    "incoming": 2,
+    "outgoing": 4
+  },
+  {
+    "id": "a81178b3-3fe5-42ee-b527-77bdcaa1d4e9",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-22",
+    "beginning_balance": 16,
+    "ending_balance": 12,
+    "incoming": 0,
+    "outgoing": 4
+  },
+  {
+    "id": "4289d906-9b47-43f3-8c0b-37ad76516d67",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-22",
+    "beginning_balance": 19,
+    "ending_balance": 19,
+    "incoming": 7,
+    "outgoing": 7
+  },
+  {
+    "id": "463eddd1-3a3a-4e03-bfcd-80bcc87017eb",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-22",
+    "beginning_balance": 18,
+    "ending_balance": 14,
+    "incoming": 8,
+    "outgoing": 12
+  },
+  {
+    "id": "45f00568-e9a0-45f4-97b1-e8df845b5559",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-22",
+    "beginning_balance": 5,
+    "ending_balance": 4,
+    "incoming": 0,
+    "outgoing": 1
+  },
+  {
+    "id": "3fc403eb-cbcb-49f1-9f07-c92f33a98478",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-22",
+    "beginning_balance": 20,
+    "ending_balance": 24,
+    "incoming": 8,
+    "outgoing": 4
+  },
+  {
+    "id": "7e584433-c144-41d5-9794-e0925b8ca4e2",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-22",
+    "beginning_balance": 20,
+    "ending_balance": 22,
+    "incoming": 3,
+    "outgoing": 1
+  },
+  {
+    "id": "d1656928-b6c6-4d2c-912d-75fd538c9f03",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-22",
+    "beginning_balance": 18,
+    "ending_balance": 14,
+    "incoming": 7,
+    "outgoing": 11
+  },
+  {
+    "id": "fe6fab74-f897-457c-a206-795e80322ea3",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-22",
+    "beginning_balance": 20,
+    "ending_balance": 14,
+    "incoming": 5,
+    "outgoing": 11
+  },
+  {
+    "id": "a816b791-6092-495c-af72-1d4bbc38a181",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-22",
+    "beginning_balance": 20,
+    "ending_balance": 22,
+    "incoming": 6,
+    "outgoing": 4
+  },
+  {
+    "id": "14bcd14c-8d54-4885-ad6e-4c391ca22559",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-22",
+    "beginning_balance": 6,
+    "ending_balance": 12,
+    "incoming": 10,
+    "outgoing": 4
+  },
+  {
+    "id": "47957afe-14e4-498d-a2cd-000d30c758d6",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-22",
+    "beginning_balance": 13,
+    "ending_balance": 7,
+    "incoming": 2,
+    "outgoing": 8
+  },
+  {
+    "id": "499bbe74-30d6-4f9f-bbc2-7b2da6e2801e",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-22",
+    "beginning_balance": 5,
+    "ending_balance": 12,
+    "incoming": 10,
+    "outgoing": 3
+  },
+  {
+    "id": "06ba6b50-8b78-4408-8d56-3ca5efca3bf6",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-22",
+    "beginning_balance": 17,
+    "ending_balance": 21,
+    "incoming": 5,
+    "outgoing": 1
+  },
+  {
+    "id": "e3f770cd-c6f5-4f57-8621-15d25d962d8c",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-22",
+    "beginning_balance": 12,
+    "ending_balance": 15,
+    "incoming": 10,
+    "outgoing": 7
+  },
+  {
+    "id": "197ee815-193c-4489-9e52-73e9b4c26858",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-22",
+    "beginning_balance": 5,
+    "ending_balance": 3,
+    "incoming": 1,
+    "outgoing": 3
+  },
+  {
+    "id": "4776d9be-4446-451e-a967-b3875b16f071",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-22",
+    "beginning_balance": 17,
+    "ending_balance": 23,
+    "incoming": 10,
+    "outgoing": 4
+  },
+  {
+    "id": "e8339106-a8da-4d78-9cf0-81c0bd5b7d1d",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-22",
+    "beginning_balance": 19,
+    "ending_balance": 4,
+    "incoming": 0,
+    "outgoing": 15
+  },
+  {
+    "id": "1dc8c25f-6dc1-4832-ba3c-2f3a1617499a",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-22",
+    "beginning_balance": 11,
+    "ending_balance": 9,
+    "incoming": 6,
+    "outgoing": 8
+  },
+  {
+    "id": "92aa88ab-9771-4b15-a822-f8cab84b3a0b",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-22",
+    "beginning_balance": 8,
+    "ending_balance": 6,
+    "incoming": 7,
+    "outgoing": 9
+  },
+  {
+    "id": "38e86aad-665e-4013-876c-d2432ed2564b",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-22",
+    "beginning_balance": 7,
+    "ending_balance": 12,
+    "incoming": 7,
+    "outgoing": 2
+  },
+  {
+    "id": "3e0c65f7-f70f-4889-a707-2de525afebc3",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-22",
+    "beginning_balance": 15,
+    "ending_balance": 7,
+    "incoming": 0,
+    "outgoing": 8
+  },
+  {
+    "id": "df59efce-ae62-4e4b-827f-8dac48a9fefe",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-22",
+    "beginning_balance": 15,
+    "ending_balance": 9,
+    "incoming": 5,
+    "outgoing": 11
+  },
+  {
+    "id": "77800d84-9f45-4e16-a8eb-4ed3623c51e5",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-22",
+    "beginning_balance": 10,
+    "ending_balance": 4,
+    "incoming": 4,
+    "outgoing": 10
+  },
+  {
+    "id": "6c77c702-d92c-4f5d-a2d3-2082b1fb5392",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-22",
+    "beginning_balance": 18,
+    "ending_balance": 25,
+    "incoming": 7,
+    "outgoing": 0
+  },
+  {
+    "id": "ea9c52b9-de8d-4032-b28f-245b1424e0cf",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-22",
+    "beginning_balance": 11,
+    "ending_balance": 15,
+    "incoming": 4,
+    "outgoing": 0
+  },
+  {
+    "id": "bace9a21-f127-4dc1-a69c-c3ee97986f60",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-22",
+    "beginning_balance": 7,
+    "ending_balance": 0,
+    "incoming": 3,
+    "outgoing": 10
+  },
+  {
+    "id": "6df8a9aa-c042-4000-8038-4b746e2c11cc",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-22",
+    "beginning_balance": 10,
+    "ending_balance": 13,
+    "incoming": 4,
+    "outgoing": 1
+  },
+  {
+    "id": "a850946c-1c42-41a4-9b0f-532d2796dfd2",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-22",
+    "beginning_balance": 14,
+    "ending_balance": 10,
+    "incoming": 2,
+    "outgoing": 6
+  },
+  {
+    "id": "67001a7e-7f76-4552-ae83-546f0cdb3a9a",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-22",
+    "beginning_balance": 11,
+    "ending_balance": 10,
+    "incoming": 3,
+    "outgoing": 4
+  },
+  {
+    "id": "41e97790-407d-4950-ac48-e1e88c35674e",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-22",
+    "beginning_balance": 15,
+    "ending_balance": 4,
+    "incoming": 3,
+    "outgoing": 14
+  },
+  {
+    "id": "ccf31e2a-2e1b-4eb9-9f30-3c5c44f69b0a",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-22",
+    "beginning_balance": 13,
+    "ending_balance": 14,
+    "incoming": 2,
+    "outgoing": 1
+  },
+  {
+    "id": "8f843369-82d9-4973-898c-79e59af6304c",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-22",
+    "beginning_balance": 20,
+    "ending_balance": 11,
+    "incoming": 4,
+    "outgoing": 13
+  },
+  {
+    "id": "4325788f-9a69-43f3-9c30-a0c687a569ac",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-22",
+    "beginning_balance": 12,
+    "ending_balance": 13,
+    "incoming": 3,
+    "outgoing": 2
+  },
+  {
+    "id": "8d7606c5-0d27-48ad-b09b-e68dc6992be3",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-22",
+    "beginning_balance": 5,
+    "ending_balance": 3,
+    "incoming": 1,
+    "outgoing": 3
+  },
+  {
+    "id": "985fa846-b6ce-4cc0-b168-4b178846815f",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-22",
+    "beginning_balance": 10,
+    "ending_balance": 7,
+    "incoming": 4,
+    "outgoing": 7
+  },
+  {
+    "id": "54104050-45d7-4b59-b01c-f8bf4fbc9cea",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-22",
+    "beginning_balance": 7,
+    "ending_balance": 8,
+    "incoming": 10,
+    "outgoing": 9
+  },
+  {
+    "id": "45398a30-59b2-4187-a8d6-68aa2ebe0e2b",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-22",
+    "beginning_balance": 19,
+    "ending_balance": 15,
+    "incoming": 3,
+    "outgoing": 7
+  },
+  {
+    "id": "dd203dd6-dd5e-46ef-b0b4-23fbd5f71bb6",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-22",
+    "beginning_balance": 9,
+    "ending_balance": 17,
+    "incoming": 10,
+    "outgoing": 2
+  },
+  {
+    "id": "8abbbf2b-97b0-4db7-9c53-91bfffe9aa28",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-22",
+    "beginning_balance": 19,
+    "ending_balance": 21,
+    "incoming": 10,
+    "outgoing": 8
+  },
+  {
+    "id": "c74f709e-7adf-47a3-a143-828aea20e17a",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-22",
+    "beginning_balance": 17,
+    "ending_balance": 13,
+    "incoming": 3,
+    "outgoing": 7
+  },
+  {
+    "id": "55d2af17-05c1-4168-af5e-da08251bd9b1",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-22",
+    "beginning_balance": 19,
+    "ending_balance": 22,
+    "incoming": 8,
+    "outgoing": 5
+  },
+  {
+    "id": "fab7748c-7faf-4f32-9cff-875783562b01",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-22",
+    "beginning_balance": 12,
+    "ending_balance": 12,
+    "incoming": 3,
+    "outgoing": 3
+  },
+  {
+    "id": "70de051a-f491-40a7-8ad9-072a08e724b7",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-22",
+    "beginning_balance": 16,
+    "ending_balance": 9,
+    "incoming": 1,
+    "outgoing": 8
+  },
+  {
+    "id": "c990ca83-ab6d-4589-9c1c-e45d63762e5d",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-22",
+    "beginning_balance": 8,
+    "ending_balance": 6,
+    "incoming": 3,
+    "outgoing": 5
+  },
+  {
+    "id": "1dfe79b1-8e9c-483d-96d3-d68a84ed3afc",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-22",
+    "beginning_balance": 7,
+    "ending_balance": 9,
+    "incoming": 8,
+    "outgoing": 6
+  },
+  {
+    "id": "c306022e-637b-4717-b0a2-5121fdd32d70",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-15",
+    "beginning_balance": 9,
+    "ending_balance": 14,
+    "incoming": 8,
+    "outgoing": 3
+  },
+  {
+    "id": "213c7870-3944-42ed-81ea-5a5f58489279",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-15",
+    "beginning_balance": 13,
+    "ending_balance": 13,
+    "incoming": 8,
+    "outgoing": 8
+  },
+  {
+    "id": "6e96eb1e-c5fb-420f-a479-4f84e4162ed3",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-15",
+    "beginning_balance": 5,
+    "ending_balance": 15,
+    "incoming": 10,
+    "outgoing": 0
+  },
+  {
+    "id": "d368502b-e81d-4a81-84d5-b6a27b4b3158",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-15",
+    "beginning_balance": 14,
+    "ending_balance": 18,
+    "incoming": 8,
+    "outgoing": 4
+  },
+  {
+    "id": "c949aada-c7ed-4c9a-be6b-9d72424095dd",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-15",
+    "beginning_balance": 15,
+    "ending_balance": 7,
+    "incoming": 7,
+    "outgoing": 15
+  },
+  {
+    "id": "a777cbab-cf5d-458c-b331-850190bf54f2",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-15",
+    "beginning_balance": 5,
+    "ending_balance": 2,
+    "incoming": 5,
+    "outgoing": 8
+  },
+  {
+    "id": "2cadef04-73af-4521-b834-86ca069ffe17",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-15",
+    "beginning_balance": 12,
+    "ending_balance": 9,
+    "incoming": 5,
+    "outgoing": 8
+  },
+  {
+    "id": "a74a0780-096f-488d-9367-36cd210b86ab",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-15",
+    "beginning_balance": 15,
+    "ending_balance": 14,
+    "incoming": 10,
+    "outgoing": 11
+  },
+  {
+    "id": "925f3e42-c587-424a-8508-693e32a21129",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-15",
+    "beginning_balance": 14,
+    "ending_balance": 10,
+    "incoming": 9,
+    "outgoing": 13
+  },
+  {
+    "id": "45e8200d-836a-481f-94d6-5b7a03b8ab78",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-15",
+    "beginning_balance": 19,
+    "ending_balance": 26,
+    "incoming": 7,
+    "outgoing": 0
+  },
+  {
+    "id": "c9a6f083-1316-4e67-85a1-714f8de1f91d",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-15",
+    "beginning_balance": 5,
+    "ending_balance": 1,
+    "incoming": 0,
+    "outgoing": 4
+  },
+  {
+    "id": "76dbd7a3-944c-4b75-a185-bdb40bdc4370",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-15",
+    "beginning_balance": 9,
+    "ending_balance": 7,
+    "incoming": 5,
+    "outgoing": 7
+  },
+  {
+    "id": "5f06ac42-a0a5-41b1-9a71-85e3f692f762",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-15",
+    "beginning_balance": 11,
+    "ending_balance": 17,
+    "incoming": 9,
+    "outgoing": 3
+  },
+  {
+    "id": "bd74febd-7d12-4927-96f9-c9df5a5c4cb9",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-15",
+    "beginning_balance": 8,
+    "ending_balance": 4,
+    "incoming": 0,
+    "outgoing": 4
+  },
+  {
+    "id": "a511f439-eaa7-45a8-a211-9aca5b4796eb",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-15",
+    "beginning_balance": 5,
+    "ending_balance": 7,
+    "incoming": 7,
+    "outgoing": 5
+  },
+  {
+    "id": "d449d512-4e9c-44fb-a2c0-01afb390d338",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-15",
+    "beginning_balance": 8,
+    "ending_balance": 0,
+    "incoming": 2,
+    "outgoing": 10
+  },
+  {
+    "id": "eb4a027f-ca8b-48b4-9ec8-522a8f847e7c",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-15",
+    "beginning_balance": 7,
+    "ending_balance": 0,
+    "incoming": 3,
+    "outgoing": 10
+  },
+  {
+    "id": "5e8cfd7a-ae56-44c7-bddc-cfa00041a8ef",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-15",
+    "beginning_balance": 12,
+    "ending_balance": 19,
+    "incoming": 7,
+    "outgoing": 0
+  },
+  {
+    "id": "62f531f8-885f-44bf-888a-84900a428c98",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-15",
+    "beginning_balance": 11,
+    "ending_balance": 3,
+    "incoming": 0,
+    "outgoing": 8
+  },
+  {
+    "id": "079e59d2-9762-4941-9411-8bcf5e67ba67",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-15",
+    "beginning_balance": 19,
+    "ending_balance": 14,
+    "incoming": 8,
+    "outgoing": 13
+  },
+  {
+    "id": "0ee3d546-a0fb-406d-b5cb-7dba3c8b9d62",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-15",
+    "beginning_balance": 6,
+    "ending_balance": 1,
+    "incoming": 2,
+    "outgoing": 7
+  },
+  {
+    "id": "a3b7fb86-5ae8-47f3-acf2-c151b9fb9b31",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-15",
+    "beginning_balance": 18,
+    "ending_balance": 8,
+    "incoming": 0,
+    "outgoing": 10
+  },
+  {
+    "id": "61e8f6c3-ece2-4b4b-a0b7-7d0560c63dbd",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-15",
+    "beginning_balance": 9,
+    "ending_balance": 4,
+    "incoming": 10,
+    "outgoing": 15
+  },
+  {
+    "id": "cd21b998-fe1b-406a-b66d-e677483eaafb",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-15",
+    "beginning_balance": 12,
+    "ending_balance": 9,
+    "incoming": 10,
+    "outgoing": 13
+  },
+  {
+    "id": "ea12b239-06bb-4b05-93fd-5b39db55bb5e",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-15",
+    "beginning_balance": 10,
+    "ending_balance": 12,
+    "incoming": 4,
+    "outgoing": 2
+  },
+  {
+    "id": "fdbde2f1-7c11-4f98-b501-ae2a83b7deaa",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-15",
+    "beginning_balance": 16,
+    "ending_balance": 20,
+    "incoming": 7,
+    "outgoing": 3
+  },
+  {
+    "id": "91e65d0c-2bc7-420c-b1d4-f719a90a5b13",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-15",
+    "beginning_balance": 10,
+    "ending_balance": 3,
+    "incoming": 5,
+    "outgoing": 12
+  },
+  {
+    "id": "07120afc-2930-4a99-be71-92efc42c0738",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-15",
+    "beginning_balance": 19,
+    "ending_balance": 20,
+    "incoming": 2,
+    "outgoing": 1
+  },
+  {
+    "id": "cf8d9576-933d-4d5a-83e3-bf82841e19bc",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-15",
+    "beginning_balance": 18,
+    "ending_balance": 26,
+    "incoming": 8,
+    "outgoing": 0
+  },
+  {
+    "id": "411381b7-d80c-4db7-92af-0b9cefcd44c4",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-15",
+    "beginning_balance": 16,
+    "ending_balance": 17,
+    "incoming": 9,
+    "outgoing": 8
+  },
+  {
+    "id": "3c2a51d1-d1bd-4a72-8174-0c874038ab28",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-15",
+    "beginning_balance": 19,
+    "ending_balance": 18,
+    "incoming": 6,
+    "outgoing": 7
+  },
+  {
+    "id": "3adaad47-06f5-4c34-aeb9-baa87f9dada6",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-15",
+    "beginning_balance": 11,
+    "ending_balance": 16,
+    "incoming": 10,
+    "outgoing": 5
+  },
+  {
+    "id": "7185d06f-aec3-4c13-9468-8dda854f6d6b",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-15",
+    "beginning_balance": 12,
+    "ending_balance": 6,
+    "incoming": 5,
+    "outgoing": 11
+  },
+  {
+    "id": "b2920cb0-b271-41e5-87f1-e552f1a1c728",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-15",
+    "beginning_balance": 16,
+    "ending_balance": 24,
+    "incoming": 9,
+    "outgoing": 1
+  },
+  {
+    "id": "dc51bbdb-7178-40ea-85fd-2213821ab6cf",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-15",
+    "beginning_balance": 20,
+    "ending_balance": 13,
+    "incoming": 5,
+    "outgoing": 12
+  },
+  {
+    "id": "586cfcc2-145b-4101-835d-536948683a21",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-15",
+    "beginning_balance": 10,
+    "ending_balance": 11,
+    "incoming": 1,
+    "outgoing": 0
+  },
+  {
+    "id": "824c453f-3928-483d-92b7-273111b06b32",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-15",
+    "beginning_balance": 16,
+    "ending_balance": 4,
+    "incoming": 3,
+    "outgoing": 15
+  },
+  {
+    "id": "5ad4e86f-8425-4433-98d0-f1bc5e6eebc1",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-15",
+    "beginning_balance": 17,
+    "ending_balance": 8,
+    "incoming": 1,
+    "outgoing": 10
+  },
+  {
+    "id": "5ac1eff6-a9d2-416c-89d2-13cf12679245",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-15",
+    "beginning_balance": 8,
+    "ending_balance": 2,
+    "incoming": 1,
+    "outgoing": 7
+  },
+  {
+    "id": "92ebffc1-133d-4f96-a6d9-57dfe672d6df",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-15",
+    "beginning_balance": 9,
+    "ending_balance": 12,
+    "incoming": 5,
+    "outgoing": 2
+  },
+  {
+    "id": "afcb74a4-76e4-4621-98b2-ee518145af3a",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-15",
+    "beginning_balance": 7,
+    "ending_balance": 11,
+    "incoming": 6,
+    "outgoing": 2
+  },
+  {
+    "id": "6df06387-63d4-4f8b-b476-95f4c7995086",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-15",
+    "beginning_balance": 12,
+    "ending_balance": 10,
+    "incoming": 6,
+    "outgoing": 8
+  },
+  {
+    "id": "eee83b34-ff2b-46f1-a84d-7faf01fbfb0c",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-15",
+    "beginning_balance": 16,
+    "ending_balance": 14,
+    "incoming": 1,
+    "outgoing": 3
+  },
+  {
+    "id": "a27dac08-df86-4363-b0de-6f9428cabc55",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-15",
+    "beginning_balance": 18,
+    "ending_balance": 22,
+    "incoming": 6,
+    "outgoing": 2
+  },
+  {
+    "id": "db48bb26-6c43-41ed-9962-8edbdc869af1",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-15",
+    "beginning_balance": 5,
+    "ending_balance": 0,
+    "incoming": 7,
+    "outgoing": 12
+  },
+  {
+    "id": "16dddfdd-2a87-4a9b-ac5b-9aceb266775d",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-08",
+    "beginning_balance": 10,
+    "ending_balance": 6,
+    "incoming": 0,
+    "outgoing": 4
+  },
+  {
+    "id": "2cbec897-47d0-4988-be18-70b2ad221448",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-08",
+    "beginning_balance": 18,
+    "ending_balance": 13,
+    "incoming": 9,
+    "outgoing": 14
+  },
+  {
+    "id": "9739bfe9-3208-424d-ad33-66fe98b84663",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-08",
+    "beginning_balance": 12,
+    "ending_balance": 19,
+    "incoming": 10,
+    "outgoing": 3
+  },
+  {
+    "id": "d84a6672-b8c1-4d06-9761-2dc63b5a566f",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-08",
+    "beginning_balance": 19,
+    "ending_balance": 19,
+    "incoming": 6,
+    "outgoing": 6
+  },
+  {
+    "id": "8f5bf380-3cec-4820-a87b-18649b818948",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-08",
+    "beginning_balance": 14,
+    "ending_balance": 2,
+    "incoming": 0,
+    "outgoing": 12
+  },
+  {
+    "id": "8c3bba69-bdcf-44d5-aaa0-e605dc2a152b",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-08",
+    "beginning_balance": 10,
+    "ending_balance": 2,
+    "incoming": 7,
+    "outgoing": 15
+  },
+  {
+    "id": "75133bab-34ba-462f-8736-587c88513c42",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-08",
+    "beginning_balance": 18,
+    "ending_balance": 12,
+    "incoming": 4,
+    "outgoing": 10
+  },
+  {
+    "id": "93387a88-6963-4442-b383-3eb7d0058576",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-08",
+    "beginning_balance": 6,
+    "ending_balance": 7,
+    "incoming": 8,
+    "outgoing": 7
+  },
+  {
+    "id": "66da1906-fdbf-4369-9982-680d3078e2bb",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-08",
+    "beginning_balance": 19,
+    "ending_balance": 23,
+    "incoming": 6,
+    "outgoing": 2
+  },
+  {
+    "id": "2f9a27cf-f5ff-4a10-9962-2911fe2551e8",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-08",
+    "beginning_balance": 11,
+    "ending_balance": 14,
+    "incoming": 3,
+    "outgoing": 0
+  },
+  {
+    "id": "e5055547-1d33-48ed-ae92-883e6d3699e2",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-08",
+    "beginning_balance": 8,
+    "ending_balance": 18,
+    "incoming": 10,
+    "outgoing": 0
+  },
+  {
+    "id": "967a75f6-1bd2-45c9-9da5-e6bd7e104050",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-08",
+    "beginning_balance": 7,
+    "ending_balance": 8,
+    "incoming": 10,
+    "outgoing": 9
+  },
+  {
+    "id": "0788ffde-d5c8-4f20-b9ce-7b041fa3ece7",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-08",
+    "beginning_balance": 8,
+    "ending_balance": 5,
+    "incoming": 1,
+    "outgoing": 4
+  },
+  {
+    "id": "2f7e8a5e-46cd-433a-b375-db3258eb26b3",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-08",
+    "beginning_balance": 18,
+    "ending_balance": 17,
+    "incoming": 9,
+    "outgoing": 10
+  },
+  {
+    "id": "8fa63e3e-a43c-4d1e-9028-79071fae15e8",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-08",
+    "beginning_balance": 13,
+    "ending_balance": 17,
+    "incoming": 5,
+    "outgoing": 1
+  },
+  {
+    "id": "c26e0df3-e0b8-4141-a965-dc2439c0f0be",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-08",
+    "beginning_balance": 13,
+    "ending_balance": 17,
+    "incoming": 5,
+    "outgoing": 1
+  },
+  {
+    "id": "f14b49e4-23b9-4426-8e81-1e1d37f3e9a0",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-08",
+    "beginning_balance": 12,
+    "ending_balance": 4,
+    "incoming": 5,
+    "outgoing": 13
+  },
+  {
+    "id": "a1e5b531-96bf-4915-932b-a965b88b6e62",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-08",
+    "beginning_balance": 9,
+    "ending_balance": 4,
+    "incoming": 3,
+    "outgoing": 8
+  },
+  {
+    "id": "a844965b-35fc-4289-9445-9805821fce6f",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-08",
+    "beginning_balance": 16,
+    "ending_balance": 12,
+    "incoming": 6,
+    "outgoing": 10
+  },
+  {
+    "id": "76ba4d1f-2836-4b93-a96d-1ffb47bfb3d7",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-08",
+    "beginning_balance": 14,
+    "ending_balance": 12,
+    "incoming": 10,
+    "outgoing": 12
+  },
+  {
+    "id": "daa26dae-d846-49d0-a35b-54ef2122da83",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-08",
+    "beginning_balance": 12,
+    "ending_balance": 2,
+    "incoming": 0,
+    "outgoing": 10
+  },
+  {
+    "id": "6462c149-bcdd-43a4-ae1d-a71d954c0b85",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-08",
+    "beginning_balance": 10,
+    "ending_balance": 10,
+    "incoming": 3,
+    "outgoing": 3
+  },
+  {
+    "id": "83f2d517-c18d-4ede-bc64-c6a366e035fb",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-08",
+    "beginning_balance": 7,
+    "ending_balance": 11,
+    "incoming": 8,
+    "outgoing": 4
+  },
+  {
+    "id": "c9bf0adc-d726-49de-acc4-14039fb3689e",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-08",
+    "beginning_balance": 10,
+    "ending_balance": 7,
+    "incoming": 7,
+    "outgoing": 10
+  },
+  {
+    "id": "3c3268c5-77fc-4e4f-8506-d14d3782314e",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-08",
+    "beginning_balance": 14,
+    "ending_balance": 10,
+    "incoming": 4,
+    "outgoing": 8
+  },
+  {
+    "id": "bc4c3fca-f1e3-4f7f-bab9-b1f5c7cc0e90",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-08",
+    "beginning_balance": 5,
+    "ending_balance": 4,
+    "incoming": 7,
+    "outgoing": 8
+  },
+  {
+    "id": "c2aab8e9-1b88-4ac8-a8fe-16998b589dd0",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-08",
+    "beginning_balance": 18,
+    "ending_balance": 18,
+    "incoming": 10,
+    "outgoing": 10
+  },
+  {
+    "id": "05325197-267e-47af-8e57-209a4ead7903",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-08",
+    "beginning_balance": 10,
+    "ending_balance": 4,
+    "incoming": 5,
+    "outgoing": 11
+  },
+  {
+    "id": "705b24ce-cae8-4357-8b35-5eef23cf3dc8",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-08",
+    "beginning_balance": 11,
+    "ending_balance": 2,
+    "incoming": 1,
+    "outgoing": 10
+  },
+  {
+    "id": "a6c630a5-3831-4a1b-9547-89fb4639be3d",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-08",
+    "beginning_balance": 9,
+    "ending_balance": 17,
+    "incoming": 8,
+    "outgoing": 0
+  },
+  {
+    "id": "0958cf3e-d5e0-45c6-8b5c-1b0b8d6f3332",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-08",
+    "beginning_balance": 7,
+    "ending_balance": 2,
+    "incoming": 0,
+    "outgoing": 5
+  },
+  {
+    "id": "faa7149f-3ce3-4d17-b042-8396142206b5",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-08",
+    "beginning_balance": 17,
+    "ending_balance": 14,
+    "incoming": 2,
+    "outgoing": 5
+  },
+  {
+    "id": "dcce3982-4477-4113-8fbb-9348a270201c",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-08",
+    "beginning_balance": 5,
+    "ending_balance": 10,
+    "incoming": 8,
+    "outgoing": 3
+  },
+  {
+    "id": "b59bb5df-6585-4c10-ba47-3e9f27c317e3",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-08",
+    "beginning_balance": 19,
+    "ending_balance": 16,
+    "incoming": 6,
+    "outgoing": 9
+  },
+  {
+    "id": "007955fc-bd1e-46da-b1df-ba3603d0ff85",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-08",
+    "beginning_balance": 14,
+    "ending_balance": 16,
+    "incoming": 9,
+    "outgoing": 7
+  },
+  {
+    "id": "62cc0fe9-7200-4fed-a926-72a061db2a43",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-08",
+    "beginning_balance": 11,
+    "ending_balance": 10,
+    "incoming": 7,
+    "outgoing": 8
+  },
+  {
+    "id": "3ff81e57-ea38-4247-9d9c-f4f07b1f6129",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-08",
+    "beginning_balance": 6,
+    "ending_balance": 14,
+    "incoming": 8,
+    "outgoing": 0
+  },
+  {
+    "id": "491f4585-1065-4882-9fb6-d820761cff55",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-08",
+    "beginning_balance": 18,
+    "ending_balance": 15,
+    "incoming": 3,
+    "outgoing": 6
+  },
+  {
+    "id": "36a76ab0-b1f4-400b-bacd-287a1cc5f41b",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-08",
+    "beginning_balance": 16,
+    "ending_balance": 14,
+    "incoming": 6,
+    "outgoing": 8
+  },
+  {
+    "id": "563befd4-f635-4f7e-af16-9a7d7d61c586",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-08",
+    "beginning_balance": 11,
+    "ending_balance": 10,
+    "incoming": 5,
+    "outgoing": 6
+  },
+  {
+    "id": "43223cba-eaf6-4fcb-a501-9d98cfc815b3",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-08",
+    "beginning_balance": 13,
+    "ending_balance": 10,
+    "incoming": 1,
+    "outgoing": 4
+  },
+  {
+    "id": "7b92bf73-c359-4c47-bbfd-09df1bdffca9",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-08",
+    "beginning_balance": 8,
+    "ending_balance": 3,
+    "incoming": 3,
+    "outgoing": 8
+  },
+  {
+    "id": "fe5782ff-1005-48bf-a330-e0f405eb9bd9",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-08",
+    "beginning_balance": 5,
+    "ending_balance": 9,
+    "incoming": 6,
+    "outgoing": 2
+  },
+  {
+    "id": "5439c77e-0d78-4e28-ad64-a9c529660d07",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-08",
+    "beginning_balance": 14,
+    "ending_balance": 17,
+    "incoming": 8,
+    "outgoing": 5
+  },
+  {
+    "id": "8cb43a6f-9806-46a5-b7cc-9df7a3a8627b",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-08",
+    "beginning_balance": 12,
+    "ending_balance": 9,
+    "incoming": 6,
+    "outgoing": 9
+  },
+  {
+    "id": "53a7b106-c075-47e1-9c26-5d891bc742d5",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-01",
+    "beginning_balance": 17,
+    "ending_balance": 13,
+    "incoming": 4,
+    "outgoing": 8
+  },
+  {
+    "id": "15bc983d-ae67-44de-aeae-8aa426545942",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-01",
+    "beginning_balance": 19,
+    "ending_balance": 24,
+    "incoming": 9,
+    "outgoing": 4
+  },
+  {
+    "id": "d8574679-1522-43b9-a66a-f0c5757acb30",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-01",
+    "beginning_balance": 20,
+    "ending_balance": 16,
+    "incoming": 5,
+    "outgoing": 9
+  },
+  {
+    "id": "89af1ae1-e4e7-4958-b5a0-11b64fcb65d2",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-01",
+    "beginning_balance": 7,
+    "ending_balance": 9,
+    "incoming": 5,
+    "outgoing": 3
+  },
+  {
+    "id": "cc139279-631a-49c6-8f9d-b3f9e3a6f4a3",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-01",
+    "beginning_balance": 18,
+    "ending_balance": 21,
+    "incoming": 10,
+    "outgoing": 7
+  },
+  {
+    "id": "b008fb4b-e5fa-4a4d-a519-49c9d598844b",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-01",
+    "beginning_balance": 11,
+    "ending_balance": 11,
+    "incoming": 3,
+    "outgoing": 3
+  },
+  {
+    "id": "7c7cd8b6-c8f9-4013-bca3-fb1fd1961036",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-01",
+    "beginning_balance": 14,
+    "ending_balance": 15,
+    "incoming": 10,
+    "outgoing": 9
+  },
+  {
+    "id": "d31d3cd2-84aa-4227-a620-fd25b1ead5f7",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-01",
+    "beginning_balance": 9,
+    "ending_balance": 11,
+    "incoming": 5,
+    "outgoing": 3
+  },
+  {
+    "id": "6228bab3-36ff-4e54-9771-e84479292f1d",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-01",
+    "beginning_balance": 17,
+    "ending_balance": 25,
+    "incoming": 8,
+    "outgoing": 0
+  },
+  {
+    "id": "fdc10714-0c74-4e8c-8257-13de2469d6e1",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-01",
+    "beginning_balance": 12,
+    "ending_balance": 11,
+    "incoming": 4,
+    "outgoing": 5
+  },
+  {
+    "id": "25042dca-a8dc-49d6-a922-96a018d1dbf1",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-01",
+    "beginning_balance": 13,
+    "ending_balance": 2,
+    "incoming": 1,
+    "outgoing": 12
+  },
+  {
+    "id": "6174f24d-01ee-400f-9cb5-e282953ee446",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-01",
+    "beginning_balance": 8,
+    "ending_balance": 7,
+    "incoming": 1,
+    "outgoing": 2
+  },
+  {
+    "id": "c2e7bbd4-64e0-4a15-8888-c5365650c62a",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-01",
+    "beginning_balance": 7,
+    "ending_balance": 11,
+    "incoming": 10,
+    "outgoing": 6
+  },
+  {
+    "id": "ac652fde-5fe4-400c-ab0d-f94b766016cd",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-01",
+    "beginning_balance": 13,
+    "ending_balance": 6,
+    "incoming": 5,
+    "outgoing": 12
+  },
+  {
+    "id": "adac6756-1c6f-4c71-9b9d-6f4194346f17",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-03-01",
+    "beginning_balance": 19,
+    "ending_balance": 8,
+    "incoming": 2,
+    "outgoing": 13
+  },
+  {
+    "id": "41735f7f-fdba-4988-858f-baa8b37e6600",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-01",
+    "beginning_balance": 17,
+    "ending_balance": 24,
+    "incoming": 10,
+    "outgoing": 3
+  },
+  {
+    "id": "c7485501-f0f1-4551-9bd5-1131cb2baf66",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-01",
+    "beginning_balance": 15,
+    "ending_balance": 21,
+    "incoming": 6,
+    "outgoing": 0
+  },
+  {
+    "id": "0ca43e58-f250-45b0-a6f5-e706b9819eae",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-01",
+    "beginning_balance": 20,
+    "ending_balance": 21,
+    "incoming": 2,
+    "outgoing": 1
+  },
+  {
+    "id": "be2dc8ea-c25c-4399-a7f0-71a12d84c00a",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-01",
+    "beginning_balance": 15,
+    "ending_balance": 14,
+    "incoming": 5,
+    "outgoing": 6
+  },
+  {
+    "id": "97fb3ffc-349d-4314-9fdc-181c0e6cd19a",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-01",
+    "beginning_balance": 18,
+    "ending_balance": 18,
+    "incoming": 0,
+    "outgoing": 0
+  },
+  {
+    "id": "6068ad1b-a279-4a52-9e25-01e65fcd881e",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-01",
+    "beginning_balance": 18,
+    "ending_balance": 15,
+    "incoming": 0,
+    "outgoing": 3
+  },
+  {
+    "id": "b9d6b775-8b3d-4fec-a5d6-02a9377355a8",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-01",
+    "beginning_balance": 17,
+    "ending_balance": 23,
+    "incoming": 6,
+    "outgoing": 0
+  },
+  {
+    "id": "f4c78bf0-ec60-41c7-9275-d0e3bf20fc76",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-01",
+    "beginning_balance": 9,
+    "ending_balance": 8,
+    "incoming": 5,
+    "outgoing": 6
+  },
+  {
+    "id": "82d8c3de-5a82-4575-9f79-6aada9f2380c",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-01",
+    "beginning_balance": 8,
+    "ending_balance": 5,
+    "incoming": 1,
+    "outgoing": 4
+  },
+  {
+    "id": "7a47c611-c520-425c-8ec6-de892793224d",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-01",
+    "beginning_balance": 11,
+    "ending_balance": 10,
+    "incoming": 7,
+    "outgoing": 8
+  },
+  {
+    "id": "fee18ebf-24c8-4b3e-8e8b-3a58be1fa79d",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-01",
+    "beginning_balance": 10,
+    "ending_balance": 19,
+    "incoming": 10,
+    "outgoing": 1
+  },
+  {
+    "id": "7b6013ea-dee0-4391-aff3-248650fdd355",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-01",
+    "beginning_balance": 18,
+    "ending_balance": 23,
+    "incoming": 5,
+    "outgoing": 0
+  },
+  {
+    "id": "705560c9-9cb2-499f-aacd-e097ca01ef83",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-01",
+    "beginning_balance": 15,
+    "ending_balance": 13,
+    "incoming": 2,
+    "outgoing": 4
+  },
+  {
+    "id": "1ff55fab-1e39-494d-8663-e2c48688b8bd",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-01",
+    "beginning_balance": 16,
+    "ending_balance": 18,
+    "incoming": 9,
+    "outgoing": 7
+  },
+  {
+    "id": "41b069d9-1346-4425-922b-1840220aec00",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-03-01",
+    "beginning_balance": 18,
+    "ending_balance": 10,
+    "incoming": 3,
+    "outgoing": 11
+  },
+  {
+    "id": "a4f34e7f-4551-47dd-9a46-e18c314d9b65",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-01",
+    "beginning_balance": 8,
+    "ending_balance": 12,
+    "incoming": 10,
+    "outgoing": 6
+  },
+  {
+    "id": "2ce85b92-b576-4de5-9c65-437d5a351535",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-01",
+    "beginning_balance": 15,
+    "ending_balance": 22,
+    "incoming": 7,
+    "outgoing": 0
+  },
+  {
+    "id": "b1d1244f-d35f-49da-91de-3892b6e596e7",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-01",
+    "beginning_balance": 14,
+    "ending_balance": 12,
+    "incoming": 6,
+    "outgoing": 8
+  },
+  {
+    "id": "b94bccbe-e6f5-437e-b2f8-1d5c434f6d8e",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-01",
+    "beginning_balance": 18,
+    "ending_balance": 15,
+    "incoming": 10,
+    "outgoing": 13
+  },
+  {
+    "id": "1d5f0f3e-dffb-4f3a-b710-7906df9a2049",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-01",
+    "beginning_balance": 19,
+    "ending_balance": 10,
+    "incoming": 0,
+    "outgoing": 9
+  },
+  {
+    "id": "eb10a416-3e4f-465f-8e98-a850374647c8",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-01",
+    "beginning_balance": 20,
+    "ending_balance": 28,
+    "incoming": 8,
+    "outgoing": 0
+  },
+  {
+    "id": "7d2db078-969d-4ba7-8bfd-0bd190663248",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-01",
+    "beginning_balance": 14,
+    "ending_balance": 17,
+    "incoming": 3,
+    "outgoing": 0
+  },
+  {
+    "id": "96fc4079-f165-47ca-b25d-6bf0829ed772",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-01",
+    "beginning_balance": 18,
+    "ending_balance": 23,
+    "incoming": 7,
+    "outgoing": 2
+  },
+  {
+    "id": "1cc84417-76ec-4530-ad8a-b5c6b82a5e7b",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-01",
+    "beginning_balance": 16,
+    "ending_balance": 8,
+    "incoming": 7,
+    "outgoing": 15
+  },
+  {
+    "id": "1fc1a2c0-1198-47f9-8ed5-a56830799c60",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-01",
+    "beginning_balance": 17,
+    "ending_balance": 15,
+    "incoming": 5,
+    "outgoing": 7
+  },
+  {
+    "id": "6f522a07-bd29-4722-bff6-f728574fa3e6",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-01",
+    "beginning_balance": 11,
+    "ending_balance": 10,
+    "incoming": 4,
+    "outgoing": 5
+  },
+  {
+    "id": "4baafd38-a006-4c64-b3e6-8cf3d7404faf",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-01",
+    "beginning_balance": 14,
+    "ending_balance": 15,
+    "incoming": 2,
+    "outgoing": 1
+  },
+  {
+    "id": "e985a3cf-7ffe-40b6-808f-9a9ba34af6c4",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-01",
+    "beginning_balance": 13,
+    "ending_balance": 6,
+    "incoming": 2,
+    "outgoing": 9
+  },
+  {
+    "id": "f253abbe-5003-44e8-bf2a-6ed5d2a91830",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-01",
+    "beginning_balance": 20,
+    "ending_balance": 21,
+    "incoming": 6,
+    "outgoing": 5
+  },
+  {
+    "id": "a4c1ff03-0a35-41b2-a648-ae81739c94bc",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-03-01",
+    "beginning_balance": 13,
+    "ending_balance": 2,
+    "incoming": 0,
+    "outgoing": 11
+  },
+  {
+    "id": "2d9304b3-e533-4369-8a30-985c3d3fd184",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-22",
+    "beginning_balance": 17,
+    "ending_balance": 2,
+    "incoming": 0,
+    "outgoing": 15
+  },
+  {
+    "id": "5a81fcc3-81e2-42c9-9ae8-9ebdd094911a",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-22",
+    "beginning_balance": 7,
+    "ending_balance": 9,
+    "incoming": 6,
+    "outgoing": 4
+  },
+  {
+    "id": "3e692f6e-8824-4337-8d09-2371a44728ca",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-22",
+    "beginning_balance": 10,
+    "ending_balance": 0,
+    "incoming": 2,
+    "outgoing": 12
+  },
+  {
+    "id": "f68af963-2efa-4893-9528-f96f884f9eaa",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-22",
+    "beginning_balance": 11,
+    "ending_balance": 17,
+    "incoming": 10,
+    "outgoing": 4
+  },
+  {
+    "id": "bb13ec9e-bb62-4149-b1a3-7ae6184c44e3",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-22",
+    "beginning_balance": 12,
+    "ending_balance": 12,
+    "incoming": 1,
+    "outgoing": 1
+  },
+  {
+    "id": "8e68c76e-b986-43ed-8f6e-8e3db716439b",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-22",
+    "beginning_balance": 14,
+    "ending_balance": 8,
+    "incoming": 8,
+    "outgoing": 14
+  },
+  {
+    "id": "c4526300-6350-43d4-9016-b123dee31863",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-22",
+    "beginning_balance": 9,
+    "ending_balance": 9,
+    "incoming": 0,
+    "outgoing": 0
+  },
+  {
+    "id": "7dde19ea-8583-4ac2-affa-68793905093f",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-22",
+    "beginning_balance": 19,
+    "ending_balance": 26,
+    "incoming": 9,
+    "outgoing": 2
+  },
+  {
+    "id": "e73b39f1-5284-4221-9715-10823d74fc80",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-22",
+    "beginning_balance": 16,
+    "ending_balance": 13,
+    "incoming": 5,
+    "outgoing": 8
+  },
+  {
+    "id": "9c04b541-7cc1-4a53-b6ad-8f9888b92eae",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-22",
+    "beginning_balance": 20,
+    "ending_balance": 12,
+    "incoming": 3,
+    "outgoing": 11
+  },
+  {
+    "id": "d618b387-71f9-439a-8bb5-3566f1839cb3",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-22",
+    "beginning_balance": 16,
+    "ending_balance": 7,
+    "incoming": 1,
+    "outgoing": 10
+  },
+  {
+    "id": "04e6ed97-8c86-47b0-ac42-337ffb480e5c",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-22",
+    "beginning_balance": 16,
+    "ending_balance": 9,
+    "incoming": 1,
+    "outgoing": 8
+  },
+  {
+    "id": "17047ae1-0414-44ca-95e6-d9b3be0a3f8a",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-22",
+    "beginning_balance": 10,
+    "ending_balance": 7,
+    "incoming": 6,
+    "outgoing": 9
+  },
+  {
+    "id": "c7a12cfd-d282-4877-af76-ba8c988cd5d8",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-22",
+    "beginning_balance": 17,
+    "ending_balance": 27,
+    "incoming": 10,
+    "outgoing": 0
+  },
+  {
+    "id": "9e17274a-1aee-4899-b800-7ba50151e1cc",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-22",
+    "beginning_balance": 11,
+    "ending_balance": 12,
+    "incoming": 6,
+    "outgoing": 5
+  },
+  {
+    "id": "fbe1d74b-03eb-4de4-a2f9-3eec50a086d0",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-22",
+    "beginning_balance": 7,
+    "ending_balance": 9,
+    "incoming": 7,
+    "outgoing": 5
+  },
+  {
+    "id": "e3db0d7c-db3e-486e-92ef-c377d543a347",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-22",
+    "beginning_balance": 20,
+    "ending_balance": 15,
+    "incoming": 9,
+    "outgoing": 14
+  },
+  {
+    "id": "157771e9-faa5-4816-8dd3-b4c0e851fa3e",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-22",
+    "beginning_balance": 11,
+    "ending_balance": 0,
+    "incoming": 1,
+    "outgoing": 12
+  },
+  {
+    "id": "a03c9e26-096f-43e0-a2d3-c4aa4621dfa5",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-22",
+    "beginning_balance": 14,
+    "ending_balance": 12,
+    "incoming": 10,
+    "outgoing": 12
+  },
+  {
+    "id": "6f3ba894-dcf8-4a96-8ca4-cd534c3c11dd",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-22",
+    "beginning_balance": 20,
+    "ending_balance": 26,
+    "incoming": 10,
+    "outgoing": 4
+  },
+  {
+    "id": "a5c29191-faf1-4c41-b879-d0fb1a73cdfd",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-22",
+    "beginning_balance": 15,
+    "ending_balance": 16,
+    "incoming": 3,
+    "outgoing": 2
+  },
+  {
+    "id": "0f4679c1-4a40-44db-ad3a-ef29c9c84d49",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-22",
+    "beginning_balance": 17,
+    "ending_balance": 18,
+    "incoming": 9,
+    "outgoing": 8
+  },
+  {
+    "id": "2c3eafa1-3c54-414f-80ef-3394b05972d3",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-22",
+    "beginning_balance": 6,
+    "ending_balance": 8,
+    "incoming": 8,
+    "outgoing": 6
+  },
+  {
+    "id": "4e0543db-511e-4776-bdc1-274f91cf194d",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-22",
+    "beginning_balance": 6,
+    "ending_balance": 4,
+    "incoming": 3,
+    "outgoing": 5
+  },
+  {
+    "id": "285eb560-fb9d-490b-be06-4a2ba07f4dd6",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-22",
+    "beginning_balance": 15,
+    "ending_balance": 20,
+    "incoming": 6,
+    "outgoing": 1
+  },
+  {
+    "id": "b31f367c-4b93-4e37-a1e9-ee1f3e1e5c3a",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-22",
+    "beginning_balance": 14,
+    "ending_balance": 14,
+    "incoming": 0,
+    "outgoing": 0
+  },
+  {
+    "id": "e9cea078-48e7-4a5f-b570-a2f44fce1a3e",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-22",
+    "beginning_balance": 9,
+    "ending_balance": 11,
+    "incoming": 6,
+    "outgoing": 4
+  },
+  {
+    "id": "160f75d9-c27c-4079-8e1a-566613c17439",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-22",
+    "beginning_balance": 13,
+    "ending_balance": 1,
+    "incoming": 0,
+    "outgoing": 12
+  },
+  {
+    "id": "c749c2d2-a272-4e7a-b9d6-52183d38498c",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-22",
+    "beginning_balance": 14,
+    "ending_balance": 8,
+    "incoming": 3,
+    "outgoing": 9
+  },
+  {
+    "id": "329d5152-f7ae-4c75-8de7-e4f70611ecd5",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-22",
+    "beginning_balance": 12,
+    "ending_balance": 18,
+    "incoming": 8,
+    "outgoing": 2
+  },
+  {
+    "id": "d7b2ffa1-c6d3-403c-b37c-6511667f1876",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-22",
+    "beginning_balance": 7,
+    "ending_balance": 11,
+    "incoming": 9,
+    "outgoing": 5
+  },
+  {
+    "id": "97d8e21b-a6ac-4bb6-b5b7-d4da5f666d15",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-22",
+    "beginning_balance": 8,
+    "ending_balance": 15,
+    "incoming": 9,
+    "outgoing": 2
+  },
+  {
+    "id": "de84f33e-b506-480e-9411-62b98057f147",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-22",
+    "beginning_balance": 14,
+    "ending_balance": 16,
+    "incoming": 7,
+    "outgoing": 5
+  },
+  {
+    "id": "f61d0281-0260-4205-904f-661b7663bb33",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-22",
+    "beginning_balance": 10,
+    "ending_balance": 17,
+    "incoming": 8,
+    "outgoing": 1
+  },
+  {
+    "id": "c70f2372-54bd-4284-878e-f3d2695beb47",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-22",
+    "beginning_balance": 7,
+    "ending_balance": 2,
+    "incoming": 1,
+    "outgoing": 6
+  },
+  {
+    "id": "9e42cf2e-067b-45b9-8de3-0785335f4250",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-22",
+    "beginning_balance": 10,
+    "ending_balance": 7,
+    "incoming": 3,
+    "outgoing": 6
+  },
+  {
+    "id": "f4d0e2f6-2fc8-42bb-925f-73a8e719bc10",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-22",
+    "beginning_balance": 15,
+    "ending_balance": 16,
+    "incoming": 10,
+    "outgoing": 9
+  },
+  {
+    "id": "1ca4a200-5c23-423c-bfbc-af6f945c7951",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-22",
+    "beginning_balance": 9,
+    "ending_balance": 0,
+    "incoming": 2,
+    "outgoing": 11
+  },
+  {
+    "id": "8a4b4aac-7e86-4390-9a7b-a8248c24dd6b",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-22",
+    "beginning_balance": 18,
+    "ending_balance": 12,
+    "incoming": 7,
+    "outgoing": 13
+  },
+  {
+    "id": "fbdf44ae-e6b7-4ec8-b8f1-8f57f542380d",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-22",
+    "beginning_balance": 14,
+    "ending_balance": 16,
+    "incoming": 4,
+    "outgoing": 2
+  },
+  {
+    "id": "3d351680-bba3-4ad1-ac4d-ba4ccf5b5858",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-22",
+    "beginning_balance": 15,
+    "ending_balance": 14,
+    "incoming": 0,
+    "outgoing": 1
+  },
+  {
+    "id": "0b7ce4c5-bb99-4f16-8816-25764cac9b32",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-22",
+    "beginning_balance": 14,
+    "ending_balance": 13,
+    "incoming": 5,
+    "outgoing": 6
+  },
+  {
+    "id": "0b2cdb21-9cd0-452c-bfbf-2861a0f682f7",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-22",
+    "beginning_balance": 15,
+    "ending_balance": 4,
+    "incoming": 3,
+    "outgoing": 14
+  },
+  {
+    "id": "1849fcf4-1203-4054-bb2c-e33423fee464",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-22",
+    "beginning_balance": 16,
+    "ending_balance": 14,
+    "incoming": 8,
+    "outgoing": 10
+  },
+  {
+    "id": "26ce04ea-7bab-458a-bff4-603bf0a8124d",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-22",
+    "beginning_balance": 9,
+    "ending_balance": 15,
+    "incoming": 9,
+    "outgoing": 3
+  },
+  {
+    "id": "e8ec7ad5-ac48-433a-a72e-1b9d436c78f4",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-15",
+    "beginning_balance": 6,
+    "ending_balance": 6,
+    "incoming": 10,
+    "outgoing": 10
+  },
+  {
+    "id": "177ef5de-cf5c-4166-8604-bb722928c67f",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-15",
+    "beginning_balance": 8,
+    "ending_balance": 16,
+    "incoming": 10,
+    "outgoing": 2
+  },
+  {
+    "id": "76f7a803-7400-4704-91b0-6bb4ee3c37b0",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-15",
+    "beginning_balance": 19,
+    "ending_balance": 11,
+    "incoming": 4,
+    "outgoing": 12
+  },
+  {
+    "id": "69572e56-39d3-43f8-a0b9-4dffe768dff6",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-15",
+    "beginning_balance": 20,
+    "ending_balance": 25,
+    "incoming": 9,
+    "outgoing": 4
+  },
+  {
+    "id": "8a96fb4d-7e84-4999-968c-7a70af073333",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-15",
+    "beginning_balance": 20,
+    "ending_balance": 19,
+    "incoming": 1,
+    "outgoing": 2
+  },
+  {
+    "id": "7569a619-3a5e-4294-9b3f-6da83aa63255",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-15",
+    "beginning_balance": 15,
+    "ending_balance": 24,
+    "incoming": 9,
+    "outgoing": 0
+  },
+  {
+    "id": "9649169a-bbaf-494a-9c2a-e3658396aaf4",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-15",
+    "beginning_balance": 6,
+    "ending_balance": 4,
+    "incoming": 0,
+    "outgoing": 2
+  },
+  {
+    "id": "881e944f-31a7-46fa-8ef5-124e148fb176",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-15",
+    "beginning_balance": 10,
+    "ending_balance": 1,
+    "incoming": 3,
+    "outgoing": 12
+  },
+  {
+    "id": "65fa3d26-e522-4708-904e-d1aedf3f9dc7",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-15",
+    "beginning_balance": 6,
+    "ending_balance": 3,
+    "incoming": 8,
+    "outgoing": 11
+  },
+  {
+    "id": "d538af54-0a69-4dcd-8f8b-c88f9e04e060",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-15",
+    "beginning_balance": 9,
+    "ending_balance": 9,
+    "incoming": 5,
+    "outgoing": 5
+  },
+  {
+    "id": "85178412-f5c2-414c-8a43-6cc26f994c86",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-15",
+    "beginning_balance": 13,
+    "ending_balance": 9,
+    "incoming": 8,
+    "outgoing": 12
+  },
+  {
+    "id": "1efd2d5e-7ff6-4b9c-8a85-b0432595093e",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-15",
+    "beginning_balance": 6,
+    "ending_balance": 2,
+    "incoming": 4,
+    "outgoing": 8
+  },
+  {
+    "id": "2c684082-d1e8-4a73-9504-f12f09ffbe21",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-15",
+    "beginning_balance": 18,
+    "ending_balance": 15,
+    "incoming": 4,
+    "outgoing": 7
+  },
+  {
+    "id": "08bec300-34bf-4271-86e4-7e21450a3cc7",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-15",
+    "beginning_balance": 14,
+    "ending_balance": 16,
+    "incoming": 5,
+    "outgoing": 3
+  },
+  {
+    "id": "948d5562-2eb0-4a9e-916c-568bf6fa0d28",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-15",
+    "beginning_balance": 13,
+    "ending_balance": 11,
+    "incoming": 3,
+    "outgoing": 5
+  },
+  {
+    "id": "2f13c05d-80e4-4c60-a5bb-89962a05a8c0",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-15",
+    "beginning_balance": 15,
+    "ending_balance": 11,
+    "incoming": 5,
+    "outgoing": 9
+  },
+  {
+    "id": "8b6a1c5f-5f3f-40e3-8c87-1fbfab268186",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-15",
+    "beginning_balance": 12,
+    "ending_balance": 15,
+    "incoming": 4,
+    "outgoing": 1
+  },
+  {
+    "id": "dd696e76-c299-48cc-ac04-d72906af7bb8",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-15",
+    "beginning_balance": 20,
+    "ending_balance": 27,
+    "incoming": 7,
+    "outgoing": 0
+  },
+  {
+    "id": "1ecc1488-57fe-4019-bcee-d2259b2bb4ec",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-15",
+    "beginning_balance": 7,
+    "ending_balance": 14,
+    "incoming": 9,
+    "outgoing": 2
+  },
+  {
+    "id": "cc914574-e08b-4c26-b683-a6f7d9d6ee46",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-15",
+    "beginning_balance": 16,
+    "ending_balance": 11,
+    "incoming": 10,
+    "outgoing": 15
+  },
+  {
+    "id": "4850fba9-9e33-4d63-9f8d-24f9737a11b5",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-15",
+    "beginning_balance": 12,
+    "ending_balance": 9,
+    "incoming": 9,
+    "outgoing": 12
+  },
+  {
+    "id": "af112c4f-6b66-45ed-b99c-7fa95dac9e3e",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-15",
+    "beginning_balance": 12,
+    "ending_balance": 22,
+    "incoming": 10,
+    "outgoing": 0
+  },
+  {
+    "id": "b0c7a19d-3fd6-46c2-a8c6-6403bc040996",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-15",
+    "beginning_balance": 9,
+    "ending_balance": 12,
+    "incoming": 3,
+    "outgoing": 0
+  },
+  {
+    "id": "cdbf4bc9-aded-4f1d-8b58-3e71098690af",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-15",
+    "beginning_balance": 8,
+    "ending_balance": 11,
+    "incoming": 10,
+    "outgoing": 7
+  },
+  {
+    "id": "8e29063e-1c7a-4e06-874b-974c1ef5edae",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-15",
+    "beginning_balance": 9,
+    "ending_balance": 17,
+    "incoming": 10,
+    "outgoing": 2
+  },
+  {
+    "id": "3b9126f0-2522-43dd-bf30-2275f25eb0f9",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-15",
+    "beginning_balance": 18,
+    "ending_balance": 12,
+    "incoming": 8,
+    "outgoing": 14
+  },
+  {
+    "id": "d91ee919-12a2-42cb-bdfa-4939e7a66378",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-15",
+    "beginning_balance": 19,
+    "ending_balance": 26,
+    "incoming": 8,
+    "outgoing": 1
+  },
+  {
+    "id": "c85dc9b1-fcf7-4f29-b508-d3af84f02dc2",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-15",
+    "beginning_balance": 12,
+    "ending_balance": 12,
+    "incoming": 4,
+    "outgoing": 4
+  },
+  {
+    "id": "1084d850-a3fd-46bb-a35f-4ac26cfcc4e1",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-15",
+    "beginning_balance": 13,
+    "ending_balance": 4,
+    "incoming": 6,
+    "outgoing": 15
+  },
+  {
+    "id": "aaa8e20b-6d9b-4cb7-af21-075cf1d23e0c",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-15",
+    "beginning_balance": 9,
+    "ending_balance": 0,
+    "incoming": 3,
+    "outgoing": 12
+  },
+  {
+    "id": "c762940e-cf46-4a0f-bbdb-3807640c20a0",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-15",
+    "beginning_balance": 14,
+    "ending_balance": 8,
+    "incoming": 0,
+    "outgoing": 6
+  },
+  {
+    "id": "3ed92e12-1b1c-4b12-b9e6-0bd023a96e5e",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-15",
+    "beginning_balance": 12,
+    "ending_balance": 5,
+    "incoming": 8,
+    "outgoing": 15
+  },
+  {
+    "id": "ab4f7234-c1b5-473a-b872-69e53f751e9f",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-15",
+    "beginning_balance": 8,
+    "ending_balance": 10,
+    "incoming": 5,
+    "outgoing": 3
+  },
+  {
+    "id": "cf36cb6b-9728-412e-a413-45e46ab4507e",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-15",
+    "beginning_balance": 17,
+    "ending_balance": 20,
+    "incoming": 8,
+    "outgoing": 5
+  },
+  {
+    "id": "3b9de168-215c-4dc9-90a0-743a02b0df34",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-15",
+    "beginning_balance": 14,
+    "ending_balance": 15,
+    "incoming": 1,
+    "outgoing": 0
+  },
+  {
+    "id": "aeda532e-dff4-4e57-ba67-168bb63fb1fa",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-15",
+    "beginning_balance": 8,
+    "ending_balance": 2,
+    "incoming": 1,
+    "outgoing": 7
+  },
+  {
+    "id": "1d527fea-25be-4732-aa9c-883a2381e6fe",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-15",
+    "beginning_balance": 14,
+    "ending_balance": 10,
+    "incoming": 3,
+    "outgoing": 7
+  },
+  {
+    "id": "070aa5dd-111e-42a1-84bb-67686b85f039",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-15",
+    "beginning_balance": 15,
+    "ending_balance": 4,
+    "incoming": 1,
+    "outgoing": 12
+  },
+  {
+    "id": "287b9f50-ce37-4f18-8b93-f1b78967fc2c",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-15",
+    "beginning_balance": 6,
+    "ending_balance": 0,
+    "incoming": 6,
+    "outgoing": 12
+  },
+  {
+    "id": "0ecdcfe9-74df-4038-800e-1a2ab8d08a38",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-15",
+    "beginning_balance": 15,
+    "ending_balance": 15,
+    "incoming": 10,
+    "outgoing": 10
+  },
+  {
+    "id": "7b206e13-7b0e-4c1e-b9eb-9b4497aecc19",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-15",
+    "beginning_balance": 9,
+    "ending_balance": 1,
+    "incoming": 1,
+    "outgoing": 9
+  },
+  {
+    "id": "4d9e77fe-dcfd-4cf3-bae4-0880b200d0f5",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-15",
+    "beginning_balance": 19,
+    "ending_balance": 20,
+    "incoming": 10,
+    "outgoing": 9
+  },
+  {
+    "id": "17607eb4-e9ea-4dc0-8b91-e03e9234176f",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-15",
+    "beginning_balance": 17,
+    "ending_balance": 7,
+    "incoming": 5,
+    "outgoing": 15
+  },
+  {
+    "id": "8593ff30-2936-4471-80b7-4b253578c4b8",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-15",
+    "beginning_balance": 9,
+    "ending_balance": 12,
+    "incoming": 7,
+    "outgoing": 4
+  },
+  {
+    "id": "89fc7303-8890-4ddb-a051-4f77cffb9f03",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-15",
+    "beginning_balance": 6,
+    "ending_balance": 0,
+    "incoming": 0,
+    "outgoing": 6
+  },
+  {
+    "id": "4c80971b-d7f1-44f1-8234-30568df9b262",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-08",
+    "beginning_balance": 17,
+    "ending_balance": 12,
+    "incoming": 2,
+    "outgoing": 7
+  },
+  {
+    "id": "f0443dac-5c57-48c3-8ede-8c4f09da48cf",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-08",
+    "beginning_balance": 16,
+    "ending_balance": 20,
+    "incoming": 9,
+    "outgoing": 5
+  },
+  {
+    "id": "f9b47cde-9ddc-4cd6-a553-dc19150d4772",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-08",
+    "beginning_balance": 5,
+    "ending_balance": 0,
+    "incoming": 4,
+    "outgoing": 9
+  },
+  {
+    "id": "dabe6c0f-ea4e-4ce9-a078-09b89e99985d",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-08",
+    "beginning_balance": 17,
+    "ending_balance": 15,
+    "incoming": 2,
+    "outgoing": 4
+  },
+  {
+    "id": "6810bcc4-7707-4985-ae35-c65b97a0c9b4",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-08",
+    "beginning_balance": 11,
+    "ending_balance": 3,
+    "incoming": 0,
+    "outgoing": 8
+  },
+  {
+    "id": "a8147f1e-86ad-4e1a-996b-e12dbebdcd5e",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-08",
+    "beginning_balance": 16,
+    "ending_balance": 15,
+    "incoming": 5,
+    "outgoing": 6
+  },
+  {
+    "id": "4ca3bcbe-861c-45e0-9e79-0c6131b5a9cd",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-08",
+    "beginning_balance": 12,
+    "ending_balance": 16,
+    "incoming": 10,
+    "outgoing": 6
+  },
+  {
+    "id": "2619c5b9-47fe-497c-8419-1857ccf39b5d",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-08",
+    "beginning_balance": 10,
+    "ending_balance": 6,
+    "incoming": 7,
+    "outgoing": 11
+  },
+  {
+    "id": "54a2a170-93f4-4cb0-a118-63d0b4a71f00",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-08",
+    "beginning_balance": 11,
+    "ending_balance": 11,
+    "incoming": 3,
+    "outgoing": 3
+  },
+  {
+    "id": "cd7f31ab-8037-43b9-8650-8b4ebcf8d94c",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-08",
+    "beginning_balance": 9,
+    "ending_balance": 8,
+    "incoming": 10,
+    "outgoing": 11
+  },
+  {
+    "id": "4eb43b12-83f3-4bbc-a060-307b8d10d342",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-08",
+    "beginning_balance": 17,
+    "ending_balance": 16,
+    "incoming": 4,
+    "outgoing": 5
+  },
+  {
+    "id": "d0bdfe65-7b48-46ac-b84e-253a018cd57b",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-08",
+    "beginning_balance": 18,
+    "ending_balance": 7,
+    "incoming": 0,
+    "outgoing": 11
+  },
+  {
+    "id": "7aa5813e-c3bf-4cb0-8298-db3628aede0b",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-08",
+    "beginning_balance": 14,
+    "ending_balance": 5,
+    "incoming": 3,
+    "outgoing": 12
+  },
+  {
+    "id": "cd87201e-4b12-49b3-8848-2806d08fb218",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-08",
+    "beginning_balance": 9,
+    "ending_balance": 9,
+    "incoming": 8,
+    "outgoing": 8
+  },
+  {
+    "id": "6e536c7b-1410-4afe-a1ba-fc073c7fc034",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-08",
+    "beginning_balance": 10,
+    "ending_balance": 10,
+    "incoming": 8,
+    "outgoing": 8
+  },
+  {
+    "id": "ea86038e-afd5-4bff-853a-29edc17a612e",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-08",
+    "beginning_balance": 20,
+    "ending_balance": 9,
+    "incoming": 3,
+    "outgoing": 14
+  },
+  {
+    "id": "df24317f-16f9-477e-977e-52b52fdd06a3",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-08",
+    "beginning_balance": 8,
+    "ending_balance": 14,
+    "incoming": 8,
+    "outgoing": 2
+  },
+  {
+    "id": "181558ff-fe10-4390-8702-c971e2683725",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-08",
+    "beginning_balance": 9,
+    "ending_balance": 9,
+    "incoming": 7,
+    "outgoing": 7
+  },
+  {
+    "id": "80b02dbc-0a0a-45ef-8c7c-2845b46ecc1a",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-08",
+    "beginning_balance": 17,
+    "ending_balance": 17,
+    "incoming": 9,
+    "outgoing": 9
+  },
+  {
+    "id": "07874b4a-7ef5-48c7-accb-0497b552538c",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-08",
+    "beginning_balance": 14,
+    "ending_balance": 4,
+    "incoming": 0,
+    "outgoing": 10
+  },
+  {
+    "id": "e0d28b10-f04c-42c8-9ba9-ce93fb789d03",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-08",
+    "beginning_balance": 8,
+    "ending_balance": 13,
+    "incoming": 5,
+    "outgoing": 0
+  },
+  {
+    "id": "eed67cdc-fa83-47e1-a3ec-19cb84a8985f",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-08",
+    "beginning_balance": 13,
+    "ending_balance": 2,
+    "incoming": 4,
+    "outgoing": 15
+  },
+  {
+    "id": "60cb708e-dfd9-4cdb-823d-bb58b08b15c2",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-08",
+    "beginning_balance": 11,
+    "ending_balance": 14,
+    "incoming": 8,
+    "outgoing": 5
+  },
+  {
+    "id": "7d14a476-6619-4be3-ab0a-43546a06d69c",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-08",
+    "beginning_balance": 16,
+    "ending_balance": 10,
+    "incoming": 1,
+    "outgoing": 7
+  },
+  {
+    "id": "b8216c99-cb99-401c-a904-8cd9a629d624",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-08",
+    "beginning_balance": 17,
+    "ending_balance": 17,
+    "incoming": 9,
+    "outgoing": 9
+  },
+  {
+    "id": "802470ad-a7af-4dc4-8765-b3d9422aa228",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-08",
+    "beginning_balance": 11,
+    "ending_balance": 11,
+    "incoming": 0,
+    "outgoing": 0
+  },
+  {
+    "id": "d6595bd9-8fb5-415e-a951-cae4636fab5f",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-08",
+    "beginning_balance": 7,
+    "ending_balance": 2,
+    "incoming": 2,
+    "outgoing": 7
+  },
+  {
+    "id": "cacc5d0d-3a15-4ff1-84b5-73bd7291c393",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-08",
+    "beginning_balance": 17,
+    "ending_balance": 15,
+    "incoming": 8,
+    "outgoing": 10
+  },
+  {
+    "id": "4250219c-4315-45b7-a72f-967cfaec4ab7",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-08",
+    "beginning_balance": 20,
+    "ending_balance": 12,
+    "incoming": 0,
+    "outgoing": 8
+  },
+  {
+    "id": "ab20e175-f564-4ae3-be41-fd66c6d0fb48",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-08",
+    "beginning_balance": 14,
+    "ending_balance": 13,
+    "incoming": 10,
+    "outgoing": 11
+  },
+  {
+    "id": "15bb6e16-9d70-45bc-88f8-16a47df59586",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-08",
+    "beginning_balance": 17,
+    "ending_balance": 13,
+    "incoming": 7,
+    "outgoing": 11
+  },
+  {
+    "id": "aaf201d8-0bab-444a-a58c-b91ac333e5a9",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-08",
+    "beginning_balance": 17,
+    "ending_balance": 17,
+    "incoming": 2,
+    "outgoing": 2
+  },
+  {
+    "id": "7c2fa12d-235e-403e-8ba9-71dc3a0edf3e",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-08",
+    "beginning_balance": 19,
+    "ending_balance": 11,
+    "incoming": 6,
+    "outgoing": 14
+  },
+  {
+    "id": "abb99976-84ad-49c9-bf6a-61cbbe358cd5",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-08",
+    "beginning_balance": 19,
+    "ending_balance": 18,
+    "incoming": 3,
+    "outgoing": 4
+  },
+  {
+    "id": "ba6d57c8-3c37-4bed-9ef3-52700be6d16c",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-08",
+    "beginning_balance": 11,
+    "ending_balance": 13,
+    "incoming": 3,
+    "outgoing": 1
+  },
+  {
+    "id": "921c9ef4-739b-45dc-a165-e894773f0670",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-08",
+    "beginning_balance": 5,
+    "ending_balance": 14,
+    "incoming": 10,
+    "outgoing": 1
+  },
+  {
+    "id": "9db76a0f-a403-49a2-be72-83e021c09be0",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-08",
+    "beginning_balance": 18,
+    "ending_balance": 10,
+    "incoming": 5,
+    "outgoing": 13
+  },
+  {
+    "id": "94c5a389-3282-4125-bd35-2e1ff077640a",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-08",
+    "beginning_balance": 6,
+    "ending_balance": 8,
+    "incoming": 4,
+    "outgoing": 2
+  },
+  {
+    "id": "fc342663-5361-48ad-a501-19517bfd478d",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-08",
+    "beginning_balance": 11,
+    "ending_balance": 12,
+    "incoming": 10,
+    "outgoing": 9
+  },
+  {
+    "id": "3a8f1b88-8c36-4e7b-aa90-abe46ce52ece",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-08",
+    "beginning_balance": 10,
+    "ending_balance": 11,
+    "incoming": 1,
+    "outgoing": 0
+  },
+  {
+    "id": "9a0471e3-c2f0-4deb-bd56-a2b2c9751b94",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-08",
+    "beginning_balance": 10,
+    "ending_balance": 5,
+    "incoming": 0,
+    "outgoing": 5
+  },
+  {
+    "id": "6af81f11-55f7-4775-a10f-3cdde29d6e1e",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-08",
+    "beginning_balance": 8,
+    "ending_balance": 8,
+    "incoming": 10,
+    "outgoing": 10
+  },
+  {
+    "id": "1d52e62b-48d1-4bc2-8d6f-712b32ee92c7",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-08",
+    "beginning_balance": 19,
+    "ending_balance": 25,
+    "incoming": 6,
+    "outgoing": 0
+  },
+  {
+    "id": "14ec4044-fbd4-42a9-86c8-9242dd6a9b54",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-08",
+    "beginning_balance": 20,
+    "ending_balance": 14,
+    "incoming": 6,
+    "outgoing": 12
+  },
+  {
+    "id": "a9772709-50ae-46e7-b270-08119da327cd",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-08",
+    "beginning_balance": 16,
+    "ending_balance": 6,
+    "incoming": 5,
+    "outgoing": 15
+  },
+  {
+    "id": "3f4bcc44-9af8-4a52-8ad4-81739c60220f",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-01",
+    "beginning_balance": 18,
+    "ending_balance": 19,
+    "incoming": 2,
+    "outgoing": 1
+  },
+  {
+    "id": "2d1bf5be-fe92-41f5-9e16-5447724ab632",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-01",
+    "beginning_balance": 6,
+    "ending_balance": 8,
+    "incoming": 8,
+    "outgoing": 6
+  },
+  {
+    "id": "51923424-6b56-4544-ab47-6629aa7d8d3c",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-01",
+    "beginning_balance": 19,
+    "ending_balance": 14,
+    "incoming": 1,
+    "outgoing": 6
+  },
+  {
+    "id": "62d42dc7-875f-476f-88b0-61a324cb9294",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-01",
+    "beginning_balance": 10,
+    "ending_balance": 6,
+    "incoming": 1,
+    "outgoing": 5
+  },
+  {
+    "id": "639fed15-d9f3-4039-a5aa-9329ef64b49b",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-01",
+    "beginning_balance": 15,
+    "ending_balance": 5,
+    "incoming": 1,
+    "outgoing": 11
+  },
+  {
+    "id": "4d4f674c-b494-449d-9049-3048999c9a03",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-01",
+    "beginning_balance": 12,
+    "ending_balance": 7,
+    "incoming": 2,
+    "outgoing": 7
+  },
+  {
+    "id": "68b69daf-4e1a-4ef5-9046-78ab57aaef2d",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-01",
+    "beginning_balance": 19,
+    "ending_balance": 17,
+    "incoming": 0,
+    "outgoing": 2
+  },
+  {
+    "id": "7fcc5fec-20b2-4fc3-8ab6-ac13a58f29ae",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-01",
+    "beginning_balance": 20,
+    "ending_balance": 17,
+    "incoming": 1,
+    "outgoing": 4
+  },
+  {
+    "id": "6635388a-60fb-4767-be1f-59ce414d38d0",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-01",
+    "beginning_balance": 13,
+    "ending_balance": 1,
+    "incoming": 1,
+    "outgoing": 13
+  },
+  {
+    "id": "3dd9552b-c810-4bdd-85c7-470af0fef323",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-01",
+    "beginning_balance": 15,
+    "ending_balance": 24,
+    "incoming": 10,
+    "outgoing": 1
+  },
+  {
+    "id": "519f49aa-a77a-4637-b827-adf57da70181",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-01",
+    "beginning_balance": 6,
+    "ending_balance": 10,
+    "incoming": 4,
+    "outgoing": 0
+  },
+  {
+    "id": "0593472c-fb7c-48ee-a0bd-1c1de6010666",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-01",
+    "beginning_balance": 7,
+    "ending_balance": 11,
+    "incoming": 9,
+    "outgoing": 5
+  },
+  {
+    "id": "9217490e-c44d-48b7-8b98-737d179902d5",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-01",
+    "beginning_balance": 16,
+    "ending_balance": 13,
+    "incoming": 10,
+    "outgoing": 13
+  },
+  {
+    "id": "76667fa3-38dc-4e7c-b356-d9fdff46f4cc",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-01",
+    "beginning_balance": 15,
+    "ending_balance": 18,
+    "incoming": 4,
+    "outgoing": 1
+  },
+  {
+    "id": "35816f99-0406-4fe1-8cef-1468f8202628",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-02-01",
+    "beginning_balance": 18,
+    "ending_balance": 20,
+    "incoming": 6,
+    "outgoing": 4
+  },
+  {
+    "id": "fb8595ac-0cc7-42fe-976e-93c9da429256",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-01",
+    "beginning_balance": 18,
+    "ending_balance": 11,
+    "incoming": 8,
+    "outgoing": 15
+  },
+  {
+    "id": "decb3e12-0c4f-4d44-9dde-b6a98db03b86",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-01",
+    "beginning_balance": 20,
+    "ending_balance": 20,
+    "incoming": 2,
+    "outgoing": 2
+  },
+  {
+    "id": "f7a2b08f-6b30-4850-ab84-76b0edc7b09d",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-01",
+    "beginning_balance": 11,
+    "ending_balance": 6,
+    "incoming": 6,
+    "outgoing": 11
+  },
+  {
+    "id": "d68499f5-6c97-4773-bfa6-488150089247",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-01",
+    "beginning_balance": 18,
+    "ending_balance": 13,
+    "incoming": 3,
+    "outgoing": 8
+  },
+  {
+    "id": "f5b2a16b-d9e5-4204-a138-199863acf798",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-01",
+    "beginning_balance": 8,
+    "ending_balance": 9,
+    "incoming": 6,
+    "outgoing": 5
+  },
+  {
+    "id": "8fb13127-2471-471e-a815-84fc0efe0ee3",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-01",
+    "beginning_balance": 14,
+    "ending_balance": 16,
+    "incoming": 4,
+    "outgoing": 2
+  },
+  {
+    "id": "8fc4a666-4d12-4866-883f-c96d2e329d32",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-01",
+    "beginning_balance": 9,
+    "ending_balance": 1,
+    "incoming": 0,
+    "outgoing": 8
+  },
+  {
+    "id": "fd0298d4-16c9-4a0a-ba5c-5d3e8c4c0406",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-01",
+    "beginning_balance": 6,
+    "ending_balance": 8,
+    "incoming": 2,
+    "outgoing": 0
+  },
+  {
+    "id": "0c59575e-9fcc-439a-9cd8-25183aad420b",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-01",
+    "beginning_balance": 14,
+    "ending_balance": 11,
+    "incoming": 3,
+    "outgoing": 6
+  },
+  {
+    "id": "3477d3d3-5b28-4d34-a269-cfaedf6d9e96",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-01",
+    "beginning_balance": 15,
+    "ending_balance": 9,
+    "incoming": 4,
+    "outgoing": 10
+  },
+  {
+    "id": "6c119acc-5998-456c-996c-54d529767f37",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-01",
+    "beginning_balance": 6,
+    "ending_balance": 1,
+    "incoming": 4,
+    "outgoing": 9
+  },
+  {
+    "id": "dec1d1d5-9b2d-4785-ae5c-1c58e12a9747",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-01",
+    "beginning_balance": 16,
+    "ending_balance": 9,
+    "incoming": 7,
+    "outgoing": 14
+  },
+  {
+    "id": "4c0e2966-a0e5-43bd-a036-d931ba9614c0",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-01",
+    "beginning_balance": 6,
+    "ending_balance": 1,
+    "incoming": 7,
+    "outgoing": 12
+  },
+  {
+    "id": "511bc03b-d22d-4cc3-a836-ac57817288a9",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-01",
+    "beginning_balance": 15,
+    "ending_balance": 14,
+    "incoming": 6,
+    "outgoing": 7
+  },
+  {
+    "id": "7e264b89-fa6c-4cd2-8346-0ed666a49080",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-02-01",
+    "beginning_balance": 18,
+    "ending_balance": 6,
+    "incoming": 3,
+    "outgoing": 15
+  },
+  {
+    "id": "98c4bf5e-1dee-4b66-9963-1d5fd46f85ad",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-01",
+    "beginning_balance": 11,
+    "ending_balance": 11,
+    "incoming": 5,
+    "outgoing": 5
+  },
+  {
+    "id": "65ab233b-2dc6-46af-8f79-cd1cff223a22",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-01",
+    "beginning_balance": 18,
+    "ending_balance": 11,
+    "incoming": 5,
+    "outgoing": 12
+  },
+  {
+    "id": "654f272d-f133-4657-9abd-e0084ede0ce0",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-01",
+    "beginning_balance": 17,
+    "ending_balance": 24,
+    "incoming": 8,
+    "outgoing": 1
+  },
+  {
+    "id": "967bd44f-ba8b-4aae-9812-91b833b8fd43",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-01",
+    "beginning_balance": 12,
+    "ending_balance": 16,
+    "incoming": 7,
+    "outgoing": 3
+  },
+  {
+    "id": "9f6927ba-4c0e-462c-a046-35a133a7065d",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-01",
+    "beginning_balance": 16,
+    "ending_balance": 15,
+    "incoming": 0,
+    "outgoing": 1
+  },
+  {
+    "id": "5bc70f3d-ac1f-4001-808e-9c370280d3d0",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-01",
+    "beginning_balance": 18,
+    "ending_balance": 19,
+    "incoming": 8,
+    "outgoing": 7
+  },
+  {
+    "id": "d1cfe901-6333-429a-b37f-87eda613b16b",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-01",
+    "beginning_balance": 18,
+    "ending_balance": 11,
+    "incoming": 5,
+    "outgoing": 12
+  },
+  {
+    "id": "71bdb83d-68d4-46ff-a5e2-e1fa4e7fe079",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-01",
+    "beginning_balance": 13,
+    "ending_balance": 13,
+    "incoming": 2,
+    "outgoing": 2
+  },
+  {
+    "id": "4d13b6d4-6cb4-4d8a-9568-6a5eb72fcd3d",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-01",
+    "beginning_balance": 18,
+    "ending_balance": 13,
+    "incoming": 0,
+    "outgoing": 5
+  },
+  {
+    "id": "3651f060-f708-44ef-82d9-7fa51eec3390",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-01",
+    "beginning_balance": 12,
+    "ending_balance": 15,
+    "incoming": 5,
+    "outgoing": 2
+  },
+  {
+    "id": "6b3474b2-37fe-4ed2-9b3d-5e66e3caf2f9",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-01",
+    "beginning_balance": 7,
+    "ending_balance": 2,
+    "incoming": 0,
+    "outgoing": 5
+  },
+  {
+    "id": "00a8d24d-4d19-4fbb-b400-d5da10e3fbae",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-01",
+    "beginning_balance": 7,
+    "ending_balance": 2,
+    "incoming": 6,
+    "outgoing": 11
+  },
+  {
+    "id": "dd525ba5-5fe6-494a-9c57-6c0a3d79c4e4",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-01",
+    "beginning_balance": 19,
+    "ending_balance": 11,
+    "incoming": 6,
+    "outgoing": 14
+  },
+  {
+    "id": "080f2201-2cd2-4873-8ebe-6a67c7553f5e",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-01",
+    "beginning_balance": 14,
+    "ending_balance": 0,
+    "incoming": 0,
+    "outgoing": 14
+  },
+  {
+    "id": "049084c3-73e9-4062-a14d-3fe857614364",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-02-01",
+    "beginning_balance": 5,
+    "ending_balance": 5,
+    "incoming": 10,
+    "outgoing": 10
+  },
+  {
+    "id": "29511bce-c48e-466b-85ad-d7dcd6141d8b",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-25",
+    "beginning_balance": 7,
+    "ending_balance": 7,
+    "incoming": 5,
+    "outgoing": 5
+  },
+  {
+    "id": "02db22e6-f884-4d38-80b6-e688490404f3",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-25",
+    "beginning_balance": 20,
+    "ending_balance": 28,
+    "incoming": 10,
+    "outgoing": 2
+  },
+  {
+    "id": "2818e740-af5c-49e2-87de-d3e329a2acf2",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-25",
+    "beginning_balance": 15,
+    "ending_balance": 23,
+    "incoming": 10,
+    "outgoing": 2
+  },
+  {
+    "id": "ddd0703d-8afe-4f6d-ad2b-70dfce9356ba",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-25",
+    "beginning_balance": 5,
+    "ending_balance": 9,
+    "incoming": 6,
+    "outgoing": 2
+  },
+  {
+    "id": "b5ec860d-8c45-4de0-853b-3679e0a840a6",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-25",
+    "beginning_balance": 12,
+    "ending_balance": 9,
+    "incoming": 0,
+    "outgoing": 3
+  },
+  {
+    "id": "53dbfd51-dec8-4cc3-8f91-164be0dc5e8f",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-25",
+    "beginning_balance": 17,
+    "ending_balance": 12,
+    "incoming": 10,
+    "outgoing": 15
+  },
+  {
+    "id": "9c5a2ace-dd00-49dd-9e2b-5555e08286ee",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-25",
+    "beginning_balance": 7,
+    "ending_balance": 14,
+    "incoming": 7,
+    "outgoing": 0
+  },
+  {
+    "id": "81145d8d-ddc4-4f73-aabe-322f8fddea40",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-25",
+    "beginning_balance": 18,
+    "ending_balance": 25,
+    "incoming": 7,
+    "outgoing": 0
+  },
+  {
+    "id": "b9c8e5ba-8d1a-47ad-90ea-c769f2a24822",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-25",
+    "beginning_balance": 11,
+    "ending_balance": 11,
+    "incoming": 7,
+    "outgoing": 7
+  },
+  {
+    "id": "105633f9-9702-413e-9eb8-40e6b568ed9e",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-25",
+    "beginning_balance": 7,
+    "ending_balance": 2,
+    "incoming": 0,
+    "outgoing": 5
+  },
+  {
+    "id": "2ec29552-8dfe-4167-a8ad-0689500b8768",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-25",
+    "beginning_balance": 9,
+    "ending_balance": 0,
+    "incoming": 0,
+    "outgoing": 9
+  },
+  {
+    "id": "dc8f9f91-4932-4383-89eb-39c2b38c16b2",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-25",
+    "beginning_balance": 18,
+    "ending_balance": 9,
+    "incoming": 0,
+    "outgoing": 9
+  },
+  {
+    "id": "2ddf3bc9-b79d-41ee-851f-1b05786d0db8",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-25",
+    "beginning_balance": 11,
+    "ending_balance": 14,
+    "incoming": 3,
+    "outgoing": 0
+  },
+  {
+    "id": "b7abf57a-1044-459d-8236-4c2fdf9af923",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-25",
+    "beginning_balance": 14,
+    "ending_balance": 22,
+    "incoming": 8,
+    "outgoing": 0
+  },
+  {
+    "id": "faef6607-c201-48cd-bd98-b5f87d7b4bd7",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-25",
+    "beginning_balance": 18,
+    "ending_balance": 14,
+    "incoming": 9,
+    "outgoing": 13
+  },
+  {
+    "id": "2d643c9c-03b3-460f-8c9b-c0b024365c28",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-25",
+    "beginning_balance": 14,
+    "ending_balance": 12,
+    "incoming": 3,
+    "outgoing": 5
+  },
+  {
+    "id": "4f9b610b-1b8c-4c41-83f3-0ae3380ed22a",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-25",
+    "beginning_balance": 10,
+    "ending_balance": 6,
+    "incoming": 4,
+    "outgoing": 8
+  },
+  {
+    "id": "38368b48-89fb-4a66-8bf8-e0d07c4d686e",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-25",
+    "beginning_balance": 11,
+    "ending_balance": 10,
+    "incoming": 10,
+    "outgoing": 11
+  },
+  {
+    "id": "d78bdd8c-f91e-4e1e-9275-f03e1aaf9389",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-25",
+    "beginning_balance": 7,
+    "ending_balance": 9,
+    "incoming": 2,
+    "outgoing": 0
+  },
+  {
+    "id": "daa41492-7133-44b3-aba3-ba9544d61eb3",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-25",
+    "beginning_balance": 7,
+    "ending_balance": 6,
+    "incoming": 7,
+    "outgoing": 8
+  },
+  {
+    "id": "fae14a0e-a101-4697-a04c-137443d658ff",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-25",
+    "beginning_balance": 11,
+    "ending_balance": 8,
+    "incoming": 3,
+    "outgoing": 6
+  },
+  {
+    "id": "9b828ce4-be0a-4b42-b68b-94dd751adf7c",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-25",
+    "beginning_balance": 14,
+    "ending_balance": 13,
+    "incoming": 4,
+    "outgoing": 5
+  },
+  {
+    "id": "2ab18d6d-9bbf-40c6-8953-fffa3b95ffa6",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-25",
+    "beginning_balance": 9,
+    "ending_balance": 2,
+    "incoming": 8,
+    "outgoing": 15
+  },
+  {
+    "id": "a816fc67-93e7-49d3-8832-ad5991c8593f",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-25",
+    "beginning_balance": 14,
+    "ending_balance": 11,
+    "incoming": 2,
+    "outgoing": 5
+  },
+  {
+    "id": "4e5df4c4-47e5-470a-b51b-d357cae48843",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-25",
+    "beginning_balance": 17,
+    "ending_balance": 18,
+    "incoming": 1,
+    "outgoing": 0
+  },
+  {
+    "id": "f711fbb5-2507-4419-a87a-690a3eb59709",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-25",
+    "beginning_balance": 11,
+    "ending_balance": 17,
+    "incoming": 9,
+    "outgoing": 3
+  },
+  {
+    "id": "8a131dfa-b96c-46d7-85a4-9d6c8a549f7c",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-25",
+    "beginning_balance": 19,
+    "ending_balance": 20,
+    "incoming": 4,
+    "outgoing": 3
+  },
+  {
+    "id": "62ef1ada-4dd5-4f99-9b68-a460df586979",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-25",
+    "beginning_balance": 7,
+    "ending_balance": 3,
+    "incoming": 9,
+    "outgoing": 13
+  },
+  {
+    "id": "b39b9edd-86d1-4a2f-9e1f-279be1381237",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-25",
+    "beginning_balance": 11,
+    "ending_balance": 1,
+    "incoming": 3,
+    "outgoing": 13
+  },
+  {
+    "id": "edc63f66-7d3d-40cc-8f4a-e211cb029996",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-25",
+    "beginning_balance": 14,
+    "ending_balance": 9,
+    "incoming": 2,
+    "outgoing": 7
+  },
+  {
+    "id": "bfa01cfb-af90-4adf-a321-b34b88d19198",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-25",
+    "beginning_balance": 14,
+    "ending_balance": 18,
+    "incoming": 10,
+    "outgoing": 6
+  },
+  {
+    "id": "b61425f6-f3ec-49a2-afe9-8f0559a8776c",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-25",
+    "beginning_balance": 15,
+    "ending_balance": 9,
+    "incoming": 0,
+    "outgoing": 6
+  },
+  {
+    "id": "a4a9715a-5fba-46a9-ba83-570ade10e6dc",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-25",
+    "beginning_balance": 12,
+    "ending_balance": 14,
+    "incoming": 5,
+    "outgoing": 3
+  },
+  {
+    "id": "50923d51-1fcb-4d58-ba50-23e5af25da21",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-25",
+    "beginning_balance": 13,
+    "ending_balance": 15,
+    "incoming": 8,
+    "outgoing": 6
+  },
+  {
+    "id": "ce34ec29-328e-4624-bf32-6a88fd28c82b",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-25",
+    "beginning_balance": 9,
+    "ending_balance": 1,
+    "incoming": 7,
+    "outgoing": 15
+  },
+  {
+    "id": "264d6262-8793-4646-9e66-c90fac814f47",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-25",
+    "beginning_balance": 18,
+    "ending_balance": 8,
+    "incoming": 5,
+    "outgoing": 15
+  },
+  {
+    "id": "5cf45b1c-bfff-4301-9fde-5f54f46c2ac5",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-25",
+    "beginning_balance": 12,
+    "ending_balance": 17,
+    "incoming": 9,
+    "outgoing": 4
+  },
+  {
+    "id": "bcfd0a59-c15a-41b0-8e6b-b276f5c949ab",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-25",
+    "beginning_balance": 10,
+    "ending_balance": 5,
+    "incoming": 8,
+    "outgoing": 13
+  },
+  {
+    "id": "aa1c0fd8-4bdf-4435-85c4-5d8794a4aca8",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-25",
+    "beginning_balance": 17,
+    "ending_balance": 6,
+    "incoming": 1,
+    "outgoing": 12
+  },
+  {
+    "id": "be09baa8-5aa6-48d9-83a4-4e66fba8b526",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-25",
+    "beginning_balance": 17,
+    "ending_balance": 24,
+    "incoming": 10,
+    "outgoing": 3
+  },
+  {
+    "id": "7c546e16-dc5c-4ad8-bcf1-229ac6472e29",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-25",
+    "beginning_balance": 14,
+    "ending_balance": 3,
+    "incoming": 4,
+    "outgoing": 15
+  },
+  {
+    "id": "d3426495-0ed7-4ff5-beba-6387375eab49",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-25",
+    "beginning_balance": 13,
+    "ending_balance": 12,
+    "incoming": 5,
+    "outgoing": 6
+  },
+  {
+    "id": "f9c7657e-cdc5-404e-a77f-ccd677a9dbac",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-25",
+    "beginning_balance": 10,
+    "ending_balance": 4,
+    "incoming": 7,
+    "outgoing": 13
+  },
+  {
+    "id": "4405a0cc-3461-4433-9d32-68637bd51da4",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-25",
+    "beginning_balance": 8,
+    "ending_balance": 2,
+    "incoming": 6,
+    "outgoing": 12
+  },
+  {
+    "id": "37214916-6a64-4770-be51-bae470eb1f3f",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-25",
+    "beginning_balance": 8,
+    "ending_balance": 9,
+    "incoming": 2,
+    "outgoing": 1
+  },
+  {
+    "id": "646dce63-5578-4fb1-8f69-eb2a2bce6d48",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-18",
+    "beginning_balance": 9,
+    "ending_balance": 6,
+    "incoming": 1,
+    "outgoing": 4
+  },
+  {
+    "id": "624f4cf3-df00-45c2-8f71-1d8eeb9fc32b",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-18",
+    "beginning_balance": 12,
+    "ending_balance": 7,
+    "incoming": 9,
+    "outgoing": 14
+  },
+  {
+    "id": "94ecc00e-895a-4bc6-b32b-6f42be5b8939",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-18",
+    "beginning_balance": 6,
+    "ending_balance": 3,
+    "incoming": 0,
+    "outgoing": 3
+  },
+  {
+    "id": "f3dd37d2-602c-42b4-8013-53987f155e60",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-18",
+    "beginning_balance": 20,
+    "ending_balance": 14,
+    "incoming": 6,
+    "outgoing": 12
+  },
+  {
+    "id": "dfa97add-36c8-44bd-9d9e-146aa09e89ec",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-18",
+    "beginning_balance": 7,
+    "ending_balance": 9,
+    "incoming": 5,
+    "outgoing": 3
+  },
+  {
+    "id": "3f9b7e3d-6d76-4c0d-8e58-1c67b87e1a29",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-18",
+    "beginning_balance": 18,
+    "ending_balance": 13,
+    "incoming": 1,
+    "outgoing": 6
+  },
+  {
+    "id": "cfa59384-25ac-42e0-9a2b-3915b2f18125",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-18",
+    "beginning_balance": 5,
+    "ending_balance": 0,
+    "incoming": 4,
+    "outgoing": 9
+  },
+  {
+    "id": "8050df2a-084e-4b10-a6f5-2d9305d34d7d",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-18",
+    "beginning_balance": 15,
+    "ending_balance": 14,
+    "incoming": 6,
+    "outgoing": 7
+  },
+  {
+    "id": "cc45bc3f-754a-46c5-80c2-6e928640b942",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-18",
+    "beginning_balance": 8,
+    "ending_balance": 9,
+    "incoming": 2,
+    "outgoing": 1
+  },
+  {
+    "id": "723b4572-cf63-4067-baf3-a70a3cc0df8a",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-18",
+    "beginning_balance": 11,
+    "ending_balance": 12,
+    "incoming": 2,
+    "outgoing": 1
+  },
+  {
+    "id": "639e617f-bf06-4cda-ba90-65ee0fae0002",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-18",
+    "beginning_balance": 16,
+    "ending_balance": 22,
+    "incoming": 6,
+    "outgoing": 0
+  },
+  {
+    "id": "92774367-7494-4ed8-b120-a6b44c20302d",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-18",
+    "beginning_balance": 11,
+    "ending_balance": 7,
+    "incoming": 9,
+    "outgoing": 13
+  },
+  {
+    "id": "b5d55d64-f0d0-457c-aeb3-0928706758c0",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-18",
+    "beginning_balance": 19,
+    "ending_balance": 9,
+    "incoming": 4,
+    "outgoing": 14
+  },
+  {
+    "id": "0af8549f-13bd-4087-8099-bc1fffc7ad4e",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-18",
+    "beginning_balance": 14,
+    "ending_balance": 3,
+    "incoming": 1,
+    "outgoing": 12
+  },
+  {
+    "id": "a874e1d9-508a-4c02-bfd2-c2d42a029062",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-18",
+    "beginning_balance": 5,
+    "ending_balance": 1,
+    "incoming": 6,
+    "outgoing": 10
+  },
+  {
+    "id": "4a696bde-f7f9-4698-af4d-6deb5027de14",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-18",
+    "beginning_balance": 17,
+    "ending_balance": 14,
+    "incoming": 4,
+    "outgoing": 7
+  },
+  {
+    "id": "aa4a61f2-4f3a-4f90-8681-64c1b8b2263a",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-18",
+    "beginning_balance": 8,
+    "ending_balance": 4,
+    "incoming": 0,
+    "outgoing": 4
+  },
+  {
+    "id": "26e6d6e5-d089-4b7b-aed1-22e4ea4ecedb",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-18",
+    "beginning_balance": 14,
+    "ending_balance": 13,
+    "incoming": 4,
+    "outgoing": 5
+  },
+  {
+    "id": "18ef05e0-d39b-4cd2-bdd5-41a5e9f90a0a",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-18",
+    "beginning_balance": 12,
+    "ending_balance": 12,
+    "incoming": 6,
+    "outgoing": 6
+  },
+  {
+    "id": "fdd75aa9-ec3e-48f3-aa73-f8838ddcf967",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-18",
+    "beginning_balance": 9,
+    "ending_balance": 13,
+    "incoming": 10,
+    "outgoing": 6
+  },
+  {
+    "id": "87777dbd-bab4-4d3c-9785-2772f561a95f",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-18",
+    "beginning_balance": 7,
+    "ending_balance": 5,
+    "incoming": 0,
+    "outgoing": 2
+  },
+  {
+    "id": "c59b1ca8-ac97-44f0-99c2-244ae2764c88",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-18",
+    "beginning_balance": 17,
+    "ending_balance": 21,
+    "incoming": 7,
+    "outgoing": 3
+  },
+  {
+    "id": "62e1021c-8ae6-46b4-9107-6445db2ee99e",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-18",
+    "beginning_balance": 16,
+    "ending_balance": 11,
+    "incoming": 6,
+    "outgoing": 11
+  },
+  {
+    "id": "919390df-fd34-4170-84c2-282124838b93",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-18",
+    "beginning_balance": 10,
+    "ending_balance": 12,
+    "incoming": 8,
+    "outgoing": 6
+  },
+  {
+    "id": "3d3d9d7e-cf84-4db6-a83d-34ac2895ca5f",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-18",
+    "beginning_balance": 7,
+    "ending_balance": 7,
+    "incoming": 8,
+    "outgoing": 8
+  },
+  {
+    "id": "6e2d7644-beb7-4801-9ac3-36084ee30c7e",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-18",
+    "beginning_balance": 9,
+    "ending_balance": 13,
+    "incoming": 8,
+    "outgoing": 4
+  },
+  {
+    "id": "351e0cf3-a55d-4c52-85d4-5766ad5e23fd",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-18",
+    "beginning_balance": 7,
+    "ending_balance": 8,
+    "incoming": 1,
+    "outgoing": 0
+  },
+  {
+    "id": "15893e5b-b579-49b1-bdb4-290241dcb8db",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-18",
+    "beginning_balance": 17,
+    "ending_balance": 18,
+    "incoming": 8,
+    "outgoing": 7
+  },
+  {
+    "id": "8604a195-0493-48ed-92f8-5418db0c85f9",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-18",
+    "beginning_balance": 12,
+    "ending_balance": 20,
+    "incoming": 9,
+    "outgoing": 1
+  },
+  {
+    "id": "bf8ae51d-86be-400e-8539-2d08be1760f6",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-18",
+    "beginning_balance": 12,
+    "ending_balance": 15,
+    "incoming": 5,
+    "outgoing": 2
+  },
+  {
+    "id": "0c9ac3ca-7c4a-472e-bfa7-a920bb6ce259",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-18",
+    "beginning_balance": 5,
+    "ending_balance": 2,
+    "incoming": 2,
+    "outgoing": 5
+  },
+  {
+    "id": "c022a68c-fd53-454d-92eb-48424ec82564",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-18",
+    "beginning_balance": 7,
+    "ending_balance": 12,
+    "incoming": 8,
+    "outgoing": 3
+  },
+  {
+    "id": "bc827ff3-ef07-40d8-bcba-17b9f5e77926",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-18",
+    "beginning_balance": 11,
+    "ending_balance": 11,
+    "incoming": 1,
+    "outgoing": 1
+  },
+  {
+    "id": "0ad7f06d-3584-43a7-b1ab-38c410cb67e3",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-18",
+    "beginning_balance": 19,
+    "ending_balance": 18,
+    "incoming": 0,
+    "outgoing": 1
+  },
+  {
+    "id": "099fe3b0-17db-4acf-8127-24a4e89d8b42",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-18",
+    "beginning_balance": 19,
+    "ending_balance": 18,
+    "incoming": 10,
+    "outgoing": 11
+  },
+  {
+    "id": "e54fe8f3-5b46-4121-9f09-ad1605aff056",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-18",
+    "beginning_balance": 10,
+    "ending_balance": 8,
+    "incoming": 1,
+    "outgoing": 3
+  },
+  {
+    "id": "130359eb-9bfb-4062-a2ec-dbf2485ad0df",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-18",
+    "beginning_balance": 12,
+    "ending_balance": 11,
+    "incoming": 5,
+    "outgoing": 6
+  },
+  {
+    "id": "3f2afa2e-ff40-4f99-91d2-2511f7ead3f3",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-18",
+    "beginning_balance": 12,
+    "ending_balance": 0,
+    "incoming": 3,
+    "outgoing": 15
+  },
+  {
+    "id": "5e8e9277-2ea1-41b0-8e0e-e05e3a3a56ba",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-18",
+    "beginning_balance": 15,
+    "ending_balance": 23,
+    "incoming": 9,
+    "outgoing": 1
+  },
+  {
+    "id": "d4e513fd-488c-4566-a3d0-03e034b90738",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-18",
+    "beginning_balance": 9,
+    "ending_balance": 9,
+    "incoming": 2,
+    "outgoing": 2
+  },
+  {
+    "id": "1ef6dfda-9115-4b5b-afbc-dc2f4688e1d5",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-18",
+    "beginning_balance": 9,
+    "ending_balance": 6,
+    "incoming": 8,
+    "outgoing": 11
+  },
+  {
+    "id": "a46340fa-0c29-47c1-9984-b292ac2247e4",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-18",
+    "beginning_balance": 12,
+    "ending_balance": 10,
+    "incoming": 7,
+    "outgoing": 9
+  },
+  {
+    "id": "435743db-4523-49ff-9338-fe7f0d101827",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-18",
+    "beginning_balance": 7,
+    "ending_balance": 9,
+    "incoming": 6,
+    "outgoing": 4
+  },
+  {
+    "id": "a73030c8-5a13-4e63-b725-375a5d82c341",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-18",
+    "beginning_balance": 14,
+    "ending_balance": 13,
+    "incoming": 5,
+    "outgoing": 6
+  },
+  {
+    "id": "6057b672-48e2-4a28-88a7-d8e1a746245a",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-18",
+    "beginning_balance": 13,
+    "ending_balance": 8,
+    "incoming": 9,
+    "outgoing": 14
+  },
+  {
+    "id": "1275388f-43b4-42a0-9b06-ec9802e80939",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-11",
+    "beginning_balance": 5,
+    "ending_balance": 3,
+    "incoming": 8,
+    "outgoing": 10
+  },
+  {
+    "id": "a5cf30c4-5699-4811-94b1-9e72f676694c",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-11",
+    "beginning_balance": 19,
+    "ending_balance": 23,
+    "incoming": 7,
+    "outgoing": 3
+  },
+  {
+    "id": "febd9889-9461-4aa1-8910-c1c7b62f4285",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-11",
+    "beginning_balance": 9,
+    "ending_balance": 5,
+    "incoming": 1,
+    "outgoing": 5
+  },
+  {
+    "id": "bc0c2845-6338-4ccb-8a52-d53f77e07095",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-11",
+    "beginning_balance": 6,
+    "ending_balance": 8,
+    "incoming": 9,
+    "outgoing": 7
+  },
+  {
+    "id": "1d8a3f69-ecb9-4ddc-a517-667f2bf9feea",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-11",
+    "beginning_balance": 20,
+    "ending_balance": 18,
+    "incoming": 9,
+    "outgoing": 11
+  },
+  {
+    "id": "1a597040-ae36-4917-b3d0-77299482c32f",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-11",
+    "beginning_balance": 15,
+    "ending_balance": 12,
+    "incoming": 3,
+    "outgoing": 6
+  },
+  {
+    "id": "f7fc6555-be20-4ebd-82cb-4f5e1f926172",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-11",
+    "beginning_balance": 9,
+    "ending_balance": 7,
+    "incoming": 10,
+    "outgoing": 12
+  },
+  {
+    "id": "3d5d468a-a0b9-4ff1-bac1-98a21f9d1bfe",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-11",
+    "beginning_balance": 20,
+    "ending_balance": 15,
+    "incoming": 3,
+    "outgoing": 8
+  },
+  {
+    "id": "a5f9cda7-32e5-44ed-9500-bc803ce5e193",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-11",
+    "beginning_balance": 18,
+    "ending_balance": 14,
+    "incoming": 5,
+    "outgoing": 9
+  },
+  {
+    "id": "892e443f-4ab4-4534-b1aa-582e513963f5",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-11",
+    "beginning_balance": 15,
+    "ending_balance": 19,
+    "incoming": 5,
+    "outgoing": 1
+  },
+  {
+    "id": "0cda51d9-cccf-4776-8867-bbc0e983f68c",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-11",
+    "beginning_balance": 7,
+    "ending_balance": 0,
+    "incoming": 1,
+    "outgoing": 8
+  },
+  {
+    "id": "21b1b529-e904-4779-b2de-083a104d3094",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-11",
+    "beginning_balance": 13,
+    "ending_balance": 9,
+    "incoming": 3,
+    "outgoing": 7
+  },
+  {
+    "id": "7ab6540c-8e8a-43cd-b48f-51aa3800a2ad",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-11",
+    "beginning_balance": 12,
+    "ending_balance": 10,
+    "incoming": 3,
+    "outgoing": 5
+  },
+  {
+    "id": "02d2a7f6-ebb0-4f61-877f-9becfd7a08f6",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-11",
+    "beginning_balance": 19,
+    "ending_balance": 24,
+    "incoming": 5,
+    "outgoing": 0
+  },
+  {
+    "id": "edf6148d-990b-4602-bdfb-3c540d419272",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "date": "2025-01-11",
+    "beginning_balance": 8,
+    "ending_balance": 2,
+    "incoming": 5,
+    "outgoing": 11
+  },
+  {
+    "id": "a3d068f0-a444-4f45-8f98-8bf41173fa6c",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-11",
+    "beginning_balance": 15,
+    "ending_balance": 18,
+    "incoming": 9,
+    "outgoing": 6
+  },
+  {
+    "id": "b3893767-f91f-4097-bd34-3ef883f580f1",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-11",
+    "beginning_balance": 5,
+    "ending_balance": 6,
+    "incoming": 9,
+    "outgoing": 8
+  },
+  {
+    "id": "be69c57e-924f-4754-867a-2f4d964809b6",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-11",
+    "beginning_balance": 19,
+    "ending_balance": 26,
+    "incoming": 8,
+    "outgoing": 1
+  },
+  {
+    "id": "f392d677-0297-4df5-80a1-fc1ba0596b91",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-11",
+    "beginning_balance": 12,
+    "ending_balance": 2,
+    "incoming": 3,
+    "outgoing": 13
+  },
+  {
+    "id": "7d375722-8717-42d6-95b8-ade78c585328",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-11",
+    "beginning_balance": 14,
+    "ending_balance": 15,
+    "incoming": 2,
+    "outgoing": 1
+  },
+  {
+    "id": "f069eed3-50a2-4a56-8790-14f67ec104db",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-11",
+    "beginning_balance": 7,
+    "ending_balance": 8,
+    "incoming": 1,
+    "outgoing": 0
+  },
+  {
+    "id": "285ee74e-2ef3-4413-8340-be3f318bfb55",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-11",
+    "beginning_balance": 12,
+    "ending_balance": 21,
+    "incoming": 9,
+    "outgoing": 0
+  },
+  {
+    "id": "1b9c32a1-c31d-4205-ad00-ea487864594d",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-11",
+    "beginning_balance": 17,
+    "ending_balance": 18,
+    "incoming": 10,
+    "outgoing": 9
+  },
+  {
+    "id": "dbb866bf-ea2a-492b-a234-68ed3bc6c0af",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-11",
+    "beginning_balance": 8,
+    "ending_balance": 12,
+    "incoming": 4,
+    "outgoing": 0
+  },
+  {
+    "id": "d824ef66-0d87-4ee0-9e99-bc330214e26b",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-11",
+    "beginning_balance": 19,
+    "ending_balance": 21,
+    "incoming": 9,
+    "outgoing": 7
+  },
+  {
+    "id": "12ac5d9d-c3d4-4a34-9ef8-9b93fa6a5d25",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-11",
+    "beginning_balance": 16,
+    "ending_balance": 4,
+    "incoming": 3,
+    "outgoing": 15
+  },
+  {
+    "id": "1a8ef6e3-b223-47fd-886b-7b2912a3bf55",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-11",
+    "beginning_balance": 19,
+    "ending_balance": 26,
+    "incoming": 10,
+    "outgoing": 3
+  },
+  {
+    "id": "0319ba5d-1397-4ef3-8cb2-e62b19c65d5b",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-11",
+    "beginning_balance": 13,
+    "ending_balance": 17,
+    "incoming": 9,
+    "outgoing": 5
+  },
+  {
+    "id": "08f07360-76cf-42ad-b1aa-4869f5819a00",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-11",
+    "beginning_balance": 8,
+    "ending_balance": 7,
+    "incoming": 4,
+    "outgoing": 5
+  },
+  {
+    "id": "dbc9108c-7da2-49e5-8268-c3de4482d1cb",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "date": "2025-01-11",
+    "beginning_balance": 14,
+    "ending_balance": 1,
+    "incoming": 1,
+    "outgoing": 14
+  },
+  {
+    "id": "00046c77-752f-4977-9de5-d07d1c264f11",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-11",
+    "beginning_balance": 18,
+    "ending_balance": 10,
+    "incoming": 6,
+    "outgoing": 14
+  },
+  {
+    "id": "b20cbe24-630c-4550-b46a-5ba7cc308027",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-11",
+    "beginning_balance": 16,
+    "ending_balance": 7,
+    "incoming": 0,
+    "outgoing": 9
+  },
+  {
+    "id": "18100a00-5aa8-4021-bcaf-130c13128463",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-11",
+    "beginning_balance": 5,
+    "ending_balance": 0,
+    "incoming": 7,
+    "outgoing": 12
+  },
+  {
+    "id": "25fb9165-f0a2-4897-8a87-ca286d86c4d3",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-11",
+    "beginning_balance": 13,
+    "ending_balance": 13,
+    "incoming": 8,
+    "outgoing": 8
+  },
+  {
+    "id": "c7505323-b8ee-4814-9c36-d95a15255508",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-11",
+    "beginning_balance": 16,
+    "ending_balance": 6,
+    "incoming": 5,
+    "outgoing": 15
+  },
+  {
+    "id": "10b2b683-a48f-4583-a048-9c15ef6804b4",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-11",
+    "beginning_balance": 16,
+    "ending_balance": 16,
+    "incoming": 4,
+    "outgoing": 4
+  },
+  {
+    "id": "d149ed9f-f863-48fd-b76e-c2dd677706f2",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-11",
+    "beginning_balance": 9,
+    "ending_balance": 6,
+    "incoming": 2,
+    "outgoing": 5
+  },
+  {
+    "id": "6713ee5e-c46d-4e29-aba5-20281db2939e",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-11",
+    "beginning_balance": 14,
+    "ending_balance": 22,
+    "incoming": 8,
+    "outgoing": 0
+  },
+  {
+    "id": "33cd828b-1df2-4b57-933a-d4ad169b92c9",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-11",
+    "beginning_balance": 17,
+    "ending_balance": 10,
+    "incoming": 8,
+    "outgoing": 15
+  },
+  {
+    "id": "f58c956d-09cd-4921-942d-b865353f6f02",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-11",
+    "beginning_balance": 19,
+    "ending_balance": 15,
+    "incoming": 3,
+    "outgoing": 7
+  },
+  {
+    "id": "0bd9cd6e-785d-4254-9af6-690c416a1501",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-11",
+    "beginning_balance": 10,
+    "ending_balance": 13,
+    "incoming": 6,
+    "outgoing": 3
+  },
+  {
+    "id": "dd289857-6ed4-4be9-ba9d-05f3791f188b",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-11",
+    "beginning_balance": 15,
+    "ending_balance": 14,
+    "incoming": 9,
+    "outgoing": 10
+  },
+  {
+    "id": "f035a2a3-7ccb-427a-964b-4d0d96a293bc",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-11",
+    "beginning_balance": 12,
+    "ending_balance": 16,
+    "incoming": 6,
+    "outgoing": 2
+  },
+  {
+    "id": "329c2fbe-9ec5-4d6f-a1d2-396f40849cec",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-11",
+    "beginning_balance": 18,
+    "ending_balance": 24,
+    "incoming": 7,
+    "outgoing": 1
+  },
+  {
+    "id": "573a80e8-3a2d-4895-824a-14b1aba297ef",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "date": "2025-01-11",
+    "beginning_balance": 19,
+    "ending_balance": 7,
+    "incoming": 1,
+    "outgoing": 13
+  }
+]

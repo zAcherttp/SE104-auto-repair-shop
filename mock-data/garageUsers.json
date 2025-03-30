@@ -1,0 +1,77 @@
+[
+  {
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "user_id": "391e0a92-eefc-4cd1-928d-1cc2525875ee",
+    "role_id": "4cfe60f8-766f-4c14-9b05-f346d1bcdcbe"
+  },
+  {
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "user_id": "777dd56b-2a50-4d0f-a926-63b45365ff65",
+    "role_id": "c7aadb91-5d12-457d-82b8-0d679ed95b29"
+  },
+  {
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "user_id": "7c444f83-ec9a-44ee-8755-c821b94733a0",
+    "role_id": "aa4f3627-16dd-4c2f-ab05-75b2992f883b"
+  },
+  {
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "user_id": "1f566afa-c1ec-41b3-8c5d-f021ace3a410",
+    "role_id": "aa4f3627-16dd-4c2f-ab05-75b2992f883b"
+  },
+  {
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "user_id": "488bbe19-df6c-40c9-84bf-8b5b19d35fdb",
+    "role_id": "aa4f3627-16dd-4c2f-ab05-75b2992f883b"
+  },
+  {
+    "garage_id": "de6ad599-799a-4983-949c-f2d9353514fa",
+    "user_id": "8915e7ca-f48c-4286-a36b-73e1db99225e",
+    "role_id": "aa4f3627-16dd-4c2f-ab05-75b2992f883b"
+  },
+  {
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "user_id": "b591bb98-c174-4f56-b124-bf18b475fd79",
+    "role_id": "4cfe60f8-766f-4c14-9b05-f346d1bcdcbe"
+  },
+  {
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "user_id": "3788b1ec-831c-44a8-8232-b0df4872684d",
+    "role_id": "c7aadb91-5d12-457d-82b8-0d679ed95b29"
+  },
+  {
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "user_id": "cc65dd50-acc5-4a27-9c49-b405ff3ee92e",
+    "role_id": "aa4f3627-16dd-4c2f-ab05-75b2992f883b"
+  },
+  {
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "user_id": "28f847b0-4a11-4d4a-bbf8-846eaaeec44d",
+    "role_id": "aa4f3627-16dd-4c2f-ab05-75b2992f883b"
+  },
+  {
+    "garage_id": "25c898c9-5513-455f-88a7-00aae9f065e0",
+    "user_id": "8f957610-2988-4cc0-8b30-adcc736c5457",
+    "role_id": "aa4f3627-16dd-4c2f-ab05-75b2992f883b"
+  },
+  {
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "user_id": "246b71a6-36ec-4645-9546-d06416b13004",
+    "role_id": "4cfe60f8-766f-4c14-9b05-f346d1bcdcbe"
+  },
+  {
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "user_id": "a94751a4-cd76-4efd-ae67-3db8520e61e4",
+    "role_id": "c7aadb91-5d12-457d-82b8-0d679ed95b29"
+  },
+  {
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "user_id": "28f847b0-4a11-4d4a-bbf8-846eaaeec44d",
+    "role_id": "aa4f3627-16dd-4c2f-ab05-75b2992f883b"
+  },
+  {
+    "garage_id": "552a7795-d391-4e85-9a7e-465dc29124f2",
+    "user_id": "7c444f83-ec9a-44ee-8755-c821b94733a0",
+    "role_id": "aa4f3627-16dd-4c2f-ab05-75b2992f883b"
+  }
+]

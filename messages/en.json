@@ -1,0 +1,19 @@
+{
+  "appName": "GarageFlow",
+  "locale": {
+    "en": "English",
+    "vi": "Vietnamese"
+  },
+  "login": {
+    "welcome-back": "Welcome back",
+    "email": "Email",
+    "login-to-your-account": "Enter your email below to login to your account",
+    "email-placeholder": "m@example.com",
+    "password": "Password",
+    "forgot-password": "Forgot your password?",
+    "login": "Login",
+    "no-account": "Don't have an account?",
+    "signup": "Sign up"
+  },
+  "signup": {}
+}

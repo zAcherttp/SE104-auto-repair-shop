@@ -1,0 +1,402 @@
+[
+  {
+    "id": "29eb5b0b-ebef-4e9a-aa68-354e56e8c5a9",
+    "license_plate": "WPO 924",
+    "car_brand_id": "382cdafe-aafb-4052-9c25-5cf8733ca1ac",
+    "customer_id": "62a33ff8-363f-4318-8e64-942277e2ebf8",
+    "model": "Civic",
+    "year": 2015
+  },
+  {
+    "id": "8a0d0348-b88c-41a2-b18b-ee39635defd2",
+    "license_plate": "BRN 259",
+    "car_brand_id": "c052340e-6782-4625-bc5a-36344e5426e7",
+    "customer_id": "3fb138a4-9c82-4cdb-b093-50df67e5941c",
+    "model": "Explorer",
+    "year": 2019
+  },
+  {
+    "id": "b505b487-737a-4daf-8916-702200e98119",
+    "license_plate": "YNC 788",
+    "car_brand_id": "65e2813b-df58-4a67-bc7b-4de0da97a1d9",
+    "customer_id": "7d6d25df-0364-4e85-98fa-bc30714a57d5",
+    "model": "Corolla",
+    "year": 2004
+  },
+  {
+    "id": "bf4e4220-a61d-46b6-8071-75cc58ca8434",
+    "license_plate": "LDD 462",
+    "car_brand_id": "7aea892b-88bb-4d8a-a592-5d40a015f64e",
+    "customer_id": "7d6d25df-0364-4e85-98fa-bc30714a57d5",
+    "model": "Q7",
+    "year": 2017
+  },
+  {
+    "id": "1c34dc3f-4de3-494c-a5d3-97bef86943ba",
+    "license_plate": "WPB 724",
+    "car_brand_id": "31007a25-4cba-4f21-a9a2-f17dccd9c9c2",
+    "customer_id": "8e2fb478-61be-4441-8f39-96df0164aa30",
+    "model": "Tahoe",
+    "year": 2000
+  },
+  {
+    "id": "ed97e92a-36bf-44e9-b363-a374e08a927e",
+    "license_plate": "ZSC 311",
+    "car_brand_id": "b28b63bc-2974-4303-9db0-6de31b29ab41",
+    "customer_id": "3fb138a4-9c82-4cdb-b093-50df67e5941c",
+    "model": "Sonata",
+    "year": 2016
+  },
+  {
+    "id": "8d42057a-7776-431c-bd9a-b5714c93774e",
+    "license_plate": "VSK 942",
+    "car_brand_id": "7aea892b-88bb-4d8a-a592-5d40a015f64e",
+    "customer_id": "13ab4777-1dd0-4f82-a67e-facdea160476",
+    "model": "A6",
+    "year": 2005
+  },
+  {
+    "id": "aba1a6a7-6e18-4d5c-a4fc-ef86e04548a3",
+    "license_plate": "RBX 590",
+    "car_brand_id": "7bfafc45-4376-463c-b13e-a5dfc353f1b9",
+    "customer_id": "8e2fb478-61be-4441-8f39-96df0164aa30",
+    "model": "3 Series",
+    "year": 2011
+  },
+  {
+    "id": "bdc35160-c16d-4566-965b-a1d0efe94667",
+    "license_plate": "OBB 738",
+    "car_brand_id": "b564bd4a-c250-4839-9133-5135dd20532d",
+    "customer_id": "9a36c2a2-8db8-480d-ba5b-d59581c57244",
+    "model": "S-Class",
+    "year": 2008
+  },
+  {
+    "id": "859769d4-15de-4677-a954-2c77eb7b4e07",
+    "license_plate": "YMM 455",
+    "car_brand_id": "7bfafc45-4376-463c-b13e-a5dfc353f1b9",
+    "customer_id": "10038f11-08d3-4028-ac66-3431ea6f5ff5",
+    "model": "3 Series",
+    "year": 2021
+  },
+  {
+    "id": "20e44233-24d2-487d-b8e0-8b70ae68c256",
+    "license_plate": "VLH 117",
+    "car_brand_id": "7bfafc45-4376-463c-b13e-a5dfc353f1b9",
+    "customer_id": "e5cd9441-ef74-4c2b-b275-9cc953cec489",
+    "model": "X3",
+    "year": 2005
+  },
+  {
+    "id": "c680f903-d760-4a7d-9e25-74126ac8989a",
+    "license_plate": "CHE 768",
+    "car_brand_id": "76b4f69e-3020-445b-9557-ba057b391e5b",
+    "customer_id": "7d6d25df-0364-4e85-98fa-bc30714a57d5",
+    "model": "Altima",
+    "year": 2020
+  },
+  {
+    "id": "23b9ebb2-a9d5-42a6-93d7-9292cb85a1da",
+    "license_plate": "AVJ 831",
+    "car_brand_id": "b28b63bc-2974-4303-9db0-6de31b29ab41",
+    "customer_id": "6a4ae844-2b79-46a7-9ad5-e4a440ba2651",
+    "model": "Tucson",
+    "year": 2006
+  },
+  {
+    "id": "e7ff5d0f-a5b0-4e8e-a338-7e290b5ea5f0",
+    "license_plate": "VQN 283",
+    "car_brand_id": "31007a25-4cba-4f21-a9a2-f17dccd9c9c2",
+    "customer_id": "27661326-e93f-42ea-89e5-56b0df2b7cba",
+    "model": "Malibu",
+    "year": 2019
+  },
+  {
+    "id": "cd719158-d0cd-4cb4-8274-e7a1652e4408",
+    "license_plate": "TSZ 254",
+    "car_brand_id": "65e2813b-df58-4a67-bc7b-4de0da97a1d9",
+    "customer_id": "8e2fb478-61be-4441-8f39-96df0164aa30",
+    "model": "Corolla",
+    "year": 2008
+  },
+  {
+    "id": "6d520c86-f16d-4c52-b4bc-732681478290",
+    "license_plate": "YHX 344",
+    "car_brand_id": "b28b63bc-2974-4303-9db0-6de31b29ab41",
+    "customer_id": "6a4ae844-2b79-46a7-9ad5-e4a440ba2651",
+    "model": "Tucson",
+    "year": 2022
+  },
+  {
+    "id": "3faf8c3c-55cd-4d07-8970-1d7d30bd887a",
+    "license_plate": "GHX 011",
+    "car_brand_id": "7aea892b-88bb-4d8a-a592-5d40a015f64e",
+    "customer_id": "5a2c70c7-ef09-4d39-8b62-0ecc4169aca7",
+    "model": "Q5",
+    "year": 2009
+  },
+  {
+    "id": "2a78e845-0950-4c83-829a-e965d4c3e819",
+    "license_plate": "FCE 714",
+    "car_brand_id": "382cdafe-aafb-4052-9c25-5cf8733ca1ac",
+    "customer_id": "5723e9ed-6a44-41c0-bef3-71e445ee14ca",
+    "model": "Accord",
+    "year": 2020
+  },
+  {
+    "id": "b1d3bff4-be3c-4631-98fe-4b9d4f7de1d0",
+    "license_plate": "UAW 320",
+    "car_brand_id": "7aea892b-88bb-4d8a-a592-5d40a015f64e",
+    "customer_id": "e172e133-9b70-4777-ae62-9b4667d6e8aa",
+    "model": "A4",
+    "year": 2005
+  },
+  {
+    "id": "031d8218-c377-4ffe-9379-696c4c124b7c",
+    "license_plate": "SRE 891",
+    "car_brand_id": "76b4f69e-3020-445b-9557-ba057b391e5b",
+    "customer_id": "6dec5287-297f-4cdd-9154-f0f0bbe9e5bb",
+    "model": "Altima",
+    "year": 2016
+  },
+  {
+    "id": "a580dbfe-512e-441a-a42d-bbb21c0a0910",
+    "license_plate": "EZL 473",
+    "car_brand_id": "76b4f69e-3020-445b-9557-ba057b391e5b",
+    "customer_id": "43485549-17c7-4595-aed5-f673dc02e6eb",
+    "model": "Rogue",
+    "year": 2000
+  },
+  {
+    "id": "0eb2bcf8-8c8f-4b4d-8f79-c279b4904c77",
+    "license_plate": "PAH 275",
+    "car_brand_id": "7aea892b-88bb-4d8a-a592-5d40a015f64e",
+    "customer_id": "27661326-e93f-42ea-89e5-56b0df2b7cba",
+    "model": "Q7",
+    "year": 2017
+  },
+  {
+    "id": "bb6ae0a9-bc04-4932-8809-28fb5a2016df",
+    "license_plate": "DCO 355",
+    "car_brand_id": "7bfafc45-4376-463c-b13e-a5dfc353f1b9",
+    "customer_id": "5723e9ed-6a44-41c0-bef3-71e445ee14ca",
+    "model": "X3",
+    "year": 2001
+  },
+  {
+    "id": "edf7ab09-9b8e-4e77-a843-2808ed259ba8",
+    "license_plate": "PRF 622",
+    "car_brand_id": "519e3bac-1217-4d1e-8247-2ece275b1517",
+    "customer_id": "6a4ae844-2b79-46a7-9ad5-e4a440ba2651",
+    "model": "Optima",
+    "year": 2023
+  },
+  {
+    "id": "a26dd281-fa4f-4dbf-ad03-73032c5afa44",
+    "license_plate": "WON 112",
+    "car_brand_id": "b28b63bc-2974-4303-9db0-6de31b29ab41",
+    "customer_id": "cb3a8802-3dc6-4903-a45c-7b67c810bb34",
+    "model": "Tucson",
+    "year": 2012
+  },
+  {
+    "id": "1f56e242-e891-478f-8f75-733020ed90e4",
+    "license_plate": "CEN 731",
+    "car_brand_id": "c052340e-6782-4625-bc5a-36344e5426e7",
+    "customer_id": "3fb138a4-9c82-4cdb-b093-50df67e5941c",
+    "model": "F-150",
+    "year": 2001
+  },
+  {
+    "id": "3717cecf-3e20-4ccc-8e28-c46199c41a97",
+    "license_plate": "CRQ 262",
+    "car_brand_id": "31007a25-4cba-4f21-a9a2-f17dccd9c9c2",
+    "customer_id": "e172e133-9b70-4777-ae62-9b4667d6e8aa",
+    "model": "Equinox",
+    "year": 2019
+  },
+  {
+    "id": "d8ecf902-9c8b-498c-845d-a5500c50a300",
+    "license_plate": "DHS 136",
+    "car_brand_id": "65e2813b-df58-4a67-bc7b-4de0da97a1d9",
+    "customer_id": "b17cdc90-3257-4736-984c-29f46a0f5d5d",
+    "model": "RAV4",
+    "year": 2009
+  },
+  {
+    "id": "a2b4e91a-3aa1-4014-8a06-42aa9b0a71d2",
+    "license_plate": "HQG 099",
+    "car_brand_id": "b28b63bc-2974-4303-9db0-6de31b29ab41",
+    "customer_id": "798aea64-8c2d-4afa-a6b9-d808cf7f3ad4",
+    "model": "Tucson",
+    "year": 2008
+  },
+  {
+    "id": "f4c8f9ab-d66b-4ae2-9457-a4449080de92",
+    "license_plate": "QZY 979",
+    "car_brand_id": "7bfafc45-4376-463c-b13e-a5dfc353f1b9",
+    "customer_id": "9a36c2a2-8db8-480d-ba5b-d59581c57244",
+    "model": "7 Series",
+    "year": 2006
+  },
+  {
+    "id": "9f498d9a-4e11-4e5d-a1df-626eb8b3e062",
+    "license_plate": "CFK 830",
+    "car_brand_id": "382cdafe-aafb-4052-9c25-5cf8733ca1ac",
+    "customer_id": "98700410-2ee9-4841-b410-9e34516abb77",
+    "model": "Civic",
+    "year": 2002
+  },
+  {
+    "id": "94c680f3-dc10-4d26-9950-bb621afeaa32",
+    "license_plate": "JBY 492",
+    "car_brand_id": "7aea892b-88bb-4d8a-a592-5d40a015f64e",
+    "customer_id": "6a4ae844-2b79-46a7-9ad5-e4a440ba2651",
+    "model": "Q7",
+    "year": 2006
+  },
+  {
+    "id": "681f1c4f-c23c-4ef4-9c3b-888d8a60bd12",
+    "license_plate": "BBR 553",
+    "car_brand_id": "519e3bac-1217-4d1e-8247-2ece275b1517",
+    "customer_id": "798aea64-8c2d-4afa-a6b9-d808cf7f3ad4",
+    "model": "Forte",
+    "year": 2004
+  },
+  {
+    "id": "bc8e9660-c716-4016-bfca-7c9c58c9eeb5",
+    "license_plate": "NVQ 143",
+    "car_brand_id": "b564bd4a-c250-4839-9133-5135dd20532d",
+    "customer_id": "4bf97793-44ba-4dab-a6fc-c1789fef1ade",
+    "model": "GLC",
+    "year": 2010
+  },
+  {
+    "id": "bbc25487-fc35-4810-a844-2e4c91f45945",
+    "license_plate": "RNF 159",
+    "car_brand_id": "b28b63bc-2974-4303-9db0-6de31b29ab41",
+    "customer_id": "98700410-2ee9-4841-b410-9e34516abb77",
+    "model": "Kona",
+    "year": 2001
+  },
+  {
+    "id": "9978585e-237f-4cc1-82ab-146f18c2df1a",
+    "license_plate": "ZRJ 772",
+    "car_brand_id": "76b4f69e-3020-445b-9557-ba057b391e5b",
+    "customer_id": "e5cd9441-ef74-4c2b-b275-9cc953cec489",
+    "model": "Altima",
+    "year": 2005
+  },
+  {
+    "id": "e736ac19-d229-4ca2-a429-a06156af30bb",
+    "license_plate": "URE 617",
+    "car_brand_id": "31007a25-4cba-4f21-a9a2-f17dccd9c9c2",
+    "customer_id": "47561434-6708-4484-9c45-3ab51072ec47",
+    "model": "Suburban",
+    "year": 2009
+  },
+  {
+    "id": "5363a4cb-988e-44cd-bcea-eca1408718ce",
+    "license_plate": "LCV 711",
+    "car_brand_id": "519e3bac-1217-4d1e-8247-2ece275b1517",
+    "customer_id": "8e2fb478-61be-4441-8f39-96df0164aa30",
+    "model": "Optima",
+    "year": 2013
+  },
+  {
+    "id": "84b18729-cb8e-4bf4-a5c5-ccea09a5627e",
+    "license_plate": "QYR 345",
+    "car_brand_id": "76b4f69e-3020-445b-9557-ba057b391e5b",
+    "customer_id": "7bc8537f-2de7-4678-a159-6896b58045bf",
+    "model": "Frontier",
+    "year": 2020
+  },
+  {
+    "id": "59da6513-768a-41d9-bd14-80ba21ea0c15",
+    "license_plate": "AHE 968",
+    "car_brand_id": "31007a25-4cba-4f21-a9a2-f17dccd9c9c2",
+    "customer_id": "b17cdc90-3257-4736-984c-29f46a0f5d5d",
+    "model": "Silverado",
+    "year": 2005
+  },
+  {
+    "id": "1fcc0474-7d72-4d91-b411-fc3b36448678",
+    "license_plate": "ZFS 135",
+    "car_brand_id": "7aea892b-88bb-4d8a-a592-5d40a015f64e",
+    "customer_id": "af1029e0-72fc-449e-ad44-68171c042cae",
+    "model": "A4",
+    "year": 2000
+  },
+  {
+    "id": "f5218c7b-211a-405d-a7b2-a91fc176e78b",
+    "license_plate": "RCN 030",
+    "car_brand_id": "b564bd4a-c250-4839-9133-5135dd20532d",
+    "customer_id": "10038f11-08d3-4028-ac66-3431ea6f5ff5",
+    "model": "E-Class",
+    "year": 2005
+  },
+  {
+    "id": "7581523d-aa60-4a05-8eb1-d0230e36bca7",
+    "license_plate": "ROF 552",
+    "car_brand_id": "31007a25-4cba-4f21-a9a2-f17dccd9c9c2",
+    "customer_id": "61024342-fac0-4365-832b-b3e2c117a28b",
+    "model": "Silverado",
+    "year": 2002
+  },
+  {
+    "id": "4923acd0-1c85-40cb-814d-5f2de6e6090a",
+    "license_plate": "RSP 560",
+    "car_brand_id": "65e2813b-df58-4a67-bc7b-4de0da97a1d9",
+    "customer_id": "43485549-17c7-4595-aed5-f673dc02e6eb",
+    "model": "RAV4",
+    "year": 2002
+  },
+  {
+    "id": "d8620f3a-c0d8-4957-81cb-283ce69e9775",
+    "license_plate": "XLJ 427",
+    "car_brand_id": "76b4f69e-3020-445b-9557-ba057b391e5b",
+    "customer_id": "8e2fb478-61be-4441-8f39-96df0164aa30",
+    "model": "Sentra",
+    "year": 2000
+  },
+  {
+    "id": "fce9e97b-7f86-4e63-92c0-550b52da69c6",
+    "license_plate": "ZJC 329",
+    "car_brand_id": "c052340e-6782-4625-bc5a-36344e5426e7",
+    "customer_id": "47561434-6708-4484-9c45-3ab51072ec47",
+    "model": "F-150",
+    "year": 2010
+  },
+  {
+    "id": "d6b28d72-da60-4c7b-9b39-ae3f3d86951d",
+    "license_plate": "GVJ 716",
+    "car_brand_id": "7bfafc45-4376-463c-b13e-a5dfc353f1b9",
+    "customer_id": "52934666-6a1d-4039-8c5b-27a14820bb91",
+    "model": "7 Series",
+    "year": 2000
+  },
+  {
+    "id": "4ea41adb-238f-45e9-a0d0-718134a4770e",
+    "license_plate": "HCO 668",
+    "car_brand_id": "7bfafc45-4376-463c-b13e-a5dfc353f1b9",
+    "customer_id": "98700410-2ee9-4841-b410-9e34516abb77",
+    "model": "X5",
+    "year": 2008
+  },
+  {
+    "id": "c4e5bed2-17e3-42fc-b6fb-c9c4c238852e",
+    "license_plate": "XQJ 830",
+    "car_brand_id": "519e3bac-1217-4d1e-8247-2ece275b1517",
+    "customer_id": "498a6c5d-8cbc-4fa4-b818-d1563bb0e5cc",
+    "model": "Forte",
+    "year": 2001
+  },
+  {
+    "id": "0d994e40-7710-4fac-8e31-c000552f3f8e",
+    "license_plate": "KGH 208",
+    "car_brand_id": "76b4f69e-3020-445b-9557-ba057b391e5b",
+    "customer_id": "cb3a8802-3dc6-4903-a45c-7b67c810bb34",
+    "model": "Rogue",
+    "year": 2018
+  }
+]

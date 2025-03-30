@@ -1,0 +1,2942 @@
+[
+  {
+    "id": "4319c09e-e850-4189-a652-07dead06144c",
+    "repair_order_id": "a838549e-b46d-48cf-8c4e-2f3eb98065cf",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "labor_id": "890d3e91-9690-427f-a351-374ced4652fa",
+    "description": "Diagnostic Service with Starter Motor",
+    "part_quantity": 2,
+    "total_amount": 474.98,
+    "status": "Completed"
+  },
+  {
+    "id": "5d5c990b-ed89-4838-aa3e-9bbbddcf8922",
+    "repair_order_id": "a838549e-b46d-48cf-8c4e-2f3eb98065cf",
+    "part_id": null,
+    "labor_id": "c5699909-9045-4d52-9a8d-f1102c17624c",
+    "description": "Oil Change",
+    "part_quantity": null,
+    "total_amount": 45,
+    "status": "Pending"
+  },
+  {
+    "id": "775433d6-35a9-4f69-9584-976ae847ab76",
+    "repair_order_id": "a838549e-b46d-48cf-8c4e-2f3eb98065cf",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "labor_id": "c5699909-9045-4d52-9a8d-f1102c17624c",
+    "description": "Oil Change with Brake Pads (Rear)",
+    "part_quantity": 2,
+    "total_amount": 204.98,
+    "status": "Completed"
+  },
+  {
+    "id": "8ef290ee-9826-4d96-9255-126e6e1cb391",
+    "repair_order_id": "a838549e-b46d-48cf-8c4e-2f3eb98065cf",
+    "part_id": null,
+    "labor_id": "3a23db72-7e17-4bd6-80a8-e27f1ebeeb9f",
+    "description": "Brake Pad Replacement (Rear)",
+    "part_quantity": null,
+    "total_amount": 110,
+    "status": "Completed"
+  },
+  {
+    "id": "6b7a743e-9f29-4c40-ba25-8db2d31be73f",
+    "repair_order_id": "0cdf56a1-53bc-451a-9987-1ca8e6f54bb2",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "labor_id": "440c79f9-6e0a-48dd-8724-2a65f6e97c32",
+    "description": "Fuel Pump Replacement with Water Pump",
+    "part_quantity": 2,
+    "total_amount": 429.98,
+    "status": "Pending"
+  },
+  {
+    "id": "97ab94b6-06ea-4e1e-8fe3-ec5ce587c32e",
+    "repair_order_id": "0cdf56a1-53bc-451a-9987-1ca8e6f54bb2",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "labor_id": "f8e48bbd-67c2-4548-bfb6-01e64b818ac6",
+    "description": "Battery Replacement with Starter Motor",
+    "part_quantity": 1,
+    "total_amount": 249.99,
+    "status": "Completed"
+  },
+  {
+    "id": "31c2593e-c59d-454e-a9df-0e96814b85d7",
+    "repair_order_id": "0cdf56a1-53bc-451a-9987-1ca8e6f54bb2",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "labor_id": null,
+    "description": "with Brake Pads (Front)",
+    "part_quantity": 3,
+    "total_amount": 269.96999999999997,
+    "status": "Completed"
+  },
+  {
+    "id": "33268ec9-9b59-4cec-95d4-01bfdb1e8a16",
+    "repair_order_id": "0cdf56a1-53bc-451a-9987-1ca8e6f54bb2",
+    "part_id": null,
+    "labor_id": "1c541dc7-8ecd-4e3f-b200-482a6252d576",
+    "description": "Spark Plug Replacement",
+    "part_quantity": null,
+    "total_amount": 90,
+    "status": "Completed"
+  },
+  {
+    "id": "b34634e3-3587-4d1d-9d48-28dde5e327c6",
+    "repair_order_id": "2b56fe87-0000-4942-89d2-44261a813f59",
+    "part_id": null,
+    "labor_id": "c5699909-9045-4d52-9a8d-f1102c17624c",
+    "description": "Oil Change",
+    "part_quantity": null,
+    "total_amount": 45,
+    "status": "Completed"
+  },
+  {
+    "id": "23f3afcc-8f16-4318-965d-6ead6678c75f",
+    "repair_order_id": "2b56fe87-0000-4942-89d2-44261a813f59",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "labor_id": "9bc9b37a-0fb4-4e01-8bbe-139f8096029b",
+    "description": "Timing Belt Replacement with Air Filter",
+    "part_quantity": 3,
+    "total_amount": 409.97,
+    "status": "Pending"
+  },
+  {
+    "id": "347f1e4c-1edb-4326-92af-bbf5b9b4ded4",
+    "repair_order_id": "2b56fe87-0000-4942-89d2-44261a813f59",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "labor_id": "2d639c2b-02a2-4a32-becd-aa161bf6e62b",
+    "description": "Brake Rotor Replacement (Front) with Oxygen Sensor",
+    "part_quantity": 2,
+    "total_amount": 309.98,
+    "status": "Completed"
+  },
+  {
+    "id": "d43c4411-3b4a-4fa7-b2cb-d87bbba295c0",
+    "repair_order_id": "2b56fe87-0000-4942-89d2-44261a813f59",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "labor_id": "06494e79-a752-4b27-9843-abbd827a4979",
+    "description": "Starter Motor Replacement with Spark Plugs (Set)",
+    "part_quantity": 2,
+    "total_amount": 259.98,
+    "status": "Pending"
+  },
+  {
+    "id": "622128db-cf33-484d-8768-66918de7c49d",
+    "repair_order_id": "26edc4d5-5102-48cf-8f24-afee69b042ab",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "labor_id": "440c79f9-6e0a-48dd-8724-2a65f6e97c32",
+    "description": "Fuel Pump Replacement with Brake Rotors (Front)",
+    "part_quantity": 2,
+    "total_amount": 509.98,
+    "status": "Completed"
+  },
+  {
+    "id": "5618b5f1-9a5e-4190-a271-d457566c9f21",
+    "repair_order_id": "e7035433-71d4-42fe-8cd4-8423c3a7661a",
+    "part_id": null,
+    "labor_id": "a6f4a5d4-db3b-4e24-bac1-c90e5ac291a5",
+    "description": "Radiator Replacement",
+    "part_quantity": null,
+    "total_amount": 200,
+    "status": "Pending"
+  },
+  {
+    "id": "c5fa697b-c5ad-4319-97ba-ffa96b89fa09",
+    "repair_order_id": "e7035433-71d4-42fe-8cd4-8423c3a7661a",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "labor_id": "c5699909-9045-4d52-9a8d-f1102c17624c",
+    "description": "Oil Change with Air Filter",
+    "part_quantity": 3,
+    "total_amount": 104.97,
+    "status": "Pending"
+  },
+  {
+    "id": "a91dbf79-be5f-4e44-acb9-1c63337c54fb",
+    "repair_order_id": "e7035433-71d4-42fe-8cd4-8423c3a7661a",
+    "part_id": null,
+    "labor_id": "9bc9b37a-0fb4-4e01-8bbe-139f8096029b",
+    "description": "Timing Belt Replacement",
+    "part_quantity": null,
+    "total_amount": 350,
+    "status": "Pending"
+  },
+  {
+    "id": "ac429e9b-b898-4df7-a8e0-6e43856535f1",
+    "repair_order_id": "9ea11579-378e-439a-9642-e3c18605af3b",
+    "part_id": null,
+    "labor_id": "2d639c2b-02a2-4a32-becd-aa161bf6e62b",
+    "description": "Brake Rotor Replacement (Front)",
+    "part_quantity": null,
+    "total_amount": 150,
+    "status": "Pending"
+  },
+  {
+    "id": "187c0b4a-4895-4592-895d-cbc37aea978e",
+    "repair_order_id": "9ea11579-378e-439a-9642-e3c18605af3b",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "labor_id": "f8e48bbd-67c2-4548-bfb6-01e64b818ac6",
+    "description": "Battery Replacement with Fuel Pump",
+    "part_quantity": 2,
+    "total_amount": 309.98,
+    "status": "Pending"
+  },
+  {
+    "id": "f4d74493-4c43-438e-a319-334a46d75aa9",
+    "repair_order_id": "f328082e-38b7-403c-874f-ed82d5731d46",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "labor_id": "49400891-7c07-49e9-a4db-19627276aa13",
+    "description": "Water Pump Replacement with Oil Filter",
+    "part_quantity": 3,
+    "total_amount": 208.97,
+    "status": "Completed"
+  },
+  {
+    "id": "b264b521-cb12-409c-9d22-56d75e9ea5c6",
+    "repair_order_id": "f328082e-38b7-403c-874f-ed82d5731d46",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "labor_id": "440c79f9-6e0a-48dd-8724-2a65f6e97c32",
+    "description": "Fuel Pump Replacement with Oil Filter",
+    "part_quantity": 2,
+    "total_amount": 275.98,
+    "status": "Completed"
+  },
+  {
+    "id": "90164b5b-ad96-4427-83e3-9dcac02bcfb9",
+    "repair_order_id": "f328082e-38b7-403c-874f-ed82d5731d46",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "labor_id": null,
+    "description": "with Oxygen Sensor",
+    "part_quantity": 3,
+    "total_amount": 239.96999999999997,
+    "status": "Completed"
+  },
+  {
+    "id": "bbd75906-c176-4758-af36-a010758de369",
+    "repair_order_id": "f328082e-38b7-403c-874f-ed82d5731d46",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "labor_id": "f8e48bbd-67c2-4548-bfb6-01e64b818ac6",
+    "description": "Battery Replacement with Oxygen Sensor",
+    "part_quantity": 3,
+    "total_amount": 289.96999999999997,
+    "status": "Pending"
+  },
+  {
+    "id": "814c97e6-a529-482b-8cc7-99afe4753806",
+    "repair_order_id": "f328082e-38b7-403c-874f-ed82d5731d46",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "labor_id": "3a23db72-7e17-4bd6-80a8-e27f1ebeeb9f",
+    "description": "Brake Pad Replacement (Rear) with Brake Pads (Front)",
+    "part_quantity": 1,
+    "total_amount": 199.99,
+    "status": "Completed"
+  },
+  {
+    "id": "fe492b1d-664c-496e-987f-f8e566e63710",
+    "repair_order_id": "105b680f-9283-417d-9226-034ab9df0780",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "labor_id": null,
+    "description": "with Brake Pads (Rear)",
+    "part_quantity": 3,
+    "total_amount": 239.96999999999997,
+    "status": "Completed"
+  },
+  {
+    "id": "82349b8d-1bdf-4c3e-9baf-9fd6b7caee59",
+    "repair_order_id": "105b680f-9283-417d-9226-034ab9df0780",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear) with Starter Motor",
+    "part_quantity": 3,
+    "total_amount": 739.97,
+    "status": "Completed"
+  },
+  {
+    "id": "519e247b-b70d-46d3-a6e7-036ce8ab3eb4",
+    "repair_order_id": "105b680f-9283-417d-9226-034ab9df0780",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "labor_id": "49400891-7c07-49e9-a4db-19627276aa13",
+    "description": "Water Pump Replacement with Oil Filter",
+    "part_quantity": 1,
+    "total_amount": 182.99,
+    "status": "Pending"
+  },
+  {
+    "id": "03a66969-d935-4254-8410-a808045e5678",
+    "repair_order_id": "d74e737b-fe95-43aa-a889-1e41133f34bf",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear) with Brake Pads (Front)",
+    "part_quantity": 2,
+    "total_amount": 319.98,
+    "status": "Completed"
+  },
+  {
+    "id": "c3432471-26fa-4dc5-8662-5192ac0491d8",
+    "repair_order_id": "d74e737b-fe95-43aa-a889-1e41133f34bf",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear) with Battery",
+    "part_quantity": 2,
+    "total_amount": 439.98,
+    "status": "Pending"
+  },
+  {
+    "id": "ab95455f-2bee-4179-8e07-14b4e3896157",
+    "repair_order_id": "d74e737b-fe95-43aa-a889-1e41133f34bf",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "labor_id": "49400891-7c07-49e9-a4db-19627276aa13",
+    "description": "Water Pump Replacement with Battery",
+    "part_quantity": 2,
+    "total_amount": 469.98,
+    "status": "Pending"
+  },
+  {
+    "id": "719d451d-19b4-427e-837c-b0fbe0832a3d",
+    "repair_order_id": "d74e737b-fe95-43aa-a889-1e41133f34bf",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "labor_id": "a6f4a5d4-db3b-4e24-bac1-c90e5ac291a5",
+    "description": "Radiator Replacement with Brake Rotors (Front)",
+    "part_quantity": 2,
+    "total_amount": 459.98,
+    "status": "Pending"
+  },
+  {
+    "id": "d2aee595-b06f-466d-b22e-4c0b2ec2c2b6",
+    "repair_order_id": "d74e737b-fe95-43aa-a889-1e41133f34bf",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "labor_id": "c5699909-9045-4d52-9a8d-f1102c17624c",
+    "description": "Oil Change with Brake Pads (Rear)",
+    "part_quantity": 1,
+    "total_amount": 124.99,
+    "status": "Completed"
+  },
+  {
+    "id": "0f94738e-b796-47bb-a6b7-74e6650b4228",
+    "repair_order_id": "31c85fd3-2ebd-43b3-b1fe-81668b112763",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "labor_id": "a6f4a5d4-db3b-4e24-bac1-c90e5ac291a5",
+    "description": "Radiator Replacement with Air Filter",
+    "part_quantity": 4,
+    "total_amount": 279.96,
+    "status": "Pending"
+  },
+  {
+    "id": "68ab6494-61de-4861-b185-7cdc2c549a4e",
+    "repair_order_id": "31c85fd3-2ebd-43b3-b1fe-81668b112763",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "labor_id": "c3a55c87-0b3e-42dd-aec6-9fc824072056",
+    "description": "Oxygen Sensor Replacement with Battery",
+    "part_quantity": 3,
+    "total_amount": 549.97,
+    "status": "Completed"
+  },
+  {
+    "id": "cd169266-7ccb-41b0-a011-c8253b5c54bb",
+    "repair_order_id": "31c85fd3-2ebd-43b3-b1fe-81668b112763",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "labor_id": "7ed5de42-f1ce-4efa-a5ba-6cfa64addc3e",
+    "description": "Alternator Replacement with Brake Pads (Rear)",
+    "part_quantity": 1,
+    "total_amount": 259.99,
+    "status": "Pending"
+  },
+  {
+    "id": "e1dfbdd0-db90-427c-98c9-876a1fdbbb75",
+    "repair_order_id": "0482f481-44cb-4d1d-8d38-c62fffee2467",
+    "part_id": null,
+    "labor_id": "9bc9b37a-0fb4-4e01-8bbe-139f8096029b",
+    "description": "Timing Belt Replacement",
+    "part_quantity": null,
+    "total_amount": 350,
+    "status": "Pending"
+  },
+  {
+    "id": "c471c67f-dfab-4519-b571-2935a36f4035",
+    "repair_order_id": "0482f481-44cb-4d1d-8d38-c62fffee2467",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "labor_id": "4862992d-f836-436e-a3be-552e004f5ade",
+    "description": "Brake Pad Replacement (Front) with Air Filter",
+    "part_quantity": 3,
+    "total_amount": 179.97,
+    "status": "Pending"
+  },
+  {
+    "id": "895bc2aa-4561-496f-9b09-e62e472d2ad0",
+    "repair_order_id": "0482f481-44cb-4d1d-8d38-c62fffee2467",
+    "part_id": null,
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear)",
+    "part_quantity": null,
+    "total_amount": 140,
+    "status": "Completed"
+  },
+  {
+    "id": "6a48e9a2-b0c7-4321-8315-c5b95d6625ed",
+    "repair_order_id": "0baded5f-a138-4d59-8b0b-b87085d5aeef",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "labor_id": "440c79f9-6e0a-48dd-8724-2a65f6e97c32",
+    "description": "Fuel Pump Replacement with Alternator",
+    "part_quantity": 4,
+    "total_amount": 1249.96,
+    "status": "Completed"
+  },
+  {
+    "id": "6f20a08e-906e-40b0-8791-24d34bc134db",
+    "repair_order_id": "a7cdbd91-f309-4c7e-a847-524e9cc5e751",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "labor_id": "c3a55c87-0b3e-42dd-aec6-9fc824072056",
+    "description": "Oxygen Sensor Replacement with Water Pump",
+    "part_quantity": 2,
+    "total_amount": 279.98,
+    "status": "Completed"
+  },
+  {
+    "id": "6397f809-786f-4062-96a0-6c0f47d958c5",
+    "repair_order_id": "37349e9e-208d-426d-a114-c317f76814ea",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "labor_id": "3a23db72-7e17-4bd6-80a8-e27f1ebeeb9f",
+    "description": "Brake Pad Replacement (Rear) with Fuel Pump",
+    "part_quantity": 3,
+    "total_amount": 499.97,
+    "status": "Pending"
+  },
+  {
+    "id": "1eaf7397-5fb2-4e7f-ab71-175e1e63372e",
+    "repair_order_id": "5f7e856f-54c8-4d18-bc39-b2335b0a1226",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear) with Brake Pads (Rear)",
+    "part_quantity": 3,
+    "total_amount": 379.96999999999997,
+    "status": "Completed"
+  },
+  {
+    "id": "16324d1d-c96d-408a-86c2-faad2ed3be5f",
+    "repair_order_id": "5f7e856f-54c8-4d18-bc39-b2335b0a1226",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "labor_id": "f8e48bbd-67c2-4548-bfb6-01e64b818ac6",
+    "description": "Battery Replacement with Air Filter",
+    "part_quantity": 4,
+    "total_amount": 129.95999999999998,
+    "status": "Completed"
+  },
+  {
+    "id": "1a284b89-d6e5-4b5f-8e4e-e29472a0594f",
+    "repair_order_id": "5f7e856f-54c8-4d18-bc39-b2335b0a1226",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear) with Timing Belt Kit",
+    "part_quantity": 3,
+    "total_amount": 619.97,
+    "status": "Completed"
+  },
+  {
+    "id": "a2e650a4-4513-4888-a6c2-268cbf8b3ffe",
+    "repair_order_id": "5f7e856f-54c8-4d18-bc39-b2335b0a1226",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "labor_id": "7ed5de42-f1ce-4efa-a5ba-6cfa64addc3e",
+    "description": "Alternator Replacement with Air Filter",
+    "part_quantity": 1,
+    "total_amount": 199.99,
+    "status": "Completed"
+  },
+  {
+    "id": "18e6bb06-8a35-4836-b49f-4634714d800c",
+    "repair_order_id": "e1f76786-8c04-4ae0-934d-6c86395c67f1",
+    "part_id": null,
+    "labor_id": "440c79f9-6e0a-48dd-8724-2a65f6e97c32",
+    "description": "Fuel Pump Replacement",
+    "part_quantity": null,
+    "total_amount": 250,
+    "status": "Completed"
+  },
+  {
+    "id": "baa82421-ee2b-4f9f-94ee-bf24496c45ef",
+    "repair_order_id": "6114de43-70d1-4e81-b887-54f04d380a97",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "labor_id": "890d3e91-9690-427f-a351-374ced4652fa",
+    "description": "Diagnostic Service with Starter Motor",
+    "part_quantity": 1,
+    "total_amount": 274.99,
+    "status": "Completed"
+  },
+  {
+    "id": "b5fe3e8c-1d41-416f-9519-0028e2756d54",
+    "repair_order_id": "6114de43-70d1-4e81-b887-54f04d380a97",
+    "part_id": null,
+    "labor_id": "890d3e91-9690-427f-a351-374ced4652fa",
+    "description": "Diagnostic Service",
+    "part_quantity": null,
+    "total_amount": 75,
+    "status": "Completed"
+  },
+  {
+    "id": "085dc78f-b9d8-4e95-a511-5b6764c21b6a",
+    "repair_order_id": "6114de43-70d1-4e81-b887-54f04d380a97",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear) with Brake Pads (Front)",
+    "part_quantity": 1,
+    "total_amount": 229.99,
+    "status": "Completed"
+  },
+  {
+    "id": "49b69c54-b2fd-4928-896a-eb6ba28447c2",
+    "repair_order_id": "27b65789-05c2-4df8-a41b-58168166a346",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "labor_id": null,
+    "description": "with Oil Filter",
+    "part_quantity": 3,
+    "total_amount": 38.97,
+    "status": "Pending"
+  },
+  {
+    "id": "4d333965-1d66-4d34-a10d-b61dec54699e",
+    "repair_order_id": "27b65789-05c2-4df8-a41b-58168166a346",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "labor_id": "7ed5de42-f1ce-4efa-a5ba-6cfa64addc3e",
+    "description": "Alternator Replacement with Alternator",
+    "part_quantity": 4,
+    "total_amount": 1179.96,
+    "status": "Pending"
+  },
+  {
+    "id": "8abcc4b2-d223-4b1b-b327-549b5d6427dc",
+    "repair_order_id": "27b65789-05c2-4df8-a41b-58168166a346",
+    "part_id": null,
+    "labor_id": "c5699909-9045-4d52-9a8d-f1102c17624c",
+    "description": "Oil Change",
+    "part_quantity": null,
+    "total_amount": 45,
+    "status": "Pending"
+  },
+  {
+    "id": "bed8c652-ddc5-4403-a8a0-37c9e08f2462",
+    "repair_order_id": "27b65789-05c2-4df8-a41b-58168166a346",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "labor_id": "7ed5de42-f1ce-4efa-a5ba-6cfa64addc3e",
+    "description": "Alternator Replacement with Oxygen Sensor",
+    "part_quantity": 2,
+    "total_amount": 339.98,
+    "status": "Pending"
+  },
+  {
+    "id": "f8a42a99-bafd-4635-a5ed-5f0cb54d0131",
+    "repair_order_id": "27b65789-05c2-4df8-a41b-58168166a346",
+    "part_id": null,
+    "labor_id": "a6f4a5d4-db3b-4e24-bac1-c90e5ac291a5",
+    "description": "Radiator Replacement",
+    "part_quantity": null,
+    "total_amount": 200,
+    "status": "Pending"
+  },
+  {
+    "id": "f088c287-ceea-4e04-a600-774cc6736182",
+    "repair_order_id": "7d943793-65a7-4a4a-9870-1dcf7a0c2514",
+    "part_id": null,
+    "labor_id": "3a23db72-7e17-4bd6-80a8-e27f1ebeeb9f",
+    "description": "Brake Pad Replacement (Rear)",
+    "part_quantity": null,
+    "total_amount": 110,
+    "status": "Pending"
+  },
+  {
+    "id": "6ec5ee27-3f48-404b-b783-fdad527b439b",
+    "repair_order_id": "7d943793-65a7-4a4a-9870-1dcf7a0c2514",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "labor_id": "4862992d-f836-436e-a3be-552e004f5ade",
+    "description": "Brake Pad Replacement (Front) with Radiator",
+    "part_quantity": 3,
+    "total_amount": 659.97,
+    "status": "Pending"
+  },
+  {
+    "id": "e97a57bc-3379-4fb5-9be3-ed3ecdc7d5e2",
+    "repair_order_id": "7d943793-65a7-4a4a-9870-1dcf7a0c2514",
+    "part_id": null,
+    "labor_id": "890d3e91-9690-427f-a351-374ced4652fa",
+    "description": "Diagnostic Service",
+    "part_quantity": null,
+    "total_amount": 75,
+    "status": "Completed"
+  },
+  {
+    "id": "2b03bf2e-c188-4821-b08a-6bc89a86b72f",
+    "repair_order_id": "7d943793-65a7-4a4a-9870-1dcf7a0c2514",
+    "part_id": null,
+    "labor_id": "4862992d-f836-436e-a3be-552e004f5ade",
+    "description": "Brake Pad Replacement (Front)",
+    "part_quantity": null,
+    "total_amount": 120,
+    "status": "Completed"
+  },
+  {
+    "id": "0fefe1af-4f9d-4627-a136-4e3a12b82998",
+    "repair_order_id": "7d943793-65a7-4a4a-9870-1dcf7a0c2514",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "labor_id": "a6f4a5d4-db3b-4e24-bac1-c90e5ac291a5",
+    "description": "Radiator Replacement with Timing Belt Kit",
+    "part_quantity": 1,
+    "total_amount": 359.99,
+    "status": "Pending"
+  },
+  {
+    "id": "ba311c95-8f5a-4bb1-9248-52e4e4edb79b",
+    "repair_order_id": "96120122-04cc-4262-9089-419ef721f204",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "labor_id": null,
+    "description": "with Alternator",
+    "part_quantity": 3,
+    "total_amount": 749.97,
+    "status": "Pending"
+  },
+  {
+    "id": "90a97e33-32d2-41d3-a267-0d1b35116485",
+    "repair_order_id": "96120122-04cc-4262-9089-419ef721f204",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "labor_id": "49400891-7c07-49e9-a4db-19627276aa13",
+    "description": "Water Pump Replacement with Brake Pads (Rear)",
+    "part_quantity": 2,
+    "total_amount": 329.98,
+    "status": "Pending"
+  },
+  {
+    "id": "dd480069-035a-4fd6-85f9-093b767be730",
+    "repair_order_id": "169a819b-a739-490f-9274-81d41d24b5ea",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "labor_id": "440c79f9-6e0a-48dd-8724-2a65f6e97c32",
+    "description": "Fuel Pump Replacement with Brake Rotors (Front)",
+    "part_quantity": 3,
+    "total_amount": 639.97,
+    "status": "Completed"
+  },
+  {
+    "id": "dc0524e6-118a-4d7a-b534-a7a711b2dda4",
+    "repair_order_id": "169a819b-a739-490f-9274-81d41d24b5ea",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "labor_id": "1c541dc7-8ecd-4e3f-b200-482a6252d576",
+    "description": "Spark Plug Replacement with Battery",
+    "part_quantity": 2,
+    "total_amount": 389.98,
+    "status": "Pending"
+  },
+  {
+    "id": "54dd1bef-4e6e-4e06-9d80-4a3d5988cd9f",
+    "repair_order_id": "169a819b-a739-490f-9274-81d41d24b5ea",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "labor_id": "1c541dc7-8ecd-4e3f-b200-482a6252d576",
+    "description": "Spark Plug Replacement with Water Pump",
+    "part_quantity": 1,
+    "total_amount": 179.99,
+    "status": "Pending"
+  },
+  {
+    "id": "fc1cc92a-1a39-40c7-b1a5-ff1e0f9ef545",
+    "repair_order_id": "5d4552a5-e41c-4504-a772-b6c13b8b6020",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "labor_id": "890d3e91-9690-427f-a351-374ced4652fa",
+    "description": "Diagnostic Service with Air Filter",
+    "part_quantity": 1,
+    "total_amount": 94.99,
+    "status": "Completed"
+  },
+  {
+    "id": "4aa4b1bf-2766-46e2-8604-4fb99c6a0a1e",
+    "repair_order_id": "5d4552a5-e41c-4504-a772-b6c13b8b6020",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "labor_id": "440c79f9-6e0a-48dd-8724-2a65f6e97c32",
+    "description": "Fuel Pump Replacement with Oil Filter",
+    "part_quantity": 2,
+    "total_amount": 275.98,
+    "status": "Pending"
+  },
+  {
+    "id": "711eb1ef-60f7-4362-949a-2945e04efeca",
+    "repair_order_id": "5d4552a5-e41c-4504-a772-b6c13b8b6020",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "labor_id": "1c541dc7-8ecd-4e3f-b200-482a6252d576",
+    "description": "Spark Plug Replacement with Starter Motor",
+    "part_quantity": 4,
+    "total_amount": 889.96,
+    "status": "Pending"
+  },
+  {
+    "id": "bc6e216d-2455-42ce-88cf-1e43f902b1cc",
+    "repair_order_id": "cdcb1037-e991-400b-94e7-45e2f953bae5",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "labor_id": "c5699909-9045-4d52-9a8d-f1102c17624c",
+    "description": "Oil Change with Air Filter",
+    "part_quantity": 1,
+    "total_amount": 64.99,
+    "status": "Pending"
+  },
+  {
+    "id": "e581fc01-f7bb-4db4-9dcc-6c632b43ca20",
+    "repair_order_id": "cdcb1037-e991-400b-94e7-45e2f953bae5",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "labor_id": "49400891-7c07-49e9-a4db-19627276aa13",
+    "description": "Water Pump Replacement with Starter Motor",
+    "part_quantity": 2,
+    "total_amount": 569.98,
+    "status": "Completed"
+  },
+  {
+    "id": "491857bf-4aa6-47b6-b360-a17bfc472bed",
+    "repair_order_id": "cdcb1037-e991-400b-94e7-45e2f953bae5",
+    "part_id": null,
+    "labor_id": "890d3e91-9690-427f-a351-374ced4652fa",
+    "description": "Diagnostic Service",
+    "part_quantity": null,
+    "total_amount": 75,
+    "status": "Completed"
+  },
+  {
+    "id": "f4ed6cf6-1697-4050-a69a-098a419ba533",
+    "repair_order_id": "81ccf3ed-453e-4eca-8a5c-bf06772e5895",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "labor_id": "c3a55c87-0b3e-42dd-aec6-9fc824072056",
+    "description": "Oxygen Sensor Replacement with Fuel Pump",
+    "part_quantity": 1,
+    "total_amount": 229.99,
+    "status": "Completed"
+  },
+  {
+    "id": "e66f0259-5fd2-44c0-b606-4bfda40a4bdc",
+    "repair_order_id": "81ccf3ed-453e-4eca-8a5c-bf06772e5895",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "labor_id": "2d639c2b-02a2-4a32-becd-aa161bf6e62b",
+    "description": "Brake Rotor Replacement (Front) with Spark Plugs (Set)",
+    "part_quantity": 2,
+    "total_amount": 249.98000000000002,
+    "status": "Completed"
+  },
+  {
+    "id": "c51bf0a3-f4c8-4795-b936-ce3ff4e15e28",
+    "repair_order_id": "81ccf3ed-453e-4eca-8a5c-bf06772e5895",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "labor_id": "c3a55c87-0b3e-42dd-aec6-9fc824072056",
+    "description": "Oxygen Sensor Replacement with Fuel Pump",
+    "part_quantity": 1,
+    "total_amount": 229.99,
+    "status": "Completed"
+  },
+  {
+    "id": "bea48084-5bb4-45c9-b569-398271c68367",
+    "repair_order_id": "81ccf3ed-453e-4eca-8a5c-bf06772e5895",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "labor_id": "4862992d-f836-436e-a3be-552e004f5ade",
+    "description": "Brake Pad Replacement (Front) with Water Pump",
+    "part_quantity": 2,
+    "total_amount": 299.98,
+    "status": "Completed"
+  },
+  {
+    "id": "c70a9480-c659-478d-9cf0-752d4eba3509",
+    "repair_order_id": "f54c10f3-eb0f-4e12-a8e0-96893182bce2",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "labor_id": "2d639c2b-02a2-4a32-becd-aa161bf6e62b",
+    "description": "Brake Rotor Replacement (Front) with Spark Plugs (Set)",
+    "part_quantity": 4,
+    "total_amount": 349.96000000000004,
+    "status": "Pending"
+  },
+  {
+    "id": "9c0d9175-893a-4591-8378-823ce181920e",
+    "repair_order_id": "39884597-9dfd-4838-94cf-026714b60c9f",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "labor_id": "440c79f9-6e0a-48dd-8724-2a65f6e97c32",
+    "description": "Fuel Pump Replacement with Starter Motor",
+    "part_quantity": 2,
+    "total_amount": 649.98,
+    "status": "Completed"
+  },
+  {
+    "id": "43c3866d-b568-4384-89cf-a439e833d7d8",
+    "repair_order_id": "39884597-9dfd-4838-94cf-026714b60c9f",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear) with Water Pump",
+    "part_quantity": 2,
+    "total_amount": 319.98,
+    "status": "Completed"
+  },
+  {
+    "id": "fffa8b57-96e6-4773-9014-73a2319e75ee",
+    "repair_order_id": "6bc51d72-32ad-43f9-b6d9-d2dccffb5233",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "labor_id": "3a23db72-7e17-4bd6-80a8-e27f1ebeeb9f",
+    "description": "Brake Pad Replacement (Rear) with Oxygen Sensor",
+    "part_quantity": 3,
+    "total_amount": 349.96999999999997,
+    "status": "Pending"
+  },
+  {
+    "id": "78c8c2a1-e94c-4a25-b133-d5a237a66556",
+    "repair_order_id": "6bc51d72-32ad-43f9-b6d9-d2dccffb5233",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "labor_id": "3a23db72-7e17-4bd6-80a8-e27f1ebeeb9f",
+    "description": "Brake Pad Replacement (Rear) with Fuel Pump",
+    "part_quantity": 3,
+    "total_amount": 499.97,
+    "status": "Completed"
+  },
+  {
+    "id": "63c9c513-94da-4fec-b6bf-890a4837da9f",
+    "repair_order_id": "22bf91bd-ab37-41fe-9a7f-23d05ebfe1ee",
+    "part_id": null,
+    "labor_id": "4862992d-f836-436e-a3be-552e004f5ade",
+    "description": "Brake Pad Replacement (Front)",
+    "part_quantity": null,
+    "total_amount": 120,
+    "status": "Pending"
+  },
+  {
+    "id": "0f511ecd-d09f-49a9-8720-90653c761f94",
+    "repair_order_id": "22bf91bd-ab37-41fe-9a7f-23d05ebfe1ee",
+    "part_id": null,
+    "labor_id": null,
+    "description": "",
+    "part_quantity": null,
+    "total_amount": 0,
+    "status": "Pending"
+  },
+  {
+    "id": "151f0980-bf42-41c1-882e-a617188c48ef",
+    "repair_order_id": "22bf91bd-ab37-41fe-9a7f-23d05ebfe1ee",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "labor_id": "c3a55c87-0b3e-42dd-aec6-9fc824072056",
+    "description": "Oxygen Sensor Replacement with Alternator",
+    "part_quantity": 4,
+    "total_amount": 1099.96,
+    "status": "Pending"
+  },
+  {
+    "id": "f9490307-807b-479a-9574-541359480651",
+    "repair_order_id": "22bf91bd-ab37-41fe-9a7f-23d05ebfe1ee",
+    "part_id": null,
+    "labor_id": "a6f4a5d4-db3b-4e24-bac1-c90e5ac291a5",
+    "description": "Radiator Replacement",
+    "part_quantity": null,
+    "total_amount": 200,
+    "status": "Pending"
+  },
+  {
+    "id": "8fa5422f-ca92-4641-9ec7-6dd0b69ff017",
+    "repair_order_id": "22bf91bd-ab37-41fe-9a7f-23d05ebfe1ee",
+    "part_id": null,
+    "labor_id": "c3a55c87-0b3e-42dd-aec6-9fc824072056",
+    "description": "Oxygen Sensor Replacement",
+    "part_quantity": null,
+    "total_amount": 100,
+    "status": "Pending"
+  },
+  {
+    "id": "9f870e40-3e98-407b-9b33-14fad5cfc219",
+    "repair_order_id": "811201b4-edee-4e89-9774-a5d8cd682aca",
+    "part_id": null,
+    "labor_id": null,
+    "description": "",
+    "part_quantity": null,
+    "total_amount": 0,
+    "status": "Pending"
+  },
+  {
+    "id": "eb06b3c3-5e50-4366-8dff-286fc647ea9b",
+    "repair_order_id": "0acba302-b5f0-4746-8a96-dfe13fc8b384",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "labor_id": "3a23db72-7e17-4bd6-80a8-e27f1ebeeb9f",
+    "description": "Brake Pad Replacement (Rear) with Spark Plugs (Set)",
+    "part_quantity": 3,
+    "total_amount": 259.97,
+    "status": "Pending"
+  },
+  {
+    "id": "cc1ec5a4-22e0-47c7-9bc3-802399460152",
+    "repair_order_id": "0acba302-b5f0-4746-8a96-dfe13fc8b384",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "labor_id": null,
+    "description": "with Brake Pads (Front)",
+    "part_quantity": 1,
+    "total_amount": 89.99,
+    "status": "Pending"
+  },
+  {
+    "id": "949282d0-db11-4703-ab54-6264d67a4c2d",
+    "repair_order_id": "0acba302-b5f0-4746-8a96-dfe13fc8b384",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "labor_id": "c3a55c87-0b3e-42dd-aec6-9fc824072056",
+    "description": "Oxygen Sensor Replacement with Fuel Pump",
+    "part_quantity": 1,
+    "total_amount": 229.99,
+    "status": "Pending"
+  },
+  {
+    "id": "1bdceacd-7d13-4f95-97c5-9aa529f56243",
+    "repair_order_id": "0acba302-b5f0-4746-8a96-dfe13fc8b384",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "labor_id": "c5699909-9045-4d52-9a8d-f1102c17624c",
+    "description": "Oil Change with Oil Filter",
+    "part_quantity": 3,
+    "total_amount": 83.97,
+    "status": "Pending"
+  },
+  {
+    "id": "bc7c79c2-70ea-48ee-9fcf-78a350a49059",
+    "repair_order_id": "abfc8c1e-4bec-48f5-8bb3-891e20917e8d",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "labor_id": "06494e79-a752-4b27-9843-abbd827a4979",
+    "description": "Starter Motor Replacement with Alternator",
+    "part_quantity": 1,
+    "total_amount": 409.99,
+    "status": "Completed"
+  },
+  {
+    "id": "f7bae6bf-a878-4803-8e83-abc9e4dd698e",
+    "repair_order_id": "abfc8c1e-4bec-48f5-8bb3-891e20917e8d",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "labor_id": "c5699909-9045-4d52-9a8d-f1102c17624c",
+    "description": "Oil Change with Water Pump",
+    "part_quantity": 1,
+    "total_amount": 134.99,
+    "status": "Pending"
+  },
+  {
+    "id": "d565b06a-058a-40ce-a224-78a88202c44c",
+    "repair_order_id": "f6a77bf6-899b-4d19-90e8-ec56b88d48bf",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "labor_id": "1c541dc7-8ecd-4e3f-b200-482a6252d576",
+    "description": "Spark Plug Replacement with Brake Rotors (Front)",
+    "part_quantity": 3,
+    "total_amount": 479.97,
+    "status": "Pending"
+  },
+  {
+    "id": "7261d574-4e71-4293-8099-94c0f33cb8d4",
+    "repair_order_id": "f6a77bf6-899b-4d19-90e8-ec56b88d48bf",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear) with Fuel Pump",
+    "part_quantity": 4,
+    "total_amount": 659.96,
+    "status": "Completed"
+  },
+  {
+    "id": "0c1edcb6-b2cd-491f-aa0a-aa87e7e1a917",
+    "repair_order_id": "f6a77bf6-899b-4d19-90e8-ec56b88d48bf",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "labor_id": "06494e79-a752-4b27-9843-abbd827a4979",
+    "description": "Starter Motor Replacement with Alternator",
+    "part_quantity": 4,
+    "total_amount": 1159.96,
+    "status": "Completed"
+  },
+  {
+    "id": "b95d236e-0c5e-4b43-a96d-f276d1de3399",
+    "repair_order_id": "f6a77bf6-899b-4d19-90e8-ec56b88d48bf",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "labor_id": "f8e48bbd-67c2-4548-bfb6-01e64b818ac6",
+    "description": "Battery Replacement with Brake Rotors (Rear)",
+    "part_quantity": 2,
+    "total_amount": 289.98,
+    "status": "Completed"
+  },
+  {
+    "id": "01f69b79-5ca2-4fe6-be6a-b723524b641d",
+    "repair_order_id": "14964fc6-a37c-4f38-bea9-eb5c757357fc",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "labor_id": "a6f4a5d4-db3b-4e24-bac1-c90e5ac291a5",
+    "description": "Radiator Replacement with Water Pump",
+    "part_quantity": 4,
+    "total_amount": 559.96,
+    "status": "Pending"
+  },
+  {
+    "id": "d0d50f11-6a21-4ee2-a037-5ae3823eef37",
+    "repair_order_id": "14964fc6-a37c-4f38-bea9-eb5c757357fc",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "labor_id": "3a23db72-7e17-4bd6-80a8-e27f1ebeeb9f",
+    "description": "Brake Pad Replacement (Rear) with Spark Plugs (Set)",
+    "part_quantity": 2,
+    "total_amount": 209.98000000000002,
+    "status": "Completed"
+  },
+  {
+    "id": "b1cde04f-1762-4615-a617-4b3ea25d15d6",
+    "repair_order_id": "38b8ab1d-b259-4da7-8e4e-720f5263ac07",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "labor_id": "c5699909-9045-4d52-9a8d-f1102c17624c",
+    "description": "Oil Change with Fuel Pump",
+    "part_quantity": 3,
+    "total_amount": 434.97,
+    "status": "Completed"
+  },
+  {
+    "id": "b45c07b8-2fee-4546-9e1e-5709cb7f027a",
+    "repair_order_id": "38b8ab1d-b259-4da7-8e4e-720f5263ac07",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "labor_id": "49400891-7c07-49e9-a4db-19627276aa13",
+    "description": "Water Pump Replacement with Oil Filter",
+    "part_quantity": 4,
+    "total_amount": 221.96,
+    "status": "Pending"
+  },
+  {
+    "id": "de017824-4ef1-46e2-866a-3cf03b310f8e",
+    "repair_order_id": "38b8ab1d-b259-4da7-8e4e-720f5263ac07",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "labor_id": "9bc9b37a-0fb4-4e01-8bbe-139f8096029b",
+    "description": "Timing Belt Replacement with Starter Motor",
+    "part_quantity": 1,
+    "total_amount": 549.99,
+    "status": "Completed"
+  },
+  {
+    "id": "e29e6fd9-5a17-427d-bb00-58e14b2ff602",
+    "repair_order_id": "47231beb-95e0-4a37-bb66-16cb2e2eb2aa",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "labor_id": "7ed5de42-f1ce-4efa-a5ba-6cfa64addc3e",
+    "description": "Alternator Replacement with Brake Rotors (Front)",
+    "part_quantity": 2,
+    "total_amount": 439.98,
+    "status": "Completed"
+  },
+  {
+    "id": "aa089fb2-9019-4240-84f4-8c837122f54e",
+    "repair_order_id": "47231beb-95e0-4a37-bb66-16cb2e2eb2aa",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "labor_id": null,
+    "description": "with Brake Rotors (Front)",
+    "part_quantity": 3,
+    "total_amount": 389.97,
+    "status": "Completed"
+  },
+  {
+    "id": "99554a5a-0c7c-422a-9447-0b08143ea354",
+    "repair_order_id": "95689852-8559-4fb4-af51-8d2a86c81a8d",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear) with Brake Rotors (Rear)",
+    "part_quantity": 3,
+    "total_amount": 499.96999999999997,
+    "status": "Completed"
+  },
+  {
+    "id": "7f8495a3-6404-4899-b9d8-42011e451a51",
+    "repair_order_id": "4ef224c4-bfe0-470e-8dee-a2dee22e5783",
+    "part_id": null,
+    "labor_id": "c3a55c87-0b3e-42dd-aec6-9fc824072056",
+    "description": "Oxygen Sensor Replacement",
+    "part_quantity": null,
+    "total_amount": 100,
+    "status": "Pending"
+  },
+  {
+    "id": "97a87ffb-06b7-4811-8fdb-98d5059bee24",
+    "repair_order_id": "4ef224c4-bfe0-470e-8dee-a2dee22e5783",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "labor_id": "49400891-7c07-49e9-a4db-19627276aa13",
+    "description": "Water Pump Replacement with Starter Motor",
+    "part_quantity": 1,
+    "total_amount": 369.99,
+    "status": "Pending"
+  },
+  {
+    "id": "06aa94f7-b21f-419f-8699-cd425c7bcd1e",
+    "repair_order_id": "4ef224c4-bfe0-470e-8dee-a2dee22e5783",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "labor_id": "9bc9b37a-0fb4-4e01-8bbe-139f8096029b",
+    "description": "Timing Belt Replacement with Starter Motor",
+    "part_quantity": 1,
+    "total_amount": 549.99,
+    "status": "Pending"
+  },
+  {
+    "id": "67c05226-5947-4c7a-8655-0cd4aa269bf5",
+    "repair_order_id": "4ef224c4-bfe0-470e-8dee-a2dee22e5783",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "labor_id": "f8e48bbd-67c2-4548-bfb6-01e64b818ac6",
+    "description": "Battery Replacement with Brake Pads (Rear)",
+    "part_quantity": 4,
+    "total_amount": 369.96,
+    "status": "Completed"
+  },
+  {
+    "id": "28d85791-2028-4655-8f38-4ace48e527a8",
+    "repair_order_id": "73cef4a6-17e8-4c31-b22d-310598705e61",
+    "part_id": null,
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear)",
+    "part_quantity": null,
+    "total_amount": 140,
+    "status": "Completed"
+  },
+  {
+    "id": "b9200237-baa7-4a7e-aebe-1c0a0988df99",
+    "repair_order_id": "73cef4a6-17e8-4c31-b22d-310598705e61",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "labor_id": "2d639c2b-02a2-4a32-becd-aa161bf6e62b",
+    "description": "Brake Rotor Replacement (Front) with Timing Belt Kit",
+    "part_quantity": 3,
+    "total_amount": 629.97,
+    "status": "Completed"
+  },
+  {
+    "id": "2ba45fbb-1be8-4821-ad7d-38ef0c6efce1",
+    "repair_order_id": "73cef4a6-17e8-4c31-b22d-310598705e61",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "labor_id": "f8e48bbd-67c2-4548-bfb6-01e64b818ac6",
+    "description": "Battery Replacement with Air Filter",
+    "part_quantity": 1,
+    "total_amount": 69.99,
+    "status": "Completed"
+  },
+  {
+    "id": "587f8973-a497-4066-8313-c0eb55008f93",
+    "repair_order_id": "dad80fc3-bcce-42f2-a43a-e7f36603490c",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "labor_id": "1c541dc7-8ecd-4e3f-b200-482a6252d576",
+    "description": "Spark Plug Replacement with Brake Rotors (Rear)",
+    "part_quantity": 1,
+    "total_amount": 209.99,
+    "status": "Completed"
+  },
+  {
+    "id": "d7e02975-8376-4a6b-842d-4258c4748ba3",
+    "repair_order_id": "dad80fc3-bcce-42f2-a43a-e7f36603490c",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "labor_id": "9bc9b37a-0fb4-4e01-8bbe-139f8096029b",
+    "description": "Timing Belt Replacement with Brake Pads (Front)",
+    "part_quantity": 2,
+    "total_amount": 529.98,
+    "status": "Pending"
+  },
+  {
+    "id": "48ac3f9b-64af-4f9a-a014-b2adb9b3011c",
+    "repair_order_id": "dad80fc3-bcce-42f2-a43a-e7f36603490c",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "labor_id": null,
+    "description": "with Alternator",
+    "part_quantity": 4,
+    "total_amount": 999.96,
+    "status": "Completed"
+  },
+  {
+    "id": "f82d8671-8591-46c4-b351-7d5b87575860",
+    "repair_order_id": "dad80fc3-bcce-42f2-a43a-e7f36603490c",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "labor_id": "890d3e91-9690-427f-a351-374ced4652fa",
+    "description": "Diagnostic Service with Starter Motor",
+    "part_quantity": 1,
+    "total_amount": 274.99,
+    "status": "Completed"
+  },
+  {
+    "id": "00768420-cc9f-4841-b74f-f89a3adaf1dc",
+    "repair_order_id": "dad80fc3-bcce-42f2-a43a-e7f36603490c",
+    "part_id": null,
+    "labor_id": "9bc9b37a-0fb4-4e01-8bbe-139f8096029b",
+    "description": "Timing Belt Replacement",
+    "part_quantity": null,
+    "total_amount": 350,
+    "status": "Pending"
+  },
+  {
+    "id": "0cc4556a-2bf9-4953-8ce4-2324c095941b",
+    "repair_order_id": "f764669f-f090-40ab-8fb1-48862b4b060e",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "labor_id": "c5699909-9045-4d52-9a8d-f1102c17624c",
+    "description": "Oil Change with Brake Rotors (Front)",
+    "part_quantity": 1,
+    "total_amount": 174.99,
+    "status": "Pending"
+  },
+  {
+    "id": "803971f0-06ea-486c-8fab-ff31ef4fff9c",
+    "repair_order_id": "f764669f-f090-40ab-8fb1-48862b4b060e",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "labor_id": "4862992d-f836-436e-a3be-552e004f5ade",
+    "description": "Brake Pad Replacement (Front) with Radiator",
+    "part_quantity": 2,
+    "total_amount": 479.98,
+    "status": "Completed"
+  },
+  {
+    "id": "747af892-97cd-488f-af49-9d21a62b52d2",
+    "repair_order_id": "f764669f-f090-40ab-8fb1-48862b4b060e",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "labor_id": "2d639c2b-02a2-4a32-becd-aa161bf6e62b",
+    "description": "Brake Rotor Replacement (Front) with Timing Belt Kit",
+    "part_quantity": 3,
+    "total_amount": 629.97,
+    "status": "Pending"
+  },
+  {
+    "id": "29065aaf-5925-4f05-a4a4-a88c03cefb89",
+    "repair_order_id": "f764669f-f090-40ab-8fb1-48862b4b060e",
+    "part_id": null,
+    "labor_id": null,
+    "description": "",
+    "part_quantity": null,
+    "total_amount": 0,
+    "status": "Completed"
+  },
+  {
+    "id": "0335e7c8-0bd5-4749-b082-37f5f1db5764",
+    "repair_order_id": "f764669f-f090-40ab-8fb1-48862b4b060e",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "labor_id": "c3a55c87-0b3e-42dd-aec6-9fc824072056",
+    "description": "Oxygen Sensor Replacement with Battery",
+    "part_quantity": 1,
+    "total_amount": 249.99,
+    "status": "Completed"
+  },
+  {
+    "id": "6f1823b6-66e7-4727-955d-a66717e0778d",
+    "repair_order_id": "3bea5135-82a3-40a2-8e7b-0335cad2716d",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "labor_id": "7ed5de42-f1ce-4efa-a5ba-6cfa64addc3e",
+    "description": "Alternator Replacement with Spark Plugs (Set)",
+    "part_quantity": 1,
+    "total_amount": 229.99,
+    "status": "Completed"
+  },
+  {
+    "id": "36756cb0-9f50-4e5f-9888-5bda5fb9dc47",
+    "repair_order_id": "3bea5135-82a3-40a2-8e7b-0335cad2716d",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear) with Battery",
+    "part_quantity": 1,
+    "total_amount": 289.99,
+    "status": "Completed"
+  },
+  {
+    "id": "ea581d04-9fb7-4278-a259-102020fb3be0",
+    "repair_order_id": "3bea5135-82a3-40a2-8e7b-0335cad2716d",
+    "part_id": null,
+    "labor_id": null,
+    "description": "",
+    "part_quantity": null,
+    "total_amount": 0,
+    "status": "Completed"
+  },
+  {
+    "id": "25ffb29b-e8b0-47aa-a079-115c9877b114",
+    "repair_order_id": "3bea5135-82a3-40a2-8e7b-0335cad2716d",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "labor_id": "440c79f9-6e0a-48dd-8724-2a65f6e97c32",
+    "description": "Fuel Pump Replacement with Air Filter",
+    "part_quantity": 4,
+    "total_amount": 329.96,
+    "status": "Completed"
+  },
+  {
+    "id": "0ecf506e-b7d2-4cb2-a8a5-f87d25c06c3f",
+    "repair_order_id": "3bea5135-82a3-40a2-8e7b-0335cad2716d",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "labor_id": "440c79f9-6e0a-48dd-8724-2a65f6e97c32",
+    "description": "Fuel Pump Replacement with Air Filter",
+    "part_quantity": 3,
+    "total_amount": 309.97,
+    "status": "Completed"
+  },
+  {
+    "id": "255d9ee1-643a-471e-890f-a23729e4b001",
+    "repair_order_id": "95bb1cd2-3d93-490c-8f3e-4f4b5eb92ec0",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "labor_id": "a6f4a5d4-db3b-4e24-bac1-c90e5ac291a5",
+    "description": "Radiator Replacement with Timing Belt Kit",
+    "part_quantity": 2,
+    "total_amount": 519.98,
+    "status": "Pending"
+  },
+  {
+    "id": "750a9c1a-9291-4483-a5f4-822e082c13ca",
+    "repair_order_id": "95bb1cd2-3d93-490c-8f3e-4f4b5eb92ec0",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "labor_id": "890d3e91-9690-427f-a351-374ced4652fa",
+    "description": "Diagnostic Service with Brake Rotors (Front)",
+    "part_quantity": 3,
+    "total_amount": 464.97,
+    "status": "Completed"
+  },
+  {
+    "id": "4254e844-b4a0-472f-8ae3-3133b3e72a6b",
+    "repair_order_id": "95bb1cd2-3d93-490c-8f3e-4f4b5eb92ec0",
+    "part_id": null,
+    "labor_id": "2d639c2b-02a2-4a32-becd-aa161bf6e62b",
+    "description": "Brake Rotor Replacement (Front)",
+    "part_quantity": null,
+    "total_amount": 150,
+    "status": "Pending"
+  },
+  {
+    "id": "02889823-37aa-4c7f-8ea8-546a35a69c17",
+    "repair_order_id": "95bb1cd2-3d93-490c-8f3e-4f4b5eb92ec0",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "labor_id": "890d3e91-9690-427f-a351-374ced4652fa",
+    "description": "Diagnostic Service with Brake Rotors (Rear)",
+    "part_quantity": 3,
+    "total_amount": 434.96999999999997,
+    "status": "Completed"
+  },
+  {
+    "id": "e56611d8-37b6-4e52-95fb-3129c47a3433",
+    "repair_order_id": "388f39e3-9fe2-4fe8-899f-f9be12af22aa",
+    "part_id": null,
+    "labor_id": "c5699909-9045-4d52-9a8d-f1102c17624c",
+    "description": "Oil Change",
+    "part_quantity": null,
+    "total_amount": 45,
+    "status": "Pending"
+  },
+  {
+    "id": "e5441f6b-7444-4c42-8db2-605cc0608c96",
+    "repair_order_id": "388f39e3-9fe2-4fe8-899f-f9be12af22aa",
+    "part_id": null,
+    "labor_id": "3a23db72-7e17-4bd6-80a8-e27f1ebeeb9f",
+    "description": "Brake Pad Replacement (Rear)",
+    "part_quantity": null,
+    "total_amount": 110,
+    "status": "Completed"
+  },
+  {
+    "id": "5ff306d3-2b27-492c-8244-e0f456ff212c",
+    "repair_order_id": "388f39e3-9fe2-4fe8-899f-f9be12af22aa",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "labor_id": "06494e79-a752-4b27-9843-abbd827a4979",
+    "description": "Starter Motor Replacement with Timing Belt Kit",
+    "part_quantity": 1,
+    "total_amount": 319.99,
+    "status": "Pending"
+  },
+  {
+    "id": "58254da4-e334-452b-8925-19c8c3e5cef1",
+    "repair_order_id": "dce198e4-21ac-4d68-8186-a9f09b149613",
+    "part_id": null,
+    "labor_id": null,
+    "description": "",
+    "part_quantity": null,
+    "total_amount": 0,
+    "status": "Completed"
+  },
+  {
+    "id": "98e20745-3716-44f4-8ec7-c57abbcff17c",
+    "repair_order_id": "dce198e4-21ac-4d68-8186-a9f09b149613",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "labor_id": "890d3e91-9690-427f-a351-374ced4652fa",
+    "description": "Diagnostic Service with Timing Belt Kit",
+    "part_quantity": 1,
+    "total_amount": 234.99,
+    "status": "Completed"
+  },
+  {
+    "id": "8ec7836e-a62c-4abf-8e29-3357848426ee",
+    "repair_order_id": "0a3706ed-10ed-4546-aa42-9c7e547e99ee",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "labor_id": null,
+    "description": "with Brake Rotors (Front)",
+    "part_quantity": 4,
+    "total_amount": 519.96,
+    "status": "Pending"
+  },
+  {
+    "id": "1fdeaea0-65bb-4c41-8322-302933f65f72",
+    "repair_order_id": "1d08952f-cf54-41b3-ae58-8213a11ecea1",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "labor_id": "3a23db72-7e17-4bd6-80a8-e27f1ebeeb9f",
+    "description": "Brake Pad Replacement (Rear) with Oxygen Sensor",
+    "part_quantity": 3,
+    "total_amount": 349.96999999999997,
+    "status": "Completed"
+  },
+  {
+    "id": "f2b14498-b0e0-4689-829c-0cbca11938ac",
+    "repair_order_id": "1d08952f-cf54-41b3-ae58-8213a11ecea1",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "labor_id": "890d3e91-9690-427f-a351-374ced4652fa",
+    "description": "Diagnostic Service with Spark Plugs (Set)",
+    "part_quantity": 1,
+    "total_amount": 124.99000000000001,
+    "status": "Pending"
+  },
+  {
+    "id": "d1d31fa5-a062-47ea-8e7c-94f9bc13c674",
+    "repair_order_id": "1d08952f-cf54-41b3-ae58-8213a11ecea1",
+    "part_id": null,
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear)",
+    "part_quantity": null,
+    "total_amount": 140,
+    "status": "Completed"
+  },
+  {
+    "id": "dcea2778-cc95-40c4-bd82-7c15975b6bec",
+    "repair_order_id": "b9507a7e-7c93-4237-9720-772b336c41b7",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "labor_id": "4862992d-f836-436e-a3be-552e004f5ade",
+    "description": "Brake Pad Replacement (Front) with Alternator",
+    "part_quantity": 2,
+    "total_amount": 619.98,
+    "status": "Completed"
+  },
+  {
+    "id": "c1c87266-1946-4797-86e3-99ed1954ff78",
+    "repair_order_id": "b9507a7e-7c93-4237-9720-772b336c41b7",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "labor_id": "7ed5de42-f1ce-4efa-a5ba-6cfa64addc3e",
+    "description": "Alternator Replacement with Radiator",
+    "part_quantity": 2,
+    "total_amount": 539.98,
+    "status": "Completed"
+  },
+  {
+    "id": "72b70567-a437-4f0c-accf-926dca1c8335",
+    "repair_order_id": "b9507a7e-7c93-4237-9720-772b336c41b7",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear) with Brake Pads (Front)",
+    "part_quantity": 1,
+    "total_amount": 229.99,
+    "status": "Completed"
+  },
+  {
+    "id": "cc9fc46f-5327-408f-be23-2dd1a92fabdf",
+    "repair_order_id": "b9507a7e-7c93-4237-9720-772b336c41b7",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "labor_id": null,
+    "description": "with Spark Plugs (Set)",
+    "part_quantity": 1,
+    "total_amount": 49.99,
+    "status": "Completed"
+  },
+  {
+    "id": "adaca779-97ea-4015-930c-8f9e74d82cc8",
+    "repair_order_id": "1e66a742-bf40-493e-8187-1389d0197b62",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear) with Spark Plugs (Set)",
+    "part_quantity": 2,
+    "total_amount": 239.98000000000002,
+    "status": "Pending"
+  },
+  {
+    "id": "839d0a27-3f8f-43a8-b3ee-ca3b097b11d0",
+    "repair_order_id": "4235316d-d273-48d2-9c37-3eed793b0d1e",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "labor_id": "06494e79-a752-4b27-9843-abbd827a4979",
+    "description": "Starter Motor Replacement with Oil Filter",
+    "part_quantity": 2,
+    "total_amount": 185.98,
+    "status": "Pending"
+  },
+  {
+    "id": "18f1f4f5-0cd3-451f-a91e-9a535148af31",
+    "repair_order_id": "d1de909c-aa89-4406-ad27-42c90b550eed",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear) with Oil Filter",
+    "part_quantity": 1,
+    "total_amount": 152.99,
+    "status": "Completed"
+  },
+  {
+    "id": "86dcddb4-6bfd-40d0-b1d7-591e0ac08f72",
+    "repair_order_id": "d1de909c-aa89-4406-ad27-42c90b550eed",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "labor_id": "a6f4a5d4-db3b-4e24-bac1-c90e5ac291a5",
+    "description": "Radiator Replacement with Alternator",
+    "part_quantity": 2,
+    "total_amount": 699.98,
+    "status": "Completed"
+  },
+  {
+    "id": "c27e01c6-1095-4af5-a143-9957ef43fc12",
+    "repair_order_id": "1c43456c-4c92-4637-8cca-19b35cfc6d7b",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "labor_id": "9bc9b37a-0fb4-4e01-8bbe-139f8096029b",
+    "description": "Timing Belt Replacement with Brake Rotors (Front)",
+    "part_quantity": 2,
+    "total_amount": 609.98,
+    "status": "Pending"
+  },
+  {
+    "id": "3b0e2534-468d-479a-a79f-72d05715dc79",
+    "repair_order_id": "47f27913-57f1-45ca-9249-4df1ec5b8f7b",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "labor_id": "06494e79-a752-4b27-9843-abbd827a4979",
+    "description": "Starter Motor Replacement with Water Pump",
+    "part_quantity": 2,
+    "total_amount": 339.98,
+    "status": "Completed"
+  },
+  {
+    "id": "6faae9aa-b003-4d98-a44e-40ab275ef0a7",
+    "repair_order_id": "47f27913-57f1-45ca-9249-4df1ec5b8f7b",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "labor_id": "7ed5de42-f1ce-4efa-a5ba-6cfa64addc3e",
+    "description": "Alternator Replacement with Brake Pads (Front)",
+    "part_quantity": 1,
+    "total_amount": 269.99,
+    "status": "Completed"
+  },
+  {
+    "id": "d9e326c3-125d-48d7-8628-4b6571832c4b",
+    "repair_order_id": "47f27913-57f1-45ca-9249-4df1ec5b8f7b",
+    "part_id": null,
+    "labor_id": "2d639c2b-02a2-4a32-becd-aa161bf6e62b",
+    "description": "Brake Rotor Replacement (Front)",
+    "part_quantity": null,
+    "total_amount": 150,
+    "status": "Completed"
+  },
+  {
+    "id": "700a59fc-3e57-4220-a9e3-fb996582ca0f",
+    "repair_order_id": "47f27913-57f1-45ca-9249-4df1ec5b8f7b",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "labor_id": null,
+    "description": "with Brake Pads (Rear)",
+    "part_quantity": 2,
+    "total_amount": 159.98,
+    "status": "Completed"
+  },
+  {
+    "id": "eb035fd7-3409-465b-9efd-07b59bb00ce7",
+    "repair_order_id": "47f27913-57f1-45ca-9249-4df1ec5b8f7b",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "labor_id": "c5699909-9045-4d52-9a8d-f1102c17624c",
+    "description": "Oil Change with Oil Filter",
+    "part_quantity": 1,
+    "total_amount": 57.99,
+    "status": "Completed"
+  },
+  {
+    "id": "0844739d-9616-4052-8371-98347698b2bc",
+    "repair_order_id": "050f5272-c963-4892-9104-f28bbd849e45",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "labor_id": null,
+    "description": "with Spark Plugs (Set)",
+    "part_quantity": 4,
+    "total_amount": 199.96,
+    "status": "Completed"
+  },
+  {
+    "id": "21153c4b-fd3f-4449-a9ab-e6dd96deee6e",
+    "repair_order_id": "050f5272-c963-4892-9104-f28bbd849e45",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "labor_id": "9bc9b37a-0fb4-4e01-8bbe-139f8096029b",
+    "description": "Timing Belt Replacement with Oil Filter",
+    "part_quantity": 4,
+    "total_amount": 401.96,
+    "status": "Completed"
+  },
+  {
+    "id": "d22c0443-d67a-4543-8209-74029f6971f1",
+    "repair_order_id": "050f5272-c963-4892-9104-f28bbd849e45",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "labor_id": "4862992d-f836-436e-a3be-552e004f5ade",
+    "description": "Brake Pad Replacement (Front) with Starter Motor",
+    "part_quantity": 1,
+    "total_amount": 319.99,
+    "status": "Completed"
+  },
+  {
+    "id": "bab44d47-b1fa-430c-9e5a-15b188a3d108",
+    "repair_order_id": "050f5272-c963-4892-9104-f28bbd849e45",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "labor_id": "440c79f9-6e0a-48dd-8724-2a65f6e97c32",
+    "description": "Fuel Pump Replacement with Oxygen Sensor",
+    "part_quantity": 3,
+    "total_amount": 489.96999999999997,
+    "status": "Pending"
+  },
+  {
+    "id": "4a38a357-634e-4053-8cf4-718d7b78459f",
+    "repair_order_id": "050f5272-c963-4892-9104-f28bbd849e45",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "labor_id": "2d639c2b-02a2-4a32-becd-aa161bf6e62b",
+    "description": "Brake Rotor Replacement (Front) with Alternator",
+    "part_quantity": 1,
+    "total_amount": 399.99,
+    "status": "Pending"
+  },
+  {
+    "id": "29b3db99-ac3b-41da-9f3c-a7df79763645",
+    "repair_order_id": "3012fc9d-2d7d-4b8c-b6fc-dd0902fdab67",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear) with Air Filter",
+    "part_quantity": 4,
+    "total_amount": 219.95999999999998,
+    "status": "Completed"
+  },
+  {
+    "id": "6c0c5e11-0ca0-4e90-add6-8b0522da262f",
+    "repair_order_id": "3012fc9d-2d7d-4b8c-b6fc-dd0902fdab67",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "labor_id": "49400891-7c07-49e9-a4db-19627276aa13",
+    "description": "Water Pump Replacement with Brake Rotors (Front)",
+    "part_quantity": 4,
+    "total_amount": 689.96,
+    "status": "Completed"
+  },
+  {
+    "id": "3e81b29b-98ee-42e8-94fb-9259ea6e09b3",
+    "repair_order_id": "3012fc9d-2d7d-4b8c-b6fc-dd0902fdab67",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "labor_id": "c5699909-9045-4d52-9a8d-f1102c17624c",
+    "description": "Oil Change with Water Pump",
+    "part_quantity": 2,
+    "total_amount": 224.98,
+    "status": "Completed"
+  },
+  {
+    "id": "5d7f49c4-7e9f-4d88-8513-396a80d69834",
+    "repair_order_id": "3012fc9d-2d7d-4b8c-b6fc-dd0902fdab67",
+    "part_id": null,
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear)",
+    "part_quantity": null,
+    "total_amount": 140,
+    "status": "Completed"
+  },
+  {
+    "id": "d0870d72-eba1-4109-b895-202c381aef10",
+    "repair_order_id": "3012fc9d-2d7d-4b8c-b6fc-dd0902fdab67",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "labor_id": "9bc9b37a-0fb4-4e01-8bbe-139f8096029b",
+    "description": "Timing Belt Replacement with Brake Rotors (Rear)",
+    "part_quantity": 2,
+    "total_amount": 589.98,
+    "status": "Completed"
+  },
+  {
+    "id": "b876df94-8ab0-4bf6-8fc3-62678c5fd510",
+    "repair_order_id": "79b91861-dabf-447d-89bc-e37117db5b24",
+    "part_id": null,
+    "labor_id": "c3a55c87-0b3e-42dd-aec6-9fc824072056",
+    "description": "Oxygen Sensor Replacement",
+    "part_quantity": null,
+    "total_amount": 100,
+    "status": "Completed"
+  },
+  {
+    "id": "42dccc42-3d6c-4a0b-b5e9-b6f1d279ef56",
+    "repair_order_id": "79b91861-dabf-447d-89bc-e37117db5b24",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "labor_id": "9bc9b37a-0fb4-4e01-8bbe-139f8096029b",
+    "description": "Timing Belt Replacement with Timing Belt Kit",
+    "part_quantity": 3,
+    "total_amount": 829.97,
+    "status": "Completed"
+  },
+  {
+    "id": "5811e318-b206-4e57-b265-9f9817655975",
+    "repair_order_id": "c49d0464-74a2-4c26-ae38-2e048b6d46a8",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear) with Brake Pads (Rear)",
+    "part_quantity": 1,
+    "total_amount": 219.99,
+    "status": "Completed"
+  },
+  {
+    "id": "d9987083-6f79-4ea1-b8bf-ce7ed916814c",
+    "repair_order_id": "c49d0464-74a2-4c26-ae38-2e048b6d46a8",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "labor_id": null,
+    "description": "with Water Pump",
+    "part_quantity": 2,
+    "total_amount": 179.98,
+    "status": "Pending"
+  },
+  {
+    "id": "416a11a6-adc8-4249-9fb2-83e73d2e6436",
+    "repair_order_id": "c49d0464-74a2-4c26-ae38-2e048b6d46a8",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "labor_id": "06494e79-a752-4b27-9843-abbd827a4979",
+    "description": "Starter Motor Replacement with Starter Motor",
+    "part_quantity": 2,
+    "total_amount": 559.98,
+    "status": "Pending"
+  },
+  {
+    "id": "2731fbe1-5936-48e8-865a-e3c0d0bff4d1",
+    "repair_order_id": "c49d0464-74a2-4c26-ae38-2e048b6d46a8",
+    "part_id": null,
+    "labor_id": "a6f4a5d4-db3b-4e24-bac1-c90e5ac291a5",
+    "description": "Radiator Replacement",
+    "part_quantity": null,
+    "total_amount": 200,
+    "status": "Completed"
+  },
+  {
+    "id": "b34a4d36-b163-4ccc-b3f2-2b011b8999e3",
+    "repair_order_id": "c49d0464-74a2-4c26-ae38-2e048b6d46a8",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "labor_id": "890d3e91-9690-427f-a351-374ced4652fa",
+    "description": "Diagnostic Service with Brake Pads (Front)",
+    "part_quantity": 4,
+    "total_amount": 434.96,
+    "status": "Pending"
+  },
+  {
+    "id": "d5dea968-a651-4630-bafd-fd15ddd235a1",
+    "repair_order_id": "0310cc2e-cd83-45f3-b75d-7df103dd8dab",
+    "part_id": null,
+    "labor_id": null,
+    "description": "",
+    "part_quantity": null,
+    "total_amount": 0,
+    "status": "Pending"
+  },
+  {
+    "id": "c7574b56-c494-4872-b785-6e5363986443",
+    "repair_order_id": "0310cc2e-cd83-45f3-b75d-7df103dd8dab",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "labor_id": "49400891-7c07-49e9-a4db-19627276aa13",
+    "description": "Water Pump Replacement with Brake Pads (Front)",
+    "part_quantity": 3,
+    "total_amount": 439.96999999999997,
+    "status": "Completed"
+  },
+  {
+    "id": "5f276e33-3fe4-4344-8268-ab3ef2652e38",
+    "repair_order_id": "47337230-d20c-4fab-a19d-4f2299f9d781",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "labor_id": "440c79f9-6e0a-48dd-8724-2a65f6e97c32",
+    "description": "Fuel Pump Replacement with Alternator",
+    "part_quantity": 1,
+    "total_amount": 499.99,
+    "status": "Pending"
+  },
+  {
+    "id": "25d61910-96f6-4877-b2bc-d061bb402b0a",
+    "repair_order_id": "47337230-d20c-4fab-a19d-4f2299f9d781",
+    "part_id": null,
+    "labor_id": "c5699909-9045-4d52-9a8d-f1102c17624c",
+    "description": "Oil Change",
+    "part_quantity": null,
+    "total_amount": 45,
+    "status": "Completed"
+  },
+  {
+    "id": "0260d062-a707-42a0-ad5d-71cd213f1878",
+    "repair_order_id": "47337230-d20c-4fab-a19d-4f2299f9d781",
+    "part_id": null,
+    "labor_id": "3a23db72-7e17-4bd6-80a8-e27f1ebeeb9f",
+    "description": "Brake Pad Replacement (Rear)",
+    "part_quantity": null,
+    "total_amount": 110,
+    "status": "Completed"
+  },
+  {
+    "id": "2d6dcf97-0468-4a16-aaa4-972b52c3f709",
+    "repair_order_id": "47337230-d20c-4fab-a19d-4f2299f9d781",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "labor_id": "890d3e91-9690-427f-a351-374ced4652fa",
+    "description": "Diagnostic Service with Spark Plugs (Set)",
+    "part_quantity": 1,
+    "total_amount": 124.99000000000001,
+    "status": "Completed"
+  },
+  {
+    "id": "b61621d2-8d22-4fbe-8e6d-f5895968b02b",
+    "repair_order_id": "c466346b-7025-4729-868c-51c291d66694",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "labor_id": "f8e48bbd-67c2-4548-bfb6-01e64b818ac6",
+    "description": "Battery Replacement with Battery",
+    "part_quantity": 4,
+    "total_amount": 649.96,
+    "status": "Pending"
+  },
+  {
+    "id": "91ab1778-3c1b-4879-be66-1c8cf73fcd8d",
+    "repair_order_id": "c466346b-7025-4729-868c-51c291d66694",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "labor_id": "1c541dc7-8ecd-4e3f-b200-482a6252d576",
+    "description": "Spark Plug Replacement with Water Pump",
+    "part_quantity": 2,
+    "total_amount": 269.98,
+    "status": "Pending"
+  },
+  {
+    "id": "4c0894a8-31db-4e7e-8cb7-5d3c865dd734",
+    "repair_order_id": "c466346b-7025-4729-868c-51c291d66694",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "labor_id": null,
+    "description": "with Brake Pads (Front)",
+    "part_quantity": 3,
+    "total_amount": 269.96999999999997,
+    "status": "Pending"
+  },
+  {
+    "id": "072b2931-df82-42d0-b220-68d6be3a12c7",
+    "repair_order_id": "c466346b-7025-4729-868c-51c291d66694",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "labor_id": "c5699909-9045-4d52-9a8d-f1102c17624c",
+    "description": "Oil Change with Battery",
+    "part_quantity": 2,
+    "total_amount": 344.98,
+    "status": "Completed"
+  },
+  {
+    "id": "670c1bce-7cde-4c6e-a5bf-24c47e34cd49",
+    "repair_order_id": "c466346b-7025-4729-868c-51c291d66694",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "labor_id": "a6f4a5d4-db3b-4e24-bac1-c90e5ac291a5",
+    "description": "Radiator Replacement with Water Pump",
+    "part_quantity": 3,
+    "total_amount": 469.96999999999997,
+    "status": "Completed"
+  },
+  {
+    "id": "df635a84-2177-475b-883b-3fce2b3c408f",
+    "repair_order_id": "274584c3-e9b5-46dc-a8ee-f534cac82acd",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "labor_id": "890d3e91-9690-427f-a351-374ced4652fa",
+    "description": "Diagnostic Service with Brake Rotors (Rear)",
+    "part_quantity": 1,
+    "total_amount": 194.99,
+    "status": "Completed"
+  },
+  {
+    "id": "94678e30-09d8-4504-b265-794eef6f716d",
+    "repair_order_id": "274584c3-e9b5-46dc-a8ee-f534cac82acd",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear) with Brake Pads (Front)",
+    "part_quantity": 2,
+    "total_amount": 319.98,
+    "status": "Completed"
+  },
+  {
+    "id": "57499b7b-eea9-4ecc-8cc8-0b24567f8b0c",
+    "repair_order_id": "274584c3-e9b5-46dc-a8ee-f534cac82acd",
+    "part_id": null,
+    "labor_id": "49400891-7c07-49e9-a4db-19627276aa13",
+    "description": "Water Pump Replacement",
+    "part_quantity": null,
+    "total_amount": 170,
+    "status": "Completed"
+  },
+  {
+    "id": "0f57f05b-a7a2-47ae-8e8c-a84c7cdcde92",
+    "repair_order_id": "274584c3-e9b5-46dc-a8ee-f534cac82acd",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "labor_id": "c5699909-9045-4d52-9a8d-f1102c17624c",
+    "description": "Oil Change with Timing Belt Kit",
+    "part_quantity": 4,
+    "total_amount": 684.96,
+    "status": "Pending"
+  },
+  {
+    "id": "94fdb655-ec01-45c2-b956-549a91e8db50",
+    "repair_order_id": "274584c3-e9b5-46dc-a8ee-f534cac82acd",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "labor_id": "440c79f9-6e0a-48dd-8724-2a65f6e97c32",
+    "description": "Fuel Pump Replacement with Water Pump",
+    "part_quantity": 3,
+    "total_amount": 519.97,
+    "status": "Completed"
+  },
+  {
+    "id": "2c876ba6-60bc-44ad-a15b-9a0f4b62f7bc",
+    "repair_order_id": "769da026-a6ee-4b20-8592-8d9192a7e443",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear) with Water Pump",
+    "part_quantity": 3,
+    "total_amount": 409.96999999999997,
+    "status": "Pending"
+  },
+  {
+    "id": "3d1bb7cf-a60b-485a-834f-5ec69389d447",
+    "repair_order_id": "769da026-a6ee-4b20-8592-8d9192a7e443",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "labor_id": "3a23db72-7e17-4bd6-80a8-e27f1ebeeb9f",
+    "description": "Brake Pad Replacement (Rear) with Air Filter",
+    "part_quantity": 3,
+    "total_amount": 169.97,
+    "status": "Pending"
+  },
+  {
+    "id": "00b7ca36-af61-47d0-ab86-bbed672eab6b",
+    "repair_order_id": "403c8999-c64e-4fa1-b43c-3d3936b6a3e0",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "labor_id": "a6f4a5d4-db3b-4e24-bac1-c90e5ac291a5",
+    "description": "Radiator Replacement with Starter Motor",
+    "part_quantity": 2,
+    "total_amount": 599.98,
+    "status": "Completed"
+  },
+  {
+    "id": "e0d52d72-59db-4a99-b6a0-834033675a17",
+    "repair_order_id": "0278b2ee-27a9-4ff5-a1a7-dd5d39bd3fa8",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "labor_id": null,
+    "description": "with Brake Rotors (Front)",
+    "part_quantity": 3,
+    "total_amount": 389.97,
+    "status": "Pending"
+  },
+  {
+    "id": "61372ecc-9462-4c3d-ba00-b6946543810c",
+    "repair_order_id": "994cde60-2d80-4c4c-a980-f8dcca919283",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "labor_id": "7ed5de42-f1ce-4efa-a5ba-6cfa64addc3e",
+    "description": "Alternator Replacement with Air Filter",
+    "part_quantity": 1,
+    "total_amount": 199.99,
+    "status": "Completed"
+  },
+  {
+    "id": "59843f58-9c48-46d9-87ce-2a893adab679",
+    "repair_order_id": "994cde60-2d80-4c4c-a980-f8dcca919283",
+    "part_id": null,
+    "labor_id": null,
+    "description": "",
+    "part_quantity": null,
+    "total_amount": 0,
+    "status": "Pending"
+  },
+  {
+    "id": "c11a91bb-cd96-4391-89ce-0ced6c5e6dba",
+    "repair_order_id": "868db048-2f5e-46f3-ac4d-07336bbf819f",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "labor_id": "49400891-7c07-49e9-a4db-19627276aa13",
+    "description": "Water Pump Replacement with Timing Belt Kit",
+    "part_quantity": 1,
+    "total_amount": 329.99,
+    "status": "Completed"
+  },
+  {
+    "id": "2d9d0dd3-f606-4703-89a4-68e469d93686",
+    "repair_order_id": "868db048-2f5e-46f3-ac4d-07336bbf819f",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "labor_id": null,
+    "description": "with Alternator",
+    "part_quantity": 2,
+    "total_amount": 499.98,
+    "status": "Completed"
+  },
+  {
+    "id": "52588e67-75d1-4101-8faf-8c809db30405",
+    "repair_order_id": "5c020174-922f-41ff-ab41-45b332896033",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "labor_id": "7ed5de42-f1ce-4efa-a5ba-6cfa64addc3e",
+    "description": "Alternator Replacement with Starter Motor",
+    "part_quantity": 3,
+    "total_amount": 779.97,
+    "status": "Completed"
+  },
+  {
+    "id": "ee8c5bd6-84d7-41bd-998f-eb95d0ee8341",
+    "repair_order_id": "5c020174-922f-41ff-ab41-45b332896033",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "labor_id": "890d3e91-9690-427f-a351-374ced4652fa",
+    "description": "Diagnostic Service with Battery",
+    "part_quantity": 1,
+    "total_amount": 224.99,
+    "status": "Completed"
+  },
+  {
+    "id": "5eead287-fe4d-448e-b444-e20eb6a16249",
+    "repair_order_id": "5c020174-922f-41ff-ab41-45b332896033",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "labor_id": "7ed5de42-f1ce-4efa-a5ba-6cfa64addc3e",
+    "description": "Alternator Replacement with Oxygen Sensor",
+    "part_quantity": 1,
+    "total_amount": 259.99,
+    "status": "Pending"
+  },
+  {
+    "id": "925d04e7-0f3a-474e-8a7c-275f9e217eab",
+    "repair_order_id": "5c020174-922f-41ff-ab41-45b332896033",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "labor_id": "3a23db72-7e17-4bd6-80a8-e27f1ebeeb9f",
+    "description": "Brake Pad Replacement (Rear) with Oxygen Sensor",
+    "part_quantity": 2,
+    "total_amount": 269.98,
+    "status": "Pending"
+  },
+  {
+    "id": "a7d0b96a-3cac-4999-960f-4e79c0b5783e",
+    "repair_order_id": "5c020174-922f-41ff-ab41-45b332896033",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "labor_id": "06494e79-a752-4b27-9843-abbd827a4979",
+    "description": "Starter Motor Replacement with Brake Rotors (Rear)",
+    "part_quantity": 4,
+    "total_amount": 639.96,
+    "status": "Pending"
+  },
+  {
+    "id": "cc7c54b0-08fb-4fd8-a126-061a23da462e",
+    "repair_order_id": "47ba1aa2-9cb1-4275-a700-2a805a66a64c",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "labor_id": "06494e79-a752-4b27-9843-abbd827a4979",
+    "description": "Starter Motor Replacement with Fuel Pump",
+    "part_quantity": 4,
+    "total_amount": 679.96,
+    "status": "Completed"
+  },
+  {
+    "id": "4590ea48-a3fe-4a75-9626-4a194ca29f02",
+    "repair_order_id": "47ba1aa2-9cb1-4275-a700-2a805a66a64c",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "labor_id": "a6f4a5d4-db3b-4e24-bac1-c90e5ac291a5",
+    "description": "Radiator Replacement with Battery",
+    "part_quantity": 2,
+    "total_amount": 499.98,
+    "status": "Pending"
+  },
+  {
+    "id": "f62a57f0-5a78-4084-accd-0a4330108290",
+    "repair_order_id": "47ba1aa2-9cb1-4275-a700-2a805a66a64c",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "labor_id": "a6f4a5d4-db3b-4e24-bac1-c90e5ac291a5",
+    "description": "Radiator Replacement with Water Pump",
+    "part_quantity": 1,
+    "total_amount": 289.99,
+    "status": "Pending"
+  },
+  {
+    "id": "524d7f95-35f0-41a2-b4ae-92c96ddc3d26",
+    "repair_order_id": "47ba1aa2-9cb1-4275-a700-2a805a66a64c",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "labor_id": "440c79f9-6e0a-48dd-8724-2a65f6e97c32",
+    "description": "Fuel Pump Replacement with Radiator",
+    "part_quantity": 3,
+    "total_amount": 789.97,
+    "status": "Completed"
+  },
+  {
+    "id": "d23028ef-499c-4e20-b846-36794171f739",
+    "repair_order_id": "79795ec3-150f-40ca-b955-62d87ece8a9c",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "labor_id": "06494e79-a752-4b27-9843-abbd827a4979",
+    "description": "Starter Motor Replacement with Spark Plugs (Set)",
+    "part_quantity": 3,
+    "total_amount": 309.97,
+    "status": "Completed"
+  },
+  {
+    "id": "268fd548-aa32-4db9-bfec-2c5313a8caff",
+    "repair_order_id": "79795ec3-150f-40ca-b955-62d87ece8a9c",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "labor_id": null,
+    "description": "with Oxygen Sensor",
+    "part_quantity": 4,
+    "total_amount": 319.96,
+    "status": "Pending"
+  },
+  {
+    "id": "b1ba6eb3-c732-499e-8660-18fef80cbe28",
+    "repair_order_id": "79795ec3-150f-40ca-b955-62d87ece8a9c",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "labor_id": "06494e79-a752-4b27-9843-abbd827a4979",
+    "description": "Starter Motor Replacement with Brake Pads (Rear)",
+    "part_quantity": 3,
+    "total_amount": 399.96999999999997,
+    "status": "Completed"
+  },
+  {
+    "id": "0feddee2-ea59-4f6a-be43-c32d4f82489b",
+    "repair_order_id": "79795ec3-150f-40ca-b955-62d87ece8a9c",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "labor_id": "440c79f9-6e0a-48dd-8724-2a65f6e97c32",
+    "description": "Fuel Pump Replacement with Radiator",
+    "part_quantity": 1,
+    "total_amount": 429.99,
+    "status": "Completed"
+  },
+  {
+    "id": "964279cc-e5ce-472f-9b76-9d47c66568cd",
+    "repair_order_id": "81d697da-18cf-4e03-aa34-fdf15e2ab5bc",
+    "part_id": null,
+    "labor_id": "1c541dc7-8ecd-4e3f-b200-482a6252d576",
+    "description": "Spark Plug Replacement",
+    "part_quantity": null,
+    "total_amount": 90,
+    "status": "Pending"
+  },
+  {
+    "id": "a549f518-e5c1-40d0-ac27-0db01a69174b",
+    "repair_order_id": "55988f5f-9a11-484f-a79d-97fa6a7cc7bd",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "labor_id": "a6f4a5d4-db3b-4e24-bac1-c90e5ac291a5",
+    "description": "Radiator Replacement with Oil Filter",
+    "part_quantity": 3,
+    "total_amount": 238.97,
+    "status": "Completed"
+  },
+  {
+    "id": "1c8ea222-5b95-410a-996a-812fa1bfbc17",
+    "repair_order_id": "55988f5f-9a11-484f-a79d-97fa6a7cc7bd",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "labor_id": "2d639c2b-02a2-4a32-becd-aa161bf6e62b",
+    "description": "Brake Rotor Replacement (Front) with Oxygen Sensor",
+    "part_quantity": 2,
+    "total_amount": 309.98,
+    "status": "Pending"
+  },
+  {
+    "id": "d0d601dd-7751-4ec9-856d-84c3c4244d67",
+    "repair_order_id": "55988f5f-9a11-484f-a79d-97fa6a7cc7bd",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "labor_id": null,
+    "description": "with Air Filter",
+    "part_quantity": 3,
+    "total_amount": 59.97,
+    "status": "Completed"
+  },
+  {
+    "id": "49346c68-ef8c-4884-ad03-2b3dc165ecae",
+    "repair_order_id": "0be8650c-9455-4a36-af60-1573f31e0f80",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "labor_id": "c3a55c87-0b3e-42dd-aec6-9fc824072056",
+    "description": "Oxygen Sensor Replacement with Brake Pads (Front)",
+    "part_quantity": 3,
+    "total_amount": 369.96999999999997,
+    "status": "Completed"
+  },
+  {
+    "id": "47a3c17a-e018-4350-9163-87100a64160d",
+    "repair_order_id": "0be8650c-9455-4a36-af60-1573f31e0f80",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "labor_id": null,
+    "description": "with Fuel Pump",
+    "part_quantity": 3,
+    "total_amount": 389.97,
+    "status": "Pending"
+  },
+  {
+    "id": "4225cf35-b12d-4ed3-b593-4cc22b6f6be9",
+    "repair_order_id": "0be8650c-9455-4a36-af60-1573f31e0f80",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear) with Brake Pads (Front)",
+    "part_quantity": 3,
+    "total_amount": 409.96999999999997,
+    "status": "Completed"
+  },
+  {
+    "id": "03b4ce47-861d-492a-8eb9-a19dd3639445",
+    "repair_order_id": "0be8650c-9455-4a36-af60-1573f31e0f80",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "labor_id": "49400891-7c07-49e9-a4db-19627276aa13",
+    "description": "Water Pump Replacement with Oxygen Sensor",
+    "part_quantity": 3,
+    "total_amount": 409.96999999999997,
+    "status": "Completed"
+  },
+  {
+    "id": "5e2da918-078c-49b0-b0fc-bb33a702a4f7",
+    "repair_order_id": "7bfc8def-26f7-41b5-aa17-1f87490d8b74",
+    "part_id": null,
+    "labor_id": "9bc9b37a-0fb4-4e01-8bbe-139f8096029b",
+    "description": "Timing Belt Replacement",
+    "part_quantity": null,
+    "total_amount": 350,
+    "status": "Pending"
+  },
+  {
+    "id": "803333bb-8776-47bb-aa4f-3cf7c1d390fd",
+    "repair_order_id": "7bfc8def-26f7-41b5-aa17-1f87490d8b74",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "labor_id": "2d639c2b-02a2-4a32-becd-aa161bf6e62b",
+    "description": "Brake Rotor Replacement (Front) with Oxygen Sensor",
+    "part_quantity": 2,
+    "total_amount": 309.98,
+    "status": "Completed"
+  },
+  {
+    "id": "e78129ec-514f-458e-9e96-b3e9028158e7",
+    "repair_order_id": "feb1d052-f8ee-4720-a38e-c8ffbe2bf203",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "labor_id": "c3a55c87-0b3e-42dd-aec6-9fc824072056",
+    "description": "Oxygen Sensor Replacement with Timing Belt Kit",
+    "part_quantity": 1,
+    "total_amount": 259.99,
+    "status": "Completed"
+  },
+  {
+    "id": "5bc78cda-4c68-49f1-b70d-e8ecc098328c",
+    "repair_order_id": "feb1d052-f8ee-4720-a38e-c8ffbe2bf203",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "labor_id": null,
+    "description": "with Brake Pads (Rear)",
+    "part_quantity": 3,
+    "total_amount": 239.96999999999997,
+    "status": "Completed"
+  },
+  {
+    "id": "ce469a7b-63c5-4623-b915-c53b39c869bc",
+    "repair_order_id": "34655780-b267-4900-b8f1-4520093852d2",
+    "part_id": null,
+    "labor_id": null,
+    "description": "",
+    "part_quantity": null,
+    "total_amount": 0,
+    "status": "Completed"
+  },
+  {
+    "id": "1c1979f3-8fcd-4611-97de-0dd639d96439",
+    "repair_order_id": "34655780-b267-4900-b8f1-4520093852d2",
+    "part_id": null,
+    "labor_id": "2d639c2b-02a2-4a32-becd-aa161bf6e62b",
+    "description": "Brake Rotor Replacement (Front)",
+    "part_quantity": null,
+    "total_amount": 150,
+    "status": "Completed"
+  },
+  {
+    "id": "97f747db-105f-46c1-bcfb-de1e35627c28",
+    "repair_order_id": "34655780-b267-4900-b8f1-4520093852d2",
+    "part_id": null,
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear)",
+    "part_quantity": null,
+    "total_amount": 140,
+    "status": "Completed"
+  },
+  {
+    "id": "9f0df657-3ce7-48aa-b0f5-d3ee5a5dc45b",
+    "repair_order_id": "34655780-b267-4900-b8f1-4520093852d2",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "labor_id": "f8e48bbd-67c2-4548-bfb6-01e64b818ac6",
+    "description": "Battery Replacement with Starter Motor",
+    "part_quantity": 3,
+    "total_amount": 649.97,
+    "status": "Completed"
+  },
+  {
+    "id": "b3d69737-67d4-4916-a22b-349ca1c561c7",
+    "repair_order_id": "7af5b7ac-62c4-42f3-89f0-64c6f0e52ebc",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "labor_id": "9bc9b37a-0fb4-4e01-8bbe-139f8096029b",
+    "description": "Timing Belt Replacement with Oil Filter",
+    "part_quantity": 2,
+    "total_amount": 375.98,
+    "status": "Completed"
+  },
+  {
+    "id": "67c53c4d-511a-4b57-94d0-418af394d83b",
+    "repair_order_id": "7af5b7ac-62c4-42f3-89f0-64c6f0e52ebc",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "labor_id": "a6f4a5d4-db3b-4e24-bac1-c90e5ac291a5",
+    "description": "Radiator Replacement with Alternator",
+    "part_quantity": 4,
+    "total_amount": 1199.96,
+    "status": "Completed"
+  },
+  {
+    "id": "13b7b189-9bfd-45c4-8b6b-6f71b8467e49",
+    "repair_order_id": "7f65e58f-a900-4aec-9372-8e254c337f5d",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "labor_id": "2d639c2b-02a2-4a32-becd-aa161bf6e62b",
+    "description": "Brake Rotor Replacement (Front) with Spark Plugs (Set)",
+    "part_quantity": 3,
+    "total_amount": 299.97,
+    "status": "Completed"
+  },
+  {
+    "id": "b3683aed-ca47-4a11-9b3d-1b01c7893f39",
+    "repair_order_id": "8d713ac0-f7a5-4cc0-9f95-6cf35151afbc",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "labor_id": "4862992d-f836-436e-a3be-552e004f5ade",
+    "description": "Brake Pad Replacement (Front) with Battery",
+    "part_quantity": 3,
+    "total_amount": 569.97,
+    "status": "Pending"
+  },
+  {
+    "id": "6c094f03-5f61-4eee-9a3d-3945ad112bff",
+    "repair_order_id": "8d713ac0-f7a5-4cc0-9f95-6cf35151afbc",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "labor_id": "4862992d-f836-436e-a3be-552e004f5ade",
+    "description": "Brake Pad Replacement (Front) with Battery",
+    "part_quantity": 2,
+    "total_amount": 419.98,
+    "status": "Completed"
+  },
+  {
+    "id": "c9b75648-385c-417b-bef6-f8a683ab89f1",
+    "repair_order_id": "8d713ac0-f7a5-4cc0-9f95-6cf35151afbc",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "labor_id": "c5699909-9045-4d52-9a8d-f1102c17624c",
+    "description": "Oil Change with Water Pump",
+    "part_quantity": 1,
+    "total_amount": 134.99,
+    "status": "Pending"
+  },
+  {
+    "id": "098b11fa-1af6-494a-8741-0aea8103430b",
+    "repair_order_id": "a9404770-bee2-4e46-88fe-0cda158ce109",
+    "part_id": null,
+    "labor_id": "9bc9b37a-0fb4-4e01-8bbe-139f8096029b",
+    "description": "Timing Belt Replacement",
+    "part_quantity": null,
+    "total_amount": 350,
+    "status": "Completed"
+  },
+  {
+    "id": "9ceb4434-bda3-48c3-9601-36fe938b851e",
+    "repair_order_id": "a9404770-bee2-4e46-88fe-0cda158ce109",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "labor_id": null,
+    "description": "with Battery",
+    "part_quantity": 4,
+    "total_amount": 599.96,
+    "status": "Completed"
+  },
+  {
+    "id": "fcf12824-210b-4673-b052-0c30e7cc813b",
+    "repair_order_id": "a9404770-bee2-4e46-88fe-0cda158ce109",
+    "part_id": null,
+    "labor_id": "f8e48bbd-67c2-4548-bfb6-01e64b818ac6",
+    "description": "Battery Replacement",
+    "part_quantity": null,
+    "total_amount": 50,
+    "status": "Pending"
+  },
+  {
+    "id": "bebb08b0-7b99-4349-b01a-6ab633afd897",
+    "repair_order_id": "ef10ad07-1983-47b6-9cfb-e3e0a6dc03af",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "labor_id": "06494e79-a752-4b27-9843-abbd827a4979",
+    "description": "Starter Motor Replacement with Water Pump",
+    "part_quantity": 1,
+    "total_amount": 249.99,
+    "status": "Pending"
+  },
+  {
+    "id": "673c4a7a-fe1a-4a5d-b109-aa2d80a540d4",
+    "repair_order_id": "bec98b50-876b-4635-b20b-79f184e7c64b",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "labor_id": "9bc9b37a-0fb4-4e01-8bbe-139f8096029b",
+    "description": "Timing Belt Replacement with Brake Pads (Front)",
+    "part_quantity": 1,
+    "total_amount": 439.99,
+    "status": "Completed"
+  },
+  {
+    "id": "46fd7781-ece8-4b20-88c1-63e36d3889d2",
+    "repair_order_id": "a7efa855-d416-493b-abc6-2c11f052df1f",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "labor_id": "f8e48bbd-67c2-4548-bfb6-01e64b818ac6",
+    "description": "Battery Replacement with Brake Rotors (Rear)",
+    "part_quantity": 4,
+    "total_amount": 529.96,
+    "status": "Completed"
+  },
+  {
+    "id": "ed0471bb-13c2-40b0-814f-5d65a015bf8a",
+    "repair_order_id": "a7efa855-d416-493b-abc6-2c11f052df1f",
+    "part_id": null,
+    "labor_id": "440c79f9-6e0a-48dd-8724-2a65f6e97c32",
+    "description": "Fuel Pump Replacement",
+    "part_quantity": null,
+    "total_amount": 250,
+    "status": "Completed"
+  },
+  {
+    "id": "5a27450a-6ddb-4b39-8959-40ab7cb372a3",
+    "repair_order_id": "a7efa855-d416-493b-abc6-2c11f052df1f",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "labor_id": "1c541dc7-8ecd-4e3f-b200-482a6252d576",
+    "description": "Spark Plug Replacement with Air Filter",
+    "part_quantity": 3,
+    "total_amount": 149.97,
+    "status": "Completed"
+  },
+  {
+    "id": "361779ca-d5a2-47fa-9404-6c01cc701cc2",
+    "repair_order_id": "a7efa855-d416-493b-abc6-2c11f052df1f",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "labor_id": "440c79f9-6e0a-48dd-8724-2a65f6e97c32",
+    "description": "Fuel Pump Replacement with Water Pump",
+    "part_quantity": 1,
+    "total_amount": 339.99,
+    "status": "Completed"
+  },
+  {
+    "id": "99d1deaa-27d6-44cb-b3bc-1e69e33440b0",
+    "repair_order_id": "a7efa855-d416-493b-abc6-2c11f052df1f",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "labor_id": "3a23db72-7e17-4bd6-80a8-e27f1ebeeb9f",
+    "description": "Brake Pad Replacement (Rear) with Spark Plugs (Set)",
+    "part_quantity": 4,
+    "total_amount": 309.96000000000004,
+    "status": "Completed"
+  },
+  {
+    "id": "6af7d53b-fda4-4c19-8837-be9c2eaeb756",
+    "repair_order_id": "8db0e07f-069a-4c91-b509-16cd2c0a925f",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "labor_id": "440c79f9-6e0a-48dd-8724-2a65f6e97c32",
+    "description": "Fuel Pump Replacement with Oil Filter",
+    "part_quantity": 1,
+    "total_amount": 262.99,
+    "status": "Completed"
+  },
+  {
+    "id": "415f2c0a-cd80-4abe-b205-1fa304583544",
+    "repair_order_id": "8db0e07f-069a-4c91-b509-16cd2c0a925f",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "labor_id": "890d3e91-9690-427f-a351-374ced4652fa",
+    "description": "Diagnostic Service with Spark Plugs (Set)",
+    "part_quantity": 4,
+    "total_amount": 274.96000000000004,
+    "status": "Completed"
+  },
+  {
+    "id": "c066bbca-c5c5-4503-92fe-7b1240b9c8d2",
+    "repair_order_id": "7e70e512-23bf-44ff-8d01-16ed76d00a01",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "labor_id": null,
+    "description": "with Brake Rotors (Front)",
+    "part_quantity": 2,
+    "total_amount": 259.98,
+    "status": "Pending"
+  },
+  {
+    "id": "483cbb29-e015-4cfc-a435-7594175879cd",
+    "repair_order_id": "7e70e512-23bf-44ff-8d01-16ed76d00a01",
+    "part_id": null,
+    "labor_id": null,
+    "description": "",
+    "part_quantity": null,
+    "total_amount": 0,
+    "status": "Completed"
+  },
+  {
+    "id": "87b908d1-3063-47ac-bf32-0ae00d41d73c",
+    "repair_order_id": "7e70e512-23bf-44ff-8d01-16ed76d00a01",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "labor_id": "890d3e91-9690-427f-a351-374ced4652fa",
+    "description": "Diagnostic Service with Brake Pads (Front)",
+    "part_quantity": 2,
+    "total_amount": 254.98,
+    "status": "Pending"
+  },
+  {
+    "id": "361f6378-1280-4038-8423-1c7964b4d522",
+    "repair_order_id": "7e70e512-23bf-44ff-8d01-16ed76d00a01",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "labor_id": "3a23db72-7e17-4bd6-80a8-e27f1ebeeb9f",
+    "description": "Brake Pad Replacement (Rear) with Brake Pads (Rear)",
+    "part_quantity": 3,
+    "total_amount": 349.96999999999997,
+    "status": "Completed"
+  },
+  {
+    "id": "9fb84e01-8935-478d-b0e6-385132a040e4",
+    "repair_order_id": "7e70e512-23bf-44ff-8d01-16ed76d00a01",
+    "part_id": "57846c41-7f45-4051-9922-9b3b979c3acd",
+    "labor_id": null,
+    "description": "with Oxygen Sensor",
+    "part_quantity": 2,
+    "total_amount": 159.98,
+    "status": "Completed"
+  },
+  {
+    "id": "d4a220cc-043e-4620-83df-e08a7ff41624",
+    "repair_order_id": "68ac59ea-20f1-4a06-be6f-b2ad2337d751",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "labor_id": "2d639c2b-02a2-4a32-becd-aa161bf6e62b",
+    "description": "Brake Rotor Replacement (Front) with Brake Pads (Front)",
+    "part_quantity": 1,
+    "total_amount": 239.99,
+    "status": "Completed"
+  },
+  {
+    "id": "9ba90216-9d76-4504-aa77-c13110395d2e",
+    "repair_order_id": "68ac59ea-20f1-4a06-be6f-b2ad2337d751",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "labor_id": "a6f4a5d4-db3b-4e24-bac1-c90e5ac291a5",
+    "description": "Radiator Replacement with Battery",
+    "part_quantity": 2,
+    "total_amount": 499.98,
+    "status": "Completed"
+  },
+  {
+    "id": "cf106e38-31d8-41e6-afaa-bd583c9cc3b6",
+    "repair_order_id": "68ac59ea-20f1-4a06-be6f-b2ad2337d751",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "labor_id": "c5699909-9045-4d52-9a8d-f1102c17624c",
+    "description": "Oil Change with Water Pump",
+    "part_quantity": 4,
+    "total_amount": 404.96,
+    "status": "Completed"
+  },
+  {
+    "id": "e443f2fd-aae4-43a4-806b-2ff1ea4acd33",
+    "repair_order_id": "68ac59ea-20f1-4a06-be6f-b2ad2337d751",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "labor_id": "4862992d-f836-436e-a3be-552e004f5ade",
+    "description": "Brake Pad Replacement (Front) with Brake Rotors (Rear)",
+    "part_quantity": 1,
+    "total_amount": 239.99,
+    "status": "Completed"
+  },
+  {
+    "id": "e5d9f90e-c938-4b43-adbb-27f4b7b14a22",
+    "repair_order_id": "f2a4c583-7972-4fe8-99d7-a907a3005e39",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "labor_id": "890d3e91-9690-427f-a351-374ced4652fa",
+    "description": "Diagnostic Service with Starter Motor",
+    "part_quantity": 4,
+    "total_amount": 874.96,
+    "status": "Completed"
+  },
+  {
+    "id": "c0f198eb-3cef-4f18-a4c7-6e691f52ca4f",
+    "repair_order_id": "f2a4c583-7972-4fe8-99d7-a907a3005e39",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "labor_id": "440c79f9-6e0a-48dd-8724-2a65f6e97c32",
+    "description": "Fuel Pump Replacement with Brake Pads (Rear)",
+    "part_quantity": 4,
+    "total_amount": 569.96,
+    "status": "Completed"
+  },
+  {
+    "id": "36f5c231-0676-4cb1-a4e5-f945a2bf4d04",
+    "repair_order_id": "f2a4c583-7972-4fe8-99d7-a907a3005e39",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "labor_id": "1c541dc7-8ecd-4e3f-b200-482a6252d576",
+    "description": "Spark Plug Replacement with Starter Motor",
+    "part_quantity": 1,
+    "total_amount": 289.99,
+    "status": "Pending"
+  },
+  {
+    "id": "1277c66f-429e-4f6e-a6d1-2c9871a9e443",
+    "repair_order_id": "618a760a-e66f-400f-80d1-55d84d2df443",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear) with Battery",
+    "part_quantity": 2,
+    "total_amount": 439.98,
+    "status": "Pending"
+  },
+  {
+    "id": "cf33b337-e648-43ec-a462-01aa30e292e2",
+    "repair_order_id": "14d8b5af-6dd8-49e4-a849-1c43289044d0",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "labor_id": "49400891-7c07-49e9-a4db-19627276aa13",
+    "description": "Water Pump Replacement with Air Filter",
+    "part_quantity": 4,
+    "total_amount": 249.95999999999998,
+    "status": "Pending"
+  },
+  {
+    "id": "4f4d42ae-b636-4c77-8ca7-9e4618c7638e",
+    "repair_order_id": "14d8b5af-6dd8-49e4-a849-1c43289044d0",
+    "part_id": null,
+    "labor_id": "f8e48bbd-67c2-4548-bfb6-01e64b818ac6",
+    "description": "Battery Replacement",
+    "part_quantity": null,
+    "total_amount": 50,
+    "status": "Completed"
+  },
+  {
+    "id": "ecf19cbe-568c-404e-ae64-74e4f69518f6",
+    "repair_order_id": "6fe4703b-9b13-4d34-8d6e-2da38af1acc7",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "labor_id": "4862992d-f836-436e-a3be-552e004f5ade",
+    "description": "Brake Pad Replacement (Front) with Alternator",
+    "part_quantity": 2,
+    "total_amount": 619.98,
+    "status": "Completed"
+  },
+  {
+    "id": "7dd977d9-1160-473b-bd78-b99b939e994f",
+    "repair_order_id": "6fe4703b-9b13-4d34-8d6e-2da38af1acc7",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "labor_id": "c5699909-9045-4d52-9a8d-f1102c17624c",
+    "description": "Oil Change with Spark Plugs (Set)",
+    "part_quantity": 2,
+    "total_amount": 144.98000000000002,
+    "status": "Pending"
+  },
+  {
+    "id": "92a166f8-ddc9-4ff2-ae58-678e63acd825",
+    "repair_order_id": "6fe4703b-9b13-4d34-8d6e-2da38af1acc7",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "labor_id": "49400891-7c07-49e9-a4db-19627276aa13",
+    "description": "Water Pump Replacement with Brake Rotors (Rear)",
+    "part_quantity": 1,
+    "total_amount": 289.99,
+    "status": "Pending"
+  },
+  {
+    "id": "205710fa-4c22-46b8-8381-1cb7bd59188e",
+    "repair_order_id": "6fe4703b-9b13-4d34-8d6e-2da38af1acc7",
+    "part_id": null,
+    "labor_id": "4862992d-f836-436e-a3be-552e004f5ade",
+    "description": "Brake Pad Replacement (Front)",
+    "part_quantity": null,
+    "total_amount": 120,
+    "status": "Completed"
+  },
+  {
+    "id": "d2994161-a253-4359-ab32-4ca2f04dd76c",
+    "repair_order_id": "318e76a9-3ae3-4c3e-a30a-d8b79ec9d039",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "labor_id": "c3a55c87-0b3e-42dd-aec6-9fc824072056",
+    "description": "Oxygen Sensor Replacement with Brake Pads (Rear)",
+    "part_quantity": 2,
+    "total_amount": 259.98,
+    "status": "Completed"
+  },
+  {
+    "id": "559846d5-4c80-47a6-a480-837087ac9976",
+    "repair_order_id": "318e76a9-3ae3-4c3e-a30a-d8b79ec9d039",
+    "part_id": null,
+    "labor_id": "c5699909-9045-4d52-9a8d-f1102c17624c",
+    "description": "Oil Change",
+    "part_quantity": null,
+    "total_amount": 45,
+    "status": "Pending"
+  },
+  {
+    "id": "073e6f39-ec05-4601-b0e4-ea557ea0241c",
+    "repair_order_id": "318e76a9-3ae3-4c3e-a30a-d8b79ec9d039",
+    "part_id": "0e59d28e-9dd3-472b-819f-72a5565281d4",
+    "labor_id": "440c79f9-6e0a-48dd-8724-2a65f6e97c32",
+    "description": "Fuel Pump Replacement with Alternator",
+    "part_quantity": 2,
+    "total_amount": 749.98,
+    "status": "Pending"
+  },
+  {
+    "id": "e8ebfd84-17fc-4abb-9a55-1367d8608b32",
+    "repair_order_id": "919a341a-b9ed-4662-b8e5-344beed2ecb9",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "labor_id": "2d639c2b-02a2-4a32-becd-aa161bf6e62b",
+    "description": "Brake Rotor Replacement (Front) with Radiator",
+    "part_quantity": 2,
+    "total_amount": 509.98,
+    "status": "Completed"
+  },
+  {
+    "id": "c9ae5ab0-f601-43aa-992a-0aaff6bbe22a",
+    "repair_order_id": "919a341a-b9ed-4662-b8e5-344beed2ecb9",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "labor_id": "4862992d-f836-436e-a3be-552e004f5ade",
+    "description": "Brake Pad Replacement (Front) with Radiator",
+    "part_quantity": 2,
+    "total_amount": 479.98,
+    "status": "Pending"
+  },
+  {
+    "id": "c798b873-3bb3-4a01-b921-db088adf9803",
+    "repair_order_id": "f4a6c3e3-313a-4881-ba82-da1ad1c86091",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "labor_id": "2d639c2b-02a2-4a32-becd-aa161bf6e62b",
+    "description": "Brake Rotor Replacement (Front) with Brake Pads (Rear)",
+    "part_quantity": 4,
+    "total_amount": 469.96,
+    "status": "Completed"
+  },
+  {
+    "id": "8f14b999-838d-4be7-a0c0-86feba14e682",
+    "repair_order_id": "21720dee-2aef-4c03-9bb6-ad873a02b5c0",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "labor_id": "4862992d-f836-436e-a3be-552e004f5ade",
+    "description": "Brake Pad Replacement (Front) with Starter Motor",
+    "part_quantity": 1,
+    "total_amount": 319.99,
+    "status": "Completed"
+  },
+  {
+    "id": "5f9a63e2-54eb-42e0-a08b-94962fd1365a",
+    "repair_order_id": "21720dee-2aef-4c03-9bb6-ad873a02b5c0",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "labor_id": "3a23db72-7e17-4bd6-80a8-e27f1ebeeb9f",
+    "description": "Brake Pad Replacement (Rear) with Fuel Pump",
+    "part_quantity": 2,
+    "total_amount": 369.98,
+    "status": "Pending"
+  },
+  {
+    "id": "2220bcdb-5d41-428e-81ce-8d27eaa532ab",
+    "repair_order_id": "c111903d-951c-4567-912a-4c855d6b6b6c",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "labor_id": null,
+    "description": "with Timing Belt Kit",
+    "part_quantity": 4,
+    "total_amount": 639.96,
+    "status": "Completed"
+  },
+  {
+    "id": "8c4a5041-9d3b-4512-a9b1-6c0e6a4e0c01",
+    "repair_order_id": "c111903d-951c-4567-912a-4c855d6b6b6c",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "labor_id": "7ed5de42-f1ce-4efa-a5ba-6cfa64addc3e",
+    "description": "Alternator Replacement with Air Filter",
+    "part_quantity": 4,
+    "total_amount": 259.96,
+    "status": "Completed"
+  },
+  {
+    "id": "1e8a9097-ac5d-4e81-ae16-60e36f832a4a",
+    "repair_order_id": "7a4c9323-11bc-4ba5-928d-768612714e87",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "labor_id": "3a23db72-7e17-4bd6-80a8-e27f1ebeeb9f",
+    "description": "Brake Pad Replacement (Rear) with Spark Plugs (Set)",
+    "part_quantity": 1,
+    "total_amount": 159.99,
+    "status": "Pending"
+  },
+  {
+    "id": "b5d171d1-bb6c-4b79-b476-f3a0896bbc9f",
+    "repair_order_id": "7a4c9323-11bc-4ba5-928d-768612714e87",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "labor_id": null,
+    "description": "with Starter Motor",
+    "part_quantity": 2,
+    "total_amount": 399.98,
+    "status": "Pending"
+  },
+  {
+    "id": "5625533b-d7fd-4762-9300-48e7949da5d5",
+    "repair_order_id": "7a4c9323-11bc-4ba5-928d-768612714e87",
+    "part_id": "4b056e37-c2d2-418d-aaae-2eb268ea57ce",
+    "labor_id": "2d639c2b-02a2-4a32-becd-aa161bf6e62b",
+    "description": "Brake Rotor Replacement (Front) with Oil Filter",
+    "part_quantity": 2,
+    "total_amount": 175.98,
+    "status": "Completed"
+  },
+  {
+    "id": "eaa5aaca-61f3-43c8-98f9-e71d27ca5ed6",
+    "repair_order_id": "7a4c9323-11bc-4ba5-928d-768612714e87",
+    "part_id": null,
+    "labor_id": "440c79f9-6e0a-48dd-8724-2a65f6e97c32",
+    "description": "Fuel Pump Replacement",
+    "part_quantity": null,
+    "total_amount": 250,
+    "status": "Completed"
+  },
+  {
+    "id": "e142c7c8-d537-423f-acaf-2c6a3ab7b43f",
+    "repair_order_id": "41d5237f-78a9-424b-8518-eab17ba9223f",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "labor_id": "1c541dc7-8ecd-4e3f-b200-482a6252d576",
+    "description": "Spark Plug Replacement with Starter Motor",
+    "part_quantity": 1,
+    "total_amount": 289.99,
+    "status": "Completed"
+  },
+  {
+    "id": "567d4d4e-11b4-4acd-85e5-c28c440a0b2b",
+    "repair_order_id": "41d5237f-78a9-424b-8518-eab17ba9223f",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "labor_id": "1c541dc7-8ecd-4e3f-b200-482a6252d576",
+    "description": "Spark Plug Replacement with Brake Rotors (Front)",
+    "part_quantity": 3,
+    "total_amount": 479.97,
+    "status": "Completed"
+  },
+  {
+    "id": "cc0d51a8-af57-43b6-9ac7-550ec1cfde94",
+    "repair_order_id": "41d5237f-78a9-424b-8518-eab17ba9223f",
+    "part_id": "c42c1273-eba9-46d3-ab65-8080a818c57c",
+    "labor_id": "9bc9b37a-0fb4-4e01-8bbe-139f8096029b",
+    "description": "Timing Belt Replacement with Brake Pads (Front)",
+    "part_quantity": 3,
+    "total_amount": 619.97,
+    "status": "Pending"
+  },
+  {
+    "id": "881b8f85-9b9a-4f1a-ad05-bb5b2269ac15",
+    "repair_order_id": "41d5237f-78a9-424b-8518-eab17ba9223f",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "labor_id": "3a23db72-7e17-4bd6-80a8-e27f1ebeeb9f",
+    "description": "Brake Pad Replacement (Rear) with Radiator",
+    "part_quantity": 1,
+    "total_amount": 289.99,
+    "status": "Pending"
+  },
+  {
+    "id": "8ec6d5d5-0bc8-4e8c-a2ac-62933030746b",
+    "repair_order_id": "41d5237f-78a9-424b-8518-eab17ba9223f",
+    "part_id": null,
+    "labor_id": "49400891-7c07-49e9-a4db-19627276aa13",
+    "description": "Water Pump Replacement",
+    "part_quantity": null,
+    "total_amount": 170,
+    "status": "Pending"
+  },
+  {
+    "id": "61c8db30-6679-4e1f-945b-610e5e2e7c35",
+    "repair_order_id": "9c398dd6-e5c1-4503-959a-5ad2be796d87",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "labor_id": "a6f4a5d4-db3b-4e24-bac1-c90e5ac291a5",
+    "description": "Radiator Replacement with Brake Pads (Rear)",
+    "part_quantity": 2,
+    "total_amount": 359.98,
+    "status": "Pending"
+  },
+  {
+    "id": "6f56e88b-9d87-4083-a628-c629d65b165d",
+    "repair_order_id": "9c398dd6-e5c1-4503-959a-5ad2be796d87",
+    "part_id": "d4e98d2b-3e33-4cfa-8367-eb4360d986ac",
+    "labor_id": "890d3e91-9690-427f-a351-374ced4652fa",
+    "description": "Diagnostic Service with Water Pump",
+    "part_quantity": 4,
+    "total_amount": 434.96,
+    "status": "Completed"
+  },
+  {
+    "id": "3ef97415-048d-4fba-bb00-f4fa11e0dd3c",
+    "repair_order_id": "9c398dd6-e5c1-4503-959a-5ad2be796d87",
+    "part_id": "a1ace109-4d8a-47e4-a30b-e9b5588a0130",
+    "labor_id": "2d639c2b-02a2-4a32-becd-aa161bf6e62b",
+    "description": "Brake Rotor Replacement (Front) with Air Filter",
+    "part_quantity": 4,
+    "total_amount": 229.95999999999998,
+    "status": "Completed"
+  },
+  {
+    "id": "bdfc60a8-961e-4403-ab8e-d0e31999ecd2",
+    "repair_order_id": "9c398dd6-e5c1-4503-959a-5ad2be796d87",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "labor_id": "49400891-7c07-49e9-a4db-19627276aa13",
+    "description": "Water Pump Replacement with Battery",
+    "part_quantity": 4,
+    "total_amount": 769.96,
+    "status": "Completed"
+  },
+  {
+    "id": "b91ad500-9a14-44eb-9acc-063d42fb7442",
+    "repair_order_id": "95c50dbb-63e7-4e12-8af9-03a67405abd3",
+    "part_id": "bda770e4-72a3-4a57-aaaf-7fc9b93af2ee",
+    "labor_id": null,
+    "description": "with Brake Pads (Rear)",
+    "part_quantity": 2,
+    "total_amount": 159.98,
+    "status": "Pending"
+  },
+  {
+    "id": "b0ed4443-5934-4c87-ad99-a1eb5ee137fc",
+    "repair_order_id": "95c50dbb-63e7-4e12-8af9-03a67405abd3",
+    "part_id": null,
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear)",
+    "part_quantity": null,
+    "total_amount": 140,
+    "status": "Completed"
+  },
+  {
+    "id": "e577da7e-4a44-4897-949d-126cfe573f1b",
+    "repair_order_id": "95c50dbb-63e7-4e12-8af9-03a67405abd3",
+    "part_id": "31fb29e2-a609-4458-a2a4-34957f2db3c5",
+    "labor_id": "7ed5de42-f1ce-4efa-a5ba-6cfa64addc3e",
+    "description": "Alternator Replacement with Brake Rotors (Rear)",
+    "part_quantity": 2,
+    "total_amount": 419.98,
+    "status": "Pending"
+  },
+  {
+    "id": "63e1fc11-a8c0-403c-9f15-6dc2f7fc3525",
+    "repair_order_id": "95c50dbb-63e7-4e12-8af9-03a67405abd3",
+    "part_id": "10ceea46-4781-43e4-83a8-0a59c3cdfa95",
+    "labor_id": "f8e48bbd-67c2-4548-bfb6-01e64b818ac6",
+    "description": "Battery Replacement with Fuel Pump",
+    "part_quantity": 3,
+    "total_amount": 439.97,
+    "status": "Pending"
+  },
+  {
+    "id": "59c7ff82-d764-49b5-b822-d9bb294ce13b",
+    "repair_order_id": "0226deb7-2da1-4376-b67a-20b462a772eb",
+    "part_id": "00027219-d617-4eda-8981-5692ba766012",
+    "labor_id": "9bc9b37a-0fb4-4e01-8bbe-139f8096029b",
+    "description": "Timing Belt Replacement with Starter Motor",
+    "part_quantity": 3,
+    "total_amount": 949.97,
+    "status": "Pending"
+  },
+  {
+    "id": "35daf478-acf5-4850-a760-874ef6b88858",
+    "repair_order_id": "0226deb7-2da1-4376-b67a-20b462a772eb",
+    "part_id": "ad6392cf-c3de-408c-8071-15b1e5c83fc8",
+    "labor_id": "04802f02-8b40-43cb-bccf-5db747d961c2",
+    "description": "Brake Rotor Replacement (Rear) with Timing Belt Kit",
+    "part_quantity": 3,
+    "total_amount": 619.97,
+    "status": "Completed"
+  },
+  {
+    "id": "b13040f2-afb8-40f5-a7ff-d3856f9cf0ac",
+    "repair_order_id": "0226deb7-2da1-4376-b67a-20b462a772eb",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "labor_id": "2d639c2b-02a2-4a32-becd-aa161bf6e62b",
+    "description": "Brake Rotor Replacement (Front) with Battery",
+    "part_quantity": 2,
+    "total_amount": 449.98,
+    "status": "Pending"
+  },
+  {
+    "id": "df797516-d204-4a32-9717-7d6d75e569e3",
+    "repair_order_id": "0226deb7-2da1-4376-b67a-20b462a772eb",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "labor_id": "49400891-7c07-49e9-a4db-19627276aa13",
+    "description": "Water Pump Replacement with Brake Rotors (Front)",
+    "part_quantity": 4,
+    "total_amount": 689.96,
+    "status": "Pending"
+  },
+  {
+    "id": "f9040340-f1e7-4d85-b662-07e68e660929",
+    "repair_order_id": "13251080-caf6-4079-bae6-fdc100836b67",
+    "part_id": "a28650ec-0219-4121-8567-f1d1cae89e49",
+    "labor_id": "4862992d-f836-436e-a3be-552e004f5ade",
+    "description": "Brake Pad Replacement (Front) with Spark Plugs (Set)",
+    "part_quantity": 4,
+    "total_amount": 319.96000000000004,
+    "status": "Completed"
+  },
+  {
+    "id": "4c839877-bdf2-4ac2-9146-a756fbbc0407",
+    "repair_order_id": "718adbbe-ccf8-4ee5-ac76-33053672f021",
+    "part_id": "3d5fe465-577d-4deb-8cef-fc59f1555d4f",
+    "labor_id": "c3a55c87-0b3e-42dd-aec6-9fc824072056",
+    "description": "Oxygen Sensor Replacement with Radiator",
+    "part_quantity": 2,
+    "total_amount": 459.98,
+    "status": "Completed"
+  },
+  {
+    "id": "efd1a7ff-81b1-4e00-ac38-90056d2684e3",
+    "repair_order_id": "718adbbe-ccf8-4ee5-ac76-33053672f021",
+    "part_id": "847e262a-b09f-4d7d-9287-d3f6ddab1301",
+    "labor_id": "2d639c2b-02a2-4a32-becd-aa161bf6e62b",
+    "description": "Brake Rotor Replacement (Front) with Battery",
+    "part_quantity": 1,
+    "total_amount": 299.99,
+    "status": "Completed"
+  },
+  {
+    "id": "71182448-27d6-457a-9037-7e5a2807d558",
+    "repair_order_id": "718adbbe-ccf8-4ee5-ac76-33053672f021",
+    "part_id": "ffad59e5-7586-4611-80c1-ef78f0cff0e1",
+    "labor_id": "49400891-7c07-49e9-a4db-19627276aa13",
+    "description": "Water Pump Replacement with Brake Rotors (Front)",
+    "part_quantity": 4,
+    "total_amount": 689.96,
+    "status": "Completed"
+  },
+  {
+    "id": "c1f0b5df-83be-4e54-a047-faee15a5a7a4",
+    "repair_order_id": "718adbbe-ccf8-4ee5-ac76-33053672f021",
+    "part_id": null,
+    "labor_id": "c5699909-9045-4d52-9a8d-f1102c17624c",
+    "description": "Oil Change",
+    "part_quantity": null,
+    "total_amount": 45,
+    "status": "Completed"
+  }
+]
