@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "../i18n/navigation";
 import { OctagonAlert } from "lucide-react";
 import { Bricolage_Grotesque } from "next/font/google";
 import { useTranslations } from "next-intl";
@@ -32,7 +32,7 @@ export function Error({ code }: { code: number }) {
         {errorMessage}
       </p>
       <Link
-        href="/"
+        href="/home"
         className={`${bricolage.variable} px-4 py-2 border rounded-md transition-colors shadow-sm hover:bg-primary/5`}
         style={{ fontFamily: "var(--font-bricolage)" }}
       >

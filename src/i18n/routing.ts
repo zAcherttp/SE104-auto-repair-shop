@@ -13,5 +13,9 @@ export const routing = defineRouting({
       vi: "/dang-nhap",
       en: "/login",
     },
+    "/home": {
+      vi: "/trang-chu",
+      en: "/home",
+    },
   },
 });
