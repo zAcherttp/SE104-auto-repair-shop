@@ -11,8 +11,9 @@ import {
 } from "@/src/components/ui/card";
 import { Input } from "@/src/components/ui/input";
 import { Label } from "@/src/components/ui/label";
+import { Loader2 } from "lucide-react";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
+import { Link } from "@/src/i18n/navigation";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { toast } from "sonner";
@@ -36,10 +37,10 @@ export function LoginForm({
       // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 1500));
 
-      // Success - redirect to dashboard
-      toast.success("Redirecting to your dashboard...");
+      // Success - redirect to home
+      toast.success("Login successful!");
 
-      router.push("/dashboard");
+      router.push("/home");
     } catch (error) {
       toast.error("Login failed. Please try again.");
       console.error("Login error:", error);
@@ -90,7 +91,10 @@ export function LoginForm({
                 </div>
                 <Button type="submit" className="w-full" disabled={isLoading}>
                   {isLoading ? (
-                    <div className="h-4 w-4 border-t-2 border-b-2 border-white rounded-full animate-spin mr-2"></div>
+                    <Loader2
+                      className="mr-2 h-4 w-4 animate-spin"
+                      aria-hidden="true"
+                    />
                   ) : (
                     <span>{t("login")}</span>
                   )}
@@ -99,7 +103,7 @@ export function LoginForm({
               </div>
               <div className="text-center text-sm">
                 {t("no-account")}{" "}
-                <Link href="#" className="underline underline-offset-4">
+                <Link href="/" className="underline underline-offset-4">
                   {t("signup")}
                 </Link>
               </div>

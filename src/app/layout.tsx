@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "./global.css";
 import { Toaster } from "sonner";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { routing } from "../i18n/routing";
 import { setRequestLocale } from "next-intl/server";
+import { ThemeProvider } from "next-themes";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,13 +43,20 @@ export default async function RootLayout({
   setRequestLocale(locale);
 
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider>
-          {children}
-          <Toaster />
+          <ThemeProvider
+            enableSystem
+            disableTransitionOnChange
+            attribute="class"
+            defaultTheme="dark"
+          >
+            {children}
+            <Toaster />
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>

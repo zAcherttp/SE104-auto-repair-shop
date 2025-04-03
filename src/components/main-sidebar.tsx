@@ -93,7 +93,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <NavGroup items={data.dashboardItems} label="Dashboard" />
         <NavGroup items={data.garageItems} label="Garage" />
       </SidebarContent>
-      <SidebarRail />
     </Sidebar>
   );
 }
