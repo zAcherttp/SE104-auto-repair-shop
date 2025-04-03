@@ -102,7 +102,7 @@ export function NotificationDropdown() {
   return (
     <DropdownMenu open={open} onOpenChange={setOpen}>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="icon" className="relative">
+        <Button variant="outline" size="icon" className="relative ">
           <Bell className="h-5 w-5" />
           {unreadCount > 0 && (
             <Badge className="absolute -top-2 -right-2 h-5 w-5 flex items-center justify-center p-0 bg-red-500/90">
@@ -111,7 +111,10 @@ export function NotificationDropdown() {
           )}
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-80" align="end">
+      <DropdownMenuContent
+        className="w-80 bg-background/60 backdrop-blur-sm"
+        align="end"
+      >
         <DropdownMenuLabel className="flex justify-between items-center">
           <span>Notifications</span>
           {unreadCount > 0 && (
