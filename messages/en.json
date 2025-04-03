@@ -1,6 +1,8 @@
 {
   "global": {
-    "app-name": "GarageFlow"
+    "app-name": "GarageFlow",
+    "currency": "USD",
+    "locale-code": "en"
   },
   "metadata": {
     "login": {
@@ -12,7 +14,35 @@
       "description": "Create an account"
     }
   },
-  "locale": {
+  "date": {
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "tomorrow": "Tomorrow",
+    "days": {
+      "mon": "Mon",
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri",
+      "sat": "Sat",
+      "sun": "Sun"
+    },
+    "months": {
+      "jan": "Jan",
+      "feb": "Feb",
+      "mar": "Mar",
+      "apr": "Apr",
+      "may": "May",
+      "jun": "Jun",
+      "jul": "Jul",
+      "aug": "Aug",
+      "sep": "Sep",
+      "oct": "Oct",
+      "nov": "Nov",
+      "dec": "Dec"
+    }
+  },
+  "locale-name": {
     "en": "English",
     "vi": "Vietnamese"
   },
@@ -28,6 +58,9 @@
     "signup": "Sign up"
   },
   "signup": {},
+  "home": {
+    "revenue": "Revenue"
+  },
   "error": {
     "404": "Oops! It seems you are lost. This page does not exist.",
     "500": "Oops! Something went wrong on our server.",

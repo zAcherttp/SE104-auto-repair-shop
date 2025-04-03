@@ -9,7 +9,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "../components/ui/sidebar";
-import { Link, usePathname } from "../i18n/navigation";
+import { usePathname } from "../i18n/navigation";
 
 export function NavGroup({
   items,
@@ -27,7 +27,9 @@ export function NavGroup({
 
   return (
     <SidebarGroup>
-      <SidebarGroupLabel>{label}</SidebarGroupLabel>
+      <SidebarGroupLabel className="uppercase font-semibold text-muted-foreground">
+        {label}
+      </SidebarGroupLabel>
       <SidebarMenu>
         {items.map((item) => (
           <SidebarMenuItem key={item.name}>
@@ -35,11 +37,12 @@ export function NavGroup({
               isActive={isActive(item.url)}
               asChild
               tooltip={item.name}
+              className="text-muted-foreground"
             >
-              <Link href={item.url} prefetch={false}>
+              <a href={item.url}>
                 {item.icon && <item.icon />}
                 <span>{item.name}</span>
-              </Link>
+              </a>
             </SidebarMenuButton>
           </SidebarMenuItem>
         ))}

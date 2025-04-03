@@ -18,7 +18,6 @@ import {
   Sidebar,
   SidebarContent,
   SidebarHeader,
-  SidebarRail,
 } from "../components/ui/sidebar";
 import { AppBanner } from "./app-banner";
 
