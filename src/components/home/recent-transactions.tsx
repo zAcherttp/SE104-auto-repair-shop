@@ -53,7 +53,9 @@ export function RecentTransactions() {
             <div className="flex items-center gap-3">
               <Avatar className="h-9 w-9">
                 <AvatarImage
-                  src="https://avatar.iran.liara.run/public"
+                  src={`https://avatar.iran.liara.run/username?username=${transaction.name
+                    .toLowerCase()
+                    .replace(/\s+/g, "+")}`}
                   alt={transaction.name}
                 />
                 <AvatarFallback>{transaction.name.charAt(0)}</AvatarFallback>

@@ -93,7 +93,9 @@ export function UserProfile() {
         <Button variant="ghost" className="flex items-center gap-2">
           <Avatar className="h-8 w-8">
             <AvatarImage
-              src="https://avatar.iran.liara.run/public"
+              src={`https://avatar.iran.liara.run/username?username=${user.name
+                .toLowerCase()
+                .replace(/\s+/g, "+")}`}
               alt="User"
             />
             <AvatarFallback>JD</AvatarFallback>
