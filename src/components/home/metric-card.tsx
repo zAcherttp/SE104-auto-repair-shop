@@ -72,7 +72,7 @@ export default function MetricCard({
         <CardDescription className="uppercase font-semibold text-muted-foreground">
           {title}
         </CardDescription>
-        <CardTitle className="text-2xl font-semibold tabular-nums">
+        <CardTitle className="text-2xl font-semibold text-foreground tabular-nums">
           <div className="flex justify-between">
             <div className="flex gap-2 items-center">
               {formatValue(value, type)}
@@ -107,7 +107,7 @@ export default function MetricCard({
         </CardTitle>
       </CardHeader>
       <CardFooter className="flex-col items-start gap-1 text-sm">
-        <div className="line-clamp-1 gap-2 flex font-medium">
+        <div className="line-clamp-1 gap-2 flex text-foreground font-medium">
           {getTimeframeDifference(difference, value, type)}
           <span className="text-muted-foreground font-normal">
             {/* we gonna add switching timeframe later, for now its monthly */}

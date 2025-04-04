@@ -1,7 +1,7 @@
 "use client";
 
 import type React from "react";
-import { AppSidebar } from "@/src/components/main-sidebar";
+import { AppSidebar } from "@/src/components/app-sidebar";
 import { SidebarInset, SidebarProvider } from "@/src/components/ui/sidebar";
 import { Header } from "@/src/components/dashboard-header";
 

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./global.css";
 import { Toaster } from "sonner";
-import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "../i18n/routing";
 import { setRequestLocale } from "next-intl/server";
 import { ThemeProvider } from "next-themes";
@@ -34,9 +34,9 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }) {
   // Ensure that the incoming `locale` is valid
-  const { locale } = await params;
+  let { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
-    // TODO: what should i put here?
+    locale = routing.defaultLocale;
   }
 
   // Enable static rendering
@@ -45,6 +45,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
+        suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider>
@@ -52,7 +53,6 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
             attribute="class"
-            defaultTheme="dark"
           >
             {children}
             <Toaster />

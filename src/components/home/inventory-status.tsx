@@ -9,7 +9,7 @@ export default function InventoryStatus() {
           className="rounded-md border p-4 transition-colors hover:bg-muted/50"
         >
           <div className="flex items-center justify-between">
-            <div className="font-medium">Oil Filter</div>
+            <div className="font-medium text-foreground">Oil Filter</div>
             <div className="text-sm text-muted-foreground">Stock: {i} pcs</div>
           </div>
           <div className="mt-1 text-xs text-muted-foreground">

@@ -1,6 +1,6 @@
 import { Badge } from "../ui/badge";
 
-export default function ActiveTasks() {
+export default function ActiveOrders() {
   return (
     <div className="space-y-2">
       {[1, 2, 3].map((i) => (
@@ -9,7 +9,7 @@ export default function ActiveTasks() {
           className="rounded-md border p-4 transition-colors hover:bg-muted/50"
         >
           <div className="flex items-center justify-between">
-            <div className="font-medium">Brake Replacement</div>
+            <div className="font-medium text-foreground">Brake Replacement</div>
             <div className="text-sm text-muted-foreground">Honda Civic</div>
           </div>
           <div className="mt-1 text-xs text-muted-foreground">

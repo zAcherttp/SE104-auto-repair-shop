@@ -8,6 +8,14 @@ import {
   SidebarMenuItem,
 } from "../components/ui/sidebar";
 import { LucideIcon } from "lucide-react";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal"],
+  variable: "--font-poppins",
+});
 
 export function AppBanner({
   garage,
@@ -31,7 +39,11 @@ export function AppBanner({
             <garage.logo className="h-6 w-6" />
           </div>
           <div className="grid flex-1 text-left text-sm leading-tight">
-            <span className="truncate font-semibold">{garage.name}</span>
+            <span
+              className={`${poppins.variable} truncate font-semibold text-xl text-foreground`}
+            >
+              {garage.name}
+            </span>
           </div>
         </SidebarMenuButton>
       </SidebarMenuItem>

@@ -10,7 +10,6 @@ import {
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from "@/src/components/ui/card";
@@ -18,7 +17,7 @@ import MetricCard from "@/src/components/home/metric-card";
 import { Button } from "@/src/components/ui/button";
 import { RecentTransactions } from "@/src/components/home/recent-transactions";
 import { RevenueChart } from "@/src/components/revenue-chart";
-import ActiveTasks from "@/src/components/home/active-tasks";
+import ActiveOrders from "@/src/components/home/active-orders";
 import { useTranslations } from "next-intl";
 import InventoryStatus from "@/src/components/home/inventory-status";
 
@@ -86,34 +85,30 @@ export default function HomePage() {
           <Card className="col-span-4">
             <CardHeader>
               <div className="flex items-center justify-between space-y-0">
-                <div>
-                  <CardTitle>{t("active-tasks")}</CardTitle>
-                  <CardDescription>{t("active-tasks-desc")}</CardDescription>
+                <div className="uppercase font-semibold text-muted-foreground">
+                  <CardTitle>{t("active-orders")}</CardTitle>
                 </div>
                 <Button variant="outline" asChild>
-                  <Link href="/tasks">
-                    View All Tasks
+                  <Link href="/orders" className="text-foreground">
+                    {t("view-orders")}
                     <ArrowRight />
                   </Link>
                 </Button>
               </div>
             </CardHeader>
             <CardContent>
-              <ActiveTasks />
+              <ActiveOrders />
             </CardContent>
           </Card>
           <Card className="col-span-3">
             <CardHeader>
               <div className="flex items-center justify-between space-y-0">
-                <div>
-                  <CardTitle>Inventory Status</CardTitle>
-                  <CardDescription>
-                    Low stock items that need attention
-                  </CardDescription>
+                <div className="uppercase font-semibold text-muted-foreground">
+                  <CardTitle>{t("inventory-status")}</CardTitle>
                 </div>
                 <Button variant="outline" asChild>
-                  <Link href="/inventory">
-                    View Inventory
+                  <Link href="/inventory" className="text-foreground">
+                    {t("view-inventory")}
                     <ArrowRight />
                   </Link>
                 </Button>

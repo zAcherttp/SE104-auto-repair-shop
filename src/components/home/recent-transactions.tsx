@@ -53,13 +53,13 @@ export function RecentTransactions() {
             <div className="flex items-center gap-3">
               <Avatar className="h-9 w-9">
                 <AvatarImage
-                  src={`/placeholder.svg?height=36&width=36`}
+                  src="https://avatar.iran.liara.run/public"
                   alt={transaction.name}
                 />
                 <AvatarFallback>{transaction.name.charAt(0)}</AvatarFallback>
               </Avatar>
               <div>
-                <p className="text-sm font-medium leading-none">
+                <p className="text-sm font-medium text-foreground leading-none">
                   {transaction.name}
                 </p>
                 <p className="text-xs text-muted-foreground">

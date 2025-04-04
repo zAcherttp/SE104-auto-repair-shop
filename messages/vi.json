@@ -1,6 +1,6 @@
 {
   "global": {
-    "app-name": "GarageFlow",
+    "app-name": "garageflow",
     "currency": "VND",
     "locale-code": "vi"
   },

@@ -51,7 +51,7 @@ export function UserProfile() {
     role: "Manager",
     department: "Administration",
     joinDate: "2020-03-15",
-    avatar: "/placeholder.svg?height=128&width=128",
+    avatar: "https://avatar.iran.liara.run/public",
     permissions: [
       "manage_users",
       "manage_inventory",
@@ -92,7 +92,10 @@ export function UserProfile() {
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" className="flex items-center gap-2">
           <Avatar className="h-8 w-8">
-            <AvatarImage src="/placeholder.svg" alt="User" />
+            <AvatarImage
+              src="https://avatar.iran.liara.run/public"
+              alt="User"
+            />
             <AvatarFallback>JD</AvatarFallback>
           </Avatar>
           <span className="hidden md:inline-flex">John Doe</span>

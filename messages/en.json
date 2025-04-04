@@ -1,6 +1,6 @@
 {
   "global": {
-    "app-name": "GarageFlow",
+    "app-name": "garageflow",
     "currency": "USD",
     "locale-code": "en"
   },
@@ -46,8 +46,21 @@
     "en": "English",
     "vi": "Vietnamese"
   },
+  "sidebar": {
+    "app-name": "garageflow",
+    "home": "Home",
+    "orders": "Orders",
+    "vehicles": "Vehicles",
+    "invoices": "Invoices",
+    "inventory": "Inventory",
+    "reports": "Reports",
+    "customers": "Customers",
+    "chat": "Chat",
+    "garage-logs": "Garage Logs",
+    "settings": "Settings"
+  },
   "login": {
-    "welcome-back": "Welcome back",
+    "welcome-back": "Welcome back!",
     "email": "Email",
     "login-to-your-account": "Enter your email below to login to your account",
     "email-placeholder": "m@example.com",
@@ -59,7 +72,12 @@
   },
   "signup": {},
   "home": {
-    "revenue": "Revenue"
+    "revenue": "Revenue",
+    "recent-transactions": "Recent Transactions",
+    "active-orders": "Active Orders",
+    "view-orders": "View Orders",
+    "inventory-status": "Inventory Status",
+    "view-inventory": "View Inventory"
   },
   "error": {
     "404": "Oops! It seems you are lost. This page does not exist.",
