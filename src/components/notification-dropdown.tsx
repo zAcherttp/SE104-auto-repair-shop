@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Bell, CheckCheck, Package, Truck } from "lucide-react";
+import { Bell, CheckCheck, Dot, Package, Truck } from "lucide-react";
 import { Button } from "../components/ui/button";
 import {
   DropdownMenu,
@@ -102,10 +102,10 @@ export function NotificationDropdown() {
   return (
     <DropdownMenu open={open} onOpenChange={setOpen}>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="icon" className="relative ">
+        <Button variant="ghost" size="icon" className="relative ">
           <Bell className="h-5 w-5" />
           {unreadCount > 0 && (
-            <Badge className="absolute -top-2 -right-2 h-5 w-5 flex items-center justify-center p-0 bg-red-500/90">
+            <Badge className="absolute rounded-xl -top-0 -right-0 h-4 w-4 flex items-center justify-center p-0 bg-red-500/90">
               {unreadCount}
             </Badge>
           )}
@@ -145,20 +145,23 @@ export function NotificationDropdown() {
                   key={notification.id}
                   className="cursor-default"
                 >
-                  <div
-                    className={cn(
-                      "w-full p-2 rounded-md",
-                      !notification.read && "bg-muted/50"
-                    )}
-                  >
+                  <div className={cn("w-full p-2 rounded-md")}>
                     <div className="flex items-start gap-2">
                       <div className="mt-0.5">
                         {getNotificationIcon(notification.type)}
                       </div>
                       <div className="flex-1">
-                        <p className="text-sm font-medium">
-                          {notification.title}
-                        </p>
+                        <div className="flex items-center justify-right">
+                          <p className="text-sm font-medium">
+                            {notification.title}
+                          </p>
+                          <Dot
+                            className={cn(
+                              "ml-1 size-4",
+                              notification.read ? "hidden" : "text-blue-500"
+                            )}
+                          />
+                        </div>
                         <p className="text-xs text-muted-foreground line-clamp-2">
                           {notification.description}
                         </p>

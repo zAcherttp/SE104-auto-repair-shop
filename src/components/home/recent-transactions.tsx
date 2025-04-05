@@ -44,7 +44,7 @@ const transactions: Transaction[] = [
 export function RecentTransactions() {
   return (
     <div className="flex h-full space-y-4 p-4 pt-0 pb-0">
-      <Card className="p-0 w-full rounded-lg inset-shadow-sm shadow-none ">
+      <Card className="p-0 w-full rounded-lg ">
         {transactions.map((transaction) => (
           <div
             key={transaction.id}

@@ -13,6 +13,10 @@ export const routing = defineRouting({
       vi: "/dang-nhap",
       en: "/login",
     },
+    "/signup": {
+      vi: "/dang-ky",
+      en: "/signup",
+    },
     "/home": {
       vi: "/trang-chu",
       en: "/home",
