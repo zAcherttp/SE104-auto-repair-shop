@@ -10,8 +10,9 @@ import {
   SidebarMenuItem,
 } from "../components/ui/sidebar";
 import { usePathname } from "../i18n/navigation";
+import { memo } from "react";
 
-export function NavGroup({
+export const NavGroup = memo(function NavGroup({
   items,
   label,
 }: {
@@ -49,4 +50,4 @@ export function NavGroup({
       </SidebarMenu>
     </SidebarGroup>
   );
-}
+});

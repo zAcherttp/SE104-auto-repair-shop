@@ -14,9 +14,50 @@
       "description": "Tạo tài khoản"
     }
   },
-  "locale": {
+  "date": {
+    "today": "Hôm nay",
+    "yesterday": "Hôm qua",
+    "tomorrow": "Ngày mai",
+    "days": {
+      "mon": "Thứ Hai",
+      "tue": "Thứ Ba",
+      "wed": "Thứ Tư",
+      "thu": "Thứ Năm",
+      "fri": "Thứ Sáu",
+      "sat": "Thứ Bảy",
+      "sun": "Chủ Nhật"
+    },
+    "months": {
+      "jan": "Tháng 1",
+      "feb": "Tháng 2",
+      "mar": "Tháng 3",
+      "apr": "Tháng 4",
+      "may": "Tháng 5",
+      "jun": "Tháng 6",
+      "jul": "Tháng 7",
+      "aug": "Tháng 8",
+      "sep": "Tháng 9",
+      "oct": "Tháng 10",
+      "nov": "Tháng 11",
+      "dec": "Tháng 12"
+    }
+  },
+  "locale-name": {
     "en": "Tiếng Anh",
     "vi": "Tiếng Việt"
+  },
+  "sidebar": {
+    "app-name": "garageflow",
+    "home": "Trang chủ",
+    "orders": "Đơn hàng",
+    "vehicles": "Phương tiện",
+    "invoices": "Hóa đơn",
+    "inventory": "Kho hàng",
+    "reports": "Báo cáo",
+    "customers": "Khách hàng",
+    "chat": "Trò chuyện",
+    "garage-logs": "Nhật ký garage",
+    "settings": "Cài đặt"
   },
   "login": {
     "welcome-back": "Chào mừng bạn trở lại",
@@ -30,6 +71,14 @@
     "signup": "Đăng ký"
   },
   "signup": {},
+  "home": {
+    "revenue": "Doanh thu",
+    "recent-transactions": "Giao dịch gần đây",
+    "active-orders": "Đơn hàng đang hoạt động",
+    "view-orders": "Xem đơn hàng",
+    "inventory-status": "Tình trạng kho hàng",
+    "view-inventory": "Xem kho hàng"
+  },
   "error": {
     "404": "Ôi! Có vẻ như bạn đã đi lạc. Trang này không tồn tại.",
     "500": "Ôi! Có gì đó không ổn trên máy chủ của chúng tôi.",

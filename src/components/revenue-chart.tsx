@@ -54,7 +54,7 @@ const chartConfig = {
   },
 } satisfies ChartConfig;
 
-export function RevenueChart() {
+export function RevenueChart({ className }: { className?: string }) {
   const t = useTranslations("date");
   const t_ = useTranslations("global");
   const currency = t_("currency");
@@ -63,7 +63,7 @@ export function RevenueChart() {
   const USDtoVND = 25000;
 
   return (
-    <ChartContainer config={chartConfig}>
+    <ChartContainer config={chartConfig} className={className}>
       <AreaChart
         accessibilityLayer
         data={chartData}

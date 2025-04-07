@@ -6,6 +6,8 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "../i18n/routing";
 import { setRequestLocale } from "next-intl/server";
 import { ThemeProvider } from "next-themes";
+import { ReactScan } from "../components/react-scan";
+import { StrictMode } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -48,16 +50,19 @@ export default async function RootLayout({
         suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <NextIntlClientProvider>
-          <ThemeProvider
-            enableSystem
-            disableTransitionOnChange
-            attribute="class"
-          >
-            {children}
-            <Toaster />
-          </ThemeProvider>
-        </NextIntlClientProvider>
+        <ReactScan />
+        <StrictMode>
+          <NextIntlClientProvider>
+            <ThemeProvider
+              enableSystem
+              disableTransitionOnChange
+              attribute="class"
+            >
+              {children}
+              <Toaster />
+            </ThemeProvider>
+          </NextIntlClientProvider>
+        </StrictMode>
       </body>
     </html>
   );

@@ -9,6 +9,7 @@ import {
 } from "../components/ui/sidebar";
 import { LucideIcon } from "lucide-react";
 import { Poppins } from "next/font/google";
+import { memo } from "react";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -17,13 +18,10 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-export function AppBanner({
+export const AppBanner = memo(function AppBanner({
   garage,
 }: {
-  garage: {
-    name: string;
-    logo: LucideIcon;
-  };
+  garage: { name: string; logo: LucideIcon };
 }) {
   const router = useRouter();
 
@@ -49,4 +47,4 @@ export function AppBanner({
       </SidebarMenuItem>
     </SidebarMenu>
   );
-}
+});
