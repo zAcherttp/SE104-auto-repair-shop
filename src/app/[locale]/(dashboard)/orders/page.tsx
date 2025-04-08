@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Filter, Plus, Search } from "lucide-react";
 import { Input } from "@/src/components/ui/input";
 import {
@@ -10,16 +10,87 @@ import {
   DropdownMenuTrigger,
 } from "@/src/components/ui/dropdown-menu";
 import { Button } from "@/src/components/ui/button";
-
-import { CustomKanban } from "@/src/components/orders/board";
+import { Order } from "@/src/app/type";
+import { useDebounceValue } from "usehooks-ts";
+import { fetchOrders } from "@/src/app/action/orders";
+import OrdersBoard from "@/src/components/orders/order-board";
 
 export default function OrdersPage() {
+  const [orders, setOrders] = useState<Order[]>([]);
+  const [filteredOrders, setFilteredOrders] = useState<Order[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
+  const [debouncedSearchTerm, setDebouncedSearchTerm] = useDebounceValue(
+    "",
+    300
+  );
+  const [isNewOrderOpen, setIsNewOrderOpen] = useState(false);
+  const [activeFilter, setActiveFilter] = useState<string>("all");
+
+  // In your component:
+  useEffect(() => {
+    async function loadOrders() {
+      const data = await fetchOrders();
+      setOrders(data);
+    }
+    loadOrders();
+  }, []);
+
+  useEffect(() => {
+    setDebouncedSearchTerm(searchTerm);
+  }, [searchTerm, setDebouncedSearchTerm]);
+
+  useEffect(() => {
+    const applyFiltersAndSearch = () => {
+      let result = [...orders];
+
+      // Apply search
+      if (debouncedSearchTerm) {
+        const searchLower = debouncedSearchTerm.toLowerCase().trim();
+        result = result.filter(
+          (order) =>
+            order.title.toLowerCase().includes(searchLower) ||
+            order.description?.toLowerCase().includes(searchLower) ||
+            order.customer?.name.toLowerCase().includes(searchLower) ||
+            `${order.vehicle?.make} ${order.vehicle?.model}`
+              .toLowerCase()
+              .includes(searchLower)
+        );
+      }
+
+      // Apply filters
+      switch (activeFilter) {
+        case "my":
+          // Assuming we have a current user context, for now just filter by "Mike Johnson"
+          result = result.filter(
+            (order) => order.assignedTo?.name === "Mike Johnson"
+          );
+          break;
+        case "due-today":
+          const today = new Date().toISOString().split("T")[0];
+          result = result.filter((order) => order.dueDate === today);
+          break;
+        case "high":
+          result = result.filter((order) => order.priority === "high");
+          break;
+        case "all":
+        default:
+          // No additional filtering
+          break;
+      }
+      setFilteredOrders(result);
+    };
+
+    applyFiltersAndSearch();
+  }, [orders, debouncedSearchTerm, activeFilter]);
+
+  const handleFilterSelect = (filter: string) => {
+    setActiveFilter(filter);
+  };
 
   return (
-    <div className="flex flex-col h-full">
-      <div className="border-b">
-        <div className="flex h-16 items-center px-4 sticky">
+    <div className="flex flex-col">
+      <header className="grow-0 border-b sticky top-16 z-10 bg-background/60 backdrop-blur-sm ">
+        <div className="flex h-16 items-center px-4">
           <div className="mr-auto flex items-center gap-2">
             <div className="relative">
               <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
@@ -39,10 +110,20 @@ export default function OrdersPage() {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
-                <DropdownMenuItem>All orders</DropdownMenuItem>
-                <DropdownMenuItem>My orders</DropdownMenuItem>
-                <DropdownMenuItem>High Priority</DropdownMenuItem>
-                <DropdownMenuItem>Due Today</DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleFilterSelect("all")}>
+                  All orders
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleFilterSelect("my")}>
+                  My orders
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleFilterSelect("high")}>
+                  High Priority
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() => handleFilterSelect("due-today")}
+                >
+                  Due Today
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
@@ -51,35 +132,11 @@ export default function OrdersPage() {
             New Task
           </Button>
         </div>
-      </div>
-
-      <div className="flex-1 p-6">
-        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6"> */}
-        {/* <OrdersColumnCard
-            title="Pending"
-            status="pending"
-            orders={orders}
-            setOrders={setOrders}
-            headingColor="border-t-blue-500"
-          />
-
-          <OrdersColumnCard
-            title="In Progress"
-            status="in-progress"
-            orders={orders}
-            setOrders={setOrders}
-            headingColor="border-t-yellow-500"
-          />
-
-          <OrdersColumnCard
-            title="Completed"
-            status="completed"
-            orders={orders}
-            setOrders={setOrders}
-            headingColor="border-t-green-500" */}
-        <CustomKanban />
-        {/* </div> */}
-      </div>
+      </header>
+      <OrdersBoard
+        orders={filteredOrders}
+        className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 grow-1"
+      />
     </div>
   );
 }
