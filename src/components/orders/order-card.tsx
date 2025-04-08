@@ -12,53 +12,54 @@ const priorityColors = {
 };
 
 interface OrderCardProps {
-  task: Order;
+  order: Order;
+  onDragStart: (e: React.DragEvent) => void;
 }
 
-export default function OrderCard({ task }: OrderCardProps) {
+export default function OrderCard({ order, onDragStart }: OrderCardProps) {
   return (
-    <Card className="cursor-pointer mb-2">
+    <Card className="cursor-grab mb-2" draggable onDragStart={onDragStart}>
       <CardHeader className="gap-0">
         <div className="flex justify-between">
           <div>
-            <h3 className="font-medium text-lg">{task.title}</h3>
+            <h3 className="font-medium text-lg">{order.title}</h3>
           </div>
-          <Badge className={priorityColors[task.priority]}>
-            {task.priority.charAt(0).toUpperCase() + task.priority.slice(1)}
+          <Badge className={priorityColors[order.priority]}>
+            {order.priority.charAt(0).toUpperCase() + order.priority.slice(1)}
           </Badge>
         </div>
       </CardHeader>
       <CardContent>
         <p className="text-sm text-muted-foreground line-clamp-2 mt-1">
-          {task.description}
+          {order.description}
         </p>
         <div className="flex items-center gap-2 text-xs text-muted-foreground mt-3">
           <div className="flex items-center gap-1">
             <User className="h-3.5 w-3.5" />
-            <span>{task.customer.name}</span>
+            <span>{order.customer.name}</span>
           </div>
           <div className="flex items-center gap-1">
             <Car className="h-3.5 w-3.5" />
             <span>
-              {task.vehicle.year} {task.vehicle.make} {task.vehicle.model}
+              {order.vehicle.year} {order.vehicle.make} {order.vehicle.model}
             </span>
           </div>
         </div>
         <div className="flex items-center justify-between mt-3">
-          {task.dueDate && (
+          {order.dueDate && (
             <div className="flex items-center gap-1 text-xs text-muted-foreground">
               <Clock className="h-3.5 w-3.5" />
-              <span>{new Date(task.dueDate).toLocaleDateString()}</span>
+              <span>{new Date(order.dueDate).toLocaleDateString()}</span>
             </div>
           )}
-          {task.assignedTo && (
+          {order.assignedTo && (
             <Avatar className="h-6 w-6">
               <AvatarImage
-                src={task.assignedTo.avatarUrl}
-                alt={task.assignedTo.name}
+                src={order.assignedTo.avatarUrl}
+                alt={order.assignedTo.name}
               />
               <AvatarFallback className="text-xs">
-                {task.assignedTo.initials}
+                {order.assignedTo.initials}
               </AvatarFallback>
             </Avatar>
           )}

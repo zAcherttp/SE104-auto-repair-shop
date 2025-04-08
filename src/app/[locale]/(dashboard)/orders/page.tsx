@@ -69,9 +69,6 @@ export default function OrdersPage() {
           const today = new Date().toISOString().split("T")[0];
           result = result.filter((order) => order.dueDate === today);
           break;
-        case "high":
-          result = result.filter((order) => order.priority === "high");
-          break;
         case "all":
         default:
           // No additional filtering
@@ -115,9 +112,6 @@ export default function OrdersPage() {
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => handleFilterSelect("my")}>
                   My orders
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => handleFilterSelect("high")}>
-                  High Priority
                 </DropdownMenuItem>
                 <DropdownMenuItem
                   onClick={() => handleFilterSelect("due-today")}
