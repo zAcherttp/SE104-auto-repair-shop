@@ -1,53 +1,47 @@
-import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import { Badge } from "../ui/badge";
+"use client";
+
+import { useDroppable } from "@dnd-kit/core";
+import { Order, Status } from "@/src/app/type";
+import { OrderCard } from "./order-card";
+import { cn } from "@/lib/utils";
 import { ScrollArea } from "../ui/scroll-area";
-import type { Status } from "@/src/app/type";
-
-export type Column = {
-  id: string;
-  title: string;
-  status: Status;
-  headingColor: string;
-};
-
-export type ColumnType = "Column";
-
-export type ColumnDragData = {
-  type: ColumnType;
-  column: Column;
-};
 
 interface OrderColumnProps {
-  column: Column;
-  children: React.ReactNode;
-  count: number;
-  onDrop: (e: React.DragEvent) => void;
+  title: string;
+  columnId: Status;
+  headingColor: string;
+  orders: Order[];
 }
 
-export default function OrderColumn({
-  column,
-  children,
-  count,
-  onDrop,
+export function OrderColumn({
+  title,
+  columnId,
+  headingColor,
+  orders,
 }: OrderColumnProps) {
+  const { setNodeRef } = useDroppable({
+    id: columnId,
+  });
+
   return (
-    <Card
-      className={`${column.headingColor} border-t-4 flex flex-auto h-full`}
-      onDragOver={(e) => e.preventDefault()}
-    >
-      <CardHeader className="pb-2 flex-shrink-0">
-        <div className="flex items-center justify-between">
-          <CardTitle className="text-lg font-semibold">
-            {column.title}
-          </CardTitle>
-          <Badge variant="outline">{count}</Badge>
-        </div>
-      </CardHeader>
-      <ScrollArea className="flex-1 min-h-0">
-        <CardContent onDrop={onDrop} className="w-full h-150">
-          {children}
-        </CardContent>
-      </ScrollArea>
-    </Card>
+    <div ref={setNodeRef} className="flex flex-col bg-muted/20 rounded-md p-4 ">
+      <h3 className={cn("font-semibold mb-3", headingColor)}>{title}</h3>
+
+      <div className="space-y-3">
+        <ScrollArea>
+          <div className="flex flex-col gap-2">
+            {orders.map((order) => (
+              <OrderCard key={order.id} order={order} />
+            ))}
+          </div>
+        </ScrollArea>
+
+        {orders.length === 0 && (
+          <div className="text-center py-8 text-muted-foreground text-sm italic">
+            No orders
+          </div>
+        )}
+      </div>
+    </div>
   );
 }

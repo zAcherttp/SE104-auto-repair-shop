@@ -1,124 +1,104 @@
-import React, { useEffect, useMemo, useState } from "react";
+"use client";
 
-import { Order, Status } from "@/src/app/type";
-import OrderColumn from "./orders-column";
-import { Column } from "./orders-column";
-import OrderCard from "./order-card";
+import { useMemo, useState } from "react";
+import { DndContext, DragEndEvent, DragStartEvent } from "@dnd-kit/core";
+import { ColumnConfig, Order, Status } from "@/src/app/type";
+import { OrderColumn } from "./orders-column";
+import { cn } from "@/lib/utils";
+import { DragOverlay } from "@dnd-kit/core";
+import { OrderCard } from "./order-card";
 
 interface OrdersBoardProps {
   orders: Order[];
+  onStatusChange?: (orderId: string, newStatus: Status) => void;
   className?: string;
+  isUpdating?: boolean;
 }
 
-export default function OrdersBoard({ orders, className }: OrdersBoardProps) {
-  const [cards, setCards] = useState(orders);
+export default function OrdersBoard({
+  orders,
+  onStatusChange,
+  className,
+}: OrdersBoardProps) {
+  const [activeOrder, setActiveOrder] = useState<Order | null>(null);
 
-  //filter orders by status + sort by priority high/medium/low
-  const sortByPriority = (a: Order, b: Order) => {
-    const priorityOrder = ["high", "medium", "low"];
-    return (
-      priorityOrder.indexOf(a.priority) - priorityOrder.indexOf(b.priority)
-    );
-  };
-
-  const pendingOrders = cards
-    .filter((order) => order.status === "pending")
-    .sort(sortByPriority);
-
-  const inProgressOrders = cards
-    .filter((order) => order.status === "in-progress")
-    .sort(sortByPriority);
-
-  const completedOrders = cards
-    .filter((order) => order.status === "completed")
-    .sort(sortByPriority);
-
-  const columnConfig: Column[] = useMemo(
+  // Column configurations
+  const columns = useMemo<ColumnConfig[]>(
     () => [
       {
-        id: "pending",
         title: "Pending",
-        status: "pending",
-        headingColor: "border-t-blue-500",
+        columnId: "pending",
+        headingColor: "text-yellow-500",
       },
       {
-        id: "in-progress",
-        title: "In progress",
-        status: "in-progress",
-        headingColor: "border-t-yellow-500",
+        title: "In Progress",
+        columnId: "in-progress",
+        headingColor: "text-blue-500",
       },
       {
-        id: "completed",
-        title: "Complete",
-        status: "completed",
-        headingColor: "border-t-green-500",
+        title: "Completed",
+        columnId: "completed",
+        headingColor: "text-green-500",
       },
     ],
     []
   );
 
   // Handle drag start
-  const handleDragStart = (e: React.DragEvent, orderId: string) => {
-    e.dataTransfer.setData("orderId", orderId);
+  const handleDragStart = (event: DragStartEvent) => {
+    const { active } = event;
+    const draggedOrder = orders.find((order) => order.id === active.id);
+    if (draggedOrder) {
+      setActiveOrder(draggedOrder);
+    }
   };
 
-  // Handle drop
-  const handleDrop = (e: React.DragEvent, status: Status) => {
-    const orderId = e.dataTransfer.getData("orderId");
+  // Handle drag end
+  const handleDragEnd = (event: DragEndEvent) => {
+    const { active, over } = event;
 
-    // Update the order status
-    setCards((prevOrders) =>
-      prevOrders.map((order) =>
-        order.id === orderId ? { ...order, status } : order
-      )
-    );
+    if (over && active.id !== over.id) {
+      const orderId = active.id.toString();
+      const newStatus = over.id.toString() as Status;
+
+      if (
+        newStatus &&
+        ["pending", "in-progress", "completed"].includes(newStatus)
+      ) {
+        onStatusChange?.(orderId, newStatus);
+      }
+    }
+
+    setActiveOrder(null);
   };
-
-  useEffect(() => {
-    setCards(orders);
-  }, [orders]);
 
   return (
-    <div className={className}>
-      <OrderColumn
-        column={columnConfig[0]}
-        count={pendingOrders.length}
-        onDrop={(e) => handleDrop(e, "pending")}
+    <DndContext onDragStart={handleDragStart} onDragEnd={handleDragEnd}>
+      <div className={cn("grid", className)}>
+        {columns.map((column) => {
+          const columnOrders = orders.filter(
+            (order) => order.status === column.columnId
+          );
+
+          return (
+            <OrderColumn
+              key={column.columnId}
+              title={column.title}
+              columnId={column.columnId}
+              headingColor={column.headingColor}
+              orders={columnOrders}
+            />
+          );
+        })}
+      </div>
+      <DragOverlay
+        dropAnimation={{
+          duration: 500,
+          easing: "cubic-bezier(0.2, 0, 0, 1)",
+        }}
       >
-        {pendingOrders.map((order) => (
-          <OrderCard
-            key={order.id}
-            order={order}
-            onDragStart={(e) => handleDragStart(e, order.id)}
-          />
-        ))}
-      </OrderColumn>
-      <OrderColumn
-        column={columnConfig[1]}
-        onDrop={(e) => handleDrop(e, "in-progress")}
-        count={inProgressOrders.length}
-      >
-        {inProgressOrders.map((order) => (
-          <OrderCard
-            key={order.id}
-            order={order}
-            onDragStart={(e) => handleDragStart(e, order.id)}
-          />
-        ))}
-      </OrderColumn>
-      <OrderColumn
-        column={columnConfig[2]}
-        onDrop={(e) => handleDrop(e, "completed")}
-        count={completedOrders.length}
-      >
-        {completedOrders.map((order) => (
-          <OrderCard
-            key={order.id}
-            order={order}
-            onDragStart={(e) => handleDragStart(e, order.id)}
-          />
-        ))}
-      </OrderColumn>
-    </div>
+        {activeOrder ? <OrderCard order={activeOrder} /> : null}
+      </DragOverlay>
+    </DndContext>
   );
 }

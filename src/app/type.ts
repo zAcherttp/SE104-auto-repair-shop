@@ -1,5 +1,11 @@
 export type Priority = "low" | "medium" | "high";
 
+export const PriorityMap: { [key in Priority]: number } = {
+  low: 1,
+  medium: 2,
+  high: 3,
+};
+
 export type Status = "pending" | "in-progress" | "completed";
 
 export interface Customer {

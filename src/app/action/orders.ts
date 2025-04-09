@@ -1,13 +1,71 @@
 "use server";
-import { Order } from "../type";
+import { Order, Status } from "../type";
+import { revalidatePath } from "next/cache";
 
-export async function fetchOrders() {
-  // Simulate a network request to fetch orders
-  return new Promise<Order[]>((resolve) => {
-    setTimeout(() => {
-      resolve(DEFAULT_ORDERS);
-    }, 0); // Simulate a 1 second delay
-  });
+export async function fetchOrders(): Promise<Order[]> {
+  try {
+    // Simulate API call
+    // .sort((a, b) => {
+    //         return PriorityMap[a.priority] - PriorityMap[b.priority];
+    // either sort here or in the database query
+
+    return Promise.resolve(DEFAULT_ORDERS);
+  } catch (error) {
+    console.error("Failed to fetch orders:", error);
+    return [];
+  }
+}
+
+// Update order status with optimistic update support
+export async function updateOrderStatus(
+  orderId: string,
+  status: Status
+): Promise<{ success: boolean; order?: Order }> {
+  try {
+    // In a real app, this would update the database
+    // Simulate API call
+    await new Promise((resolve) => setTimeout(resolve, 300));
+
+    // Find and update the order
+    const updatedOrder = DEFAULT_ORDERS.find((order) => order.id === orderId);
+    if (!updatedOrder) {
+      return { success: false };
+    }
+
+    updatedOrder.status = status;
+
+    // Revalidate the orders page to refresh server data
+    revalidatePath("/orders");
+
+    return { success: true, order: updatedOrder };
+  } catch (error) {
+    console.error("Failed to update order status:", error);
+    return { success: false };
+  }
+}
+
+// Create new order action
+export async function createOrder(
+  order: Omit<Order, "id">
+): Promise<{ success: boolean; order?: Order }> {
+  try {
+    // Generate an ID
+    const newOrder: Order = {
+      id: `task-${Date.now()}`,
+      ...order,
+    };
+
+    // In a real app, this would be inserted into the database
+    DEFAULT_ORDERS.push(newOrder);
+
+    // Revalidate the orders page
+    revalidatePath("/orders");
+
+    return { success: true, order: newOrder };
+  } catch (error) {
+    console.error("Failed to create order:", error);
+    return { success: false };
+  }
 }
 
 const DEFAULT_ORDERS: Order[] = [
