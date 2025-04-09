@@ -3,17 +3,16 @@
 
 import { useDraggable } from "@dnd-kit/core";
 import { Order } from "@/src/app/type";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/src/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/src/components/ui/card";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/src/components/ui/badge";
-import { format } from "date-fns";
-import { CalendarIcon, CarFront, User } from "lucide-react";
-import { Avatar, AvatarFallback } from "@/src/components/ui/avatar";
+import { Car, Clock, User } from "lucide-react";
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "@/src/components/ui/avatar";
+import React, { memo, useMemo } from "react";
 
 interface OrderCardProps {
   order: Order;
@@ -21,27 +20,85 @@ interface OrderCardProps {
   disabled?: boolean;
 }
 
-export function OrderCard({
-  order,
-  className,
-  disabled = false,
-}: OrderCardProps) {
+const OrderCardContent = memo(
+  function OrderCardContent({ order }: Omit<OrderCardProps, "className">) {
+    const priorityColor = useMemo(
+      () =>
+        ({
+          low: "flex gap-2 rounded-xl text-sm h-fit text-green-500 border-green-500/20 bg-green-500/10",
+          medium:
+            "flex gap-2 rounded-xl text-sm h-fit text-yellow-500 border-yellow-500/20 bg-yellow-500/10",
+          high: "flex gap-2 rounded-xl text-sm h-fit text-red-500 border-red-500/20 bg-red-500/10",
+        }[order.priority]),
+      [order.priority]
+    );
+
+    return (
+      <>
+        <CardHeader className="gap-0">
+          <div className="flex justify-between">
+            <div>
+              <h3 className="font-medium text-foreground text-lg">
+                {order.title}
+              </h3>
+            </div>
+            <Badge className={priorityColor}>
+              {order.priority.charAt(0).toUpperCase() + order.priority.slice(1)}
+            </Badge>
+          </div>
+        </CardHeader>
+        <CardContent>
+          <p className="text-sm text-muted-foreground line-clamp-2 mt-1">
+            {order.description}
+          </p>
+          <div className="flex items-center gap-2 text-xs text-muted-foreground mt-3">
+            <div className="flex items-center gap-1">
+              <User className="h-3.5 w-3.5" />
+              <span>{order.customer.name}</span>
+            </div>
+            <div className="flex items-center gap-1">
+              <Car className="h-3.5 w-3.5" />
+              <span>
+                {order.vehicle.year} {order.vehicle.make} {order.vehicle.model}
+              </span>
+            </div>
+          </div>
+          <div className="flex items-center justify-between mt-3">
+            {order.dueDate && (
+              <div className="flex items-center gap-1 text-xs text-muted-foreground">
+                <Clock className="h-3.5 w-3.5" />
+                <span>{new Date(order.dueDate).toLocaleDateString()}</span>
+              </div>
+            )}
+            {order.assignedTo && (
+              <Avatar className="h-6 w-6">
+                <AvatarImage
+                  src={order.assignedTo.avatarUrl}
+                  alt={order.assignedTo.name}
+                />
+                <AvatarFallback className="text-xs">
+                  {order.assignedTo.initials}
+                </AvatarFallback>
+              </Avatar>
+            )}
+          </div>
+        </CardContent>
+      </>
+    );
+  },
+  (prevProps, nextProps) => {
+    return (
+      prevProps.order.id === nextProps.order.id &&
+      prevProps.disabled === nextProps.disabled
+    );
+  }
+);
+
+function OrderCard({ order, className, disabled = false }: OrderCardProps) {
   const { attributes, listeners, setNodeRef, isDragging } = useDraggable({
     id: order.id,
     disabled: disabled,
   });
-
-  // Format due date
-  const formattedDueDate = order.dueDate
-    ? format(new Date(order.dueDate), "MMM d, yyyy")
-    : null;
-
-  // Priority badge color
-  const priorityColor = {
-    low: "bg-green-100 text-green-800",
-    medium: "bg-yellow-100 text-yellow-800",
-    high: "bg-red-100 text-red-800",
-  }[order.priority];
 
   return (
     <Card
@@ -49,54 +106,15 @@ export function OrderCard({
       {...attributes}
       {...listeners}
       className={cn(
-        "cursor-pointer border select-none",
+        "cursor-pointer border select-none bg-background",
         isDragging && "opacity-50",
         disabled && "cursor-not-allowed opacity-70",
         className
       )}
     >
-      <CardHeader className="p-3 pb-0">
-        <div className="flex justify-between items-start">
-          <CardTitle className="text-sm font-medium">{order.title}</CardTitle>
-          <Badge variant="outline" className={cn("text-xs", priorityColor)}>
-            {order.priority}
-          </Badge>
-        </div>
-      </CardHeader>
-      <CardContent className="p-3 pt-2 space-y-2">
-        {order.description && (
-          <p className="text-xs text-muted-foreground">{order.description}</p>
-        )}
-
-        <div className="flex items-center gap-2 text-xs text-muted-foreground">
-          <CarFront className="h-3 w-3" />
-          <span>
-            {order.vehicle.year} {order.vehicle.make} {order.vehicle.model}
-          </span>
-        </div>
-
-        <div className="flex items-center gap-2 text-xs text-muted-foreground">
-          <User className="h-3 w-3" />
-          <span>{order.customer.name}</span>
-        </div>
-
-        <div className="flex items-center justify-between pt-2">
-          {formattedDueDate && (
-            <div className="flex items-center gap-1 text-xs text-muted-foreground">
-              <CalendarIcon className="h-3 w-3" />
-              <span>{formattedDueDate}</span>
-            </div>
-          )}
-
-          {order.assignedTo && (
-            <Avatar className="h-6 w-6">
-              <AvatarFallback className="text-[10px]">
-                {order.assignedTo.initials}
-              </AvatarFallback>
-            </Avatar>
-          )}
-        </div>
-      </CardContent>
+      <OrderCardContent order={order} disabled={disabled} />
     </Card>
   );
 }
+
+export { OrderCard };

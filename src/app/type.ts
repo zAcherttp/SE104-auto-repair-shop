@@ -8,23 +8,23 @@ export const PriorityMap: { [key in Priority]: number } = {
 
 export type Status = "pending" | "in-progress" | "completed";
 
-export interface Customer {
+export type Customer = {
   name: string;
-}
+};
 
-export interface Vehicle {
+export type Vehicle = {
   year: number;
   make: string;
   model: string;
-}
+};
 
-export interface AssignedUser {
+export type AssignedUser = {
   initials: string;
   name?: string;
   avatarUrl?: string;
-}
+};
 
-export interface Order {
+export type Order = {
   id: string;
   title: string;
   description?: string;
@@ -35,9 +35,9 @@ export interface Order {
   dueDate?: string | Date;
   assignedTo?: AssignedUser;
   createdAt?: string | Date;
-}
+};
 export interface ColumnConfig {
   title: string;
   columnId: Status;
-  headingColor: string;
+  borderColor: string;
 }

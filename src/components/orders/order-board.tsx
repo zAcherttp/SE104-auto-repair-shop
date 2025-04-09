@@ -1,12 +1,13 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { memo, useMemo, useState } from "react";
 import { DndContext, DragEndEvent, DragStartEvent } from "@dnd-kit/core";
 import { ColumnConfig, Order, Status } from "@/src/app/type";
 import { OrderColumn } from "./orders-column";
 import { cn } from "@/lib/utils";
 import { DragOverlay } from "@dnd-kit/core";
 import { OrderCard } from "./order-card";
+import { ScrollArea } from "../ui/scroll-area";
 
 interface OrdersBoardProps {
   orders: Order[];
@@ -15,7 +16,7 @@ interface OrdersBoardProps {
   isUpdating?: boolean;
 }
 
-export default function OrdersBoard({
+const OrdersBoard = memo(function OrdersBoard({
   orders,
   onStatusChange,
   className,
@@ -28,17 +29,17 @@ export default function OrdersBoard({
       {
         title: "Pending",
         columnId: "pending",
-        headingColor: "text-yellow-500",
+        borderColor: "border-yellow-500",
       },
       {
         title: "In Progress",
         columnId: "in-progress",
-        headingColor: "text-blue-500",
+        borderColor: "border-blue-500",
       },
       {
         title: "Completed",
         columnId: "completed",
-        headingColor: "text-green-500",
+        borderColor: "border-green-500",
       },
     ],
     []
@@ -85,9 +86,23 @@ export default function OrdersBoard({
               key={column.columnId}
               title={column.title}
               columnId={column.columnId}
-              headingColor={column.headingColor}
-              orders={columnOrders}
-            />
+              borderColor={column.borderColor}
+              count={columnOrders.length}
+            >
+              <ScrollArea>
+                <div className="flex flex-col gap-2">
+                  {columnOrders.map((order) => (
+                    <OrderCard key={order.id} order={order} />
+                  ))}
+                </div>
+              </ScrollArea>
+
+              {orders.length === 0 && (
+                <div className="text-center py-8 text-muted-foreground text-sm">
+                  No orders
+                </div>
+              )}
+            </OrderColumn>
           );
         })}
       </div>
@@ -101,4 +116,6 @@ export default function OrdersBoard({
       </DragOverlay>
     </DndContext>
   );
-}
+});
+
+export default OrdersBoard;

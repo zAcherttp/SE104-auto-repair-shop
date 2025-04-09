@@ -1,7 +1,14 @@
 // src/components/orders/orders-container.tsx
 "use client";
 
-import { useEffect, useState, useTransition } from "react";
+import {
+  memo,
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+  useTransition,
+} from "react";
 import { Filter, Plus, Search } from "lucide-react";
 import { Input } from "@/src/components/ui/input";
 import {
@@ -26,7 +33,6 @@ export default function OrdersContainer({
   initialOrders,
 }: OrdersContainerProps) {
   const [orders, setOrders] = useState<Order[]>(initialOrders);
-  const [filteredOrders, setFilteredOrders] = useState<Order[]>(initialOrders);
   const [searchTerm, setSearchTerm] = useState("");
   const [debouncedSearchTerm, setDebouncedSearchTerm] = useDebounceValue(
     "",
@@ -36,98 +42,126 @@ export default function OrdersContainer({
   const [activeFilter, setActiveFilter] = useState<string>("all");
   const [isPending, startTransition] = useTransition();
 
+  const handleSearchChange = useCallback((value: string) => {
+    setSearchTerm(value);
+  }, []);
+
   useEffect(() => {
     setDebouncedSearchTerm(searchTerm);
   }, [searchTerm, setDebouncedSearchTerm]);
 
-  useEffect(() => {
-    const applyFiltersAndSearch = () => {
-      let result = [...orders];
+  const filteredOrders = useMemo(() => {
+    let result = [...orders];
 
-      // Apply search
-      if (debouncedSearchTerm) {
-        const searchLower = debouncedSearchTerm.toLowerCase().trim();
+    // Apply search
+    if (debouncedSearchTerm) {
+      const searchLower = debouncedSearchTerm.toLowerCase().trim();
+      result = result.filter(
+        (order) =>
+          order.title.toLowerCase().includes(searchLower) ||
+          order.description?.toLowerCase().includes(searchLower) ||
+          order.customer?.name.toLowerCase().includes(searchLower) ||
+          `${order.vehicle?.make} ${order.vehicle?.model}`
+            .toLowerCase()
+            .includes(searchLower)
+      );
+    }
+
+    // Apply filters
+    switch (activeFilter) {
+      case "my":
         result = result.filter(
-          (order) =>
-            order.title.toLowerCase().includes(searchLower) ||
-            order.description?.toLowerCase().includes(searchLower) ||
-            order.customer?.name.toLowerCase().includes(searchLower) ||
-            `${order.vehicle?.make} ${order.vehicle?.model}`
-              .toLowerCase()
-              .includes(searchLower)
+          (order) => order.assignedTo?.name === "Mike Johnson"
         );
-      }
-
-      // Apply filters
-      switch (activeFilter) {
-        case "my":
-          // Assuming we have a current user context, for now just filter by "Mike Johnson"
-          result = result.filter(
-            (order) => order.assignedTo?.name === "Mike Johnson"
-          );
-          break;
-        case "due-today":
-          const today = new Date().toISOString().split("T")[0];
-          result = result.filter((order) => order.dueDate === today);
-          break;
-        case "all":
-        default:
-          // No additional filtering
-          break;
-      }
-      setFilteredOrders(result);
-    };
-
-    applyFiltersAndSearch();
+        break;
+      case "due-today":
+        const today = new Date().toISOString().split("T")[0];
+        result = result.filter((order) => order.dueDate === today);
+        break;
+      case "all":
+      default:
+        break;
+    }
+    return result;
   }, [orders, debouncedSearchTerm, activeFilter]);
 
-  const handleFilterSelect = (filter: string) => {
+  const handleFilterSelect = useCallback((filter: string) => {
     setActiveFilter(filter);
-  };
+  }, []);
 
   // Handle drag and drop to update status
-  const handleDragEnd = (orderId: string, newStatus: Status) => {
-    // Find the order
-    const orderToUpdate = orders.find((order) => order.id === orderId);
-    if (!orderToUpdate || orderToUpdate.status === newStatus) return;
+  const handleDragEnd = useCallback(
+    (orderId: string, newStatus: Status) => {
+      // Find the order
+      const orderToUpdate = orders.find((order) => order.id === orderId);
+      if (!orderToUpdate || orderToUpdate.status === newStatus) return;
 
-    // Optimistic update
-    const updatedOrders = orders
-      .map((order) =>
-        order.id === orderId ? { ...order, status: newStatus } : order
-      )
-      .sort((a, b) => {
-        return PriorityMap[b.priority] - PriorityMap[a.priority];
-      });
+      // Optimistic update
+      const updatedOrders = orders
+        .map((order) =>
+          order.id === orderId ? { ...order, status: newStatus } : order
+        )
+        .sort((a, b) => {
+          return PriorityMap[b.priority] - PriorityMap[a.priority];
+        });
 
-    setOrders(updatedOrders);
+      setOrders(updatedOrders);
 
-    // Server update with error handling
-    startTransition(async () => {
-      try {
-        const result = await updateOrderStatus(orderId, newStatus);
-        if (!result.success) {
-          // Revert optimistic update on failure
+      // Server update with error handling
+      startTransition(async () => {
+        try {
+          const result = await updateOrderStatus(orderId, newStatus);
+          if (!result.success) {
+            // Revert optimistic update on failure
+            setOrders(orders);
+            toast.error("Failed to update order status");
+          } else {
+            toast.success(`Order status updated to ${newStatus}`);
+          }
+        } catch (error) {
+          // Revert optimistic update on error
+          console.error("Error updating order status:", error);
           setOrders(orders);
           toast.error("Failed to update order status");
-        } else {
-          toast.success(`Order status updated to ${newStatus}`);
         }
-      } catch (error) {
-        // Revert optimistic update on error
-        console.error("Error updating order status:", error);
-        setOrders(orders);
-        toast.error("Failed to update order status");
-      }
-    });
-  };
+      });
+    },
+    [orders, startTransition]
+  );
 
-  // Handle new order creation
-  const handleNewOrder = (order: Order) => {
+  const handleNewOrder = useCallback((order: Order) => {
     setOrders((prev) => [order, ...prev]);
     setIsNewOrderOpen(false);
     toast.success("New order created");
-  };
+  }, []);
+
+  const FilterDropdown = memo(function FilterDropdown({
+    onFilterSelect,
+  }: {
+    onFilterSelect: (filter: string) => void;
+  }) {
+    return (
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <Button variant="outline" size="icon">
+            <Filter className="h-4 w-4" />
+            <span className="sr-only">Filter</span>
+          </Button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent align="end">
+          <DropdownMenuItem onClick={() => onFilterSelect("all")}>
+            All orders
+          </DropdownMenuItem>
+          <DropdownMenuItem onClick={() => onFilterSelect("my")}>
+            My orders
+          </DropdownMenuItem>
+          <DropdownMenuItem onClick={() => onFilterSelect("due-today")}>
+            Due Today
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
+    );
+  });
 
   return (
     <div className="flex flex-col">
@@ -141,30 +175,11 @@ export default function OrdersContainer({
                 placeholder="Search orders..."
                 className="w-[250px] pl-8"
                 value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
+                onChange={(e) => handleSearchChange(e.target.value)}
+                onFocus={(e) => e.target.select()}
               />
             </div>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="outline" size="icon">
-                  <Filter className="h-4 w-4" />
-                  <span className="sr-only">Filter</span>
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem onClick={() => handleFilterSelect("all")}>
-                  All orders
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => handleFilterSelect("my")}>
-                  My orders
-                </DropdownMenuItem>
-                <DropdownMenuItem
-                  onClick={() => handleFilterSelect("due-today")}
-                >
-                  Due Today
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <FilterDropdown onFilterSelect={handleFilterSelect} />
           </div>
           <Button onClick={() => setIsNewOrderOpen(true)}>
             <Plus className="mr-2 h-4 w-4" />
