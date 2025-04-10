@@ -18,7 +18,7 @@ import {
   DropdownMenuTrigger,
 } from "@/src/components/ui/dropdown-menu";
 import { Button } from "@/src/components/ui/button";
-import { Order, PriorityMap, Status } from "@/src/app/type";
+import { Order, PriorityMap, Status } from "@/lib/type/type";
 import { useDebounceValue } from "usehooks-ts";
 import OrdersBoard from "@/src/components/orders/order-board";
 import NewOrderDialog from "./new-order-dialog";

@@ -1,5 +1,5 @@
 "use server";
-import { Order, Status } from "../type";
+import { Order, Status } from "../../../lib/type/type";
 import { revalidatePath } from "next/cache";
 
 export async function fetchOrders(): Promise<Order[]> {

@@ -28,7 +28,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/src/components/ui/select";
-import { Order, Priority } from "@/src/app/type";
+import { Order, Priority } from "@/lib/type/type";
 import { createOrder } from "@/src/app/action/orders";
 import { useTransition } from "react";
 

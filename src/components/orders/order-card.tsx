@@ -2,7 +2,7 @@
 "use client";
 
 import { useDraggable } from "@dnd-kit/core";
-import { Order } from "@/src/app/type";
+import { Order } from "@/lib/type/type";
 import { Card, CardContent, CardHeader } from "@/src/components/ui/card";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/src/components/ui/badge";

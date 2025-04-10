@@ -2,7 +2,7 @@
 
 import { memo, useMemo, useState } from "react";
 import { DndContext, DragEndEvent, DragStartEvent } from "@dnd-kit/core";
-import { ColumnConfig, Order, Status } from "@/src/app/type";
+import { ColumnConfig, Order, Status } from "@/lib/type/type";
 import { OrderColumn } from "./orders-column";
 import { cn } from "@/lib/utils";
 import { DragOverlay } from "@dnd-kit/core";
