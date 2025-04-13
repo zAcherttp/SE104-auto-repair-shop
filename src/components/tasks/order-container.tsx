@@ -1,4 +1,3 @@
-// src/components/orders/orders-container.tsx
 "use client";
 
 import {
@@ -9,7 +8,7 @@ import {
   useState,
   useTransition,
 } from "react";
-import { Filter, Plus, Search } from "lucide-react";
+import { Filter, Search } from "lucide-react";
 import { Input } from "@/src/components/ui/input";
 import {
   DropdownMenu,
@@ -20,8 +19,8 @@ import {
 import { Button } from "@/src/components/ui/button";
 import { Order, PriorityMap, Status } from "@/lib/type/type";
 import { useDebounceValue } from "usehooks-ts";
-import OrdersBoard from "@/src/components/orders/order-board";
-import NewOrderDialog from "./new-order-dialog";
+import OrdersBoard from "@/src/components/tasks/order-board";
+import NewTaskDialogForm from "./new-order-dialog";
 import { updateOrderStatus } from "@/src/app/action/orders";
 import { toast } from "sonner";
 
@@ -38,7 +37,6 @@ export default function OrdersContainer({
     "",
     200
   );
-  const [isNewOrderOpen, setIsNewOrderOpen] = useState(false);
   const [activeFilter, setActiveFilter] = useState<string>("all");
   const [isPending, startTransition] = useTransition();
 
@@ -131,7 +129,6 @@ export default function OrdersContainer({
 
   const handleNewOrder = useCallback((order: Order) => {
     setOrders((prev) => [order, ...prev]);
-    setIsNewOrderOpen(false);
     toast.success("New order created");
   }, []);
 
@@ -181,10 +178,7 @@ export default function OrdersContainer({
             </div>
             <FilterDropdown onFilterSelect={handleFilterSelect} />
           </div>
-          <Button onClick={() => setIsNewOrderOpen(true)}>
-            <Plus className="mr-2 h-4 w-4" />
-            New Task
-          </Button>
+          <NewTaskDialogForm onCreateOrder={handleNewOrder} />
         </div>
       </header>
 
@@ -194,14 +188,6 @@ export default function OrdersContainer({
         className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 grow-1"
         isUpdating={isPending}
       />
-
-      {isNewOrderOpen && (
-        <NewOrderDialog
-          isOpen={isNewOrderOpen}
-          onClose={() => setIsNewOrderOpen(false)}
-          onCreateOrder={handleNewOrder}
-        />
-      )}
     </div>
   );
 }

@@ -106,7 +106,7 @@ function OrderCard({ order, className, disabled = false }: OrderCardProps) {
       {...attributes}
       {...listeners}
       className={cn(
-        "cursor-pointer border select-none bg-background",
+        "cursor-pointer border select-none ",
         isDragging && "opacity-50",
         disabled && "cursor-not-allowed opacity-70",
         className

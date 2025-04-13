@@ -25,7 +25,7 @@ export default function HomePage() {
   const t = useTranslations("home");
 
   return (
-    <div className="flex flex-col bg-background">
+    <div className="flex flex-col">
       <div className="flex-1 space-y-4 p-6">
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           <MetricCard
@@ -86,11 +86,11 @@ export default function HomePage() {
             <CardHeader>
               <div className="flex items-center justify-between space-y-0">
                 <div className="uppercase font-semibold text-muted-foreground">
-                  <CardTitle>{t("active-orders")}</CardTitle>
+                  <CardTitle>{t("active-tasks")}</CardTitle>
                 </div>
-                <Button variant="outline" asChild>
+                <Button variant="ghost" asChild>
                   <Link href="/orders" className="text-foreground">
-                    {t("view-orders")}
+                    {t("view-tasks")}
                     <ArrowRight />
                   </Link>
                 </Button>
@@ -106,7 +106,7 @@ export default function HomePage() {
                 <div className="uppercase font-semibold text-muted-foreground">
                   <CardTitle>{t("inventory-status")}</CardTitle>
                 </div>
-                <Button variant="outline" asChild>
+                <Button variant="ghost" asChild>
                   <Link href="/inventory" className="text-foreground">
                     {t("view-inventory")}
                     <ArrowRight />

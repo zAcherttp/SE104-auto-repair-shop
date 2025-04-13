@@ -67,7 +67,7 @@ export default function MetricCard({
   type,
 }: MetricCardProps) {
   return (
-    <Card className="@container/card">
+    <Card>
       <CardHeader className="relative">
         <CardDescription className="uppercase font-semibold text-muted-foreground">
           {title}
@@ -100,7 +100,7 @@ export default function MetricCard({
                 </span>
               </Badge>
             </div>
-            <Button variant={"outline"}>
+            <Button variant={"ghost"}>
               <Icon className="h-4 w-4" />
             </Button>
           </div>

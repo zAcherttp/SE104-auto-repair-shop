@@ -21,5 +21,13 @@ export const routing = defineRouting({
       vi: "/trang-chu",
       en: "/home",
     },
+    "/tasks": {
+      vi: "/viec",
+      en: "/tasks",
+    },
+    "/vehicles": {
+      vi: "/phuong-tien",
+      en: "/vehicles",
+    },
   },
 });

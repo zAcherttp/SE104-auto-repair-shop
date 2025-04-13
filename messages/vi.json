@@ -49,7 +49,7 @@
   "sidebar": {
     "app-name": "garageflow",
     "home": "Trang chủ",
-    "orders": "Đơn hàng",
+    "tasks": "Việc",
     "vehicles": "Phương tiện",
     "invoices": "Hóa đơn",
     "inventory": "Kho hàng",
@@ -74,8 +74,8 @@
   "home": {
     "revenue": "Doanh thu",
     "recent-transactions": "Giao dịch gần đây",
-    "active-orders": "Đơn hàng đang hoạt động",
-    "view-orders": "Xem đơn hàng",
+    "active-tasks": "Việc đang xử lý",
+    "view-tasks": "Xem việc",
     "inventory-status": "Tình trạng kho hàng",
     "view-inventory": "Xem kho hàng"
   },

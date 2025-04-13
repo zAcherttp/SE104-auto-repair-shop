@@ -2,6 +2,7 @@
 
 import { z } from "zod";
 import { useForm } from "react-hook-form";
+import { format } from "date-fns";
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
   Dialog,
@@ -9,6 +10,8 @@ import {
   DialogHeader,
   DialogTitle,
   DialogFooter,
+  DialogClose,
+  DialogTrigger,
 } from "@/src/components/ui/dialog";
 import {
   Form,
@@ -31,31 +34,50 @@ import {
 import { Order, Priority } from "@/lib/type/type";
 import { createOrder } from "@/src/app/action/orders";
 import { useTransition } from "react";
+import { CalendarIcon, Plus } from "lucide-react";
+import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
+import { cn } from "@/lib/utils";
+import { Calendar } from "../ui/calendar";
+import FormSubmitButton from "../form-submit-button";
 
 const formSchema = z.object({
-  title: z.string().min(3, "Title must be at least 3 characters"),
+  title: z
+    .string()
+    .nonempty("Title is required")
+    .min(3, "Title must be at least 3 characters")
+    .max(50, "Title must be at most 50 characters"),
   description: z.string().optional(),
   priority: z.enum(["low", "medium", "high"] as const),
-  customerName: z.string().min(2, "Customer name is required"),
-  vehicleMake: z.string().min(1, "Vehicle make is required"),
-  vehicleModel: z.string().min(1, "Vehicle model is required"),
-  vehicleYear: z.string().regex(/^\d{4}$/, "Year must be a 4-digit number"),
-  dueDate: z.string().optional(),
+  customer: z.object({
+    name: z
+      .string()
+      .nonempty("Customer name is required")
+      .min(2, "Customer name must be at least 2 characters"),
+  }),
+  vehicle: z.object({
+    make: z.string().nonempty("Make is required"),
+    model: z.string().nonempty("Model is required"),
+    year: z
+      .string()
+      .nonempty("Year is required")
+      .regex(/^\d{4}$/, "Year must be valid")
+      .refine((year) => {
+        const yearNum = parseInt(year, 10);
+        return yearNum >= 1886 && yearNum <= 2100;
+      }, "Year must be between 1886 and 2100"),
+  }),
+  dueDate: z.date().optional(),
 });
 
 type FormValues = z.infer<typeof formSchema>;
 
-interface NewOrderDialogProps {
-  isOpen: boolean;
-  onClose: () => void;
+interface NewTaskDialogFormProps {
   onCreateOrder: (order: Order) => void;
 }
 
-export default function NewOrderDialog({
-  isOpen,
-  onClose,
+export default function NewTaskDialogForm({
   onCreateOrder,
-}: NewOrderDialogProps) {
+}: NewTaskDialogFormProps) {
   const [isPending, startTransition] = useTransition();
 
   const form = useForm<FormValues>({
@@ -64,11 +86,15 @@ export default function NewOrderDialog({
       title: "",
       description: "",
       priority: "medium",
-      customerName: "",
-      vehicleMake: "",
-      vehicleModel: "",
-      vehicleYear: new Date().getFullYear().toString(),
-      dueDate: new Date().toISOString().split("T")[0],
+      customer: {
+        name: "",
+      },
+      vehicle: {
+        make: "",
+        model: "",
+        year: "2025",
+      },
+      dueDate: new Date(),
     },
   });
 
@@ -81,12 +107,12 @@ export default function NewOrderDialog({
         priority: values.priority as Priority,
         status: "pending",
         customer: {
-          name: values.customerName,
+          name: values.customer.name,
         },
         vehicle: {
-          make: values.vehicleMake,
-          model: values.vehicleModel,
-          year: parseInt(values.vehicleYear),
+          make: values.vehicle.make,
+          model: values.vehicle.model,
+          year: values.vehicle.year,
         },
         dueDate: values.dueDate,
       };
@@ -101,10 +127,16 @@ export default function NewOrderDialog({
   };
 
   return (
-    <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-[500px]">
+    <Dialog>
+      <DialogTrigger asChild>
+        <Button>
+          <Plus className="mr-2 h-4 w-4" />
+          New Task
+        </Button>
+      </DialogTrigger>
+      <DialogContent className="sm:max-w-[500px]" aria-describedby="">
         <DialogHeader>
-          <DialogTitle>Create New Order</DialogTitle>
+          <DialogTitle>New Task</DialogTitle>
         </DialogHeader>
 
         <Form {...form}>
@@ -140,7 +172,7 @@ export default function NewOrderDialog({
               )}
             />
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 pr-12">
               <FormField
                 control={form.control}
                 name="priority"
@@ -173,9 +205,34 @@ export default function NewOrderDialog({
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Due Date</FormLabel>
-                    <FormControl>
-                      <Input type="date" {...field} />
-                    </FormControl>
+                    <Popover>
+                      <PopoverTrigger asChild>
+                        <FormControl>
+                          <Button
+                            variant={"outline"}
+                            className={cn(
+                              "w-[240px] pl-3 text-left font-normal",
+                              !field.value && "text-muted-foreground"
+                            )}
+                          >
+                            {field.value ? (
+                              format(field.value, "PPP")
+                            ) : (
+                              <span>Pick a date</span>
+                            )}
+                            <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
+                          </Button>
+                        </FormControl>
+                      </PopoverTrigger>
+                      <PopoverContent className="w-auto p-0" align="start">
+                        <Calendar
+                          mode="single"
+                          selected={field.value}
+                          onSelect={field.onChange}
+                          initialFocus
+                        />
+                      </PopoverContent>
+                    </Popover>
                     <FormMessage />
                   </FormItem>
                 )}
@@ -184,7 +241,7 @@ export default function NewOrderDialog({
 
             <FormField
               control={form.control}
-              name="customerName"
+              name="customer.name"
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Customer Name</FormLabel>
@@ -199,7 +256,7 @@ export default function NewOrderDialog({
             <div className="grid grid-cols-3 gap-4">
               <FormField
                 control={form.control}
-                name="vehicleMake"
+                name="vehicle.make"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Make</FormLabel>
@@ -213,7 +270,7 @@ export default function NewOrderDialog({
 
               <FormField
                 control={form.control}
-                name="vehicleModel"
+                name="vehicle.model"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Model</FormLabel>
@@ -227,12 +284,12 @@ export default function NewOrderDialog({
 
               <FormField
                 control={form.control}
-                name="vehicleYear"
+                name="vehicle.year"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Year</FormLabel>
                     <FormControl>
-                      <Input placeholder="2023" {...field} />
+                      <Input placeholder="2025" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -241,17 +298,12 @@ export default function NewOrderDialog({
             </div>
 
             <DialogFooter>
-              <Button
-                type="button"
-                variant="outline"
-                onClick={onClose}
-                disabled={isPending}
-              >
-                Cancel
-              </Button>
-              <Button type="submit" disabled={isPending}>
-                {isPending ? "Creating..." : "Create Order"}
-              </Button>
+              <DialogClose asChild>
+                <Button type="button" variant="outline" disabled={isPending}>
+                  Cancel
+                </Button>
+              </DialogClose>
+              <FormSubmitButton text="Create" isDisabled={isPending} />
             </DialogFooter>
           </form>
         </Form>

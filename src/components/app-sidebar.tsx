@@ -29,7 +29,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       },
       dashboardItems: [
         { name: t("home"), url: "/home", icon: Home },
-        { name: t("orders"), url: "/orders", icon: ClipboardList },
+        { name: t("tasks"), url: "/tasks", icon: ClipboardList },
         { name: t("vehicles"), url: "/vehicles", icon: Car },
         { name: t("invoices"), url: "/invoices", icon: CreditCard },
         { name: t("inventory"), url: "/inventory", icon: Package2 },

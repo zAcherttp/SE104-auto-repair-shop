@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./global.css";
-import { Toaster } from "sonner";
+import { Toaster } from "../components/ui/sonner";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "../i18n/routing";
 import { setRequestLocale } from "next-intl/server";
@@ -47,7 +47,6 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ReactScan />
@@ -59,7 +58,7 @@ export default async function RootLayout({
               attribute="class"
             >
               {children}
-              <Toaster />
+              <Toaster richColors />
             </ThemeProvider>
           </NextIntlClientProvider>
         </StrictMode>

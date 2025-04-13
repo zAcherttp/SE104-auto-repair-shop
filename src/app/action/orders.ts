@@ -1,4 +1,5 @@
 "use server";
+
 import { Order, Status } from "../../../lib/type/type";
 import { revalidatePath } from "next/cache";
 
@@ -49,7 +50,6 @@ export async function createOrder(
   order: Omit<Order, "id">
 ): Promise<{ success: boolean; order?: Order }> {
   try {
-    // Generate an ID
     const newOrder: Order = {
       id: `task-${Date.now()}`,
       ...order,

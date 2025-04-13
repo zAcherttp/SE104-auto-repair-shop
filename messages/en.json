@@ -49,7 +49,7 @@
   "sidebar": {
     "app-name": "garageflow",
     "home": "Home",
-    "orders": "Orders",
+    "tasks": "Tasks",
     "vehicles": "Vehicles",
     "invoices": "Invoices",
     "inventory": "Inventory",
@@ -74,8 +74,8 @@
   "home": {
     "revenue": "Revenue",
     "recent-transactions": "Recent Transactions",
-    "active-orders": "Active Orders",
-    "view-orders": "View Orders",
+    "active-tasks": "Active Tasks",
+    "view-tasks": "View Tasks",
     "inventory-status": "Inventory Status",
     "view-inventory": "View Inventory"
   },
