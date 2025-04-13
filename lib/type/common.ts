@@ -24,7 +24,7 @@ export type AssignedUser = {
   avatarUrl?: string;
 };
 
-export type Order = {
+export type Task = {
   id: string;
   title: string;
   description?: string;
@@ -35,49 +35,6 @@ export type Order = {
   dueDate?: string | Date;
   assignedTo?: AssignedUser;
   createdAt?: string | Date;
-};
-
-export interface ColumnConfig {
-  title: string;
-  columnId: Status;
-  borderColor: string;
-}
-
-// Consolidated types for the application
-
-// MetricCardProps for displaying metrics on the home page
-export interface MetricCardProps {
-  title: string;
-  value: string;
-  difference: string;
-  icon: React.ElementType;
-  type?: "currency" | "value";
-}
-
-// Transaction type for recent transactions
-export interface Transaction {
-  id: string;
-  name: string;
-  email: string;
-  amount: number;
-  date: string;
-}
-
-// InventoryItem type for inventory status
-export interface InventoryItem {
-  id: string;
-  name: string;
-  stock: number;
-  reorderPoint: number;
-  status: "Low Stock" | "In Stock";
-}
-
-// ChartConfig for revenue chart
-export type ChartConfig = {
-  [key: string]: {
-    label: string;
-    color: string;
-  };
 };
 
 // Database schema types

@@ -17,7 +17,7 @@ import {
   DropdownMenuTrigger,
 } from "@/src/components/ui/dropdown-menu";
 import { Button } from "@/src/components/ui/button";
-import { Order, PriorityMap, Status } from "@/lib/type/type";
+import { Task, PriorityMap, Status } from "@/lib/type/common";
 import { useDebounceValue } from "usehooks-ts";
 import OrdersBoard from "@/src/components/tasks/order-board";
 import NewTaskDialogForm from "./new-order-dialog";
@@ -25,13 +25,13 @@ import { updateOrderStatus } from "@/src/app/action/orders";
 import { toast } from "sonner";
 
 interface OrdersContainerProps {
-  initialOrders: Order[];
+  initialOrders: Task[];
 }
 
 export default function OrdersContainer({
   initialOrders,
 }: OrdersContainerProps) {
-  const [orders, setOrders] = useState<Order[]>(initialOrders);
+  const [orders, setOrders] = useState<Task[]>(initialOrders);
   const [searchTerm, setSearchTerm] = useState("");
   const [debouncedSearchTerm, setDebouncedSearchTerm] = useDebounceValue(
     "",
@@ -74,7 +74,13 @@ export default function OrdersContainer({
         break;
       case "due-today":
         const today = new Date().toISOString().split("T")[0];
-        result = result.filter((order) => order.dueDate === today);
+        result = result.filter((order) => {
+          if (!order.dueDate) return false;
+          const orderDueDate = new Date(order.dueDate)
+            .toISOString()
+            .split("T")[0];
+          return orderDueDate === today;
+        });
         break;
       case "all":
       default:
@@ -127,7 +133,7 @@ export default function OrdersContainer({
     [orders, startTransition]
   );
 
-  const handleNewOrder = useCallback((order: Order) => {
+  const handleNewOrder = useCallback((order: Task) => {
     setOrders((prev) => [order, ...prev]);
     toast.success("New order created");
   }, []);

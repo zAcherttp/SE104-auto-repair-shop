@@ -13,13 +13,17 @@ import {
   CardHeader,
   CardTitle,
 } from "@/src/components/ui/card";
-import MetricCard from "@/src/components/home/metric-card";
+import {
+  MetricCard,
+  MetricCardSkeleton,
+} from "@/src/components/home/metric-card";
 import { Button } from "@/src/components/ui/button";
 import { RecentTransactions } from "@/src/components/home/recent-transactions";
 import { RevenueChart } from "@/src/components/revenue-chart";
 import ActiveOrders from "@/src/components/home/active-orders";
 import { useTranslations } from "next-intl";
 import InventoryStatus from "@/src/components/home/inventory-status";
+import { Suspense } from "react";
 
 export default function HomePage() {
   const t = useTranslations("home");
@@ -27,36 +31,47 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       <div className="flex-1 space-y-4 p-6">
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-          <MetricCard
-            title="Total Revenue"
-            value="45231.89"
-            difference="1.12"
-            icon={CreditCard}
-            type="currency"
-          />
-          <MetricCard
-            title="New Customers"
-            value="2350"
-            difference="1.08"
-            icon={Users}
-            type="value"
-          />
-          <MetricCard
-            title="Active Repairs"
-            value="12"
-            difference="0.78"
-            icon={ClipboardList}
-            type="value"
-          />
-          <MetricCard
-            title="Vehicles In Shop"
-            value="8"
-            difference="0.65"
-            icon={Car}
-            type="value"
-          />
-        </div>
+        <Suspense
+          fallback={
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+              <MetricCardSkeleton />
+              <MetricCardSkeleton />
+              <MetricCardSkeleton />
+              <MetricCardSkeleton />
+            </div>
+          }
+        >
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+            <MetricCard
+              title="Total Revenue"
+              value="45231.89"
+              difference="1.12"
+              icon={CreditCard}
+              type="currency"
+            />
+            <MetricCard
+              title="New Customers"
+              value="2350"
+              difference="1.08"
+              icon={Users}
+              type="value"
+            />
+            <MetricCard
+              title="active Repairs"
+              value="12"
+              difference="0.78"
+              icon={ClipboardList}
+              type="value"
+            />
+            <MetricCard
+              title="Cars repaired this month"
+              value="8"
+              difference="0.65"
+              icon={Car}
+              type="value"
+            />
+          </div>
+        </Suspense>
 
         <div className="grid gap-4 md:grid-cols-7">
           <Card className="col-span-4">

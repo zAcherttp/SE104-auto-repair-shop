@@ -1,9 +1,11 @@
 "use server";
 
-import { Order, Status } from "../../../lib/type/type";
+import z from "zod";
+import { Task, Status } from "../../../lib/type/common";
 import { revalidatePath } from "next/cache";
+import { taskFormSchema } from "@/lib/schema";
 
-export async function fetchOrders(): Promise<Order[]> {
+export async function fetchOrders(): Promise<Task[]> {
   try {
     // Simulate API call
     // .sort((a, b) => {
@@ -21,7 +23,7 @@ export async function fetchOrders(): Promise<Order[]> {
 export async function updateOrderStatus(
   orderId: string,
   status: Status
-): Promise<{ success: boolean; order?: Order }> {
+): Promise<{ success: boolean; order?: Task }> {
   try {
     // In a real app, this would update the database
     // Simulate API call
@@ -45,30 +47,37 @@ export async function updateOrderStatus(
   }
 }
 
-// Create new order action
 export async function createOrder(
-  order: Omit<Order, "id">
-): Promise<{ success: boolean; order?: Order }> {
+  order: z.infer<typeof taskFormSchema>
+): Promise<{ error: Error | null; data?: Task }> {
   try {
-    const newOrder: Order = {
+    const result = taskFormSchema.safeParse(order);
+
+    if (!result.success) {
+      console.error("Validation failed:", result.error.format());
+      return { error: new Error("Validation failed") };
+    }
+
+    const task: Task = {
       id: `task-${Date.now()}`,
-      ...order,
+      status: "pending",
+      ...result.data,
     };
 
-    // In a real app, this would be inserted into the database
-    DEFAULT_ORDERS.push(newOrder);
+    // simulate database insertion
+    DEFAULT_ORDERS.push(task);
 
-    // Revalidate the orders page
+    // revalidate the orders page
     revalidatePath("/orders");
 
-    return { success: true, order: newOrder };
+    return { data: task, error: null };
   } catch (error) {
     console.error("Failed to create order:", error);
-    return { success: false };
+    return { error: new Error("Failed to create order") };
   }
 }
 
-const DEFAULT_ORDERS: Order[] = [
+const DEFAULT_ORDERS: Task[] = [
   {
     id: "task-1",
     title: "Oil Change",
@@ -79,7 +88,7 @@ const DEFAULT_ORDERS: Order[] = [
     vehicle: {
       make: "Toyota",
       model: "Camry",
-      year: 2019,
+      year: "2019",
     },
     assignedTo: {
       name: "Mike Johnson",
@@ -99,7 +108,7 @@ const DEFAULT_ORDERS: Order[] = [
     vehicle: {
       make: "Honda",
       model: "Civic",
-      year: 2020,
+      year: "2020",
     },
     assignedTo: {
       name: "Mike Johnson",
@@ -119,7 +128,7 @@ const DEFAULT_ORDERS: Order[] = [
     vehicle: {
       make: "Ford",
       model: "F-150",
-      year: 2021,
+      year: "2021",
     },
     status: "pending",
     dueDate: "2025-04-07",
@@ -135,7 +144,7 @@ const DEFAULT_ORDERS: Order[] = [
     vehicle: {
       make: "BMW",
       model: "X5",
-      year: 2018,
+      year: "2018",
     },
     assignedTo: {
       name: "Alex Turner",
@@ -155,7 +164,7 @@ const DEFAULT_ORDERS: Order[] = [
     vehicle: {
       make: "Chevrolet",
       model: "Malibu",
-      year: 2017,
+      year: "2017",
     },
     status: "completed",
     dueDate: "2023-05-10",
@@ -171,7 +180,7 @@ const DEFAULT_ORDERS: Order[] = [
     vehicle: {
       make: "Nissan",
       model: "Altima",
-      year: 2020,
+      year: "2020",
     },
     assignedTo: {
       name: "Chris Adams",
@@ -191,7 +200,7 @@ const DEFAULT_ORDERS: Order[] = [
     vehicle: {
       make: "Subaru",
       model: "Outback",
-      year: 2016,
+      year: "2016",
     },
     assignedTo: {
       name: "Mike Johnson",
@@ -211,7 +220,7 @@ const DEFAULT_ORDERS: Order[] = [
     vehicle: {
       make: "Hyundai",
       model: "Elantra",
-      year: 2018,
+      year: "2018",
     },
     assignedTo: {
       name: "Alex Turner",
@@ -231,7 +240,7 @@ const DEFAULT_ORDERS: Order[] = [
     vehicle: {
       make: "Jeep",
       model: "Wrangler",
-      year: 2022,
+      year: "2022",
     },
     assignedTo: {
       name: "Chris Adams",
@@ -251,7 +260,7 @@ const DEFAULT_ORDERS: Order[] = [
     vehicle: {
       make: "Volkswagen",
       model: "Jetta",
-      year: 2015,
+      year: "2015",
     },
     assignedTo: {
       name: "Mike Johnson",
@@ -271,7 +280,7 @@ const DEFAULT_ORDERS: Order[] = [
     vehicle: {
       make: "Mazda",
       model: "CX-5",
-      year: 2019,
+      year: "2019",
     },
     assignedTo: {
       name: "Chris Adams",
@@ -291,7 +300,7 @@ const DEFAULT_ORDERS: Order[] = [
     vehicle: {
       make: "Kia",
       model: "Sorento",
-      year: 2021,
+      year: "2021",
     },
     assignedTo: {
       name: "Alex Turner",
@@ -311,7 +320,7 @@ const DEFAULT_ORDERS: Order[] = [
     vehicle: {
       make: "Honda",
       model: "Accord",
-      year: 2017,
+      year: "2017",
     },
     assignedTo: {
       name: "Mike Johnson",
@@ -331,7 +340,7 @@ const DEFAULT_ORDERS: Order[] = [
     vehicle: {
       make: "Chevrolet",
       model: "Impala",
-      year: 2016,
+      year: "2016",
     },
     assignedTo: {
       name: "Chris Adams",
@@ -351,7 +360,7 @@ const DEFAULT_ORDERS: Order[] = [
     vehicle: {
       make: "Ford",
       model: "Escape",
-      year: 2018,
+      year: "2018",
     },
     assignedTo: {
       name: "Alex Turner",

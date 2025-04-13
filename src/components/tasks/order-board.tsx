@@ -2,7 +2,7 @@
 
 import { memo, useMemo, useState } from "react";
 import { DndContext, DragEndEvent, DragStartEvent } from "@dnd-kit/core";
-import { ColumnConfig, Order, Status } from "@/lib/type/type";
+import { Task, Status } from "@/lib/type/common";
 import { OrderColumn } from "./orders-column";
 import { cn } from "@/lib/utils";
 import { DragOverlay } from "@dnd-kit/core";
@@ -10,10 +10,16 @@ import { OrderCard } from "./order-card";
 import { ScrollArea } from "../ui/scroll-area";
 
 interface OrdersBoardProps {
-  orders: Order[];
+  orders: Task[];
   onStatusChange?: (orderId: string, newStatus: Status) => void;
   className?: string;
   isUpdating?: boolean;
+}
+
+interface ColumnConfig {
+  title: string;
+  columnId: Status;
+  borderColor: string;
 }
 
 const OrdersBoard = memo(function OrdersBoard({
@@ -21,7 +27,7 @@ const OrdersBoard = memo(function OrdersBoard({
   onStatusChange,
   className,
 }: OrdersBoardProps) {
-  const [activeOrder, setActiveOrder] = useState<Order | null>(null);
+  const [activeOrder, setActiveOrder] = useState<Task | null>(null);
 
   // Column configurations
   const columns = useMemo<ColumnConfig[]>(

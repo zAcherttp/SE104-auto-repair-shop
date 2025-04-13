@@ -2,7 +2,7 @@
 "use client";
 
 import { useDraggable } from "@dnd-kit/core";
-import { Order } from "@/lib/type/type";
+import { Task } from "@/lib/type/common";
 import { Card, CardContent, CardHeader } from "@/src/components/ui/card";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/src/components/ui/badge";
@@ -15,7 +15,7 @@ import {
 import React, { memo, useMemo } from "react";
 
 interface OrderCardProps {
-  order: Order;
+  order: Task;
   className?: string;
   disabled?: boolean;
 }

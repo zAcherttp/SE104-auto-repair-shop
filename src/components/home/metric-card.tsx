@@ -59,7 +59,7 @@ function getTimeframeDifference(
     : formatValue(tfDifference.toString(), type);
 }
 
-export default function MetricCard({
+export function MetricCard({
   title,
   value,
   difference,
@@ -113,6 +113,22 @@ export default function MetricCard({
             {/* we gonna add switching timeframe later, for now its monthly */}
             from last month
           </span>
+        </div>
+      </CardFooter>
+    </Card>
+  );
+}
+
+export function MetricCardSkeleton() {
+  return (
+    <Card className="animate-pulse">
+      <CardHeader className="relative">
+        <CardDescription className="h-4 w-1/2 rounded bg-muted" />
+        <CardTitle className="h-8 w-1/2 rounded bg-muted" />
+      </CardHeader>
+      <CardFooter className="flex-col items-start gap-1 text-sm">
+        <div className="line-clamp-1 gap-2 flex text-foreground font-medium">
+          <div className="h-4 w-1/2 rounded bg-muted" />
         </div>
       </CardFooter>
     </Card>

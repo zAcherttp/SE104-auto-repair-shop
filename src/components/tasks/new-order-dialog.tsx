@@ -31,7 +31,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/src/components/ui/select";
-import { Order, Priority } from "@/lib/type/type";
+import { Task } from "@/lib/type/common";
 import { createOrder } from "@/src/app/action/orders";
 import { useTransition } from "react";
 import { CalendarIcon, Plus } from "lucide-react";
@@ -39,40 +39,12 @@ import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import { cn } from "@/lib/utils";
 import { Calendar } from "../ui/calendar";
 import FormSubmitButton from "../form-submit-button";
+import { taskFormSchema } from "@/lib/schema";
 
-const formSchema = z.object({
-  title: z
-    .string()
-    .nonempty("Title is required")
-    .min(3, "Title must be at least 3 characters")
-    .max(50, "Title must be at most 50 characters"),
-  description: z.string().optional(),
-  priority: z.enum(["low", "medium", "high"] as const),
-  customer: z.object({
-    name: z
-      .string()
-      .nonempty("Customer name is required")
-      .min(2, "Customer name must be at least 2 characters"),
-  }),
-  vehicle: z.object({
-    make: z.string().nonempty("Make is required"),
-    model: z.string().nonempty("Model is required"),
-    year: z
-      .string()
-      .nonempty("Year is required")
-      .regex(/^\d{4}$/, "Year must be valid")
-      .refine((year) => {
-        const yearNum = parseInt(year, 10);
-        return yearNum >= 1886 && yearNum <= 2100;
-      }, "Year must be between 1886 and 2100"),
-  }),
-  dueDate: z.date().optional(),
-});
-
-type FormValues = z.infer<typeof formSchema>;
+type FormValues = z.infer<typeof taskFormSchema>;
 
 interface NewTaskDialogFormProps {
-  onCreateOrder: (order: Order) => void;
+  onCreateOrder: (order: Task) => void;
 }
 
 export default function NewTaskDialogForm({
@@ -81,7 +53,7 @@ export default function NewTaskDialogForm({
   const [isPending, startTransition] = useTransition();
 
   const form = useForm<FormValues>({
-    resolver: zodResolver(formSchema),
+    resolver: zodResolver(taskFormSchema),
     defaultValues: {
       title: "",
       description: "",
@@ -100,28 +72,13 @@ export default function NewTaskDialogForm({
 
   const onSubmit = (values: FormValues) => {
     startTransition(async () => {
-      // Create the order object from form values
-      const newOrderData: Omit<Order, "id"> = {
-        title: values.title,
-        description: values.description,
-        priority: values.priority as Priority,
-        status: "pending",
-        customer: {
-          name: values.customer.name,
-        },
-        vehicle: {
-          make: values.vehicle.make,
-          model: values.vehicle.model,
-          year: values.vehicle.year,
-        },
-        dueDate: values.dueDate,
-      };
+      const { data, error } = await createOrder(values);
 
-      // Submit to server
-      const result = await createOrder(newOrderData);
-
-      if (result.success && result.order) {
-        onCreateOrder(result.order);
+      if (error) {
+        return;
+      }
+      if (data) {
+        onCreateOrder(data);
       }
     });
   };
@@ -300,7 +257,7 @@ export default function NewTaskDialogForm({
             <DialogFooter>
               <DialogClose asChild>
                 <Button type="button" variant="outline" disabled={isPending}>
-                  Cancel
+                  Close
                 </Button>
               </DialogClose>
               <FormSubmitButton text="Create" isDisabled={isPending} />
