@@ -4,18 +4,23 @@ import z from "zod";
 import { Task, Status } from "../../../lib/type/common";
 import { revalidatePath } from "next/cache";
 import { taskFormSchema } from "@/lib/schema";
+import { ApiResponse } from "../../../lib/type/common";
 
-export async function fetchOrders(): Promise<Task[]> {
+export async function fetchOrders(): Promise<ApiResponse<Task[]>> {
   try {
     // Simulate API call
-    // .sort((a, b) => {
-    //         return PriorityMap[a.priority] - PriorityMap[b.priority];
-    // either sort here or in the database query
+    await new Promise((resolve) => setTimeout(resolve, 300));
 
-    return Promise.resolve(DEFAULT_ORDERS);
+    return {
+      data: DEFAULT_ORDERS,
+      error: null,
+    };
   } catch (error) {
     console.error("Failed to fetch orders:", error);
-    return [];
+    return {
+      error: new Error("Failed to fetch orders"),
+      data: undefined,
+    };
   }
 }
 
@@ -23,7 +28,7 @@ export async function fetchOrders(): Promise<Task[]> {
 export async function updateOrderStatus(
   orderId: string,
   status: Status
-): Promise<{ success: boolean; order?: Task }> {
+): Promise<ApiResponse<Task>> {
   try {
     // In a real app, this would update the database
     // Simulate API call
@@ -32,7 +37,7 @@ export async function updateOrderStatus(
     // Find and update the order
     const updatedOrder = DEFAULT_ORDERS.find((order) => order.id === orderId);
     if (!updatedOrder) {
-      return { success: false };
+      return { error: new Error("Order not found"), data: undefined };
     }
 
     updatedOrder.status = status;
@@ -40,22 +45,25 @@ export async function updateOrderStatus(
     // Revalidate the orders page to refresh server data
     revalidatePath("/orders");
 
-    return { success: true, order: updatedOrder };
+    return { error: null, data: updatedOrder };
   } catch (error) {
     console.error("Failed to update order status:", error);
-    return { success: false };
+    return {
+      error: new Error("Failed to update order status"),
+      data: undefined,
+    };
   }
 }
 
 export async function createOrder(
   order: z.infer<typeof taskFormSchema>
-): Promise<{ error: Error | null; data?: Task }> {
+): Promise<ApiResponse<Task>> {
   try {
     const result = taskFormSchema.safeParse(order);
 
     if (!result.success) {
       console.error("Validation failed:", result.error.format());
-      return { error: new Error("Validation failed") };
+      return { error: new Error("Validation failed"), data: undefined };
     }
 
     const task: Task = {
@@ -73,7 +81,7 @@ export async function createOrder(
     return { data: task, error: null };
   } catch (error) {
     console.error("Failed to create order:", error);
-    return { error: new Error("Failed to create order") };
+    return { error: new Error("Failed to create order"), data: undefined };
   }
 }
 

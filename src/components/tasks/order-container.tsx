@@ -19,81 +19,73 @@ import {
 import { Button } from "@/src/components/ui/button";
 import { Task, PriorityMap, Status } from "@/lib/type/common";
 import { useDebounceValue } from "usehooks-ts";
-import OrdersBoard from "@/src/components/tasks/order-board";
+import { OrdersBoard } from "@/src/components/tasks/order-board";
 import NewTaskDialogForm from "./new-order-dialog";
-import { updateOrderStatus } from "@/src/app/action/orders";
+import { fetchOrders, updateOrderStatus } from "@/src/app/action/orders";
 import { toast } from "sonner";
+import { useQuery } from "@tanstack/react-query";
 
-interface OrdersContainerProps {
-  initialOrders: Task[];
-}
+export default function OrdersContainer() {
+  const { data: ordersData, isLoading } = useQuery({
+    queryKey: ["orders"],
+    queryFn: () => fetchOrders(),
+  });
 
-export default function OrdersContainer({
-  initialOrders,
-}: OrdersContainerProps) {
-  const [orders, setOrders] = useState<Task[]>(initialOrders);
+  const [orders, setOrders] = useState<Task[]>([]);
+
+  useEffect(() => {
+    if (ordersData?.data) {
+      setOrders(ordersData.data);
+    }
+  }, [ordersData?.data]);
   const [searchTerm, setSearchTerm] = useState("");
-  const [debouncedSearchTerm, setDebouncedSearchTerm] = useDebounceValue(
-    "",
-    200
-  );
+  const [debouncedSearchTerm] = useDebounceValue(searchTerm, 200);
   const [activeFilter, setActiveFilter] = useState<string>("all");
-  const [isPending, startTransition] = useTransition();
+  const [isTransitioning, startTransition] = useTransition();
 
   const handleSearchChange = useCallback((value: string) => {
     setSearchTerm(value);
   }, []);
 
-  useEffect(() => {
-    setDebouncedSearchTerm(searchTerm);
-  }, [searchTerm, setDebouncedSearchTerm]);
+  const searchFilteredOrders = useMemo(() => {
+    if (!debouncedSearchTerm) return orders;
+
+    const searchLower = debouncedSearchTerm.toLowerCase().trim();
+    return orders.filter(
+      (order) =>
+        order.title.toLowerCase().includes(searchLower) ||
+        order.description?.toLowerCase().includes(searchLower) ||
+        order.customer?.name.toLowerCase().includes(searchLower) ||
+        `${order.vehicle?.make} ${order.vehicle?.model}`
+          .toLowerCase()
+          .includes(searchLower)
+    );
+  }, [orders, debouncedSearchTerm]);
 
   const filteredOrders = useMemo(() => {
-    let result = [...orders];
+    if (activeFilter === "all") return searchFilteredOrders;
 
-    // Apply search
-    if (debouncedSearchTerm) {
-      const searchLower = debouncedSearchTerm.toLowerCase().trim();
-      result = result.filter(
-        (order) =>
-          order.title.toLowerCase().includes(searchLower) ||
-          order.description?.toLowerCase().includes(searchLower) ||
-          order.customer?.name.toLowerCase().includes(searchLower) ||
-          `${order.vehicle?.make} ${order.vehicle?.model}`
-            .toLowerCase()
-            .includes(searchLower)
-      );
-    }
+    return searchFilteredOrders.filter((order) => {
+      if (activeFilter === "my") {
+        return order.assignedTo?.name === "Mike Johnson";
+      }
 
-    // Apply filters
-    switch (activeFilter) {
-      case "my":
-        result = result.filter(
-          (order) => order.assignedTo?.name === "Mike Johnson"
-        );
-        break;
-      case "due-today":
+      if (activeFilter === "due-today") {
         const today = new Date().toISOString().split("T")[0];
-        result = result.filter((order) => {
-          if (!order.dueDate) return false;
-          const orderDueDate = new Date(order.dueDate)
-            .toISOString()
-            .split("T")[0];
-          return orderDueDate === today;
-        });
-        break;
-      case "all":
-      default:
-        break;
-    }
-    return result;
-  }, [orders, debouncedSearchTerm, activeFilter]);
+        return (
+          order.dueDate &&
+          new Date(order.dueDate).toISOString().split("T")[0] === today
+        );
+      }
+
+      return true;
+    });
+  }, [searchFilteredOrders, activeFilter]);
 
   const handleFilterSelect = useCallback((filter: string) => {
     setActiveFilter(filter);
   }, []);
 
-  // Handle drag and drop to update status
   const handleDragEnd = useCallback(
     (orderId: string, newStatus: Status) => {
       // Find the order
@@ -101,21 +93,20 @@ export default function OrdersContainer({
       if (!orderToUpdate || orderToUpdate.status === newStatus) return;
 
       // Optimistic update
-      const updatedOrders = orders
-        .map((order) =>
-          order.id === orderId ? { ...order, status: newStatus } : order
-        )
-        .sort((a, b) => {
-          return PriorityMap[b.priority] - PriorityMap[a.priority];
-        });
-
-      setOrders(updatedOrders);
+      setOrders((prevOrders) => {
+        const updated = prevOrders
+          .map((order) =>
+            order.id === orderId ? { ...order, status: newStatus } : order
+          )
+          .sort((a, b) => PriorityMap[b.priority] - PriorityMap[a.priority]);
+        return updated;
+      });
 
       // Server update with error handling
       startTransition(async () => {
         try {
           const result = await updateOrderStatus(orderId, newStatus);
-          if (!result.success) {
+          if (result.error) {
             // Revert optimistic update on failure
             setOrders(orders);
             toast.error("Failed to update order status");
@@ -192,7 +183,8 @@ export default function OrdersContainer({
         orders={filteredOrders}
         onStatusChange={handleDragEnd}
         className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 grow-1"
-        isUpdating={isPending}
+        isLoading={isLoading}
+        isUpdating={isTransitioning}
       />
     </div>
   );

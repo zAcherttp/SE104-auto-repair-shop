@@ -8,6 +8,8 @@ import { setRequestLocale } from "next-intl/server";
 import { ThemeProvider } from "next-themes";
 import { ReactScan } from "../components/react-scan";
 import { StrictMode } from "react";
+import Providers from "./providers";
+import { Proportions } from "lucide-react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -57,7 +59,7 @@ export default async function RootLayout({
               disableTransitionOnChange
               attribute="class"
             >
-              {children}
+              <Providers>{children}</Providers>
               <Toaster richColors />
             </ThemeProvider>
           </NextIntlClientProvider>

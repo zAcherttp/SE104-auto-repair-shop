@@ -117,4 +117,20 @@ function OrderCard({ order, className, disabled = false }: OrderCardProps) {
   );
 }
 
-export { OrderCard };
+function OrderCardSkeleton() {
+  return (
+    <Card className="border animate-pulse [animation-duration:0.8s]">
+      <CardHeader className="gap-0">
+        <div className="h-4 w-1/2 bg-muted rounded" />
+      </CardHeader>
+      <CardContent>
+        <div className="h-3 bg-muted rounded" />
+        <div className="flex items-center gap-2 text-xs text-muted-foreground mt-3">
+          <div className="h-3 w-1/2 bg-muted rounded" />
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
+
+export { OrderCard, OrderCardSkeleton };

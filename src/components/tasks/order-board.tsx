@@ -6,13 +6,14 @@ import { Task, Status } from "@/lib/type/common";
 import { OrderColumn } from "./orders-column";
 import { cn } from "@/lib/utils";
 import { DragOverlay } from "@dnd-kit/core";
-import { OrderCard } from "./order-card";
+import { OrderCard, OrderCardSkeleton } from "./order-card";
 import { ScrollArea } from "../ui/scroll-area";
 
 interface OrdersBoardProps {
   orders: Task[];
   onStatusChange?: (orderId: string, newStatus: Status) => void;
   className?: string;
+  isLoading?: boolean;
   isUpdating?: boolean;
 }
 
@@ -22,10 +23,11 @@ interface ColumnConfig {
   borderColor: string;
 }
 
-const OrdersBoard = memo(function OrdersBoard({
+export const OrdersBoard = memo(function OrdersBoard({
   orders,
   onStatusChange,
   className,
+  isLoading,
 }: OrdersBoardProps) {
   const [activeOrder, setActiveOrder] = useState<Task | null>(null);
 
@@ -97,13 +99,17 @@ const OrdersBoard = memo(function OrdersBoard({
             >
               <ScrollArea>
                 <div className="flex flex-col gap-2">
-                  {columnOrders.map((order) => (
-                    <OrderCard key={order.id} order={order} />
-                  ))}
+                  {isLoading ? (
+                    <OrderCardSkeleton />
+                  ) : (
+                    columnOrders.map((order) => (
+                      <OrderCard key={order.id} order={order} />
+                    ))
+                  )}
                 </div>
               </ScrollArea>
 
-              {orders.length === 0 && (
+              {orders.length === 0 && !isLoading && (
                 <div className="text-center py-8 text-muted-foreground text-sm">
                   No orders
                 </div>
@@ -123,5 +129,3 @@ const OrdersBoard = memo(function OrdersBoard({
     </DndContext>
   );
 });
-
-export default OrdersBoard;

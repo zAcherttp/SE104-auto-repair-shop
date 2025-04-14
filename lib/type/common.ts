@@ -1,3 +1,8 @@
+export type ApiResponse<T> = {
+  error: Error | null;
+  data?: T;
+};
+
 export type Priority = "low" | "medium" | "high";
 
 export const PriorityMap: { [key in Priority]: number } = {
