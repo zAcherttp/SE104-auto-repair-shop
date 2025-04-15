@@ -5,7 +5,7 @@ import { Status } from "@/lib/type/common";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { Badge } from "../ui/badge";
 
-interface OrderColumnProps {
+interface TaskColumnProps {
   title: string;
   columnId: Status;
   borderColor: string;
@@ -13,13 +13,13 @@ interface OrderColumnProps {
   count?: number;
 }
 
-export function OrderColumn({
+export function TaskColumn({
   title,
   columnId,
   borderColor,
   children,
   count,
-}: OrderColumnProps) {
+}: TaskColumnProps) {
   const { setNodeRef } = useDroppable({
     id: columnId,
   });

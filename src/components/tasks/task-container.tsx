@@ -19,25 +19,25 @@ import {
 import { Button } from "@/src/components/ui/button";
 import { Task, PriorityMap, Status } from "@/lib/type/common";
 import { useDebounceValue } from "usehooks-ts";
-import { OrdersBoard } from "@/src/components/tasks/order-board";
+import { TaskBoard } from "@/src/components/tasks/task-board";
 import NewTaskDialogForm from "./new-order-dialog";
 import { fetchOrders, updateOrderStatus } from "@/src/app/action/orders";
 import { toast } from "sonner";
 import { useQuery } from "@tanstack/react-query";
 
-export default function OrdersContainer() {
-  const { data: ordersData, isLoading } = useQuery({
-    queryKey: ["orders"],
+export default function TaskContainer() {
+  const { data: tasksData, isLoading } = useQuery({
+    queryKey: ["tasks"],
     queryFn: () => fetchOrders(),
   });
 
-  const [orders, setOrders] = useState<Task[]>([]);
+  const [tasks, setTasks] = useState<Task[]>([]);
 
   useEffect(() => {
-    if (ordersData?.data) {
-      setOrders(ordersData.data);
+    if (tasksData?.data) {
+      setTasks(tasksData.data);
     }
-  }, [ordersData?.data]);
+  }, [tasksData?.data]);
   const [searchTerm, setSearchTerm] = useState("");
   const [debouncedSearchTerm] = useDebounceValue(searchTerm, 200);
   const [activeFilter, setActiveFilter] = useState<string>("all");
@@ -48,10 +48,10 @@ export default function OrdersContainer() {
   }, []);
 
   const searchFilteredOrders = useMemo(() => {
-    if (!debouncedSearchTerm) return orders;
+    if (!debouncedSearchTerm) return tasks;
 
     const searchLower = debouncedSearchTerm.toLowerCase().trim();
-    return orders.filter(
+    return tasks.filter(
       (order) =>
         order.title.toLowerCase().includes(searchLower) ||
         order.description?.toLowerCase().includes(searchLower) ||
@@ -60,7 +60,7 @@ export default function OrdersContainer() {
           .toLowerCase()
           .includes(searchLower)
     );
-  }, [orders, debouncedSearchTerm]);
+  }, [tasks, debouncedSearchTerm]);
 
   const filteredOrders = useMemo(() => {
     if (activeFilter === "all") return searchFilteredOrders;
@@ -89,11 +89,11 @@ export default function OrdersContainer() {
   const handleDragEnd = useCallback(
     (orderId: string, newStatus: Status) => {
       // Find the order
-      const orderToUpdate = orders.find((order) => order.id === orderId);
+      const orderToUpdate = tasks.find((order) => order.id === orderId);
       if (!orderToUpdate || orderToUpdate.status === newStatus) return;
 
       // Optimistic update
-      setOrders((prevOrders) => {
+      setTasks((prevOrders) => {
         const updated = prevOrders
           .map((order) =>
             order.id === orderId ? { ...order, status: newStatus } : order
@@ -108,24 +108,31 @@ export default function OrdersContainer() {
           const result = await updateOrderStatus(orderId, newStatus);
           if (result.error) {
             // Revert optimistic update on failure
-            setOrders(orders);
-            toast.error("Failed to update order status");
+            setTasks(tasks);
+            toast.error("Failed to update task status");
           } else {
-            toast.success(`Order status updated to ${newStatus}`);
+            const statusText =
+              {
+                pending: "Pending",
+                "in-progress": "In Progress",
+                completed: "Completed",
+              }[newStatus] || newStatus;
+
+            toast.success(`Task status updated to ${statusText}`);
           }
         } catch (error) {
           // Revert optimistic update on error
-          console.error("Error updating order status:", error);
-          setOrders(orders);
-          toast.error("Failed to update order status");
+          console.error("Error updating task status:", error);
+          setTasks(tasks);
+          toast.error("Failed to update task status");
         }
       });
     },
-    [orders, startTransition]
+    [tasks, startTransition]
   );
 
   const handleNewOrder = useCallback((order: Task) => {
-    setOrders((prev) => [order, ...prev]);
+    setTasks((prev) => [order, ...prev]);
     toast.success("New order created");
   }, []);
 
@@ -179,8 +186,8 @@ export default function OrdersContainer() {
         </div>
       </header>
 
-      <OrdersBoard
-        orders={filteredOrders}
+      <TaskBoard
+        tasks={filteredOrders}
         onStatusChange={handleDragEnd}
         className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 grow-1"
         isLoading={isLoading}

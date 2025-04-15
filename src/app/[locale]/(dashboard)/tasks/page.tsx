@@ -1,4 +1,4 @@
-import OrdersContainer from "@/src/components/tasks/order-container";
+import TaskContainer from "@/src/components/tasks/task-container";
 import {
   dehydrate,
   HydrationBoundary,
@@ -13,7 +13,7 @@ export default async function OrdersPage() {
 
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
-      <OrdersContainer />
+      <TaskContainer />
     </HydrationBoundary>
   );
 }

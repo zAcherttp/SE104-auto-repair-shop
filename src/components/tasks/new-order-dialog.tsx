@@ -70,6 +70,12 @@ export default function NewTaskDialogForm({
     },
   });
 
+  const handleOpenChange = (open: boolean) => {
+    if (open) {
+      form.reset();
+    }
+  };
+
   const onSubmit = (values: FormValues) => {
     startTransition(async () => {
       const { data, error } = await createOrder(values);
@@ -84,7 +90,7 @@ export default function NewTaskDialogForm({
   };
 
   return (
-    <Dialog>
+    <Dialog onOpenChange={handleOpenChange}>
       <DialogTrigger asChild>
         <Button>
           <Plus className="mr-2 h-4 w-4" />

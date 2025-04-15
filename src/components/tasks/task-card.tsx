@@ -14,14 +14,17 @@ import {
 } from "@/src/components/ui/avatar";
 import React, { memo, useMemo } from "react";
 
-interface OrderCardProps {
-  order: Task;
+interface TaskCardProps {
+  task: Task;
   className?: string;
   disabled?: boolean;
+  onClick: (task: Task) => void;
 }
 
-const OrderCardContent = memo(
-  function OrderCardContent({ order }: Omit<OrderCardProps, "className">) {
+const TaskCardContent = memo(
+  function TaskCardContent({
+    task,
+  }: Omit<TaskCardProps, "className" | "onClick">) {
     const priorityColor = useMemo(
       () =>
         ({
@@ -29,8 +32,8 @@ const OrderCardContent = memo(
           medium:
             "flex gap-2 rounded-xl text-sm h-fit text-yellow-500 border-yellow-500/20 bg-yellow-500/10",
           high: "flex gap-2 rounded-xl text-sm h-fit text-red-500 border-red-500/20 bg-red-500/10",
-        }[order.priority]),
-      [order.priority]
+        }[task.priority]),
+      [task.priority]
     );
 
     return (
@@ -39,45 +42,45 @@ const OrderCardContent = memo(
           <div className="flex justify-between">
             <div>
               <h3 className="font-medium text-foreground text-lg">
-                {order.title}
+                {task.title}
               </h3>
             </div>
             <Badge className={priorityColor}>
-              {order.priority.charAt(0).toUpperCase() + order.priority.slice(1)}
+              {task.priority.charAt(0).toUpperCase() + task.priority.slice(1)}
             </Badge>
           </div>
         </CardHeader>
         <CardContent>
           <p className="text-sm text-muted-foreground line-clamp-2 mt-1">
-            {order.description}
+            {task.description}
           </p>
           <div className="flex items-center gap-2 text-xs text-muted-foreground mt-3">
             <div className="flex items-center gap-1">
               <User className="h-3.5 w-3.5" />
-              <span>{order.customer.name}</span>
+              <span>{task.customer.name}</span>
             </div>
             <div className="flex items-center gap-1">
               <Car className="h-3.5 w-3.5" />
               <span>
-                {order.vehicle.year} {order.vehicle.make} {order.vehicle.model}
+                {task.vehicle.year} {task.vehicle.make} {task.vehicle.model}
               </span>
             </div>
           </div>
           <div className="flex items-center justify-between mt-3">
-            {order.dueDate && (
+            {task.dueDate && (
               <div className="flex items-center gap-1 text-xs text-muted-foreground">
                 <Clock className="h-3.5 w-3.5" />
-                <span>{new Date(order.dueDate).toLocaleDateString()}</span>
+                <span>{new Date(task.dueDate).toLocaleDateString()}</span>
               </div>
             )}
-            {order.assignedTo && (
+            {task.assignedTo && (
               <Avatar className="h-6 w-6">
                 <AvatarImage
-                  src={order.assignedTo.avatarUrl}
-                  alt={order.assignedTo.name}
+                  src={task.assignedTo.avatarUrl}
+                  alt={task.assignedTo.name}
                 />
                 <AvatarFallback className="text-xs">
-                  {order.assignedTo.initials}
+                  {task.assignedTo.initials}
                 </AvatarFallback>
               </Avatar>
             )}
@@ -88,36 +91,48 @@ const OrderCardContent = memo(
   },
   (prevProps, nextProps) => {
     return (
-      prevProps.order.id === nextProps.order.id &&
+      prevProps.task.id === nextProps.task.id &&
       prevProps.disabled === nextProps.disabled
     );
   }
 );
 
-function OrderCard({ order, className, disabled = false }: OrderCardProps) {
+export function TaskCard({
+  task,
+  className,
+  disabled = false,
+  onClick,
+}: TaskCardProps) {
   const { attributes, listeners, setNodeRef, isDragging } = useDraggable({
-    id: order.id,
+    id: task.id,
     disabled: disabled,
   });
 
+  const handleCardClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    e.stopPropagation();
+    if (disabled) return;
+    onClick(task);
+  };
+
   return (
     <Card
+      onClick={handleCardClick}
       ref={setNodeRef}
       {...attributes}
       {...listeners}
       className={cn(
-        "cursor-pointer border select-none ",
+        "cursor-pointer border select-none hover:bg-accent ",
         isDragging && "opacity-50",
         disabled && "cursor-not-allowed opacity-70",
         className
       )}
     >
-      <OrderCardContent order={order} disabled={disabled} />
+      <TaskCardContent task={task} disabled={disabled} />
     </Card>
   );
 }
 
-function OrderCardSkeleton() {
+export function TaskCardSkeleton() {
   return (
     <Card className="border animate-pulse [animation-duration:0.8s]">
       <CardHeader className="gap-0">
@@ -132,5 +147,3 @@ function OrderCardSkeleton() {
     </Card>
   );
 }
-
-export { OrderCard, OrderCardSkeleton };
