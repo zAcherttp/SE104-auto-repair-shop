@@ -1,25 +1,34 @@
 "use client";
 
 import { useDroppable } from "@dnd-kit/core";
-import { Status } from "@/lib/type/common";
+import { Status, Task } from "@/lib/type/common";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { Badge } from "../ui/badge";
+import { ScrollArea } from "../ui/scroll-area";
+import { TaskCard, TaskCardSkeleton } from "./task-card";
+import { memo } from "react";
 
 interface TaskColumnProps {
   title: string;
   columnId: Status;
-  borderColor: string;
+  columnColor: string;
   children?: React.ReactNode;
   count?: number;
 }
 
-export function TaskColumn({
+interface TaskColumnContentProps {
+  tasks: Task[];
+  isLoading?: boolean;
+  onTaskClick: (task: Task) => void;
+}
+
+const TaskColumnComponent = ({
   title,
   columnId,
-  borderColor,
+  columnColor,
   children,
   count,
-}: TaskColumnProps) {
+}: TaskColumnProps) => {
   const { setNodeRef } = useDroppable({
     id: columnId,
   });
@@ -27,7 +36,8 @@ export function TaskColumn({
   return (
     <Card
       ref={setNodeRef}
-      className={`${borderColor} text-foreground border-0 border-t-4  flex-auto h-full`}
+      data-column-id={columnId}
+      className={`text-foreground border-1 border-border border-t-4 ${columnColor} flex-auto h-full`}
     >
       <CardHeader className="pb-2 flex-shrink-0">
         <div className="flex items-center justify-between">
@@ -38,4 +48,36 @@ export function TaskColumn({
       <CardContent>{children}</CardContent>
     </Card>
   );
-}
+};
+
+const TaskColumnContent = memo(function TaskColumnContent({
+  tasks,
+  isLoading,
+  onTaskClick,
+}: TaskColumnContentProps) {
+  if (isLoading) {
+    return <TaskCardSkeleton />;
+  }
+
+  if (tasks.length === 0) {
+    return (
+      <div className="text-center py-8 text-muted-foreground text-sm">
+        No tasks here
+      </div>
+    );
+  }
+
+  return (
+    <ScrollArea className="h-full">
+      <div className="flex flex-col gap-2">
+        {tasks.map((task) => (
+          <TaskCard key={task.id} task={task} onClick={onTaskClick} />
+        ))}
+      </div>
+    </ScrollArea>
+  );
+});
+
+export const TaskColumn = Object.assign(TaskColumnComponent, {
+  Content: TaskColumnContent,
+});

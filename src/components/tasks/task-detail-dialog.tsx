@@ -8,14 +8,18 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/src/components/ui/dialog";
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-} from "@/src/components/ui/avatar";
 import { Badge } from "@/src/components/ui/badge";
-import { Car, Calendar, Clock, User } from "lucide-react";
-import { format } from "date-fns";
+import {
+  Car,
+  Calendar,
+  Clock,
+  User,
+  Activity,
+  ContactRound,
+} from "lucide-react";
+import { Input } from "../ui/input";
+import { Combobox } from "../ui/combobox";
+import { DatePicker } from "../ui/date-picker";
 
 interface TaskDetailDialogProps {
   task: Task | null;
@@ -40,10 +44,11 @@ export function TaskDetailDialog({
     high: "text-red-500 border-red-500/20 bg-red-500/10",
   }[task.priority];
 
-  const formatDate = (date: string | Date | undefined) => {
-    if (!date) return "Not set";
-    return format(new Date(date), "MMM d, yyyy");
-  };
+  const statusColor = {
+    pending: "text-yellow-600",
+    "in-progress": "text-blue-600",
+    completed: "text-green-600",
+  }[task.status];
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -61,73 +66,83 @@ export function TaskDetailDialog({
           {/* Customer and Vehicle Information */}
           <div className="grid grid-cols-2 gap-4">
             <div className="flex items-center gap-2">
-              <User className="h-4 w-4 text-muted-foreground" />
+              <User className="h-4   w-4 text-muted-foreground" />
               <div>
                 <p className="text-sm font-medium">Customer</p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-muted-foreground ml-0.5">
                   {task.customer.name}
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-2">
-              <Car className="h-4 w-4 text-muted-foreground" />
-              <div>
+            <div>
+              <div className="flex items-center gap-2 mb-1">
+                <Car className="h-4 w-4 text-muted-foreground" />
                 <p className="text-sm font-medium">Vehicle</p>
-                <p className="text-sm text-muted-foreground">
-                  {task.vehicle.year} {task.vehicle.make} {task.vehicle.model}
-                </p>
               </div>
+              <Input
+                disabled={true}
+                placeholder={`${task.vehicle.year} ${task.vehicle.make} ${task.vehicle.model}`}
+              />
             </div>
           </div>
 
-          {/* Status and Dates */}
+          {/* Status and Assignee */}
           <div className="grid grid-cols-2 gap-4">
-            <div>
-              <p className="text-sm font-medium">Status</p>
-              <Badge variant="outline" className="mt-1 capitalize">
-                {task.status.replace("-", " ")}
-              </Badge>
-            </div>
-            <div className="flex items-start gap-2">
-              <Clock className="h-4 w-4 mt-0.5 text-muted-foreground" />
+            <div className="flex items-center gap-2">
+              <Activity className="h-4 w-4 text-muted-foreground" />
               <div>
-                <p className="text-sm font-medium">Due Date</p>
-                <p className="text-sm text-muted-foreground">
-                  {formatDate(task.dueDate)}
-                </p>
+                <p className="text-sm font-medium">Status</p>
+
+                <Badge
+                  variant="outline"
+                  className={`mt-1 capitalize text-sm ${statusColor}`}
+                >
+                  {task.status.replace("-", " ")}
+                </Badge>
               </div>
+            </div>
+
+            <div>
+              <div className="flex items-center gap-2 mb-1">
+                <ContactRound className="h-4 w-4 text-muted-foreground" />
+                <p className="text-sm font-medium">Assigned To</p>
+              </div>
+              <Combobox
+                disabled={true}
+                items={[
+                  { value: "unassigned", label: "Unassigned" },
+                  { value: "john", label: "John Doe" },
+                  { value: "jane", label: "Jane Smith" },
+                  { value: "alex", label: "Alex Johnson" },
+                ]}
+                placeholder={task.assignedTo?.name || "Unassigned"}
+              />
             </div>
           </div>
 
-          {/* Created and Assigned */}
+          {/* Created and Due date */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="flex items-start gap-2">
-              <Calendar className="h-4 w-4 mt-0.5 text-muted-foreground" />
-              <div>
-                <p className="text-sm font-medium">Created</p>
-                <p className="text-sm text-muted-foreground">
-                  {formatDate(task.createdAt)}
-                </p>
+            <div>
+              <div className="flex items-center gap-2 mb-1">
+                <Calendar className="h-4 w-4 mt-0.5 text-muted-foreground" />
+                <p className="text-sm font-medium">Created at</p>
               </div>
+              <DatePicker
+                date={task.createdAt}
+                disabled={false}
+                placeholder={!task.createdAt ? "Not set" : undefined}
+              />
             </div>
             <div>
-              <p className="text-sm font-medium">Assigned To</p>
-              {task.assignedTo ? (
-                <div className="flex items-center gap-2 mt-1">
-                  <Avatar className="h-6 w-6">
-                    <AvatarImage
-                      src={task.assignedTo.avatarUrl || "/placeholder.svg"}
-                      alt={task.assignedTo.name}
-                    />
-                    <AvatarFallback className="text-xs">
-                      {task.assignedTo.initials}
-                    </AvatarFallback>
-                  </Avatar>
-                  <span className="text-sm">{task.assignedTo.name}</span>
-                </div>
-              ) : (
-                <p className="text-sm text-muted-foreground">Unassigned</p>
-              )}
+              <div className="flex items-center gap-2 mb-1">
+                <Clock className="h-4 w-4 mt-0.5 text-muted-foreground" />
+                <p className="text-sm font-medium">Due date</p>
+              </div>
+              <DatePicker
+                date={task.dueDate}
+                disabled={false}
+                placeholder={!task.dueDate ? "Not set" : undefined}
+              />
             </div>
           </div>
 
@@ -149,7 +164,7 @@ export function TaskDetailDialog({
               Assign
             </Button>
           </div>
-          <DialogClose>
+          <DialogClose asChild>
             <Button variant="default">Close</Button>
           </DialogClose>
         </DialogFooter>

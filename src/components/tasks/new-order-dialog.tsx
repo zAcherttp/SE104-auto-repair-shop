@@ -85,6 +85,7 @@ export default function NewTaskDialogForm({
       }
       if (data) {
         onCreateOrder(data);
+        form.reset();
       }
     });
   };

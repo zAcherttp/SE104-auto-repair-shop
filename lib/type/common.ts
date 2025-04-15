@@ -37,9 +37,9 @@ export type Task = {
   status: Status;
   customer: CustomerName;
   vehicle: Vehicle;
-  dueDate?: string | Date;
+  dueDate?: Date;
   assignedTo?: AssignedUser;
-  createdAt?: string | Date;
+  createdAt?: Date;
 };
 
 // Database schema types

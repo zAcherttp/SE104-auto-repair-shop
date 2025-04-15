@@ -117,6 +117,7 @@ export function TaskCard({
   return (
     <Card
       onClick={handleCardClick}
+      data-task-id={task.id}
       ref={setNodeRef}
       {...attributes}
       {...listeners}
