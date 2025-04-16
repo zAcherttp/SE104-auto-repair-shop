@@ -76,11 +76,11 @@ const TaskCardContent = memo(
             {task.assignedTo && (
               <Avatar className="h-6 w-6">
                 <AvatarImage
-                  src={task.assignedTo.avatarUrl}
-                  alt={task.assignedTo.name}
+                  alt={`${task.assignedTo.first_name} ${task.assignedTo.last_name[0]}`}
                 />
-                <AvatarFallback className="text-xs">
-                  {task.assignedTo.initials}
+                <AvatarFallback className="text-xs capitalize">
+                  {task.assignedTo.first_name[0]}
+                  {task.assignedTo.last_name[0]}
                 </AvatarFallback>
               </Avatar>
             )}

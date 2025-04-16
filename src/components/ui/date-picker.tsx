@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "./button";
 import { Calendar } from "./calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "./popover";
+import { LucideIcon } from "lucide-react";
 
 interface DatePickerProps {
   date?: Date;
@@ -15,6 +16,7 @@ interface DatePickerProps {
   className?: string;
   format?: string;
   disabled?: boolean;
+  icon?: LucideIcon;
 }
 
 export function DatePicker({
@@ -24,6 +26,7 @@ export function DatePicker({
   className,
   format: dateFormat = "PPP",
   disabled = false,
+  icon,
 }: DatePickerProps) {
   const [selectedDate, setSelectedDate] = React.useState<Date | undefined>(
     date
@@ -46,7 +49,7 @@ export function DatePicker({
         <Button
           variant={"outline"}
           className={cn(
-            " justify-start text-left font-normal",
+            " justify-between text-left font-normal",
             !selectedDate && "text-muted-foreground",
             className
           )}
@@ -57,6 +60,7 @@ export function DatePicker({
           ) : (
             <span>{placeholder}</span>
           )}
+          {icon && React.createElement(icon, { className: "opacity-50" })}
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-auto p-0" align="start">

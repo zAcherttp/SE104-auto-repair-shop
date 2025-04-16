@@ -67,7 +67,7 @@ export default function TaskContainer() {
 
     return searchFilteredOrders.filter((order) => {
       if (activeFilter === "my") {
-        return order.assignedTo?.name === "Mike Johnson";
+        return order.assignedTo?.id === "1";
       }
 
       if (activeFilter === "due-today") {

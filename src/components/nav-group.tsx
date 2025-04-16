@@ -12,17 +12,19 @@ import {
 import { usePathname } from "../i18n/navigation";
 import { memo } from "react";
 
-export const NavGroup = memo(function NavGroup({
-  items,
-  label,
-}: {
+interface NavGroupProps {
   items: {
     name: string;
     url: string;
     icon: LucideIcon;
   }[];
   label: string;
-}) {
+}
+
+export const NavGroup = memo(function NavGroup({
+  items,
+  label,
+}: NavGroupProps) {
   const pathname = usePathname();
   const isActive = (url: string) => pathname === url;
 

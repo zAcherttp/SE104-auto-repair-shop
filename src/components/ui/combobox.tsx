@@ -22,6 +22,7 @@ export type ComboboxItem = {
 
 interface ComboboxProps {
   items: ComboboxItem[];
+  searchEnabled?: boolean;
   placeholder?: string;
   searchPlaceholder?: string;
   emptyMessage?: string;
@@ -32,7 +33,8 @@ interface ComboboxProps {
   width?: string;
 }
 
-export function Combobox({
+export function ComboBox({
+  searchEnabled,
   items,
   placeholder = "Select an option...",
   searchPlaceholder = "Search...",
@@ -69,7 +71,7 @@ export function Combobox({
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className={cn(`w-[${width}] justify-between`, className)}
+          className={cn(`w-[${width}] font-normal justify-between`, className)}
           disabled={disabled}
         >
           {selectedValue
@@ -80,7 +82,9 @@ export function Combobox({
       </PopoverTrigger>
       <PopoverContent className={`w-[${width}] p-0`}>
         <Command>
-          <CommandInput placeholder={searchPlaceholder} className="h-9" />
+          {searchEnabled && (
+            <CommandInput placeholder={searchPlaceholder} className="h-9" />
+          )}
           <CommandList>
             <CommandEmpty>{emptyMessage}</CommandEmpty>
             <CommandGroup>

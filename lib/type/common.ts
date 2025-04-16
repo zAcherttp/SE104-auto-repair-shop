@@ -23,12 +23,6 @@ export type Vehicle = {
   model: string;
 };
 
-export type AssignedUser = {
-  initials: string;
-  name?: string;
-  avatarUrl?: string;
-};
-
 export type Task = {
   id: string;
   title: string;
@@ -38,7 +32,7 @@ export type Task = {
   customer: CustomerName;
   vehicle: Vehicle;
   dueDate?: Date;
-  assignedTo?: AssignedUser;
+  assignedTo?: AssignedMechanic;
   createdAt?: Date;
 };
 
@@ -56,6 +50,8 @@ export interface UserData {
   last_name: string;
   phone: string;
 }
+
+export type AssignedMechanic = Omit<UserData, "phone" | "user_auth_id">;
 
 export interface Car {
   id: string;
