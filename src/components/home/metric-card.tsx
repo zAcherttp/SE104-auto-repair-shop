@@ -18,7 +18,7 @@ interface MetricCardProps {
 }
 
 function formatPercentage(difference: string) {
-  const percentage = (parseFloat(difference) - 1.0) * 100;
+  const percentage = parseFloat(difference);
   return `${percentage.toFixed(1)}%`;
 }
 
@@ -49,9 +49,10 @@ function getTimeframeDifference(
   value: string,
   type: MetricCardProps["type"]
 ) {
-  const numericDifference = parseFloat(difference);
+  const numericDifference =
+    difference === "0.00" ? 3.402823e38 : parseFloat(difference);
   const valuef = parseFloat(value);
-  const tfDifference = valuef * numericDifference - valuef;
+  const tfDifference = valuef * (1 - 100 / numericDifference);
 
   // return in the format of +- formatted(tfDifference)
   return tfDifference > 0
