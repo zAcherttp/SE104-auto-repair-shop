@@ -1,6 +1,7 @@
 "use server";
 
 import { ApiResponse } from "@/lib/type";
+import { supabase } from "@/lib/supabase";
 
 type MetricCardBase = {
   difference: string;
@@ -13,6 +14,12 @@ type TotalRevenue = {
 export async function fetchTotalRevenue(): Promise<ApiResponse<TotalRevenue>> {
   try {
     //todo: fetch 2 months of data from the API
+
+    const { data, error } = await supabase
+      .from("revenue")
+      .select("*")
+      .limit(2)
+      .order("date", { ascending: false });
 
     // Simulate API call
     const totalRevenue = "45231.89"; // Replace with actual API call

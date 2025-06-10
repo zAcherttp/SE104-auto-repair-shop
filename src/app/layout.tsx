@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./global.css";
+import "@/src/styles/global.css";
 import { Toaster } from "../components/ui/sonner";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "../i18n/routing";
@@ -9,7 +9,6 @@ import { ThemeProvider } from "next-themes";
 import { ReactScan } from "../components/react-scan";
 import { StrictMode } from "react";
 import Providers from "./providers";
-import { Proportions } from "lucide-react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -49,9 +48,9 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased selection:bg-primary/50`}
       >
-        <ReactScan />
+        {/* <ReactScan /> */}
         <StrictMode>
           <NextIntlClientProvider>
             <ThemeProvider

@@ -1,4 +1,3 @@
-// app/not-found.tsx
 "use client";
 
 import { Error } from "@/src/components/error";

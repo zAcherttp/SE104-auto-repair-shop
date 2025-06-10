@@ -235,9 +235,11 @@ export function TaskDetailDialog({
               </Button>
             )}
           </div>
-          <DialogClose asChild>
-            <Button variant="default">Close</Button>
-          </DialogClose>
+          {!isEditMode && (
+            <DialogClose asChild>
+              <Button variant="default">Close</Button>
+            </DialogClose>
+          )}
         </DialogFooter>
       </DialogContent>
     </Dialog>
