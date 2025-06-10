@@ -10,7 +10,12 @@ const statusColors = {
   Pending: "bg-red-100 text-red-500 border-red-500/20 bg-red-500/10",
 };
 export default function ActiveOrders() {
-  const { error: tasksError, data: tasks } = useQuery({
+  const {
+    error: tasksError,
+    data: tasks,
+    isLoading,
+    isError,
+  } = useQuery({
     queryKey: ["activeTasks"],
     queryFn: () => fetchActiveTasks(),
   });
@@ -42,6 +47,22 @@ export default function ActiveOrders() {
           </div>
         </div>
       ))}
+
+      {/* Debug panel - comment out or remove in production */}
+      {/* <div className="mt-4 p-4 border border-dashed border-gray-400 rounded bg-gray-50 text-xs">
+        <h4 className="font-bold mb-2">Debug Info:</h4>
+        <div>Loading: {isLoading ? "true" : "false"}</div>
+        <div>Error: {isError ? "true" : "false"}</div>
+        <div>Task Count: {tasks?.data?.length || 0}</div>
+        <div className="mt-2">
+          <details>
+            <summary>Raw Data (click to expand)</summary>
+            <pre className="mt-2 overflow-auto max-h-40 p-2 bg-gray-100">
+              {JSON.stringify(tasks?.data, null, 2)}
+            </pre>
+          </details>
+        </div>
+      </div> */}
     </div>
   );
 }

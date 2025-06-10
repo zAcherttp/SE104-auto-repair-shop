@@ -33,7 +33,6 @@ export type Task = {
   vehicle: Vehicle;
   dueDate?: Date;
   assignedTo?: AssignedMechanic;
-  createdAt?: Date;
 };
 
 // Database schema types

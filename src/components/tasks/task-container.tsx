@@ -26,18 +26,30 @@ import { toast } from "sonner";
 import { useQuery } from "@tanstack/react-query";
 
 export default function TaskContainer() {
+  console.log("=== TaskContainer Rendered ===");
+
   const { data: tasksData, isLoading } = useQuery({
     queryKey: ["tasks"],
     queryFn: () => fetchOrders(),
   });
+  console.log("🔍 useQuery result:", { tasksData, isLoading });
 
   const [tasks, setTasks] = useState<Task[]>([]);
 
   useEffect(() => {
+    console.log("=== TaskContainer Debug ===");
+    console.log("tasksData:", tasksData);
+    console.log("tasksData?.data:", tasksData?.data);
+    console.log("tasksData?.error:", tasksData?.error);
+    console.log("isLoading:", isLoading);
+
     if (tasksData?.data) {
+      console.log("TaskContainer received data:", tasksData.data);
       setTasks(tasksData.data);
+    } else {
+      console.log("No data received or data is falsy");
     }
-  }, [tasksData?.data]);
+  }, [tasksData]);
   const [searchTerm, setSearchTerm] = useState("");
   const [debouncedSearchTerm] = useDebounceValue(searchTerm, 200);
   const [activeFilter, setActiveFilter] = useState<string>("all");
@@ -81,6 +93,9 @@ export default function TaskContainer() {
       return true;
     });
   }, [searchFilteredOrders, activeFilter]);
+
+  // console.log("Current tasks state:", tasks);
+  // console.log("Filtered orders:", filteredOrders);
 
   const handleFilterSelect = useCallback((filter: string) => {
     setActiveFilter(filter);
