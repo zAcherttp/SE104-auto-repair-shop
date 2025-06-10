@@ -2,6 +2,7 @@
 
 import { ApiResponse } from "@/lib/type";
 import { supabase } from "@/lib/supabase";
+import { SupabaseClient } from "@supabase/supabase-js";
 
 type MetricCardBase = {
   difference: string;
@@ -13,19 +14,17 @@ type TotalRevenue = {
 
 export async function fetchTotalRevenue(): Promise<ApiResponse<TotalRevenue>> {
   try {
-    //todo: fetch 2 months of data from the API
+    const { data, error } = await supabase.rpc("get_revenue_comparison");
 
-    const { data, error } = await supabase
-      .from("revenue")
-      .select("*")
-      .limit(2)
-      .order("date", { ascending: false });
-
-    // Simulate API call
-    const totalRevenue = "45231.89"; // Replace with actual API call
-    const difference = "1.12"; // Replace with actual calculation
-
-    return { error: null, data: { totalRevenue, difference } };
+    const totalRevenue = data[0].totalrevenue;
+    const difference = data[0].difference;
+    return {
+      data: {
+        totalRevenue: totalRevenue,
+        difference: difference,
+      },
+      error: null,
+    };
   } catch (error) {
     console.error("Failed to fetch total revenue:", error);
     return {
@@ -41,9 +40,13 @@ type NewCustomer = {
 
 export async function fetchNewCustomer(): Promise<ApiResponse<NewCustomer>> {
   try {
-    // Simulate API call
-    const newCustomers = "2350"; // Replace with actual API call
-    const difference = "1.08"; // Replace with actual calculation
+    const { data, error } = await supabase.rpc("get_new_customers_comparison");
+
+    if (error) {
+      throw new Error(error.message);
+    }
+    const newCustomers = data[0].newcustomers;
+    const difference = data[0].difference;
 
     return { error: null, data: { newCustomers, difference } };
   } catch (error) {
@@ -63,9 +66,14 @@ export async function fetchActiveRepairs(): Promise<
   ApiResponse<ActiveRepairs>
 > {
   try {
-    // Simulate API call
-    const activeRepairs = "12"; // Replace with actual API call
-    const difference = "0.78"; // Replace with actual calculation
+    const { data, error } = await supabase.rpc("get_active_repair");
+
+    if (error) {
+      throw new Error(error.message);
+    }
+
+    const activeRepairs = data[0].newrepairs;
+    const difference = data[0].difference;
 
     return { error: null, data: { activeRepairs, difference } };
   } catch (error) {
@@ -83,9 +91,14 @@ type CarRepaired = {
 
 export async function fetchCarRepaired(): Promise<ApiResponse<CarRepaired>> {
   try {
-    // Simulate API call
-    const carsRepaired = "8"; // Replace with actual API call
-    const difference = "0.65"; // Replace with actual calculation
+    const { data, error } = await supabase.rpc("get_cars_repaired");
+
+    if (error) {
+      throw new Error(error.message);
+    }
+
+    const carsRepaired = data[0].carsrepaired;
+    const difference = data[0].difference;
 
     return { error: null, data: { carsRepaired, difference } };
   } catch (error) {
@@ -98,8 +111,8 @@ export async function fetchCarRepaired(): Promise<ApiResponse<CarRepaired>> {
 }
 
 type RevenueChartData = {
-  month: string;
   revenue: string;
+  month: string;
 };
 
 export async function fetchRevenueChartData(): Promise<
@@ -107,20 +120,132 @@ export async function fetchRevenueChartData(): Promise<
 > {
   try {
     // Simulate API call
-    const data: RevenueChartData[] = [
-      { month: "January", revenue: "10000" },
-      { month: "February", revenue: "15000" },
-      { month: "March", revenue: "20000" },
-      { month: "April", revenue: "25000" },
-      { month: "May", revenue: "30000" },
-      { month: "June", revenue: "35000" },
-    ]; // Replace with actual API call
+    const { data, error } = await supabase.rpc("get_monthly_revenue_past_year"); // Replace with actual API call
 
-    return { error: null, data };
+    if (error) {
+      throw new Error(error.message);
+    }
+
+    const transformedData = data.map((item: any) => ({
+      month: item.month,
+      revenue: item.revenue,
+    }));
+
+    // console.log("Transformed data:", transformedData);
+
+    return { error: null, data: transformedData };
   } catch (error) {
     console.error("Failed to fetch revenue chart data:", error);
     return {
       error: new Error("Failed to fetch revenue chart data"),
+      data: [],
+    };
+  }
+}
+
+type RecentTransaction = {
+  name: string;
+  email: string;
+  amount: number;
+  date: string;
+};
+
+export async function fetchRecentTransaction(): Promise<
+  ApiResponse<RecentTransaction[]>
+> {
+  try {
+    const { data, error } = await supabase.rpc("get_recent_payments");
+
+    if (error) {
+      throw new Error(error.message);
+    }
+
+    const recentTransactions = data.map((item: any) => ({
+      name: item.name,
+      email: item.email,
+      amount: item.amount,
+      date: item.date,
+    }));
+
+    // console.log("Recent transactions:", recentTransactions);
+
+    return { error: null, data: recentTransactions };
+  } catch (error) {
+    console.error("Failed to fetch recent transactions:", error);
+    return {
+      error: new Error("Failed to fetch recent transactions"),
+      data: [],
+    };
+  }
+}
+
+type ActiveTasks = {
+  taskName: string;
+  carModel: string;
+  status: string;
+  assignedTo: string;
+}[];
+
+export async function fetchActiveTasks(): Promise<ApiResponse<ActiveTasks>> {
+  try {
+    const { data, error } = await supabase.rpc(
+      "get_in_progress_pending_orders"
+    );
+
+    if (error) {
+      throw new Error(error.message);
+    }
+
+    const activeTasks = data.map((item: any) => ({
+      taskName: item.notes,
+      carModel: item.car_model,
+      status: item.status,
+      assignedTo: item.username,
+    }));
+
+    // console.log("Active tasks:", activeTasks);
+
+    return { error: null, data: activeTasks };
+  } catch (error) {
+    // console.error("Failed to fetch active tasks:", error);
+    return {
+      error: new Error("Failed to fetch active tasks"),
+      data: [],
+    };
+  }
+}
+
+type InventoryStatus = {
+  itemName: string;
+  stock: number;
+  reorderPoint: number;
+  status: string;
+}[];
+
+export async function fetchInventoryStatus(): Promise<
+  ApiResponse<InventoryStatus>
+> {
+  try {
+    const { data, error } = await supabase.rpc("get_inventory_status");
+
+    if (error) {
+      throw new Error(error.message);
+    }
+
+    const inventoryStatus = data.map((item: any) => ({
+      itemName: item.part_name,
+      stock: item.current_stock,
+      reorderPoint: item.restore_point,
+      status: item.status,
+    }));
+
+    // console.log("Inventory status:", inventoryStatus);
+
+    return { error: null, data: inventoryStatus };
+  } catch (error) {
+    console.error("Failed to fetch inventory status:", error);
+    return {
+      error: new Error("Failed to fetch inventory status"),
       data: [],
     };
   }

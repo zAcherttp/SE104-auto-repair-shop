@@ -19,7 +19,7 @@ A web-based application designed to manage garage operations efficiently. It inc
    ```
 2. Navigate to the project directory:
    ```bash
-   cd garage-management_manual_adjustment
+   cd SE104-auto-repair-shop
    ```
 3. Install dependencies:
    ```bash

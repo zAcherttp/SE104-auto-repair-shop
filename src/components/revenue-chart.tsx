@@ -1,5 +1,7 @@
 "use client";
 import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts";
+import { fetchRevenueChartData } from "@/src/app/action/home";
+import { useQuery } from "@tanstack/react-query";
 
 import {
   ChartConfig,
@@ -10,8 +12,8 @@ import {
 import { useTranslations } from "next-intl";
 
 const chartData = [
-  { month: "jan", revenue: 3000 },
-  { month: "feb", revenue: 4500 },
+  { month: "jan", revenue: 0 },
+  { month: "feb", revenue: -4500 },
   { month: "mar", revenue: 7000 },
   { month: "apr", revenue: 6000 },
   { month: "may", revenue: 8000 },
@@ -55,6 +57,11 @@ const chartConfig = {
 } satisfies ChartConfig;
 
 export function RevenueChart({ className }: { className?: string }) {
+  const { error: monthlyRevenueError, data: monthlyRevenueData } = useQuery({
+    queryKey: ["monthlyRevenue"],
+    queryFn: () => fetchRevenueChartData(),
+  });
+
   const t = useTranslations("date");
   const t_ = useTranslations("global");
   const currency = t_("currency");
@@ -66,7 +73,8 @@ export function RevenueChart({ className }: { className?: string }) {
     <ChartContainer config={chartConfig} className={className}>
       <AreaChart
         accessibilityLayer
-        data={chartData}
+        // data={chartData}
+        data={monthlyRevenueData?.data}
         margin={{
           left: 12,
           right: 12,
