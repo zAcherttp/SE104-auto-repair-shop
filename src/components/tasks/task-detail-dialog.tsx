@@ -131,9 +131,9 @@ export function TaskDetailDialog({
               <ComboBox
                 disabled={!isEditMode}
                 items={[
-                  { value: "pending", label: "Pending" },
-                  { value: "in-progress", label: "In Progress" },
-                  { value: "completed", label: "Completed" },
+                  { value: "Pending", label: "Pending" },
+                  { value: "In Progress", label: "In Progress" },
+                  { value: "Completed", label: "Completed" },
                 ]}
                 value={editedTask.status}
                 onChange={(value) => updateField("status", value as Status)}

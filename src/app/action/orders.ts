@@ -19,7 +19,6 @@ export async function fetchOrders(): Promise<ApiResponse<Task[]>> {
     }
 
     const tasks: Task[] = data.map((item: any) => {
-      // Make sure the priority is one of the expected values
       let validPriority: Priority;
       switch (item.repairorder_priority?.toLowerCase()) {
         case "low":
@@ -31,28 +30,12 @@ export async function fetchOrders(): Promise<ApiResponse<Task[]>> {
           validPriority = "medium"; // Default fallback
       }
 
-      let validStatus: Status;
-      switch (item.repairorder_status?.toLowerCase()) {
-        case "pending":
-          validStatus = "pending";
-          break;
-        case "in progress":
-        case "in-progress":
-          validStatus = "in-progress";
-          break;
-        case "completed":
-          validStatus = "completed";
-          break;
-        default:
-          validStatus = "pending";
-      }
-
       return {
         id: item.repairorder_id,
         title: item.repairorder_title,
         description: item.repairorder_description,
         priority: validPriority,
-        status: validStatus,
+        status: item.repairorder_status as Status, // Ensure status is correctly typed
         customer: {
           name: item.customer_name,
         },
@@ -72,7 +55,7 @@ export async function fetchOrders(): Promise<ApiResponse<Task[]>> {
       };
     });
 
-    console.log("Fetched orders AAAAAAAAAAAAAAAAAAAAA:", tasks);
+    // console.log("Fetched orders:", tasks);
     return {
       data: tasks,
       error: null,
@@ -92,36 +75,64 @@ export async function updateOrderStatus(
   status: Status
 ): Promise<ApiResponse<Task>> {
   try {
-    // 1. Update just the status in the repair_orders table
-    const { error } = await supabase
-      .from("repair_orders")
+    console.log("🔍 Starting updateOrderStatus with:", { orderId, status });
+
+    const { data: existingRecord, error: selectError } = await supabase
+      .from("repairorder")
+      .select("*")
+      .eq("id", orderId)
+      .single();
+
+    console.log("🔍 Existing record:", existingRecord);
+    console.log("🔍 Select error:", selectError);
+
+    if (!existingRecord) {
+      return {
+        error: new Error("Record not found"),
+        data: undefined,
+      };
+    }
+
+    const { error, data: updateResult } = await supabase
+      .from("repairorder")
       .update({ status })
       .eq("id", orderId);
 
+    console.log("🔍 Supabase update result:", { error, updateResult });
+    console.log("🔍 Error details:", JSON.stringify(error, null, 2));
+
     if (error) {
+      console.error("❌ Failed to update order status:", error);
+      console.error("❌ Error code:", error.code);
+      console.error("❌ Error message:", error.message);
+      console.error("❌ Error details:", error.details);
+      console.error("❌ Error hint:", error.hint);
+
       return {
         error: new Error(`Failed to update order status: ${error.message}`),
         data: undefined,
       };
     }
 
+    console.log("Order status updated successfully:", orderId, status);
     // 2. Fetch the complete updated task with all its relationships
     const { data: allTasks, error: fetchError } = await supabase
       .rpc("get_repair_orders_details")
       .eq("repairorder_id", orderId);
-
+    console.log("Fetching updated task details for:", orderId);
     if (fetchError) {
       return {
         error: new Error(`Failed to fetch updated task: ${fetchError.message}`),
         data: undefined,
       };
     }
+    console.log("Fetched updated task details:", allTasks);
 
     // 3. Transform the data using your existing transformation logic
     if (allTasks && allTasks.length > 0) {
       const item = allTasks[0];
+      console.log("Transforming fetched task data:", item);
 
-      // Reuse the same transformation logic from fetchOrders
       let validPriority: Priority;
       switch (item.repairorder_priority?.toLowerCase()) {
         case "low":
@@ -138,7 +149,7 @@ export async function updateOrderStatus(
         title: item.repairorder_title,
         description: item.repairorder_description,
         priority: validPriority,
-        status: item.repairorder_status as Status,
+        status: item.repairorder_status as Status, // Ensure status is correctly typed
         customer: { name: item.customer_name },
         vehicle: {
           make: item.carbrand_name,
@@ -154,7 +165,7 @@ export async function updateOrderStatus(
             }
           : undefined,
       };
-
+      console.log("Transformed updated task:", updatedTask);
       // 4. Revalidate and return
       revalidatePath("/orders");
       return { error: null, data: updatedTask };
@@ -186,7 +197,7 @@ export async function createOrder(
 
     const task: Task = {
       id: `task-${Date.now()}`,
-      status: "pending",
+      status: "Pending",
       ...result.data,
     };
 
@@ -221,7 +232,7 @@ const DEFAULT_ORDERS: Task[] = [
       first_name: "John",
       last_name: "Smith",
     },
-    status: "pending",
+    status: "Pending",
     dueDate: new Date("2023-05-10"),
     priority: "medium",
   },
@@ -242,7 +253,7 @@ const DEFAULT_ORDERS: Task[] = [
       first_name: "Jane",
       last_name: "Doe",
     },
-    status: "in-progress",
+    status: "In Progress",
     dueDate: new Date("2023-05-12"),
     priority: "high",
   },
@@ -263,7 +274,7 @@ const DEFAULT_ORDERS: Task[] = [
       first_name: "John",
       last_name: "Smith",
     },
-    status: "pending",
+    status: "Pending",
     dueDate: new Date("2023-05-15"),
     priority: "low",
   },
@@ -284,7 +295,7 @@ const DEFAULT_ORDERS: Task[] = [
       first_name: "Jane",
       last_name: "Doe",
     },
-    status: "in-progress",
+    status: "In Progress",
     dueDate: new Date("2023-05-12"),
     priority: "high",
   },
@@ -305,7 +316,7 @@ const DEFAULT_ORDERS: Task[] = [
       first_name: "Mike",
       last_name: "Johnson",
     },
-    status: "completed",
+    status: "Completed",
     dueDate: new Date("2023-05-10"),
     priority: "medium",
   },

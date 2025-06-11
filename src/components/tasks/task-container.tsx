@@ -124,13 +124,13 @@ export default function TaskContainer() {
           if (result.error) {
             // Revert optimistic update on failure
             setTasks(tasks);
-            toast.error("Failed to update task status");
+            toast.error("Failed to update task status on server 1");
           } else {
             const statusText =
               {
-                pending: "Pending",
-                "in-progress": "In Progress",
-                completed: "Completed",
+                Pending: "Pending",
+                "In Progress": "In Progress",
+                Completed: "Completed",
               }[newStatus] || newStatus;
 
             toast.success(`Task status updated to ${statusText}`);
@@ -139,7 +139,7 @@ export default function TaskContainer() {
           // Revert optimistic update on error
           console.error("Error updating task status:", error);
           setTasks(tasks);
-          toast.error("Failed to update task status");
+          toast.error("Failed to update task status on server 2");
         }
       });
     },
