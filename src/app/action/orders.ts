@@ -9,7 +9,6 @@ import { ApiResponse } from "../../../lib/type/common";
 import { supabase } from "@/lib/supabase";
 export async function fetchOrders(): Promise<ApiResponse<Task[]>> {
   try {
-    console.log("Fetching orders from Supabase...");
     const { data, error } = await supabase.rpc("get_repair_orders_details");
     if (error) {
       return {
@@ -75,16 +74,11 @@ export async function updateOrderStatus(
   status: Status
 ): Promise<ApiResponse<Task>> {
   try {
-    console.log("🔍 Starting updateOrderStatus with:", { orderId, status });
-
     const { data: existingRecord, error: selectError } = await supabase
       .from("repairorder")
       .select("*")
       .eq("id", orderId)
       .single();
-
-    console.log("🔍 Existing record:", existingRecord);
-    console.log("🔍 Select error:", selectError);
 
     if (!existingRecord) {
       return {
@@ -98,40 +92,27 @@ export async function updateOrderStatus(
       .update({ status })
       .eq("id", orderId);
 
-    console.log("🔍 Supabase update result:", { error, updateResult });
-    console.log("🔍 Error details:", JSON.stringify(error, null, 2));
-
     if (error) {
-      console.error("❌ Failed to update order status:", error);
-      console.error("❌ Error code:", error.code);
-      console.error("❌ Error message:", error.message);
-      console.error("❌ Error details:", error.details);
-      console.error("❌ Error hint:", error.hint);
-
       return {
         error: new Error(`Failed to update order status: ${error.message}`),
         data: undefined,
       };
     }
 
-    console.log("Order status updated successfully:", orderId, status);
     // 2. Fetch the complete updated task with all its relationships
     const { data: allTasks, error: fetchError } = await supabase
       .rpc("get_repair_orders_details")
       .eq("repairorder_id", orderId);
-    console.log("Fetching updated task details for:", orderId);
     if (fetchError) {
       return {
         error: new Error(`Failed to fetch updated task: ${fetchError.message}`),
         data: undefined,
       };
     }
-    console.log("Fetched updated task details:", allTasks);
 
     // 3. Transform the data using your existing transformation logic
     if (allTasks && allTasks.length > 0) {
       const item = allTasks[0];
-      console.log("Transforming fetched task data:", item);
 
       let validPriority: Priority;
       switch (item.repairorder_priority?.toLowerCase()) {
@@ -165,7 +146,6 @@ export async function updateOrderStatus(
             }
           : undefined,
       };
-      console.log("Transformed updated task:", updatedTask);
       // 4. Revalidate and return
       revalidatePath("/orders");
       return { error: null, data: updatedTask };
