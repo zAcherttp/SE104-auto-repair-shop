@@ -110,7 +110,7 @@ export async function updateOrderStatus(
       };
     }
 
-    // 3. Transform the data using your existing transformation logic
+    // 3. Transform the data using existing transformation logic
     if (allTasks && allTasks.length > 0) {
       const item = allTasks[0];
 
@@ -165,7 +165,9 @@ export async function updateOrderStatus(
 }
 
 export async function createOrder(
-  order: z.infer<typeof taskFormSchema>
+  order: z.infer<typeof taskFormSchema>,
+  customerId: string | null = null,
+  workerId: string | null = null
 ): Promise<ApiResponse<Task>> {
   try {
     const result = taskFormSchema.safeParse(order);
@@ -175,129 +177,243 @@ export async function createOrder(
       return { error: new Error("Validation failed"), data: undefined };
     }
 
-    const task: Task = {
-      id: `task-${Date.now()}`,
-      status: "Pending",
-      ...result.data,
-    };
+    // Ensure priority has first letter capitalized for storage
+    const validPriority: Priority = (result.data.priority
+      .charAt(0)
+      .toUpperCase() + result.data.priority.slice(1).toLowerCase()) as Priority;
 
-    // simulate database insertion
-    // DEFAULT_ORDERS.push(task);
+    console.log("Creating order with data:", {
+      title: result.data.title,
+      description: result.data.description,
+      priority: validPriority,
+      dueDate: result.data.dueDate?.toISOString().split("T")[0],
+      customer: result.data.customer,
+      vehicle: result.data.vehicle,
+    });
 
-    // revalidate the orders page
+    const { error } = await supabase.rpc(
+      "create_repair_order_with_customer_car",
+      {
+        p_title: result.data.title,
+        p_description: result.data.description,
+        p_priority: validPriority,
+        p_due_date: result.data.dueDate?.toISOString().split("T")[0], // Ensure date is in YYYY-MM-DD format
+        p_customer_name: result.data.customer.name,
+        p_car_make: result.data.vehicle.make,
+        p_car_model: result.data.vehicle.model,
+        p_car_year: parseInt(result.data.vehicle.year),
+        p_customer_id: customerId,
+        p_user_id: workerId,
+      }
+    );
+
+    if (error) {
+      console.error("RPC Error:", error);
+      return {
+        error: new Error(`Failed to create repair order: ${error.message}`),
+        data: undefined,
+      };
+    }
     revalidatePath("/orders");
 
-    return { data: task, error: null };
+    return { data: undefined, error: null };
   } catch (error) {
     console.error("Failed to create order:", error);
     return { error: new Error("Failed to create order"), data: undefined };
   }
 }
 
-const DEFAULT_ORDERS: Task[] = [
-  {
-    id: "task-1",
-    title: "Oil Change",
-    description: "Full synthetic oil change and filter replacement",
-    customer: {
-      name: "John Smith",
-    },
-    vehicle: {
-      make: "Toyota",
-      model: "Camry",
-      year: "2019",
-    },
-    assignedTo: {
-      id: "1",
-      first_name: "John",
-      last_name: "Smith",
-    },
-    status: "Pending",
-    dueDate: new Date("2023-05-10"),
-    priority: "medium",
-  },
-  {
-    id: "task-2",
-    title: "Brake Replacement",
-    description: "Front brake pad and rotor replacement",
-    customer: {
-      name: "Sarah Williams",
-    },
-    vehicle: {
-      make: "Honda",
-      model: "Civic",
-      year: "2020",
-    },
-    assignedTo: {
-      id: "2",
-      first_name: "Jane",
-      last_name: "Doe",
-    },
-    status: "In Progress",
-    dueDate: new Date("2023-05-12"),
-    priority: "high",
-  },
-  {
-    id: "task-3",
-    title: "Tire Rotation",
-    description: "Rotate and balance all tires",
-    customer: {
-      name: "Robert Johnson",
-    },
-    vehicle: {
-      make: "Ford",
-      model: "F-150",
-      year: "2021",
-    },
-    assignedTo: {
-      id: "1",
-      first_name: "John",
-      last_name: "Smith",
-    },
-    status: "Pending",
-    dueDate: new Date("2023-05-15"),
-    priority: "low",
-  },
-  {
-    id: "task-4",
-    title: "AC Repair",
-    description: "Diagnose and fix AC not cooling",
-    customer: {
-      name: "Jennifer Lee",
-    },
-    vehicle: {
-      make: "BMW",
-      model: "X5",
-      year: "2018",
-    },
-    assignedTo: {
-      id: "2",
-      first_name: "Jane",
-      last_name: "Doe",
-    },
-    status: "In Progress",
-    dueDate: new Date("2023-05-12"),
-    priority: "high",
-  },
-  {
-    id: "task-5",
-    title: "Battery Replacement",
-    description: "Replace battery and test charging system",
-    customer: {
-      name: "Michael Brown",
-    },
-    vehicle: {
-      make: "Chevrolet",
-      model: "Malibu",
-      year: "2017",
-    },
-    assignedTo: {
-      id: "3",
-      first_name: "Mike",
-      last_name: "Johnson",
-    },
-    status: "Completed",
-    dueDate: new Date("2023-05-10"),
-    priority: "medium",
-  },
-];
+export async function fetchShortenedCustomersInfo(): Promise<
+  ApiResponse<
+    {
+      customerId: string;
+      name: string;
+      carBranch: string;
+      carPlate: string;
+      carModel: string;
+      carYear: string;
+    }[]
+  >
+> {
+  try {
+    const { data, error } = await supabase.rpc("get_shortened_customers_info");
+
+    if (error) {
+      return {
+        error: new Error("Failed to fetch customers from Supabase"),
+        data: undefined,
+      };
+    }
+
+    const customers = data.map((item: any) => ({
+      customerId: item.customer_id,
+      name: item.customer_name,
+      carBranch: item.carbrand_name,
+      carPlate: item.car_license_plate,
+      carModel: item.car_model,
+      carYear: String(item.car_year),
+    }));
+
+    // console.log("Fetched customers:", customers);
+
+    return {
+      data: customers || [],
+      error: null,
+    };
+  } catch (error) {
+    console.error("Failed to fetch customers:", error);
+    return {
+      error: new Error("Failed to fetch customers"),
+      data: undefined,
+    };
+  }
+}
+// const DEFAULT_ORDERS: Task[] = [
+//   {
+//     id: "task-1",
+//     title: "Oil Change",
+//     description: "Full synthetic oil change and filter replacement",
+//     customer: {
+//       name: "John Smith",
+//     },
+//     vehicle: {
+//       make: "Toyota",
+//       model: "Camry",
+//       year: "2019",
+//     },
+//     assignedTo: {
+//       id: "1",
+//       first_name: "John",
+//       last_name: "Smith",
+//     },
+//     status: "Pending",
+//     dueDate: new Date("2023-05-10"),
+//     priority: "medium",
+//   },
+//   {
+//     id: "task-2",
+//     title: "Brake Replacement",
+//     description: "Front brake pad and rotor replacement",
+//     customer: {
+//       name: "Sarah Williams",
+//     },
+//     vehicle: {
+//       make: "Honda",
+//       model: "Civic",
+//       year: "2020",
+//     },
+//     assignedTo: {
+//       id: "2",
+//       first_name: "Jane",
+//       last_name: "Doe",
+//     },
+//     status: "In Progress",
+//     dueDate: new Date("2023-05-12"),
+//     priority: "high",
+//   },
+//   {
+//     id: "task-3",
+//     title: "Tire Rotation",
+//     description: "Rotate and balance all tires",
+//     customer: {
+//       name: "Robert Johnson",
+//     },
+//     vehicle: {
+//       make: "Ford",
+//       model: "F-150",
+//       year: "2021",
+//     },
+//     assignedTo: {
+//       id: "1",
+//       first_name: "John",
+//       last_name: "Smith",
+//     },
+//     status: "Pending",
+//     dueDate: new Date("2023-05-15"),
+//     priority: "low",
+//   },
+//   {
+//     id: "task-4",
+//     title: "AC Repair",
+//     description: "Diagnose and fix AC not cooling",
+//     customer: {
+//       name: "Jennifer Lee",
+//     },
+//     vehicle: {
+//       make: "BMW",
+//       model: "X5",
+//       year: "2018",
+//     },
+//     assignedTo: {
+//       id: "2",
+//       first_name: "Jane",
+//       last_name: "Doe",
+//     },
+//     status: "In Progress",
+//     dueDate: new Date("2023-05-12"),
+//     priority: "high",
+//   },
+//   {
+//     id: "task-5",
+//     title: "Battery Replacement",
+//     description: "Replace battery and test charging system",
+//     customer: {
+//       name: "Michael Brown",
+//     },
+//     vehicle: {
+//       make: "Chevrolet",
+//       model: "Malibu",
+//       year: "2017",
+//     },
+//     assignedTo: {
+//       id: "3",
+//       first_name: "Mike",
+//       last_name: "Johnson",
+//     },
+//     status: "Completed",
+//     dueDate: new Date("2023-05-10"),
+//     priority: "medium",
+//   },
+// ];
+
+export async function fetchWorkerData(): Promise<
+  ApiResponse<
+    {
+      workerId: string;
+      firstName: string;
+      lastName: string;
+      phone: string;
+    }[]
+  >
+> {
+  try {
+    const { data, error } = await supabase.rpc("fetch_worker_data");
+
+    if (error) {
+      return {
+        error: new Error("Failed to fetch workers from Supabase"),
+        data: undefined,
+      };
+    }
+
+    const workers = data.map((item: any) => ({
+      workerId: item.id,
+      firstName: item.first_name,
+      lastName: item.last_name,
+      phone: item.phone,
+    }));
+
+    console.log("Fetched workers:", workers);
+
+    return {
+      data: workers || [],
+      error: null,
+    };
+  } catch (error) {
+    console.error("Failed to fetch workers:", error);
+    return {
+      error: new Error("Failed to fetch workers"),
+      data: undefined,
+    };
+  }
+}

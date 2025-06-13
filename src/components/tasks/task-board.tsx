@@ -136,14 +136,14 @@ export const TaskBoard = memo(function TaskBoard({
 
   const mouseSensor = useSensor(MouseSensor, {
     activationConstraint: {
-      delay: 100,
+      delay: 150,
       tolerance: 5,
     },
   });
 
   const touchSensor = useSensor(TouchSensor, {
     activationConstraint: {
-      delay: 100,
+      delay: 150,
       tolerance: 5,
     },
   });
