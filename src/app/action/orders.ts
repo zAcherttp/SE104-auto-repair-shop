@@ -232,6 +232,7 @@ export async function fetchShortenedCustomersInfo(): Promise<
       carPlate: string;
       carModel: string;
       carYear: string;
+      phone: string;
     }[]
   >
 > {
@@ -252,6 +253,7 @@ export async function fetchShortenedCustomersInfo(): Promise<
       carPlate: item.car_license_plate,
       carModel: item.car_model,
       carYear: String(item.car_year),
+      phone: item.customer_phone,
     }));
 
     // console.log("Fetched customers:", customers);
@@ -413,6 +415,52 @@ export async function fetchWorkerData(): Promise<
     console.error("Failed to fetch workers:", error);
     return {
       error: new Error("Failed to fetch workers"),
+      data: undefined,
+    };
+  }
+}
+
+export async function fetchVehicleData(): Promise<
+  ApiResponse<
+    {
+      id: string;
+      customerId: string;
+      brand: string;
+      model: string;
+      year: string;
+      licensePlate: string;
+    }[]
+  >
+> {
+  try {
+    const { data, error } = await supabase.rpc("fetch_vehicle_data");
+
+    if (error) {
+      return {
+        error: new Error("Failed to fetch vehicles from Supabase"),
+        data: undefined,
+      };
+    }
+
+    const vehicles = data.map((item: any) => ({
+      id: item.id,
+      customerId: item.customer_id,
+      brand: item.brand,
+      model: item.model,
+      year: item.year,
+      licensePlate: item.license_plate,
+    }));
+
+    console.log("Fetched vehicles:", vehicles);
+
+    return {
+      data: vehicles || [],
+      error: null,
+    };
+  } catch (error) {
+    console.error("Failed to fetch vehicles:", error);
+    return {
+      error: new Error("Failed to fetch vehicles"),
       data: undefined,
     };
   }
