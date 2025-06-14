@@ -32,14 +32,21 @@ import {
   SelectValue,
 } from "@/src/components/ui/select";
 import { Task } from "@/lib/type/common";
-import { createOrder } from "@/src/app/action/orders";
-import { useTransition } from "react";
+import {
+  createOrder,
+  fetchShortenedCustomersInfo,
+  fetchWorkerData,
+} from "@/src/app/action/orders";
+import { useState, useTransition } from "react";
 import { CalendarIcon, Plus } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import { cn } from "@/lib/utils";
 import { Calendar } from "../ui/calendar";
 import FormSubmitButton from "../form-submit-button";
 import { taskFormSchema } from "@/lib/schema";
+import { useQuery } from "@tanstack/react-query";
+import { useEffect } from "react";
+import { toast } from "sonner";
 
 type FormValues = z.infer<typeof taskFormSchema>;
 
@@ -51,6 +58,29 @@ export default function NewTaskDialogForm({
   onCreateOrder,
 }: NewTaskDialogFormProps) {
   const [isPending, startTransition] = useTransition();
+  const [selectedCustomerId, setSelectedCustomerId] = useState<string>("");
+  const [selectedWorkerId, setSelectedWorkerId] = useState<string>("");
+  const [open, setOpen] = useState(false);
+
+  // Fetch customers data
+  const { data: customersData, error: errorFetchingCustomers } = useQuery({
+    queryKey: ["customers"],
+    queryFn: fetchShortenedCustomersInfo,
+  });
+
+  // Fetch workers
+  const { data: workersData, error: errorFetchingWorkers } = useQuery({
+    queryKey: ["workers"],
+    queryFn: fetchWorkerData,
+  });
+
+  if (errorFetchingCustomers) {
+    console.error("Error fetching customers:", errorFetchingCustomers);
+  }
+
+  if (errorFetchingWorkers) {
+    console.error("Error fetching workers:", errorFetchingWorkers);
+  }
 
   const form = useForm<FormValues>({
     resolver: zodResolver(taskFormSchema),
@@ -67,31 +97,102 @@ export default function NewTaskDialogForm({
         year: "2025",
       },
       dueDate: new Date(),
+      assignedTo: "",
     },
   });
 
-  const handleOpenChange = (open: boolean) => {
-    if (open) {
+  const selectedCustomerName = form.watch("customer.name");
+
+  const selectedWorkerName = form.watch("assignedTo");
+
+  // Auto-populate vehicle fields when customer is selected
+  useEffect(() => {
+    if (selectedCustomerName && customersData?.data) {
+      const selectedCustomer = customersData.data.find(
+        (customer) => customer.name === selectedCustomerName
+      );
+
+      if (selectedCustomer) {
+        setSelectedCustomerId(selectedCustomer.customerId);
+        console.log("Selected Customer ID:", selectedCustomer.customerId);
+
+        form.setValue("vehicle.make", selectedCustomer.carBranch || "");
+        form.setValue("vehicle.model", selectedCustomer.carModel || "");
+        form.setValue("vehicle.year", selectedCustomer.carYear || "2025");
+      }
+    } else {
+      setSelectedCustomerId("");
+
+      form.setValue("vehicle.make", "");
+      form.setValue("vehicle.model", "");
+      form.setValue("vehicle.year", "2025");
+    }
+  }, [selectedCustomerName, customersData, form]);
+
+  useEffect(() => {
+    if (selectedWorkerName && workersData?.data) {
+      const selectedWorker = workersData.data.find(
+        (worker) =>
+          `${worker.firstName} ${worker.lastName}` === selectedWorkerName
+      );
+
+      if (selectedWorker) {
+        setSelectedWorkerId(selectedWorker.workerId);
+      }
+    } else {
+      setSelectedWorkerId("");
+    }
+  }, [selectedWorkerName, workersData]);
+
+  const handleOpenChange = (isOpen: boolean) => {
+    setOpen(isOpen);
+    if (isOpen) {
       form.reset();
+      setSelectedCustomerId("");
+      setSelectedWorkerId("");
     }
   };
 
   const onSubmit = (values: FormValues) => {
     startTransition(async () => {
-      const { data, error } = await createOrder(values);
+      // Optimistic notification - show immediately
+      toast.success("Creating new order...", {
+        duration: 1000, // Short duration as it will be replaced
+      });
+
+      const { data, error } = await createOrder(
+        values,
+        selectedCustomerId,
+        selectedWorkerId
+      );
 
       if (error) {
+        // Show error notification
+        toast.error("Failed to create order");
+        console.error("Failed to create order:", error);
         return;
       }
+
+      // Success notification
+      toast.success("New order created successfully!");
+
+      // Close the dialog automatically
+      setOpen(false);
+
+      // Call the callback if data exists
       if (data) {
         onCreateOrder(data);
-        form.reset();
       }
+
+      // Reset form and states
+      form.reset();
+      setSelectedCustomerId("");
+      setSelectedWorkerId("");
     });
   };
 
   return (
-    <Dialog onOpenChange={handleOpenChange}>
+    <Dialog open={open} onOpenChange={handleOpenChange}>
       <DialogTrigger asChild>
         <Button>
           <Plus className="mr-2 h-4 w-4" />
@@ -203,19 +304,76 @@ export default function NewTaskDialogForm({
               />
             </div>
 
-            <FormField
-              control={form.control}
-              name="customer.name"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Customer Name</FormLabel>
-                  <FormControl>
-                    <Input placeholder="John Smith" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+            <div className="grid grid-cols-2 gap-4">
+              <FormField
+                control={form.control}
+                name="customer.name"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Customer Name</FormLabel>
+                    <Select
+                      onValueChange={field.onChange}
+                      defaultValue={field.value}
+                    >
+                      <FormControl>
+                        <SelectTrigger>
+                          <SelectValue placeholder="Select customer" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        {customersData?.data?.map((customer) => (
+                          <SelectItem
+                            key={customer.customerId}
+                            value={customer.name}
+                          >
+                            <div className="flex items-center justify-between w-full">
+                              <span className="truncate">{customer.name}</span>
+                              <span className="text-xs text-muted-foreground ml-2">
+                                {customer.carBranch} • {customer.carPlate}
+                              </span>
+                            </div>
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+              <FormField
+                control={form.control}
+                name="assignedTo"
+                render={({ field }) => (
+                  <FormItem className="justify-self-end">
+                    <FormLabel>Assigned Worker</FormLabel>
+                    <Select
+                      onValueChange={field.onChange}
+                      defaultValue={field.value}
+                    >
+                      <FormControl>
+                        <SelectTrigger>
+                          <SelectValue placeholder="Select worker" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        {workersData?.data?.map((worker) => (
+                          <SelectItem
+                            key={worker.workerId}
+                            value={worker.firstName + " " + worker.lastName}
+                          >
+                            <div className="flex items-center justify-between w-full">
+                              {worker.firstName} {worker.lastName}
+                            </div>
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </div>
 
             <div className="grid grid-cols-3 gap-4">
               <FormField
@@ -225,7 +383,12 @@ export default function NewTaskDialogForm({
                   <FormItem>
                     <FormLabel>Make</FormLabel>
                     <FormControl>
-                      <Input placeholder="Toyota" {...field} />
+                      <Input
+                        placeholder="Toyota"
+                        {...field}
+                        disabled={!!selectedCustomerName}
+                        className={selectedCustomerName ? "bg-muted" : ""}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -239,7 +402,12 @@ export default function NewTaskDialogForm({
                   <FormItem>
                     <FormLabel>Model</FormLabel>
                     <FormControl>
-                      <Input placeholder="Camry" {...field} />
+                      <Input
+                        placeholder="Camry"
+                        {...field}
+                        disabled={!!selectedCustomerName}
+                        className={selectedCustomerName ? "bg-muted" : ""}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -253,7 +421,12 @@ export default function NewTaskDialogForm({
                   <FormItem>
                     <FormLabel>Year</FormLabel>
                     <FormControl>
-                      <Input placeholder="2025" {...field} />
+                      <Input
+                        placeholder="2025"
+                        {...field}
+                        disabled={!!selectedCustomerName}
+                        className={selectedCustomerName ? "bg-muted" : ""}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

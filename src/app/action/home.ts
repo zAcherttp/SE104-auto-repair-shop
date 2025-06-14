@@ -197,7 +197,7 @@ export async function fetchActiveTasks(): Promise<ApiResponse<ActiveTasks>> {
     }
 
     const activeTasks = data.map((item: any) => ({
-      taskName: item.notes,
+      taskName: item.title,
       carModel: item.car_model,
       status: item.status,
       assignedTo: item.username,

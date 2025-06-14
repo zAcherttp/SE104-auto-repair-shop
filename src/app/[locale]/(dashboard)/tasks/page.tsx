@@ -1,3 +1,5 @@
+import { fetchInventoryStatus } from "@/src/app/action/home";
+import { fetchOrders } from "@/src/app/action/orders";
 import TaskContainer from "@/src/components/tasks/task-container";
 import {
   dehydrate,
@@ -7,9 +9,16 @@ import {
 
 export default async function OrdersPage() {
   const queryClient = new QueryClient();
-  await queryClient.prefetchQuery({
-    queryKey: ["orders"],
-  });
+  await Promise.all([
+    queryClient.prefetchQuery({
+      queryKey: ["tasks"],
+      queryFn: fetchOrders,
+    }),
+    // queryClient.prefetchQuery({
+    //   queryKey: ["orders"],
+    //   queryFn: fetchInventoryStatus
+    // })
+  ]);
 
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>

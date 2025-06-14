@@ -11,7 +11,7 @@ export const PriorityMap: { [key in Priority]: number } = {
   high: 3,
 };
 
-export type Status = "pending" | "in-progress" | "completed";
+export type Status = "Pending" | "In Progress" | "Completed";
 
 export type CustomerName = {
   name: string;
@@ -33,7 +33,6 @@ export type Task = {
   vehicle: Vehicle;
   dueDate?: Date;
   assignedTo?: AssignedMechanic;
-  createdAt?: Date;
 };
 
 // Database schema types

@@ -27,4 +27,5 @@ export const taskFormSchema = z.object({
       }, "Year must be between 1886 and 2100"),
   }),
   dueDate: z.date().optional(),
+  assignedTo: z.string().optional(),
 });

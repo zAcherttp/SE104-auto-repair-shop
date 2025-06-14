@@ -48,17 +48,17 @@ export const TaskBoard = memo(function TaskBoard({
     () => [
       {
         title: "Pending",
-        columnId: "pending",
+        columnId: "Pending",
         columnColor: "border-t-yellow-500",
       },
       {
         title: "In Progress",
-        columnId: "in-progress",
+        columnId: "In Progress",
         columnColor: "border-t-blue-500",
       },
       {
         title: "Completed",
-        columnId: "completed",
+        columnId: "Completed",
         columnColor: "border-t-green-500",
       },
     ],
@@ -104,7 +104,7 @@ export const TaskBoard = memo(function TaskBoard({
 
         if (
           newStatus &&
-          ["pending", "in-progress", "completed"].includes(newStatus)
+          ["Pending", "In Progress", "Completed"].includes(newStatus)
         ) {
           onStatusChange?.(taskId, newStatus);
         }
@@ -136,14 +136,14 @@ export const TaskBoard = memo(function TaskBoard({
 
   const mouseSensor = useSensor(MouseSensor, {
     activationConstraint: {
-      delay: 100,
+      delay: 150,
       tolerance: 5,
     },
   });
 
   const touchSensor = useSensor(TouchSensor, {
     activationConstraint: {
-      delay: 100,
+      delay: 150,
       tolerance: 5,
     },
   });
