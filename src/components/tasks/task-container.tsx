@@ -138,6 +138,17 @@ export default function TaskContainer() {
     setTasks((prev) => [order, ...prev]);
     toast.success("New order created");
   }, []);
+  const handleEditTask = useCallback((updatedTask: Task) => {
+    setTasks((prevTasks) => {
+      const newTasks = prevTasks.map((task) => {
+        if (task.id === updatedTask.id) {
+          return updatedTask;
+        }
+        return task;
+      });
+      return newTasks;
+    });
+  }, []);
 
   const FilterDropdown = memo(function FilterDropdown({
     onFilterSelect,
@@ -192,6 +203,7 @@ export default function TaskContainer() {
       <TaskBoard
         tasks={filteredOrders}
         onStatusChange={handleDragEnd}
+        onEditTask={handleEditTask}
         className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 grow-1"
         isLoading={isLoading}
         isUpdating={isTransitioning}

@@ -21,6 +21,7 @@ import { TaskDetailDialog } from "./task-detail-dialog";
 interface TaskBoardProps {
   tasks: Task[];
   onStatusChange?: (orderId: string, newStatus: Status) => void;
+  onEditTask?: (task: Task) => void;
   className?: string;
   isLoading?: boolean;
   isUpdating?: boolean;
@@ -35,6 +36,7 @@ interface ColumnConfig {
 export const TaskBoard = memo(function TaskBoard({
   tasks,
   onStatusChange,
+  onEditTask,
   className,
   isLoading,
 }: TaskBoardProps) {
@@ -125,10 +127,15 @@ export const TaskBoard = memo(function TaskBoard({
     [activeTask]
   );
 
-  const handleEditTask = useCallback((task: Task) => {
-    // onEditTask?.(task);
-    setDetailDialogOpen(false);
-  }, []);
+  const handleEditTask = useCallback(
+    (task: Task) => {
+      if (onEditTask) {
+        onEditTask(task);
+      }
+      setDetailDialogOpen(false);
+    },
+    [onEditTask]
+  );
 
   const handleAssignTask = useCallback((task: Task) => {
     // onAssignTask?.(task);

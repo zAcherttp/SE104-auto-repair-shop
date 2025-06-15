@@ -29,6 +29,8 @@ export async function fetchOrders(): Promise<ApiResponse<Task[]>> {
           validPriority = "medium"; // Default fallback
       }
 
+      // console.log("Processing item:", item);
+
       return {
         id: item.repairorder_id,
         title: item.repairorder_title,
@@ -51,6 +53,7 @@ export async function fetchOrders(): Promise<ApiResponse<Task[]>> {
               last_name: item.user_lastname,
             }
           : undefined,
+        createdAt: new Date(item.repairorder_createdat),
       };
     });
 
@@ -145,6 +148,7 @@ export async function updateOrderStatus(
               last_name: item.user_lastname,
             }
           : undefined,
+        createdAt: new Date(item.repairorder_createdAt),
       };
       // 4. Revalidate and return
       revalidatePath("/orders");
@@ -182,14 +186,14 @@ export async function createOrder(
       .charAt(0)
       .toUpperCase() + result.data.priority.slice(1).toLowerCase()) as Priority;
 
-    console.log("Creating order with data:", {
-      title: result.data.title,
-      description: result.data.description,
-      priority: validPriority,
-      dueDate: result.data.dueDate?.toISOString().split("T")[0],
-      customer: result.data.customer,
-      vehicle: result.data.vehicle,
-    });
+    // console.log("Creating order with data:", {
+    //   title: result.data.title,
+    //   description: result.data.description,
+    //   priority: validPriority,
+    //   dueDate: result.data.dueDate?.toISOString().split("T")[0],
+    //   customer: result.data.customer,
+    //   vehicle: result.data.vehicle,
+    // });
 
     const { error } = await supabase.rpc(
       "create_repair_order_with_customer_car",
@@ -405,7 +409,7 @@ export async function fetchWorkerData(): Promise<
       phone: item.phone,
     }));
 
-    console.log("Fetched workers:", workers);
+    // console.log("Fetched workers:", workers);
 
     return {
       data: workers || [],
@@ -451,7 +455,7 @@ export async function fetchVehicleData(): Promise<
       licensePlate: item.license_plate,
     }));
 
-    console.log("Fetched vehicles:", vehicles);
+    // console.log("Fetched vehicles:", vehicles);
 
     return {
       data: vehicles || [],
@@ -461,6 +465,102 @@ export async function fetchVehicleData(): Promise<
     console.error("Failed to fetch vehicles:", error);
     return {
       error: new Error("Failed to fetch vehicles"),
+      data: undefined,
+    };
+  }
+}
+
+export async function updateTask(
+  taskId: string,
+  updates: Partial<Task>
+): Promise<ApiResponse<Task>> {
+  try {
+    // 1. Update the repair order in the database
+
+    const updatedPriority: Priority = (
+      updates?.priority
+        ? updates.priority.charAt(0).toUpperCase() +
+          updates.priority.slice(1).toLowerCase()
+        : "Medium"
+    ) as Priority;
+
+    const { error: updateError } = await supabase
+      .from("repairorder")
+      .update({
+        title: updates.title,
+        description: updates.description,
+        priority: updatedPriority,
+        status: updates.status,
+        due_date: updates.dueDate?.toISOString().split("T")[0], // Convert to YYYY-MM-DD
+        user_id: updates.assignedTo?.id || null,
+      })
+      .eq("id", taskId);
+
+    if (updateError) {
+      return {
+        error: new Error(`Failed to update task: ${updateError.message}`),
+        data: undefined,
+      };
+    }
+
+    // 2. Fetch the updated task with all relationships
+    const { data: updatedTaskData, error: fetchError } = await supabase
+      .rpc("get_repair_orders_details")
+      .eq("repairorder_id", taskId);
+
+    if (fetchError || !updatedTaskData || updatedTaskData.length === 0) {
+      return {
+        error: new Error("Failed to fetch updated task"),
+        data: undefined,
+      };
+    }
+
+    // 3. Transform the data using your existing logic
+    const item = updatedTaskData[0];
+
+    let validPriority: Priority;
+    switch (item.repairorder_priority?.toLowerCase()) {
+      case "low":
+      case "medium":
+      case "high":
+        validPriority = item.repairorder_priority.toLowerCase() as Priority;
+        break;
+      default:
+        validPriority = "medium";
+    }
+
+    const updatedTask: Task = {
+      id: item.repairorder_id,
+      title: item.repairorder_title,
+      description: item.repairorder_description,
+      priority: validPriority,
+      status: item.repairorder_status as Status,
+      customer: { name: item.customer_name },
+      vehicle: {
+        make: item.carbrand_name,
+        model: item.car_model,
+        year: item.car_year,
+      },
+      dueDate: new Date(item.repairorder_duedate),
+      assignedTo: item.user_id
+        ? {
+            id: item.user_id,
+            first_name: item.user_firstname,
+            last_name: item.user_lastname,
+          }
+        : undefined,
+      createdAt: new Date(item.repairorder_createdat),
+    };
+
+    // console.log("Updated task:", updatedTask);
+
+    // 4. Revalidate and return
+    revalidatePath("/tasks");
+    return { error: null, data: updatedTask };
+  } catch (error) {
+    console.error("Failed to update task:", error);
+    return {
+      error: new Error("Failed to update task"),
       data: undefined,
     };
   }

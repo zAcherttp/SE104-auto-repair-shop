@@ -147,7 +147,7 @@ export default function NewTaskDialogForm({
 
       if (selectedCustomer) {
         setSelectedCustomerId(selectedCustomer.customerId);
-        console.log("Selected Customer ID:", selectedCustomer.customerId);
+        // console.log("Selected Customer ID:", selectedCustomer.customerId);
 
         form.setValue("vehicle.make", selectedCustomer.carBranch || "");
         form.setValue("vehicle.model", selectedCustomer.carModel || "");

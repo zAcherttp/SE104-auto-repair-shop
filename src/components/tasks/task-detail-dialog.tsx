@@ -16,12 +16,30 @@ import {
   User,
   Activity,
   ContactRound,
+  Check,
   ChevronsUpDown,
+  Text,
 } from "lucide-react";
 import { Input } from "../ui/input";
 import { ComboBox } from "../ui/combobox";
 import { DatePicker } from "../ui/date-picker";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useTransition } from "react";
+import {
+  Command,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+} from "@/src/components/ui/command";
+import { cn } from "@/lib/utils";
+import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
+import { fetchWorkerData } from "@/src/app/action/orders";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
+import { Textarea } from "@/src/components/ui/textarea";
+import { toast } from "sonner"; // Add this import
+import { updateTask } from "@/src/app/action/orders";
+import { set } from "date-fns";
 
 interface TaskDetailDialogProps {
   task: Task | null;
@@ -39,6 +57,26 @@ export function TaskDetailDialog({
 }: TaskDetailDialogProps) {
   const [isEditMode, setIsEditMode] = useState(false);
   const [editedTask, setEditedTask] = useState<Task | null>(null);
+  const [selectedWorkerId, setSelectedWorkerId] = useState<string>("");
+  const [workerSearch, setWorkerSearch] = useState(false);
+  const [value, setValue] = useState("");
+  const [isPending, startTransition] = useTransition();
+  const [isSaving, setIsSaving] = useState(false);
+
+  const queryClient = useQueryClient();
+
+  const handleOpenChange = (isOpen: boolean) => {
+    if (!isOpen && isEditMode) {
+      setIsEditMode(false);
+      setEditedTask({ ...task } as Task); // Reset to original task when closing
+    }
+    onOpenChange(isOpen);
+  };
+
+  const { data: workersData, error: errorFetchingWorkers } = useQuery({
+    queryKey: ["workers"],
+    queryFn: fetchWorkerData,
+  });
 
   useEffect(() => {
     if (task) {
@@ -63,8 +101,48 @@ export function TaskDetailDialog({
   };
 
   const handleSaveChanges = () => {
-    onEdit?.(editedTask);
     setIsEditMode(false);
+    if (!editedTask) return;
+
+    setIsSaving(true);
+
+    startTransition(async () => {
+      try {
+        // Show loading toast
+        toast.loading("Updating task...");
+
+        const response = await updateTask(task.id, editedTask);
+        if (response.error) {
+          toast.dismiss();
+          toast.error("Failed to update task");
+          return;
+        }
+
+        // Success
+        toast.dismiss();
+        toast.success("Task updated successfully!");
+
+        if (response.data) {
+          await queryClient.invalidateQueries({
+            queryKey: ["orders"],
+          });
+
+          if (onEdit) {
+            onEdit(response.data);
+          }
+
+          // Exit edit mode
+          setIsEditMode(false);
+
+          setEditedTask(response.data);
+        }
+      } catch (error) {
+        toast.dismiss();
+        toast.error("Failed to update task");
+      } finally {
+        setIsSaving(false);
+      }
+    });
   };
 
   const updateField = <K extends keyof Task>(field: K, value: Task[K]) => {
@@ -74,31 +152,8 @@ export function TaskDetailDialog({
     });
   };
 
-  const mechanicUsers: AssignedMechanic[] = [
-    { id: "1", first_name: "John", last_name: "Smith" },
-    { id: "2", first_name: "Jane", last_name: "Smith" },
-    { id: "3", first_name: "Mike", last_name: "Johnson" },
-    { id: "4", first_name: "Emily", last_name: "Davis" },
-    { id: "5", first_name: "Chris", last_name: "Brown" },
-  ];
-
-  const formattedMechanicUsers = mechanicUsers.map((user) => ({
-    value: user.id,
-    label: `${user.first_name} ${user.last_name}`,
-  }));
-
-  const handleAssignMechanic = ({
-    value,
-  }: {
-    value: string;
-    label: string;
-  }) => {
-    const selectedMechanic = mechanicUsers.find((user) => user.id === value);
-    updateField("assignedTo", selectedMechanic);
-  };
-
   return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
+    <Dialog open={open} onOpenChange={handleOpenChange}>
       <DialogContent className="sm:max-w-[500px]">
         <DialogHeader>
           <div className="flex items-center justify-between">
@@ -109,7 +164,7 @@ export function TaskDetailDialog({
           </div>
         </DialogHeader>
 
-        <div className="grid gap-4 py-4">
+        <div className="grid gap-4 py-4 resize-none">
           <div className="grid grid-cols-2 gap-4">
             <div>
               <div className="flex items-center gap-2 mb-1">
@@ -154,30 +209,79 @@ export function TaskDetailDialog({
                 placeholder={"Not set"}
               />
             </div>
-            <div>
-              <div className="flex items-center gap-2 mb-1">
-                <ContactRound className="h-4 w-4 text-muted-foreground" />
-                <p className="text-sm font-medium">Assigned To</p>
+
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <User className="h-4 w-4 text-muted-foreground" />
+                  <p className="text-sm font-medium">Assigned to</p>
+                </div>
+                <Popover open={workerSearch} onOpenChange={setWorkerSearch}>
+                  <PopoverTrigger asChild>
+                    <Button
+                      variant="outline"
+                      role="combobox"
+                      disabled={!isEditMode}
+                      aria-expanded={workerSearch}
+                      className="w-[200px] justify-between"
+                    >
+                      {value
+                        ? workersData?.data?.find(
+                            (worker) =>
+                              worker.firstName + " " + worker.lastName === value
+                          )?.firstName +
+                          " " +
+                          workersData?.data?.find(
+                            (worker) =>
+                              worker.firstName + " " + worker.lastName === value
+                          )?.lastName
+                        : task.assignedTo?.first_name +
+                          " " +
+                          task.assignedTo?.last_name}
+                      <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+                    </Button>
+                  </PopoverTrigger>
+                  <PopoverContent className="w-[200px] p-0">
+                    <Command>
+                      <CommandInput placeholder="Search framework..." />
+                      <CommandList>
+                        <CommandEmpty>No worker found.</CommandEmpty>
+                        <CommandGroup>
+                          {workersData?.data?.map((worker) => {
+                            const fullName =
+                              worker.firstName + " " + worker.lastName;
+                            return (
+                              <CommandItem
+                                key={worker.workerId}
+                                value={fullName}
+                                onSelect={(currentValue) => {
+                                  setValue(
+                                    currentValue === value ? "" : currentValue
+                                  );
+                                  setWorkerSearch(false);
+                                  setSelectedWorkerId(worker.workerId);
+                                }}
+                              >
+                                <Check
+                                  className={cn(
+                                    "mr-2 h-4 w-4",
+                                    fullName === value
+                                      ? "opacity-100"
+                                      : "opacity-0"
+                                  )}
+                                />
+                                <div className="items-center justify-between">
+                                  {worker.firstName} {worker.lastName}
+                                </div>
+                              </CommandItem>
+                            );
+                          })}
+                        </CommandGroup>
+                      </CommandList>
+                    </Command>
+                  </PopoverContent>
+                </Popover>
               </div>
-              <ComboBox
-                disabled={!isEditMode}
-                items={formattedMechanicUsers}
-                value={
-                  editedTask.assignedTo
-                    ? `${editedTask.assignedTo.first_name} ${editedTask.assignedTo.last_name}`
-                    : "Unassigned"
-                }
-                onChange={(value) => {
-                  const selectedMechanic = formattedMechanicUsers.find(
-                    (user) => user.value === value
-                  );
-                  if (!selectedMechanic) {
-                    updateField("assignedTo", undefined);
-                    return;
-                  }
-                  handleAssignMechanic(selectedMechanic);
-                }}
-              />
             </div>
           </div>
 
@@ -212,9 +316,22 @@ export function TaskDetailDialog({
 
           <div>
             <p className="text-sm font-medium mb-1">Description</p>
-            <div className="text-sm text-muted-foreground p-3 bg-muted/50 rounded-md">
-              {task.description || "No description provided."}
-            </div>
+            {!isEditMode ? (
+              // View mode - non-editable
+              <div className="w-[435px] text-sm text-muted-foreground p-3 bg-muted/50 rounded-md overflow-hidden">
+                {task.description || "No description provided."}
+              </div>
+            ) : (
+              // Edit mode - editable textarea
+              <Textarea
+                value={editedTask.description || ""}
+                placeholder="Enter task description..."
+                className="w-[435px] bg-transparent rounded-md outline-none resize-none text-sm p-3 "
+                onChange={(e) =>
+                  updateField("description", e.target.value || undefined)
+                }
+              />
+            )}
           </div>
         </div>
 
