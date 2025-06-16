@@ -2,7 +2,7 @@
 
 import type React from "react";
 
-import { useState } from "react";
+import { useState, useTransition } from "react";
 import Link from "next/link";
 import { ArrowLeft, Eye, EyeOff } from "lucide-react";
 import { Button } from "@/src/components/ui/button";
@@ -14,23 +14,48 @@ import {
   CardTitle,
 } from "@/src/components/ui/card";
 import { Input } from "@/src/components/ui/input";
-import { Label } from "@/src/components/ui/label";
 
 import { z } from "zod";
 import { loginFormSchema } from "@/lib/schema/form";
-import { Form, FormField } from "@/src/components/ui/form";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/src/components/ui/form";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import FormSubmitButton from "@/src/components/form-submit-button";
 import { Separator } from "@/src/components/ui/separator";
+import { toast } from "sonner";
 
 type FormValues = z.infer<typeof loginFormSchema>;
 
 export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
+  const [isPending, startTransition] = useTransition();
 
   const onSubmit = async (data: FormValues) => {
-    console.log("Form submitted:", data);
+    startTransition(async () => {
+      try {
+        // Simulate async login request
+        await new Promise((resolve) => setTimeout(resolve, 2000));
+
+        console.log("Form submitted:", data);
+
+        toast.success("Login successful", {
+          duration: 2000,
+        });
+      } catch (error) {
+        toast.error("Login failed", {
+          description: "Please check your credentials and try again.",
+          duration: 2000,
+        });
+        console.error("Login error:", error);
+      }
+    });
   };
 
   const form = useForm<FormValues>({
@@ -68,54 +93,54 @@ export default function LoginPage() {
                   control={form.control}
                   name="username"
                   render={({ field }) => (
-                    <div className="space-y-2">
-                      <Label htmlFor="username">Username</Label>
-                      <Input
-                        id="username"
-                        type="text"
-                        {...field}
-                        placeholder="Enter your username"
-                        required
-                      />
-                    </div>
+                    <FormItem>
+                      <FormLabel>Username</FormLabel>
+                      <FormControl>
+                        <Input placeholder="Enter your username" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
                   )}
                 ></FormField>
                 <FormField
                   control={form.control}
                   name="password"
                   render={({ field }) => (
-                    <div className="space-y-2">
-                      <Label htmlFor="password">Password</Label>
-                      <div className="relative">
-                        <Input
-                          id="password"
-                          type={showPassword ? "text" : "password"}
-                          {...field}
-                          required
-                        />
-                        <Button
-                          type="button"
-                          variant="ghost"
-                          size="sm"
-                          className="absolute right-0 top-0 h-full px-3 py-2"
-                          onClick={() => setShowPassword(!showPassword)}
-                        >
-                          {showPassword ? (
-                            <EyeOff className="h-4 w-4" />
-                          ) : (
-                            <Eye className="h-4 w-4" />
-                          )}
-                        </Button>
-                      </div>
-                    </div>
+                    <FormItem>
+                      <FormLabel>Password</FormLabel>
+                      <FormControl>
+                        <div className="relative">
+                          <Input
+                            id="password"
+                            type={showPassword ? "text" : "password"}
+                            {...field}
+                            required
+                          />
+                          <Button
+                            type="button"
+                            variant="ghost"
+                            size="sm"
+                            className="absolute right-0 top-0 h-full px-3 py-2"
+                            onClick={() => setShowPassword(!showPassword)}
+                          >
+                            {showPassword ? (
+                              <EyeOff className="h-4 w-4" />
+                            ) : (
+                              <Eye className="h-4 w-4" />
+                            )}
+                          </Button>
+                        </div>
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
                   )}
                 ></FormField>
-                <Separator/>
-                  <FormSubmitButton
-                    className="w-full"
-                    text="Sign In"
-                    isDisabled={form.formState.isSubmitting}
-                  />
+                <Separator />
+                <FormSubmitButton
+                  className="w-full"
+                  text="Sign In"
+                  isDisabled={isPending}
+                />
               </form>
             </Form>
           </CardContent>
