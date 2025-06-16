@@ -16,7 +16,6 @@ import {
 import { Input } from "@/src/components/ui/input";
 import { Label } from "@/src/components/ui/label";
 import { Badge } from "@/src/components/ui/badge";
-import { Separator } from "@/src/components/ui/separator";
 import { Status } from "@/lib/type";
 
 // Mock data for demonstration - now organized by license plate
