@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { use, useState } from "react";
 import { Car, Filter, MessageSquare, Plus, Search, User } from "lucide-react";
 import { Button } from "@/src/components/ui/button";
 import { Input } from "@/src/components/ui/input";
@@ -47,6 +47,8 @@ import {
   SelectValue,
 } from "@/src/components/ui/select";
 import { Textarea } from "@/src/components/ui/textarea";
+import { fetchCarBrands } from "@/src/app/action/vehicles";
+import { QueryClient, useQuery } from "@tanstack/react-query";
 
 interface Vehicle {
   id: string;
@@ -250,6 +252,11 @@ export default function VehiclesPage() {
     "not-in-service": vehicles.filter((v) => v.status === "not-in-service"),
   };
 
+  const { data: carBrands, isLoading } = useQuery({
+    queryKey: ["carBrands"],
+    queryFn: fetchCarBrands,
+  });
+
   return (
     <div className="flex flex-col">
       <div className="border-b">
@@ -343,10 +350,10 @@ export default function VehiclesPage() {
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {brands.map((brand) => (
+                {carBrands?.data?.map((brand) => (
                   <div key={brand.id} className="flex items-center gap-3">
                     <Avatar className="h-10 w-10">
-                      <AvatarImage src={brand.logo} alt={brand.name} />
+                      <AvatarImage src={brand.logo_path} alt={brand.name} />
                       <AvatarFallback>{brand.name.charAt(0)}</AvatarFallback>
                     </Avatar>
                     <div>
