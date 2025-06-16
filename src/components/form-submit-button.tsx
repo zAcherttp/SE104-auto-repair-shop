@@ -5,14 +5,16 @@ import { Loader2 } from "lucide-react";
 interface FormSubmitButtonProps {
   text: string;
   isDisabled: boolean;
+  className?: string;
 }
 
 export default function FormSubmitButton({
   text,
   isDisabled,
+  className = "",
 }: FormSubmitButtonProps) {
   return (
-    <Button type="submit" className="w-30" disabled={isDisabled}>
+    <Button type="submit" className={`w-30 ${className}`} disabled={isDisabled}>
       <span
         className={`transition-all duration-200 ${
           isDisabled ? "opacity-0 blur-md scale-95" : "opacity-100 blur-0"

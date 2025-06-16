@@ -29,3 +29,8 @@ export const taskFormSchema = z.object({
   dueDate: z.date().optional(),
   assignedTo: z.string().optional(),
 });
+
+export const loginFormSchema = z.object({
+  username: z.string().nonempty("Username is required"),
+  password: z.string().nonempty("Password is required"),
+});
