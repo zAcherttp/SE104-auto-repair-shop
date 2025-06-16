@@ -74,6 +74,8 @@ export interface Customer {
 export interface CarBrand {
   id: string;
   name: string;
+  authorized: boolean;
+  logo_path: string;
 }
 
 export interface RepairOrder {
