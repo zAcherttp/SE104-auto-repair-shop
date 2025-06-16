@@ -43,6 +43,9 @@ export default function LoginPage() {
         // Simulate async login request
         await new Promise((resolve) => setTimeout(resolve, 2000));
 
+        // Redirect to home page after successful login
+        window.location.href = "/home";
+
         console.log("Form submitted:", data);
 
         toast.success("Login successful", {
