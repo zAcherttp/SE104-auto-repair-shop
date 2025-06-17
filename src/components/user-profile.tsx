@@ -12,6 +12,7 @@ import {
   Save,
   X,
   Settings,
+  LogOut,
 } from "lucide-react";
 import { Button } from "./ui/button";
 import {
@@ -36,17 +37,28 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import { useRouter } from "next/navigation";
+import { useAuth } from "@/src/providers/auth-provider";
 
 export function UserProfile() {
   const [isEditing, setIsEditing] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
   const router = useRouter();
+  const { user: authUser, signOut } = useAuth();
+
+  const handleSignOut = async () => {
+    try {
+      await signOut();
+      router.push("/");
+    } catch (error) {
+      console.error("Error signing out:", error);
+    }
+  };
 
   // Mock user data - in a real app, you would fetch this based on userId
   const user = {
     id: "u1",
-    name: "John Doe",
-    email: "john.doe@example.com",
+    name: authUser?.email?.split("@")[0] || "User",
+    email: authUser?.email || "user@example.com",
     phone: "(555) 123-4567",
     role: "Manager",
     department: "Administration",
@@ -100,7 +112,9 @@ export function UserProfile() {
             />
             <AvatarFallback>JD</AvatarFallback>
           </Avatar>
-          <span className="hidden md:inline-flex">John Doe</span>
+          <span className="hidden md:inline-flex">
+            {authUser?.email?.split("@")[0] || "User"}
+          </span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
@@ -115,7 +129,10 @@ export function UserProfile() {
           Settings
         </DropdownMenuItem>
         <DropdownMenuSeparator />
-        <DropdownMenuItem>Log out</DropdownMenuItem>
+        <DropdownMenuItem onClick={handleSignOut}>
+          <LogOut className="mr-2 h-4 w-4" />
+          Log out
+        </DropdownMenuItem>
       </DropdownMenuContent>
       <Dialog open={profileOpen} onOpenChange={setProfileOpen}>
         <DialogContent className="sm:max-w-[600px] top-36 translate-y-0">

@@ -6,7 +6,7 @@ import { revalidatePath } from "next/cache";
 import { taskFormSchema } from "@/lib/schema";
 import { ApiResponse } from "../../../lib/type/common";
 
-import { supabase } from "@/lib/supabase";
+import { supabase } from "@/lib/supabase/supabase";
 export async function fetchOrders(): Promise<ApiResponse<Task[]>> {
   try {
     const { data, error } = await supabase.rpc("get_repair_orders_details");

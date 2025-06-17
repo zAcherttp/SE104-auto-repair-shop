@@ -1,7 +1,7 @@
 "use server";
 
 import { ApiResponse, CarBrand } from "@/lib/type";
-import { supabase } from "@/lib/supabase";
+import { supabase } from "@/lib/supabase/supabase";
 
 export async function fetchCarBrands(): Promise<ApiResponse<CarBrand[]>> {
   try {

@@ -1,8 +1,7 @@
 "use server";
 
 import { ApiResponse } from "@/lib/type";
-import { supabase } from "@/lib/supabase";
-import { SupabaseClient } from "@supabase/supabase-js";
+import { supabase } from "@/lib/supabase/supabase";
 
 type MetricCardBase = {
   difference: string;

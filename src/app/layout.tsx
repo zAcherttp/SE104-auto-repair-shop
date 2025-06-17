@@ -6,7 +6,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "../i18n/routing";
 import { setRequestLocale } from "next-intl/server";
 import { ThemeProvider } from "next-themes";
-import { ReactScan } from "../components/react-scan";
+//import { ReactScan } from "../components/react-scan";
 import { StrictMode } from "react";
 import Providers from "./providers";
 

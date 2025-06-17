@@ -30,31 +30,43 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import FormSubmitButton from "@/src/components/form-submit-button";
 import { Separator } from "@/src/components/ui/separator";
 import { toast } from "sonner";
+import { createClient } from "@/lib/supabase/client";
+import { useRouter } from "next/navigation";
 
 type FormValues = z.infer<typeof loginFormSchema>;
 
 export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
   const [isPending, startTransition] = useTransition();
+  const router = useRouter();
+  const supabase = createClient();
 
   const onSubmit = async (data: FormValues) => {
     startTransition(async () => {
       try {
-        // Simulate async login request
-        await new Promise((resolve) => setTimeout(resolve, 2000));
+        const { error } = await supabase.auth.signInWithPassword({
+          email: data.email,
+          password: data.password,
+        });
 
-        // Redirect to home page after successful login
-        window.location.href = "/home";
-
-        console.log("Form submitted:", data);
+        if (error) {
+          toast.error("Login failed", {
+            description: error.message,
+            duration: 3000,
+          });
+          return;
+        }
 
         toast.success("Login successful", {
           duration: 2000,
         });
+
+        // Redirect will be handled by middleware
+        router.refresh();
       } catch (error) {
         toast.error("Login failed", {
-          description: "Please check your credentials and try again.",
-          duration: 2000,
+          description: "An unexpected error occurred. Please try again.",
+          duration: 3000,
         });
         console.error("Login error:", error);
       }
@@ -64,7 +76,7 @@ export default function LoginPage() {
   const form = useForm<FormValues>({
     resolver: zodResolver(loginFormSchema),
     defaultValues: {
-      username: "",
+      email: "",
       password: "",
     },
   });
@@ -92,14 +104,19 @@ export default function LoginPage() {
                 onSubmit={form.handleSubmit(onSubmit)}
                 className="space-y-4"
               >
+                {" "}
                 <FormField
                   control={form.control}
-                  name="username"
+                  name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Username</FormLabel>
+                      <FormLabel>Email</FormLabel>
                       <FormControl>
-                        <Input placeholder="Enter your username" {...field} />
+                        <Input
+                          type="email"
+                          placeholder="Enter your email"
+                          {...field}
+                        />
                       </FormControl>
                       <FormMessage />
                     </FormItem>

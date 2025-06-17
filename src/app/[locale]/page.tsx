@@ -1,18 +1,25 @@
-"use client"
-
-import Link from "next/link"
-import { Search, Users } from "lucide-react"
-import { Button } from "@/src/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/src/components/ui/card"
+import Link from "next/link";
+import { Search, Users } from "lucide-react";
+import { Button } from "@/src/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/src/components/ui/card";
 
 export default function HomePage() {
+  // Authentication redirects are handled by middleware
+
   return (
     <div className="min-h-screen flex items-center justify-center p-4">
       <div className="max-w-4xl w-full">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold  mb-4">Auto Repair Shop</h1>
           <p className="text-xl  max-w-2xl mx-auto ">
-            Professional automotive services with transparent tracking and expert care
+            Professional automotive services with transparent tracking and
+            expert care
           </p>
         </div>
 
@@ -24,14 +31,19 @@ export default function HomePage() {
               </div>
               <CardTitle className="text-2xl">Garage Member</CardTitle>
               <CardDescription className="text-base">
-                Access the management dashboard to handle orders, customers, and operations
+                Access the management dashboard to handle orders, customers, and
+                operations
               </CardDescription>
             </CardHeader>
             <CardContent>
               <Link href="/login">
-                <Button className="w-full text-lg py-6">Continue as Member</Button>
+                <Button className="w-full text-lg py-6">
+                  Continue as Member
+                </Button>
               </Link>
-              <p className="text-sm mt-3 text-center">For staff and administrators only</p>
+              <p className="text-sm mt-3 text-center">
+                For staff and administrators only
+              </p>
             </CardContent>
           </Card>
 
@@ -47,15 +59,20 @@ export default function HomePage() {
             </CardHeader>
             <CardContent>
               <Link href="/track-order">
-                <Button variant="outline" className="w-full text-lg py-6 border-2">
+                <Button
+                  variant="outline"
+                  className="w-full text-lg py-6 border-2"
+                >
                   Track My Order
                 </Button>
               </Link>
-              <p className="text-sm mt-3 text-center">Enter your order ID to check status</p>
+              <p className="text-sm mt-3 text-center">
+                Enter your order ID to check status
+              </p>
             </CardContent>
           </Card>
         </div>
       </div>
     </div>
-  )
+  );
 }
