@@ -17,36 +17,64 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [session, setSession] = useState<Session | null>(null);
   const [loading, setLoading] = useState(true);
-  const supabase = createClient();
 
   useEffect(() => {
-    // Get initial session
-    const getInitialSession = async () => {
-      const {
-        data: { session },
-      } = await supabase.auth.getSession();
+    let mounted = true;
+    const supabase = createClient(); // Get initial user (secure method)
+    const getInitialUser = async () => {
+      try {
+        const {
+          data: { user },
+        } = await supabase.auth.getUser();
 
-      setSession(session);
-      setUser(session?.user ?? null);
-      setLoading(false);
+        if (mounted) {
+          setUser(user);
+          // Also get session for complete auth state
+          if (user) {
+            const {
+              data: { session },
+            } = await supabase.auth.getSession();
+            setSession(session);
+          } else {
+            setSession(null);
+          }
+          setLoading(false);
+        }
+      } catch (error) {
+        console.error("Error getting user:", error);
+        if (mounted) {
+          setUser(null);
+          setSession(null);
+          setLoading(false);
+        }
+      }
     };
 
-    getInitialSession(); // Listen for auth state changes
+    getInitialUser(); // Listen for auth state changes (this gives us real-time updates)
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange(async (event, session) => {
-      setSession(session);
-      setUser(session?.user ?? null);
-      setLoading(false);
+      if (mounted) {
+        setSession(session);
+        setUser(session?.user ?? null);
+        setLoading(false);
 
-      // Note: Removed window.location.reload() to prevent infinite loops
-      // The middleware will handle redirects on route changes
+        // Clear loading faster on sign out
+        if (event === "SIGNED_OUT") {
+          setUser(null);
+          setSession(null);
+        }
+      }
     });
 
-    return () => subscription.unsubscribe();
-  }, [supabase.auth]);
+    return () => {
+      mounted = false;
+      subscription.unsubscribe();
+    };
+  }, []); // Empty dependency array is correct
 
   const signOut = async () => {
+    const supabase = createClient();
     await supabase.auth.signOut();
   };
 

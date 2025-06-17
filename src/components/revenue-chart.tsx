@@ -11,21 +11,6 @@ import {
 } from "../components/ui/chart";
 import { useTranslations } from "next-intl";
 
-const chartData = [
-  { month: "jan", revenue: 0 },
-  { month: "feb", revenue: -4500 },
-  { month: "mar", revenue: 7000 },
-  { month: "apr", revenue: 6000 },
-  { month: "may", revenue: 8000 },
-  { month: "jun", revenue: 7500 },
-  { month: "jul", revenue: 5000 },
-  { month: "aug", revenue: 9000 },
-  { month: "sep", revenue: 11000 },
-  { month: "oct", revenue: 10000 },
-  { month: "nov", revenue: 12000 },
-  { month: "dec", revenue: 9500 },
-];
-
 function formatUSD(value: number): string {
   if (value >= 1e6) {
     return `$${(value / 1e6).toFixed(1)}M`;
@@ -68,6 +53,11 @@ export function RevenueChart({ className }: { className?: string }) {
   const locale = t_("locale-code");
   const defaultCurrency = "USD";
   const USDtoVND = 25000;
+
+  if (monthlyRevenueError) {
+    console.error("Error fetching monthly revenue data:", monthlyRevenueError);
+    return <div>Error loading chart data</div>;
+  }
 
   return (
     <ChartContainer config={chartConfig} className={className}>
